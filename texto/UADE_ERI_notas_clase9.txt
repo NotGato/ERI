@@ -1,0 +1,1087 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                      Notas de Clase 9
+                           Unidad IX — El problema de la señalización
+
+
+
+                      Macho Stadler & Pérez Castrillo (1994), cap. 5; Spence (1973)
+
+
+
+                                                 Resumen
+
+       En la Clase 8 la parte no informada diseñaba un menú de contratos para que el agente
+       revelara su tipo. Estas notas estudian el caso inverso: es la parte informada la que toma una
+       decisión costosa, antes de firmar, para señalar su tipo. Empezamos preguntándonos quién
+       quiere revelar su información privada y qué hace que una acción funcione como señal, y
+       presentamos la secuencia temporal del juego. Luego desarrollamos el modelo de Spence
+       (1973), en el que la educación no aumenta la productividad pero permite a los trabajadores
+       más productivos distinguirse: aparecen el equilibrio separador, el equilibrio agrupador,
+       la multiplicidad de equilibrios y la divergencia entre retornos privados y sociales de la educa-
+       ción. Encuadramos el modelo frente a la teoría del capital humano, que explica la misma
+       correlación entre educación y salario por una vía distinta. Tercero, generalizamos el análisis
+       con el marco de Macho Stadler y Pérez Castrillo: equilibrio bayesiano perfecto, creencias
+       fuera del equilibrio y criterio intuitivo de Cho y Kreps (1987), que selecciona el equilibrio
+       razonable. Cerramos con las aplicaciones: los índices y la discriminación estadística, el con-
+       trato como señal de un principal informado, los precios de introducción que señalan calidad,
+       la deuda como señal del valor de la empresa y los contratos de licencia.
+
+
+
+1.     El problema de la señalización
+
+1.1.     ¿Quién quiere revelar su información?
+
+Es común encontrar avisos de empleo que piden “graduado reciente” sin especificar la carrera.
+Si el contenido del título no importa, ¿para qué se lo exige? La respuesta de Spence (1973) es
+que el título funciona como una señal: haber terminado una carrera, cualquiera sea, indica que
+la persona tiene capacidad para aprender. Aunque lo que estudió no le sirva a la empresa, es
+racional preferir a quien lo estudió.
+Antes de modelar este fenómeno conviene repasar lo que vimos en las Clases 7 y 8 sobre el valor
+de la información privada para quien la tiene:
+
+     Riesgo moral. El principal diseña un contrato que deja al agente exactamente en su utilidad
+     de reserva. La información privada perjudica al principal sin beneficiar al agente.
+     Selección adversa con un principal monopolista. El tipo eficiente obtiene una renta
+     informacional. Al agente le conviene que su tipo siga siendo privado: no tiene ningún interés
+     en revelarlo.
+     Selección adversa con competencia entre principales. Los principales obtienen bene-
+     ficio nulo y los agentes se quedan con todo el excedente. Pero el tipo bueno, que no puede
+     probar que lo es, recibe un contrato distorsionado (con riesgo) para que el malo no lo imite:
+     obtiene EU G < U G∗ . Aquí la información privada perjudica a quien la tiene.
+
+                                                      1
+Un agente sólo querrá revelar su tipo si gana haciéndolo, y sólo pagará por una señal costosa si
+lo que gana cubre ese costo. De los marcos estudiados, el único en el que el agente bueno tiene
+algo que ganar es el de competencia entre principales. Ese será el marco de esta clase.
+
+
+1.2.   ¿Qué es una señal?
+
+Macho Stadler y Pérez Castrillo cuentan una fábula. Un rey sin hijos varones quiere casar a su
+hija con un caballero valiente que defienda el reino. Todos los caballeros se declaran valientes. El
+rey propone una prueba: quien pase una noche en un castillo embrujado, poblado de fantasmas
+y demonios, obtendrá la mano de la princesa. Sólo uno, Bruce el Audaz, se atreve, y se casa con
+la princesa.
+Pasar la noche en el castillo es una señal de valentía porque su “costo” es tan alto para los
+caballeros cobardes que no la intentan, aunque ganarían el premio, y suficientemente bajo para
+los valientes como para que les convenga intentarla. Notemos que la prueba no hace más valiente
+a Bruce: si el rey hubiera sabido quién era valiente, lo habría elegido sin ponerlo a prueba. La
+prueba es improductiva; su único papel es transmitir información.
+
+Definición 1.1 (Señal). Una señal es una acción o decisión observable de la parte informada
+que revela, total o parcialmente, su tipo. Para ser informativa debe convenirles sólo a los tipos
+que efectivamente ganan revelándose; esto exige que su costo sea distinto según el tipo y menor
+para el tipo que quiere distinguirse.
+
+Spence distingue dos clases de atributos observables de un postulante. Los índices son carac-
+terísticas que el individuo no puede alterar (el sexo, la edad, el origen, los antecedentes). Las
+señales son características que el individuo puede modificar a un costo (la educación, la expe-
+riencia, los cursos, las certificaciones). Ambas pueden contener información, pero sólo las señales
+son objeto de decisión: en ellas está el problema estratégico.
+Spence también delimita el tipo de mercado que estudia. Si quien emite la señal está muchas
+veces en el mercado (una empresa que vende todos los días), puede invertir en una reputación
+de veracidad, y un anuncio barato puede ser creíble. En el mercado de trabajo, en cambio,
+los postulantes son muchos y entran pocas veces: no pueden construir una reputación de decir
+la verdad, y lo que los hace creíbles es que la señal sea costosa. La palabra sola —“soy muy
+productivo”— no transmite nada, porque todos los tipos tienen el mismo interés en decirla.
+
+
+1.3.   Contratar como inversión bajo incertidumbre
+
+Para el empleador, contratar a alguien es comprar una lotería: no conoce su productividad
+al contratarlo y sólo la descubre con el tiempo. Lo que observa son las señales e índices del
+postulante, y con ellos forma una distribución de probabilidad condicional sobre la productividad.
+Si el empleador es neutral al riesgo y hay competencia, el salario ofrecido a cada combinación de
+señales es la productividad esperada condicional a ellas.
+El mercado funciona como un ciclo de retroalimentación (Figura 1). Las creencias del emplea-
+dor determinan el salario que ofrece a cada nivel de educación; dado ese esquema salarial, cada
+postulante elige la educación que maximiza su salario neto del costo de educarse; el empleador
+contrata, observa la productividad de los contratados y revisa sus creencias; y el ciclo vuelve a
+empezar con la siguiente camada.
+
+Definición 1.2 (Equilibrio de señalización; Spence). Un equilibrio de señalización es un
+conjunto de creencias del empleador que son autoconfirmadas: generan salarios, decisiones de
+educación y contrataciones cuyos datos no las contradicen. En equilibrio, la distribución subjetiva
+
+
+                                                 2
+                   Creencias del empleador:                              Esquema salarial ofrecido
+                  productividad dada la señal                                    W (y)
+
+
+
+
+                   Contratación y observación                           Los postulantes eligen y:
+                      de la productividad                              máx. W (y)−costo de señalar
+
+
+ Figura 1: El ciclo de retroalimentación informativa en el mercado de trabajo (Spence, 1973).
+
+
+de la productividad dada la señal coincide con la que efectivamente genera el mercado, en el rango
+de señales que el empleador observa.
+
+El matiz final es importante: sobre señales que nadie elige el mercado no genera datos, de modo
+que las creencias sobre ellas nunca se contradicen. Esta libertad para las creencias “fuera del
+equilibrio” es la fuente de la multiplicidad de equilibrios y el origen del criterio intuitivo.
+
+
+1.4.      Secuencia temporal
+
+La Figura 2 muestra el juego (Macho Stadler y Pérez Castrillo). La diferencia con la selección
+adversa es que, antes de contratar, el agente elige una acción observable t (la señal), y los
+principales actualizan sus creencias al verla.
+
+                                                                                                                 t
+       N elige el tipo      A elige         Los P ven t      Los P ofrecen      A acepta       Resultado
+       de A (sólo A        la señal t       y actualizan       contratos        o rechaza       y pagos
+        lo observa)      (observable)     su creencia q(t)    (compiten)
+
+
+                             Figura 2: Secuencia temporal de la señalización.
+
+
+                                    Riesgo moral (VII)           Selección adversa (VIII)     Señalización (IX)
+
+  ¿Qué ignora P ?                        la acción de A                 el tipo de A             el tipo de A
+  ¿Cuándo surge la asimetría?           después de firmar             antes de firmar           antes de firmar
+  ¿Quién mueve primero?                   P (contrato)                   P (menú)                 A (señal)
+  Mecanismo                                incentivos             autoselección (screening)      señal costosa
+
+
+
+  Idea clave. En el tamizado (Clase 8) la parte no informada diseña contratos para que la
+  informada se revele. En la señalización la parte informada toma por su cuenta una decisión
+  costosa, antes de contratar, para distinguirse. Una señal funciona porque cuesta menos a
+  quien tiene algo bueno que mostrar.
+
+
+2.      La educación como señal: el modelo de Spence
+
+2.1.      Supuestos
+
+Seguimos el ejemplo numérico de Spence (1973). Hay dos grupos de trabajadores:
+
+
+
+                                                             3
+           Grupo       Productividad   Proporción     Costo de y años de educación
+
+           I (baja)          1               q1                      y
+           II (alta)         2             1 − q1                   y/2
+
+
+   La productividad no es observable antes de contratar; la educación y sí.
+   La educación no aumenta la productividad: es puramente una señal. (Relajaremos este
+   supuesto en la Sección 3.)
+   El costo de educarse, que incluye costos monetarios, psíquicos y de tiempo, es menor para
+   los más productivos: estudiar les resulta más fácil.
+   Hay competencia entre empleadores neutrales al riesgo: el salario iguala la productividad
+   esperada dada la educación observada.
+
+Con información simétrica cada trabajador cobra su productividad (1 o 2) y nadie se educa,
+porque educarse cuesta y no rinde nada. Si no hubiera ninguna señal disponible, todos cobrarían
+la productividad media,
+                               w̄ = q1 · 1 + (1 − q1 ) · 2 = 2 − q1 .                       (1)
+
+
+2.2.   El equilibrio separador
+
+Existe un nivel y ∗ tal que el empleador cree que quien tiene y < y ∗ es del grupo I y quien tiene
+y ≥ y ∗ es del grupo II, con probabilidad uno. El esquema salarial es entonces
+                                              {︄
+                                                1 si y < y ∗ ,
+                                      W (y) =
+                                                2 si y ≥ y ∗ .
+
+Frente a este esquema nadie elige un y intermedio: cualquier y ∈ (0, y ∗ ) paga lo mismo que y = 0
+y cuesta más, y cualquier y > y ∗ paga lo mismo que y ∗ y cuesta más. Cada uno elige y = 0 o
+y = y ∗ . Para que las creencias se confirmen, el grupo I debe elegir 0 y el grupo II, y ∗ :
+
+                                  Grupo I: 1 − 0 ≥ 2 − y ∗ ,                                   (2)
+                                                y∗
+                                  Grupo II: 2 −    ≥ 1 − 0.                                    (3)
+                                                2
+La primera condición dice que la señal es demasiado cara para los poco productivos; la segunda,
+que no es demasiado cara para los productivos. Juntas,
+
+                                         1 ≤ y∗ ≤ 2                                            (4)
+
+Con cualquier y ∗ en ese intervalo hay un equilibrio separador: el empleador predice sin error
+la productividad de cada postulante a partir de su educación.
+
+Ejemplo 2.1 (Separación con y ∗ = 1.5). Con y ∗ = 1.5, el grupo I obtiene 1 sin educarse y
+obtendría 2 − 1.5 = 0.5 educándose: no se educa. El grupo II obtiene 2 − 0.75 = 1.25 educándose
+y 1 sin educarse: se educa. Las creencias se confirman. Con y ∗ = 2.5, en cambio, el grupo II
+obtendría 2−1.25 = 0.75 < 1 y no se educaría: el empleador vería productividad 2 en postulantes
+sin educación y revisaría sus creencias.
+
+
+
+
+                                                  4
+               pesos                                                         costo I: y
+
+
+
+                2                                                                     W (y)
+
+
+
+
+                                                           neto II
+                                                           = 2 − y ∗ /2               costo II: y/2
+
+                1
+
+
+
+
+                                                          y∗
+                                                                                          y
+                                        1                                2
+
+
+                                            rango de y ∗ de equilibrio
+
+
+Figura 3: Equilibrio separador en el modelo de Spence (1973). El grupo I compara 1 (con y = 0)
+con 2 − y ∗ : prefiere no educarse si y ∗ ≥ 1. El grupo II compara 1 con 2 − y ∗ /2: prefiere educarse
+si y ∗ ≤ 2.
+
+2.3.   Multiplicidad y bienestar
+
+El primer rasgo llamativo es que hay infinitos equilibrios, uno por cada y ∗ ∈ [1, 2]. No son
+equivalentes en bienestar:
+
+   El grupo I cobra 1 en todos ellos y está peor que sin señal, cuando cobraría 2 − q1 .
+   El grupo II obtiene 2 − y ∗ /2, que cae con y ∗ : un requisito educativo más alto no mejora la
+   clasificación en nada y sólo consume recursos. Los equilibrios con y ∗ > 1 son Pareto inferiores
+   al de y ∗ = 1.
+   El grupo II puede estar peor que sin señal. Está mejor si 2 − y ∗ /2 > 2 − q1 , es decir, si
+   y ∗ < 2q1 . Con q1 = 21 esto no ocurre en ningún equilibrio (y ∗ ≥ 1): todos preferirían que la
+   señal no existiera. Con q1 = 0.8 (el grupo productivo es una minoría), el salario sin señal es
+   1.2 y el grupo II gana con cualquier y ∗ < 1.6; con y ∗ = 1 obtiene 1.5.
+
+Observación 2.1 (Generalización). Si el costo de la señal es a1 y para el grupo I y a2 y para
+el grupo II, con a2 < a1 , las condiciones (2)–(3) dan 1/a1 ≤ y ∗ ≤ 1/a2 , y existe un equilibrio
+separador en el que el grupo II está mejor que sin señal si y sólo si q1 > a2 /a1 (Spence, 1973).
+Cuanto más barata le resulta la señal al grupo productivo, menor puede ser su “minoría” para
+que la señal lo beneficie.
+
+Nadie actúa irracionalmente: cada trabajador elige lo mejor dado el esquema salarial. Pero la
+educación tiene un retorno privado —el salario sube de 1 a 2— y ningún retorno social en
+términos de producto: no cambia la productividad de nadie. Desde afuera, el nivel y ∗ parece un
+requisito de ingreso para los puestos bien pagos, y la educación parece productiva. Lo es para el
+individuo, no para la sociedad.
+Spence reconoce una objeción razonable: la señal cumple una función social, la de asignar las
+personas adecuadas a los puestos adecuados. Si distintos puestos requieren distintas capacidades,
+clasificar tiene valor. La objeción es válida, pero aun así hay formas más o menos eficientes de
+clasificar: subir y ∗ por encima de 1 no mejora la clasificación y sólo gasta recursos.
+
+                                                      5
+  Idea clave. En un equilibrio de señalización los retornos privados y sociales de la educa-
+  ción divergen. Puede haber sobreinversión en educación, equilibrios Pareto inferiores y
+  situaciones en las que todos estarían mejor si la señal no existiera. Nadie es irracional: es la
+  estructura informativa del mercado.
+
+
+2.4.   Equilibrios agrupadores
+
+Hay otros equilibrios, con propiedades muy distintas. Supongamos que el empleador cree que
+quien tiene y < y ∗ es del grupo I con probabilidad q1 (es decir, un postulante cualquiera) y que
+quien tiene y ≥ y ∗ es del grupo II. Los salarios son 2 − q1 para y = 0 y 2 para y = y ∗ . Ambos
+grupos eligen y = 0 si
+                                                          y∗
+                              grupo II: 2 − q1 ≥ 2 −         ⇐⇒ y ∗ ≥ 2q1
+                                                          2
+(el grupo I, cuyo costo es mayor, con más razón). Si todos eligen y = 0, el empleador sólo
+observa y = 0 y confirma que allí la productividad media es 2 − q1 . Sobre y ≥ y ∗ no hay datos
+que contradigan su creencia: se confirma “en forma degenerada”. Es un equilibrio agrupador:
+la educación no transmite información y se reproduce el resultado sin señal.
+También hay un equilibrio agrupador en el que todos se educan. Si el empleador cree que y < y ∗
+indica grupo I y que y ≥ y ∗ indica un postulante cualquiera, el salario es 1 sin educación y 2 − q1
+con y ∗ . Todos eligen y ∗ si al grupo I le conviene:
+
+                                  2 − q1 − y ∗ ≥ 1 ⇐⇒ y ∗ ≤ 1 − q1 .
+
+La educación no transmite información, pero todos invierten en ella: si alguien no lo hiciera
+cobraría menos. Spence señala que este equilibrio ni siquiera requiere que los costos difieran
+entre grupos: hay requisitos estables para los puestos que no cumplen ninguna función.
+                              Ejemplo 2.2 (Tres equilibrios con q1 = 12 ).
+             Equilibrio                       Educación      Salarios   Neto I   Neto II
+
+             Separador, y ∗ = 1                I: 0; II: 1     1; 2       1        1.5
+             Separador, y = 2
+                          ∗
+                                               I: 0; II: 2     1; 2       1         1
+             Agrupador en y = 0 (y ≥ 1)
+                                      ∗
+                                                todos 0        1.5       1.5       1.5
+             Agrupador en y ∗ = 0.4            todos 0.4       1.5       1.1       1.3
+
+El agrupador en y = 0 es débilmente mejor para todos que cualquier separador. Sin embargo,
+veremos en la Sección 4 que es el menos “razonable” de los cuatro.
+
+
+2.5.   Condiciones para que una señal funcione
+
+Costos negativamente correlacionados con la productividad. Si el costo de la señal
+fuera el mismo para todos, frente a cualquier esquema salarial todos invertirían igual y la señal
+no distinguiría a nadie. La correlación negativa entre costo de señalar y productividad es, para
+Spence, el supuesto crítico. Formalmente, es la condición de Spence–Mirrlees o de cruce
+único que vimos en la Clase 8: la tasa marginal de sustitución entre salario y señal difiere
+sistemáticamente entre tipos, de modo que las curvas de indiferencia de dos tipos se cortan una
+sola vez. Un mismo atributo puede ser señal para un tipo de trabajo y no para otro, si su costo
+está correlacionado con una capacidad pero no con otra.
+
+
+
+
+                                                    6
+Señales suficientes en el rango adecuado. La correlación es necesaria pero no suficiente.
+Si la educación sólo pudiera tomar los valores 1 o 3, no habría equilibrio separador: y = 3 es
+demasiado caro para el grupo II (2 − 1.5 < 1) y y = 1 no lo distingue del grupo I (que con salario
+2 obtendría 2−1 = 1, lo mismo que sin educarse). Spence observa que muchas posibles señales en
+los mercados de crédito —por ejemplo, ser propietario de una vivienda— terminan funcionando
+como índices, porque su costo supera largamente lo que se ganaría manipulándolas.
+
+
+3.      Encuadre: capital humano y señalización
+
+3.1.     Dos explicaciones de la misma correlación
+
+Que las personas más educadas ganen más es uno de los hechos más robustos de la economía
+laboral. La teoría del capital humano (Schultz, 1961; Becker, 1964; Mincer, 1974) lo explica
+por la vía de la productividad: la educación es una inversión que aumenta las habilidades del
+trabajador, y el salario más alto es el rendimiento de esa inversión. En la ecuación de Mincer,
+
+                               ln wi = β0 + ρ Si + β1 expi + β2 exp2i + εi ,
+
+el coeficiente ρ se interpreta como la tasa de retorno de un año más de escolaridad Si .
+La teoría de la señalización ofrece otra explicación: la educación puede no aumentar la pro-
+ductividad, sino revelar una productividad que ya existía. Las dos teorías predicen la misma
+correlación positiva entre educación y salario; difieren en lo que esa correlación significa:
+
+
+                               Capital humano                       Señalización
+
+     ¿Qué hace la educa-       aumenta la productividad             revela la productividad
+     ción?
+     Retorno privado           salario más alto                     salario más alto
+     Retorno social            igual al privado (sin externalida-   menor que el privado; puede ser nu-
+                               des)                                 lo
+     Inversión de equilibrio   eficiente                            puede haber sobreinversión
+     Qué se paga               lo aprendido                         el título (credencial)
+     Política educativa        subsidiar la educación aumenta el    subsidiarla puede encarecer la se-
+                               producto                             ñal sin aumentar el producto
+
+
+Distinguirlas empíricamente es difícil, porque son observacionalmente equivalentes en la regresión
+de Mincer: ρ mide el retorno privado de la educación, sea cual sea su origen. La literatura empírica
+buscó evidencia en predicciones que sí difieren. Por ejemplo, el “efecto diploma” (sheepskin effect):
+si el último año de una carrera, el que otorga el título, rinde mucho más que los anteriores, parte
+del retorno corresponde a la credencial y no a lo aprendido. O la evolución del salario con la
+experiencia: si la educación sólo señala, su efecto sobre el salario debería diluirse a medida que
+el empleador observa directamente la productividad.
+
+
+3.2.     Un modelo que combina ambos efectos
+
+Spence aclara que la educación no tiene por qué ser estrictamente improductiva. Modifiquemos
+el modelo de la Sección 2: la productividad del grupo I es 1 + αy y la del grupo II, 2 + αy, con
+0 ≤ α < 21 . Los costos siguen siendo y y y/2.
+
+
+
+                                                    7
+Información simétrica (capital humano puro). Cada grupo cobra su productividad y elige
+y maximizando 1 + αy − y o 2 + αy − y/2. Como el rendimiento marginal α es menor que el
+costo marginal de ambos grupos (1 y 12 ), nadie se educa. La educación es productiva, pero no
+lo suficiente como para pagar su costo.
+
+
+Información asimétrica. En un equilibrio separador el grupo I elige y = 0 y cobra 1; el
+grupo II elige y ∗ y cobra 2 + αy ∗ . Las condiciones son
+                                        1                            y∗                 2
+  I: 1 ≥ 2 + αy ∗ − y ∗ ⇐⇒ y ∗ ≥           ;        II: 2 + αy ∗ −      ≥ 1 ⇐⇒ y ∗ ≤        .
+                                       1−α                           2               1 − 2α
+El equilibrio separador de menor costo tiene y ∗ = 1/(1 − α), mayor que con α = 0: como la
+educación también le sube el salario al grupo I si la imita, el grupo II necesita educarse más para
+que no lo imiten.
+
+Ejemplo 3.1 (Retorno privado y retorno social). Con α = 0.2, el equilibrio separador de menor
+costo tiene y ∗ = 1/0.8 = 1.25. El grupo II cobra 2 + 0.2 · 1.25 = 2.25, frente a 1 del grupo I.
+Un econometrista que regresara salario sobre educación observaría que 1.25 años de educación
+“rinden” 1.25 de salario adicional: un retorno de 1 por año. Pero sólo 0.2 · 1.25 = 0.25 de esa
+diferencia es producto adicional (capital humano); el resto, 1, es la diferencia de productividad
+que ya existía y que la educación revela. El grupo II obtiene un neto de 2.25 − 0.625 = 1.625,
+frente a 2 con información simétrica: la información asimétrica le cuesta 0.375, aunque el producto
+aumentó 0.25.
+
+Observación 3.1 (Cuando la educación es muy productiva). Si α ≥ 12 , el grupo II querría
+educarse aun con información simétrica, y si la educación es muy productiva en relación con su
+costo, todos invierten mucho en ella. Spence advierte que, en ese caso, la educación puede dejar
+de funcionar como señal: su papel informativo queda opacado por su papel productivo.
+
+  Idea clave. Capital humano y señalización no son incompatibles: la educación puede au-
+  mentar la productividad y revelarla. Lo que cambia es la lectura normativa. Si la educación
+  sólo señala, su retorno social es menor que el privado y una política que la abarate para
+  todos puede no cambiar quién es productivo, sino sólo el nivel de credenciales que se exige.
+
+
+4.     El modelo general de señalización
+
+4.1.     Planteo
+
+Generalizamos el análisis con el marco de Macho Stadler y Pérez Castrillo, que es el mercado
+competitivo de la Clase 8 (Rothschild y Stiglitz) con una señal previa. Hay dos tipos de agente:
+G, con probabilidad de éxito pG , y B, con pB < pG . Muchos principales neutrales compiten por
+los agentes, de modo que obtienen beneficio nulo y los agentes se quedan con todo el excedente.
+Supongamos que la proporción de buenos, q, es tal que el equilibrio separador de la Clase 8
+existe. Los niveles de utilidad relevantes son:
+
+     Con información simétrica: U G∗ = u(wG∗ ) y U B∗ = u(wB∗ ), con wT ∗ = pT xS + (1 − pT )xF
+     (seguro completo a precio justo).
+     Con información asimétrica, sin señal (equilibrio separador de Rothschild–Stiglitz): el malo
+     obtiene U B∗ y el bueno, EU G = pG u(wSG ) + (1 − pG )u(wFG ) < U G∗ .
+
+
+
+                                                8
+Antes de ir al mercado, el agente puede realizar una actividad observable t —la educación— que
+no le sirve a nadie: ni al principal ni al agente. Para simplificar, t ∈ {0, t′ }. Su desutilidad es
+v G para el tipo bueno y v B para el malo (normalizando a cero la de t = 0). Notemos que basta
+con que t sea observable: como la información llega antes de firmar, el principal ofrece contratos
+distintos según lo que ve, aunque no pueda probarlo ante un juez.
+
+
+Creencias. Sea q la probabilidad a priori de que el agente sea bueno y q(t) la probabilidad a
+posteriori que asignan los principales después de observar t. Si ambos tipos eligen la misma t, la
+señal no es informativa y q(t) = q (equilibrio agrupador). Si los buenos eligen t′ y los malos
+t = 0, q(t′ ) = 1 y q(0) = 0 (equilibrio separador).
+
+Definición 4.1 (Equilibrio bayesiano perfecto). Un equilibrio bayesiano perfecto es una
+combinación de estrategias y creencias tal que (i) cada jugador elige lo óptimo en cada momento
+en que juega, dadas sus creencias y las estrategias de los demás, y (ii) las creencias se obtienen
+por la regla de Bayes a partir de las estrategias, siempre que sea posible. Para señales que no se
+eligen en equilibrio, la regla de Bayes no impone restricciones: las creencias “fuera del equilibrio”
+son libres.
+
+Para verificar un equilibrio se razona hacia atrás: primero los contratos que ofrecen los principales
+dadas sus creencias, luego que esas creencias sean bayesianas y por último la elección de la señal.
+
+
+4.2.   Equilibrio separador
+
+Supongamos creencias q(t′ ) = 1, q(0) = 0. Al ver t, los principales saben con quién tratan y,
+por competencia, ofrecen el contrato de información simétrica: wG∗ si t = t′ y wB∗ si t = 0. Un
+agente que elige t′ obtiene U G∗ − v T y uno que elige 0 obtiene U B∗ . Para que nadie se desvíe,
+
+                         U G∗ − v G ≥ U B∗      ⇐⇒      v G ≤ U G∗ − U B∗ ,                       (5)
+                         U B∗ ≥ U G∗ − v B      ⇐⇒      v B ≥ U G∗ − U B∗ .                       (6)
+
+Proposición 4.1 (Resultados 5.1 y 5.2). (i) Una condición necesaria para que {q(t′ ) = 1, q(0) =
+0} formen parte de un equilibrio es v G ≤ v B : la señal debe costarle menos al tipo bueno. (ii) Si
+se cumplen (5) y (6), existe un equilibrio bayesiano perfecto separador en el que el bueno elige t′ ,
+el malo elige 0, las creencias son q(t′ ) = 1, q(0) = 0 y los salarios son w(t′ ) = wG∗ , w(0) = wB∗ .
+
+La condición (i) es la de Spence–Mirrlees, pero no basta: la señal debe ser suficientemente cara
+para el malo y suficientemente barata para el bueno. El separador “al revés” (los malos se educan
+y los buenos no) nunca es un equilibrio: ningún agente malo pagaría por ser identificado como
+malo.
+Una vez que la señal separa, el problema de selección adversa desaparece: los contratos son los de
+información simétrica, sin distorsión. El costo es que el bueno paga v G , un gasto que no beneficia
+a nadie. Es racional “quemar dinero” cuando el costo de quemarlo difiere según el tipo.
+
+
+4.3.   Equilibrio agrupador
+
+En un equilibrio agrupador la señal no es informativa y los principales están exactamente en
+la situación de selección adversa de la Clase 8: ofrecen el menú que da (EU G , U B∗ ). Además, el
+agrupamiento sólo puede ocurrir en t = 0: si ambos tipos eligieran t′ , el malo ganaría desviándose
+a t = 0, porque obtiene al menos U B∗ y ahorra v B .
+
+
+
+                                                  9
+Proposición 4.2 (Resultado 5.3). Las siguientes estrategias forman un equilibrio bayesiano
+perfecto agrupador: (i) ambos tipos eligen t = 0; (ii) las creencias son q(0) = q y q(t′ ) = 0; (iii)
+si t = 0 los principales ofrecen el menú {(wFG , wSG ), wB∗ }, y si t = t′ ofrecen wB∗ .
+
+La creencia q(t′ ) = 0 no la contradice la regla de Bayes, porque en equilibrio nadie elige t′ . Con
+ella, quien se educa recibe el salario del malo y pierde v T > 0: nadie se educa. Siempre existe
+un equilibrio agrupador. Pero está sostenido por una creencia que puede ser poco razonable: ¿por
+qué pensaría un principal que quien pagó por educarse es, con seguridad, malo?
+
+
+4.4.   El criterio intuitivo
+
+Preguntémonos quién podría querer desviarse a t′ en el equilibrio agrupador, suponiendo lo más
+optimista: que al desviarse lo consideren bueno y le paguen wG∗ (nadie paga más que eso). El
+malo ganaría U G∗ − v B frente a U B∗ ; el bueno, U G∗ − v G frente a EU G . Supongamos
+                         v B > U G∗ − U B∗       y     v G < U G∗ − EU G .                        (7)
+La primera condición dice que el malo nunca se beneficia de desviarse, crean lo que crean los
+principales. La segunda, que el bueno sí se beneficia si lo reconocen. Entonces, al ver t′ , lo único
+razonable es pensar que quien se desvió es bueno: q(t′ ) = 1. Pero con esa creencia el bueno
+efectivamente se desvía, y el equilibrio agrupador se derrumba.
+Definición 4.2 (Criterio intuitivo; Cho y Kreps, 1987). Ante una señal que no se envía en
+equilibrio, los principales deben asignar probabilidad cero a los tipos que no ganarían enviándola
+cualquiera sea la respuesta de los principales. Un equilibrio no supera el criterio si, con creencias
+así restringidas, algún tipo gana desviándose. (Ver el Anexo A.)
+Proposición 4.3 (Resultado 5.4). El equilibrio agrupador de la Proposición 4.2 supera el criterio
+intuitivo si y sólo si no se cumplen simultáneamente las dos condiciones de (7).
+
+Como U B∗ < EU G , se tiene U G∗ − EU G < U G∗ − U B∗ : la condición sobre v G en (7) es más
+exigente que (5). Combinando todo:
+Proposición 4.4 (Resultado 5.5). Sea ∆ ≡ U G∗ − U B∗ y δ ≡ U G∗ − EU G , con δ < ∆. Siempre
+existe un equilibrio que supera el criterio intuitivo, y:
+
+(a) si v B > ∆ y v G < δ: existe un equilibrio separador y ningún agrupador;
+(b) si v B > ∆ y δ ≤ v G ≤ ∆: existen ambos;
+(c) si v B < ∆ o v G > ∆: existe un equilibrio agrupador y ningún separador.
+
+La interpretación es clara. (a) Si la señal es barata para los buenos y cara para los malos, sólo los
+buenos la envían: el equilibrio separa. (c) Si es barata para los malos, los principales no sabrían de
+quién viene y no la premiarían: no tiene sentido que el rey proponga una prueba que cualquiera
+puede pasar. Y si es muy cara incluso para los buenos, tampoco se envía: si la noche en el castillo
+diera un 90 % de probabilidad de infarto aun a los valientes, nadie la intentaría. (b) En el caso
+intermedio la señal es cara para los malos y no demasiado cara para los buenos: suficientemente
+barata para que la envíen en un equilibrio separador, pero no tanto como para que rompan uno
+agrupador.
+Ejemplo 4.1 (Señalización en el mercado de seguros). Retomemos el Ejemplo de Rothschild–
+                                                                     √
+Stiglitz de la Clase 8: xS = 100, xF = 0, pG = 0.9, pB = 0.6, u(w) = w y q = 12 . Allí obtuvimos
+         √                     √
+U G∗ = 90 ≈ 9.487, U B∗ = 60 ≈ 7.746 y, en el equilibrio separador sin señal, EU G ≈ 9.350.
+Entonces
+                    ∆ = 9.487 − 7.746 ≈ 1.741,      δ = 9.487 − 9.350 ≈ 0.137.
+
+                                                 10
+                              vB
+                                                                                 vG = vB
+
+
+
+                                             (b)
+                                          separador
+                  (a) sólo               y agrupador
+                separador
+
+                             ∆
+
+
+
+
+                                                                      (c)
+                                                                sólo agrupador
+
+
+
+
+                                                                                       vG
+                                   δ                      ∆
+
+
+Figura 4: Equilibrios que superan el criterio intuitivo según el costo de la señal para cada tipo
+(Macho Stadler y Pérez Castrillo). Sólo es relevante la región sobre la diagonal (v G < v B ); los
+valores corresponden al Ejemplo 4.1, con ∆ ≈ 1.74 y δ ≈ 0.14.
+
+
+   Con (v G , v B ) = (0.1, 2) estamos en el caso (a): sólo hay equilibrio separador. El bueno obtiene
+   9.487 − 0.1 = 9.387, más que 9.350: la señal lo beneficia.
+   Con (v G , v B ) = (1, 2) estamos en el caso (b). En el separador el bueno obtiene 8.487 < 9.350:
+   preferiría el agrupador, pero el separador también es un equilibrio.
+   Con (v G , v B ) = (0.1, 1) estamos en el caso (c): la señal es tan barata para el malo (1 < 1.741)
+   que la imitaría. Sólo hay equilibrio agrupador.
+
+
+El criterio intuitivo en el modelo de Spence. Con una señal continua, como la educación
+de la Sección 2, el criterio selecciona un único equilibrio (Anexo B). Primero, elimina todos los
+separadores con y ∗ > 1: un nivel y ′ ∈ (1, y ∗ ) nunca le conviene al grupo I aun si le pagan 2 (porque
+2 − y ′ < 1), pero sí al grupo II si lo reconocen; luego quien elige y ′ debe ser del grupo II. Segundo,
+elimina todos los agrupadores: si todos cobran 2 − q1 , un nivel y ′ ∈ (q1 , 2q1 ) no le conviene al
+grupo I aun con salario 2, pero sí al grupo II si lo reconocen. Sobrevive sólo el separador de
+menor costo, y ∗ = 1 (el equilibrio de Riley, 1979).
+
+Observación 4.1 (El bienestar es ambiguo). En el Ejemplo 2.2 el agrupador en y = 0 era dé-
+bilmente mejor para todos que cualquier separador; sin embargo, el criterio intuitivo lo descarta.
+En un equilibrio separador desaparece la distorsión de los contratos, pero los buenos pagan una
+señal que no le sirve a nadie. Según cuál de los dos efectos domine, la señalización puede mejorar
+o empeorar el bienestar, e incluso hay casos en que el agrupamiento es mejor para todos los tipos.
+
+
+Señales sin costo (cheap talk ). ¿Y si la señal fuera gratuita, no vinculante y no verificable,
+como decir “soy productivo” en una entrevista? En el modelo de Spence no sirve, porque todos los
+tipos tienen las mismas preferencias sobre el salario y todos lo dirían. Crawford y Sobel (1982)
+muestran que la comunicación sin costo puede transmitir información cuando los distintos tipos
+prefieren respuestas distintas del receptor y los intereses no son totalmente opuestos. Aun así, la
+información se transmite de forma gruesa (por intervalos), y tanto más fina cuanto más parecidas
+son las preferencias.
+
+
+
+                                                  11
+  Idea clave. Los juegos de señalización suelen tener muchos equilibrios, porque las creencias
+  sobre señales que nadie envía son libres. El criterio intuitivo las disciplina: si un tipo
+  nunca ganaría enviando una señal, no es razonable atribuírsela. Con dos tipos, el criterio
+  suele seleccionar el separador de menor costo.
+
+
+5.    Índices, señales y discriminación
+
+Spence se pregunta qué papel pueden jugar los índices, como el sexo. Supongamos dos grupos,
+varones (M ) y mujeres (W ), con exactamente la misma distribución de productividades y los
+mismos costos de educación: en ambos, una proporción q1 tiene productividad 1 y costo y, y
+el resto productividad 2 y costo y/2. Sexo y productividad no están correlacionados. ¿Puede el
+sexo tener algún efecto informativo?
+Parecería que no: personas de igual productividad tienen las mismas preferencias y los mismos
+costos, y por lo tanto deberían tomar las mismas decisiones. Pero el argumento falla. Si el
+empleador condiciona sus creencias al sexo además de a la educación, la decisión de educarse de
+un varón afecta los datos —y por lo tanto los salarios futuros— sólo de otros varones; la de una
+mujer, sólo de otras mujeres. Los dos grupos se convierten en dos mercados independientes, cada
+uno con su propio ciclo de retroalimentación. Las condiciones de equilibrio son
+                                 ∗                        ∗
+                            1 ≤ yW ≤ 2          y    1 ≤ yM ≤ 2,
+                     ∗ = y∗ .
+y nada obliga a que yW    M
+
+Ejemplo 5.1 (Una trampa de equilibrio de nivel bajo). Supongamos yM      ∗ = 1.1 y y ∗ = 1.9.
+                                                                                        W
+Las mujeres de alta productividad cobran lo mismo que los varones de alta productividad (2),
+pero deben educarse más para que les crean: obtienen un neto de 2 − 0.95 = 1.05, contra
+2 − 0.55 = 1.45 de los varones. Los grupos son idénticos en todo salvo en el equilibrio en el que
+quedaron atrapados.
+Otra configuración: los varones en el separador con yM∗ = 1.1 y las mujeres en el agrupador en
+                     ∗ ≥ 2q . Con q =
+y = 0, que requiere yW                  1
+                            1       1   2 todas las mujeres cobran 1.5: las de baja productividad,
+más que los varones de baja productividad (1); las de alta, menos que los varones de alta (2) en
+salario, pero más en neto (1.5 > 1.45).
+
+Spence extrae una lección metodológica. Un observador externo vería que algunas mujeres cobran
+menos que algunos varones porque tienen menos educación, y podría buscar fuera del mercado de
+trabajo la causa de esa menor educación. En el modelo esa lectura es errónea: la diferencia surge
+de la estructura informativa del mercado y se perpetúa sola. Spence la llama trampa de
+equilibrio de nivel bajo: una situación que, una vez alcanzada, persiste por razones endógenas al
+modelo, sin necesidad de prejuicio de los empleadores. Si además algunos grupos se autoexcluyen
+de ciertos mercados, las creencias sobre ellos nunca se contrastan y la discriminación puede
+persistir indefinidamente.
+
+  Idea clave. Un atributo sin relación con la productividad puede tener efectos informati-
+  vos porque segmenta el ciclo de retroalimentación: cada grupo visible puede quedar en un
+  equilibrio distinto. Es otra forma de discriminación estadística, distinta de la de Akerlof
+  (Clase 8): aquí el índice no predice la productividad, sino qué equilibrio rige.
+
+
+
+
+                                               12
+6.     El contrato como señal: el principal informado
+
+6.1.    El modelo
+
+Hasta aquí quien señalaba era el agente. Pero muchas veces es quien ofrece el contrato el que tiene
+información privada, y entonces el propio contrato puede funcionar como señal: una empresa que
+vende un producto nuevo informa su calidad con el precio o la garantía; el dueño de una patente
+informa su valor con las condiciones de la licencia (Macho Stadler y Pérez Castrillo).
+Un empresario neutral contrata a un agente; el contrato fija el esfuerzo e (horas de trabajo,
+observables) y el salario w. Lo que el agente no sabe es si el trabajo es fácil o arduo; el empresario
+sí:
+                   trabajo fácil (tipo 1): B 1 = Π(e) − w, U 1 = u(w) − v(e);
+           trabajo arduo (tipo k): B k = k Π(e) − w,                   U k = u(w) − k v(e),        k > 1.
+El trabajo arduo es más productivo para el empresario pero más penoso para el agente. Llamamos
+q a la probabilidad, para el agente, de que el trabajo sea fácil.
+
+
+Información simétrica. Los contratos óptimos C 1∗ y C k∗ saturan la participación (u(w1∗ ) −
+v(e1∗ ) = U , u(wk∗ ) − k v(ek∗ ) = U ) y cumplen Π′ (e)/v ′ (e) = 1/u′ (w). El trabajo arduo se paga
+más: wk∗ > w1∗ .
+
+
+Información asimétrica. Ambos tipos de empresario prefieren C 1∗ : más esfuerzo por menos
+salario (relativamente). El empresario con trabajo arduo quiere hacerse pasar por uno con trabajo
+fácil. El agente lo anticipa, y si le ofrecen C 1∗ no lo acepta: no sabe si el trabajo es fácil. Aquí el
+que necesita señalar es el empresario con trabajo fácil.
+
+                                                                                                          t
+            N elige el tipo         P ofrece           A actualiza          A acepta          Resultado
+            de P (sólo P           un contrato         su creencia          o rechaza          y pagos
+             lo observa)              (w, e)             q(w, e)
+
+
+     Figura 5: Secuencia temporal con principal informado (Macho Stadler y Pérez Castrillo).
+
+
+6.2.    Equilibrio separador
+
+Proposición 6.1 (Resultado 5.6). En todo equilibrio bayesiano perfecto separador, el tipo que
+querría disfrazarse (el empresario con trabajo arduo) ofrece su contrato de información simétrica:
+C k = C k∗ .
+
+La razón: si ofreciera otro contrato, podría desviarse a C k∗ , que le da más beneficio y que el
+agente acepta cualquiera sea su creencia (aun creyendo que el trabajo es arduo obtiene U ). Es
+la misma “no distorsión” del tipo al que nadie quiere imitar que vimos con competencia en la
+Clase 8.
+El contrato del empresario con trabajo fácil, C 1 = (w1 , e1 ), debe cumplir
+
+                    u(w1 ) − v(e1 ) ≥ U               (el agente acepta si cree que es fácil),                 (8)
+                          k∗        k∗            1        1
+                  k Π(e ) − w            ≥ k Π(e ) − w               (el tipo k no imita a 1),                 (9)
+                               1     1           k∗        k∗
+                       Π(e ) − w         ≥ Π(e ) − w                 (el tipo 1 no imita a k).                (10)
+
+
+
+                                                           13
+Muchos contratos cumplen estas condiciones (sostenidos por la creencia de que cualquier otra
+oferta viene de un trabajo arduo). Todos comparten una propiedad: e1 < ek∗ y w1 < wk∗ . La
+única forma de convencer al agente de que el trabajo es fácil es mostrar que al empresario le
+interesa poco su esfuerzo: un empresario con trabajo arduo, para quien cada hora es muy valiosa,
+nunca pediría tan pocas horas.
+
+Proposición 6.2. El único equilibrio separador que supera el criterio intuitivo tiene C k = C k∗
+y C 1∗∗ = (w1 , e1 ) dado por
+
+                     u(w1 ) − v(e1 ) = U ,     k Π(ek∗ ) − wk∗ = k Π(e1 ) − w1 .                 (11)
+
+C 1∗∗ es, entre los contratos que separan, el que más beneficio da al tipo 1; el tipo k nunca lo
+ofrecería en lugar de C k∗ , de modo que si el agente lo observa debe concluir, “intuitivamente”,
+que el trabajo es fácil.
+
+Ejemplo 6.1 (Pocas horas como señal de un trabajo fácil). Sea Π(e) = 4e, u(w) = w, v(e) =
+e2 /2, k = 2 y U = 0.
+Información simétrica. Tipo 1: máx 4e − e2 /2 ⇒ e1∗ = 4, w1∗ = 8, beneficio 8. Tipo k: máx 8e −
+e2 ⇒ ek∗ = 4, wk∗ = 16, beneficio 16.
+¿Por qué no funciona? Si el tipo k ofreciera C 1∗ = (8, 4) y el agente creyera que el trabajo es
+fácil, ganaría 2 · 16 − 8 = 24 > 16.
+Separación. Por (11): w1 = (e1 )2 /2 y 8e1 − (e1 )2 /2 = 16, es decir, (e1 )2 − 16e1 + 32 = 0:
+                                         √
+                               e1 = 8 − 4 2 ≈ 2.34,             w1 ≈ 2.75 .
+
+El empresario con trabajo fácil gana 4(2.34) − 2.75 ≈ 6.63, menos que 8: paga 1.37 por señalar.
+Verificación: el tipo k obtiene 16 con su contrato y 16 imitando (indiferente); el tipo 1 obtiene
+6.63 con su contrato y 16 − 16 = 0 imitando al k. Además, si el agente lo creyera tipo k, lo mejor
+que podría obtener el tipo 1 sería máx 4e − e2 = 4 < 6.63.
+
+                    w
+                                                      Uk = U        B k = 16
+                                                                               U1 = U
+
+
+                                                                                 B 1 = 6.63
+                                                  C k∗
+
+
+
+
+                                                             C 1∗
+
+
+
+                                    C 1∗∗
+
+
+                                                                                        e
+                                        2.34             4
+
+
+Figura 6: El contrato como señal en el Ejemplo 6.1 (basado en Macho Stadler y Pérez Castrillo).
+C 1∗∗ está sobre la curva de participación del agente cuando el trabajo es fácil y sobre la isobe-
+neficio del empresario con trabajo arduo que pasa por C k∗ : el tipo k es indiferente entre C k∗ y
+C 1∗∗ .
+
+
+                                                 14
+  Idea clave. Cuando quien ofrece el contrato tiene información privada, el contrato transmite
+  información. Para ser creíble, el tipo que quiere distinguirse ofrece un contrato que el otro
+  tipo nunca ofrecería, aunque con información simétrica sería ineficiente. El tipo al que nadie
+  quiere imitar no se distorsiona.
+
+
+7.     Otras aplicaciones
+
+7.1.   Precios de introducción que señalan calidad
+
+Un monopolista lanza un producto cuya calidad conoce y los consumidores no (Macho Stadler y
+Pérez Castrillo). Si la calidad es buena (G), el consumidor obtiene un excedente X; si es mala (B),
+cero. Los costos unitarios son cG > cB . Hay dos períodos; quien compra en el primero aprende
+la calidad, y quien no compra en el primero no compra en el segundo. El consumidor cree que la
+calidad es buena con probabilidad q, y el monopolista descuenta el futuro con δ ∈ (0, 1).
+En el período 2 la calidad es conocida: el monopolista bueno cobra X y el malo no vende.
+Supongamos qX < cB . Entonces no hay equilibrio agrupador: al precio qX que pagaría un
+consumidor desinformado el monopolista malo pierde, y no tiene segundo período.
+En un equilibrio separador el consumidor sabe que el malo no vende. Para que el malo no imite,
+el precio inicial debe ser p1 ≤ cB : imitar le daría p1 − cB ≤ 0 y ningún beneficio futuro. El
+monopolista bueno cobra el máximo compatible con la separación, p1 = cB (el criterio intuitivo
+descarta precios menores), y obtiene
+
+                                  ΠG = (cB − cG ) + δ (X − cG ).                               (12)
+
+Si δ(X − cG ) ≥ cG − cB , el mercado funciona: el producto bueno se lanza a un precio menor que
+su costo, y la pérdida inicial es la señal de que el monopolista confía en que los consumidores
+volverán a comprar. Si no, el mercado no existe: aun siendo buena, la calidad nunca llega a
+probarse.
+Ejemplo 7.1 (Precio de lanzamiento). Con X = 10, cG = 4, cB = 2 y q = 0.15 (qX = 1.5 < 2):
+con δ = 0.9, el monopolista bueno lanza a p1 = 2, pierde 2 por unidad en el primer período y
+gana 0.9 · 6 = 5.4 en el segundo; ΠG = 3.4 > 0. Con δ = 0.3, ΠG = −2 + 1.8 = −0.2 < 0: el
+producto no se lanza.
+
+Las muestras gratis, los precios de lanzamiento y la publicidad de marca (que no informa nada
+sobre el producto, salvo que la empresa está dispuesta a “quemar” dinero) tienen la misma lógica:
+son más rentables cuanto mejor es el producto, porque la proporción de consumidores que vuelve
+a comprar crece con la calidad. Las garantías largas y la devolución del dinero son señales para
+bienes durables, porque su costo esperado es mayor si el producto es malo (Clase 8).
+
+
+7.2.   La deuda como señal del valor de la empresa
+
+Según el teorema de Modigliani y Miller (1958), la estructura financiera no altera el valor de
+la empresa. Con información asimétrica el teorema falla (Ross, 1977; Macho Stadler y Pérez
+Castrillo). El gerente conoce la distribución de las ganancias, uniforme en [0, k], y los inversores
+no. Elige el nivel de deuda D para maximizar un promedio ponderado del valor de mercado de la
+empresa hoy, V0 (D), y de su valor esperado mañana, pagando una multa L si la empresa quiebra
+(si las ganancias no alcanzan para pagar la deuda):
+                                                        (︃         )︃
+                                                           k LD
+                             U (D) = (1 − γ) V0 (D) + γ      −        .
+                                                           2    k
+
+                                                15
+Como la probabilidad de quiebra es D/k, el costo esperado de la deuda es menor cuanto mejor
+es la empresa: es una señal posible. Con información simétrica, V0 = k/2 y el gerente elige
+D = 0. Con dos tipos, k G > k B , el tipo malo elige D = 0 en un equilibrio separador y el bueno
+elige DG tal que
+
+                     (1 − γ)(k G − k B ) B       (1 − γ)(k G − k B ) G
+                                        k ≤ DG ≤                    k .                        (13)
+                           2γL                         2γL
+Una deuda alta indica a los inversores que el valor es alto: sólo un gerente de una buena empresa
+se arriesgaría a la multa. La deuda mínima necesaria aumenta con la diferencia de valores y
+disminuye con la multa.
+Ejemplo 7.2 (Deuda y valor). Con k G = 200, k B = 100, γ = 21 y L = 100, la condición
+(13) da 50 ≤ DG ≤ 100. Con el separador de menor costo, DG = 50, el gerente bueno obtiene
+1         1
+2 (100) + 2 (100 − 25) = 87.5, contra 75 si no señalara y lo confundieran con el malo; el malo
+obtiene 50 sin deuda y 50 imitando (indiferente).
+
+
+7.3.   Contratos de licencia
+
+En la Clase 8 vimos cómo se distorsiona un contrato de licencia cuando el comprador tiene
+información privada. Supongamos ahora que es el vendedor —un laboratorio que patentó una
+innovación— quien sabe si la innovación reduce mucho los costos (cG ) o poco (cB ), y que la
+licencia se vende a un monopolista con un pago fijo F y una regalía ε por unidad (Macho Stadler
+y Pérez Castrillo). Con información simétrica el laboratorio cobraría sólo un pago fijo, ε = 0.
+Con información asimétrica, la innovación mala se licencia con su contrato simétrico, (F B∗ , 0),
+y la buena se señala con una regalía positiva y un pago fijo menor: como con la innovación
+buena se produce y se vende más, las regalías le rinden más a quien tiene la buena. El pago fijo
+no distingue entre innovaciones; la regalía sí.
+
+
+7.4.   Otras señales
+
+Los ejemplos se multiplican: una ciudad que construye estadios antes de saber si será sede olímpica
+señala que está preparada; un gobierno que se ata las manos señala sus intenciones; un país que
+adopta reglas estrictas señala que será un buen destino para la inversión; en una entrevista
+de trabajo todos intentamos señalar que somos adecuados para el puesto. Spence agrega las
+admisiones selectivas, los ascensos, el crédito al consumo y el consumo ostentoso. En todos los
+casos, la señal sólo sirve si es creíble: decir la verdad no basta si quien escucha no tiene motivos
+para creerla.
+
+
+8.     Síntesis
+
+La Unidad IX estudia qué ocurre cuando la parte informada puede actuar, antes de contratar,
+para revelar su tipo. Una señal funciona si su costo es menor para el tipo que quiere distinguirse:
+suficientemente alto para que el otro tipo no la imite y suficientemente bajo para que al pri-
+mero le convenga. En el modelo de Spence la educación, aun siendo improductiva, separa a los
+trabajadores; hay infinitos equilibrios separadores y también agrupadores, los retornos privados
+y sociales divergen y puede haber sobreinversión. Frente a la teoría del capital humano, la se-
+ñalización explica la misma correlación entre educación y salario con consecuencias normativas
+distintas. Las creencias fuera del equilibrio son libres, y el criterio intuitivo de Cho y Kreps las
+disciplina seleccionando, con dos tipos, el separador de menor costo. Los índices pueden segmen-
+tar el mercado y generar trampas de equilibrio de nivel bajo, y cuando quien tiene información
+
+                                                16
+es quien ofrece el contrato, el propio contrato —un precio, una regalía, un nivel de deuda, pocas
+horas de trabajo— se convierte en señal.
+
+
+                        Selección adversa (VIII)                Señalización (IX)
+
+ Quién mueve primero    la parte no informada (menú)            la parte informada (señal)
+ Instrumento            contratos autoseleccionables            acción costosa previa al contrato
+ Condición clave        cruce único                             cruce único: señal más barata para el
+                                                                bueno
+ Quién se distorsiona   el tipo imitado (monopolio) o el imi-   el tipo que se señala paga la señal; el
+                        table (competencia)                     otro no se distorsiona
+ Equilibrio             único (monopolio); puede no existir     múltiples; se refinan con el criterio in-
+                        (competencia)                           tuitivo
+ Bienestar              renta y distorsión                      información perfecta a cambio del cos-
+                                                                to de la señal
+
+
+
+Ejercicios
+
+1. La educación como señal (basado en Macho Stadler y Pérez Castrillo, ej. 5.1). Hay dos
+   tipos de trabajador, con productividad θ ∈ {1, 3}; la proporción de trabajadores de produc-
+   tividad alta es λ. Alcanzar un nivel de educación e le cuesta e/θ a un trabajador de tipo θ,
+   y su utilidad es w − e/θ. Las empresas compiten y la educación no afecta la productividad.
+   (a) ¿Qué nivel de educación elegiría cada tipo con información simétrica? (b) Suponga que
+   las empresas pagan w = 3 si e ≥ e0 y w = 1 si e < e0 . Encuentre los valores de e0 para los
+   que hay un equilibrio separador y verifique que las creencias son coherentes. (c) Con λ = 0.4,
+   describa el equilibrio agrupador en e = 0 y muestre que no supera el criterio intuitivo. ¿Qué
+   equilibrio sí lo supera? (d) Compare el bienestar de cada tipo en el equilibrio seleccionado y
+   en el agrupador, con λ = 0.4 y con λ = 0.9. (e) Suponga ahora que la educación aumenta
+   la productividad en 0.1 e para ambos tipos. Calcule el equilibrio separador de menor costo y
+   discuta qué parte del diferencial salarial se debe al capital humano.
+
+2. Clasificación de equilibrios (basado en Macho Stadler y Pérez Castrillo, sec. 5.4). En el
+   mercado del Ejemplo 4.1 (U G∗ ≈ 9.487, U B∗ ≈ 7.746, EU G ≈ 9.350), los agentes pueden
+   obtener un certificado cuyo costo es v G para el tipo bueno y v B para el malo. Para cada par
+   (v G , v B ) —(0.05, 3), (0.5, 3), (0.5, 1.2) y (2, 3)— indique qué equilibrios superan el criterio
+   intuitivo. En los casos con equilibrio separador, ¿gana el tipo bueno con la existencia del
+   certificado? Explique por qué en el caso (0.5, 3) el agrupador sobrevive al criterio.
+
+3. El principal informado (basado en Macho Stadler y Pérez Castrillo, sec. 5.5). Un empresa-
+   rio puede ofrecer un trabajo fácil, con beneficio 6e − w y utilidad para el trabajador w − e2 /2,
+   o uno arduo, con beneficio 18e − w y utilidad w − 3e2 /2. Sólo el empresario sabe de qué tipo
+   es el trabajo; U = 0. (a) Calcule los contratos de información simétrica. (b) Muestre que no
+   pueden ofrecerse con información asimétrica. (c) Calcule el contrato separador que supera el
+   criterio intuitivo y el costo de señalar para el empresario con trabajo fácil. (d) Interprete:
+   ¿por qué pocas horas de trabajo son una buena señal de un trabajo fácil?
+
+4. Precios de lanzamiento (basado en Macho Stadler y Pérez Castrillo, ap. 5B.1). Un mono-
+   polista lanza una bebida cuya calidad sólo él conoce. Si es buena, cada consumidor obtiene
+   un excedente X = 12 y el costo unitario es cG = 5; si es mala, el excedente es 0 y el costo
+   cB = 3. La probabilidad de buena calidad es q = 0.2. (a) Muestre que no hay equilibrio
+   agrupador. (b) Encuentre el equilibrio separador y el factor de descuento mínimo para que
+
+                                                 17
+  el mercado exista. (c) Con δ = 0.5, calcule el beneficio del monopolista bueno. (d) ¿Por qué
+  el criterio intuitivo descarta los precios iniciales menores que cB ? (e) Relacione con el uso de
+  la publicidad de marca (ej. 5.3).
+
+5. La deuda como señal (basado en Ross, 1977). Con el modelo de la Sección 7, sea k G = 120,
+   k B = 60, γ = 21 y L = 60. (a) Calcule el intervalo de deuda que separa los tipos. (b) Calcule
+   la utilidad del gerente de cada tipo en el separador de menor costo y compárela con la que
+   obtendría sin señalar. (c) ¿Cómo cambia la deuda mínima si la multa por quiebra se duplica?
+   ¿Y si k G sube a 180? Interprete.
+
+6. Índices y discriminación (basado en Spence, 1973, sec. 6). Dos grupos visibles, A y B,
+   tienen la misma composición: la mitad tiene productividad 1 y costo de educación y, y la otra
+   mitad productividad 2 y costo y/2. (a) Muestre que puede haber un equilibrio con yA  ∗ = 1.2
+       ∗
+   y yB = 1.8, y calcule el neto de cada tipo en cada grupo. (b) Suponga que el grupo B está
+   en el agrupador en y = 0. ¿Qué condición debe cumplir yB ∗ ? ¿Quiénes del grupo B ganan y
+
+   quiénes pierden respecto del grupo A? (c) ¿Puede atribuirse la diferencia de educación entre
+   grupos a una diferencia de capacidades? (d) Discuta el efecto de una ley que prohíba pagar
+   distinto salario a igual educación según el grupo.
+
+7. Aplicaciones conceptuales (Macho Stadler y Pérez Castrillo, ejs. 5.3, 5.4 y 5.6). (a) El rey
+   Salomón propone partir al niño en dos. ¿Quién no actuó racionalmente? ¿Por qué no se usa ese
+   método en los juicios de custodia? (b) Las ciudades candidatas a los Juegos Olímpicos suelen
+   construir parte de la infraestructura antes de ser elegidas. Explique este fenómeno como una
+   señal. (c) ¿Por qué en una entrevista de trabajo decir “soy muy productivo” no transmite
+   información, pero presentar un título sí? (d) Explique la diferencia entre la franquicia de un
+   seguro (Clase 8) y la garantía que ofrece un vendedor (esta clase): ¿quién diseña el contrato
+   y quién tiene la información en cada caso?
+
+
+
+
+                                               18
+                                                 Anexo
+
+A.     El criterio intuitivo
+
+Seguimos el complemento 5A.1 de Macho Stadler y Pérez Castrillo. Llamamos líder a la parte
+informada (el agente en la Sección 4, el principal en la Sección 6) y seguidor a la otra. El líder
+puede ser de tipo k ∈ K = {1, . . . , m} y envía un mensaje m ∈ M (un nivel de educación, un pre-
+cio, un
+     ∑︁ contrato). Las creencias del seguidor tras ver m son un vector q(m) = (q 1 (m), . . . , q m (m))
+con k q k (m) = 1.
+Para H ⊆ K, sea BR(H, m) el conjunto de mejores respuestas del seguidor a m con creencias
+concentradas en H. Sea U (k, m, r) la utilidad del líder de tipo k que envía m cuando el seguidor
+responde r, y U ∗ (k) su utilidad en el equilibrio considerado. Para un mensaje m no enviado en
+equilibrio, definimos
+                                 {︂                                      }︂
+                        S(m) = k ∈ K : U ∗ (k) > máx U (k, m, r) ,
+                                                          r∈BR(K,m)
+
+el conjunto de tipos que nunca ganan enviando m, crea lo que crea el seguidor. El equilibrio no
+supera el criterio intuitivo si existe un tipo k ′ tal que
+
+                               U ∗ (k ′ ) <        mı́n         U (k ′ , m, r),
+                                              r∈BR(K\S(m), m)
+
+es decir, si k ′ gana desviándose a m con cualquier respuesta óptima del seguidor que asigne
+probabilidad cero a los tipos de S(m).
+Existen refinamientos más exigentes (el criterio D1 y la “divinidad universal” de Banks y Sobel,
+1987; el equilibrio secuencial perfecto de Grossman y Perry, 1986), que coinciden con el criterio
+intuitivo en los modelos de dos tipos de esta clase y lo refinan cuando hay más tipos.
+
+
+B.     El criterio intuitivo en el modelo de Spence
+
+En el modelo de la Sección 2, la respuesta del empleador a una educación y es un salario W ∈
+[1, 2], según sus creencias.
+
+
+Separadores con y ∗ > 1. En el equilibrio, el grupo I obtiene 1 y el grupo II, 2 − y ∗ /2. Sea
+y ′ ∈ (1, y ∗ ). El grupo I, aun con el salario máximo, obtendría 2 − y ′ < 1: pertenece a S(y ′ ). Con
+creencias que excluyen al grupo I, el salario es 2 y el grupo II obtiene 2 − y ′ /2 > 2 − y ∗ /2: gana
+desviándose. El equilibrio no supera el criterio. Con y ∗ = 1, en cambio, cualquier y ′ < 1 le daría
+al grupo I 2 − y ′ > 1 si le pagaran 2, de modo que no puede excluirse al grupo I, y con creencias
+que lo incluyan el grupo II puede no ganar.
+
+
+Agrupador en y = 0. Ambos grupos cobran 2 − q1 . Sea y ′ ∈ (q1 , 2q1 ), intervalo no vacío si
+q1 > 0. El grupo I obtendría como máximo 2 − y ′ < 2 − q1 : pertenece a S(y ′ ). Con creencias que
+lo excluyen, el salario es 2 y el grupo II obtiene 2 − y ′ /2 > 2 − q1 : gana desviándose. El agrupador
+no supera el criterio. El mismo argumento se aplica a cualquier agrupador en y ∗ > 0.
+Por lo tanto, el único equilibrio que supera el criterio intuitivo es el separador de menor costo,
+y ∗ = 1: el grupo II se educa exactamente lo necesario para que al grupo I no le convenga imitarlo.
+
+
+
+
+                                                    19
+Referencias
+ [1] Banks, J. S., & Sobel, J. (1987). Equilibrium selection in signaling games. Econometrica, 55(3),
+     647–661.
+ [2] Becker, G. S. (1964). Human Capital: A Theoretical and Empirical Analysis, with Special Reference
+     to Education. NBER / Columbia University Press.
+ [3] Cho, I.-K., & Kreps, D. M. (1987). Signaling games and stable equilibria. The Quarterly Journal of
+     Economics, 102(2), 179–221.
+ [4] Crawford, V. P., & Sobel, J. (1982). Strategic information transmission. Econometrica, 50(6), 1431–
+     1451.
+ [5] Grossman, S. J., & Perry, M. (1986). Perfect sequential equilibrium. Journal of Economic Theory,
+     39(1), 97–119.
+ [6] Macho Stadler, I., & Pérez Castrillo, D. (1994). Introducción a la economía de la información. Ariel.
+     (Cap. 5.)
+ [7] Milgrom, P., & Roberts, J. (1986). Price and advertising signals of product quality. Journal of
+     Political Economy, 94(4), 796–821.
+ [8] Mincer, J. (1974). Schooling, Experience, and Earnings. NBER / Columbia University Press.
+ [9] Modigliani, F., & Miller, M. H. (1958). The cost of capital, corporation finance and the theory of
+     investment. American Economic Review, 48(3), 261–297.
+[10] Riley, J. G. (1979). Informational equilibrium. Econometrica, 47(2), 331–359.
+[11] Ross, S. A. (1977). The determination of financial structure: The incentive-signalling approach. The
+     Bell Journal of Economics, 8(1), 23–40.
+[12] Rothschild, M., & Stiglitz, J. (1976). Equilibrium in competitive insurance markets: An essay on the
+     economics of imperfect information. The Quarterly Journal of Economics, 90(4), 629–649.
+[13] Schultz, T. W. (1961). Investment in human capital. American Economic Review, 51(1), 1–17.
+[14] Spence, M. (1973). Job market signaling. The Quarterly Journal of Economics, 87(3), 355–374.
+     https://www.jstor.org/stable/1882010
+
+
+
+
+                                                   20
+

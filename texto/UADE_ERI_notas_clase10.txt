@@ -1,0 +1,1201 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                    Notas de Clase 10
+                   Unidad X — Subastas, información y diseño de mercados
+
+
+
+                        Vickrey (1961); Wilson (1969); Milgrom & Weber (1982)
+
+
+
+                                                Resumen
+       En las Clases 6 a 9 un principal diseñaba contratos frente a un agente con información pri-
+       vada. Estas notas estudian el caso en que quien no sabe —un vendedor que ignora cuánto
+       valoran el bien los compradores— enfrenta a varios agentes informados que compiten en-
+       tre sí. La herramienta es la subasta, y para analizarla necesitamos algunos elementos de
+       teoría de los juegos: estrategias dominantes, equilibrio de Nash y equilibrio bayesiano.
+       Presentamos los cuatro tipos de subasta clásicos —ascendente (inglesa), descendente (ho-
+       landesa), de primer precio y de segundo precio en sobre cerrado— y, siguiendo a Vickrey
+       (1961), derivamos sus equilibrios con valores privados y el resultado central de la unidad: el
+       teorema de equivalencia de recaudación. Discutimos cuándo falla (aversión al riesgo,
+       asimetrías, colusión) y qué hace un vendedor que fija un precio de reserva. Con la economía
+       de equipos (Alchian y Demsetz, 1972; Holmström, 1982) volvemos al riesgo moral cuando
+       el producto es conjunto. En la segunda parte pasamos a los bienes de valor común: con
+       Wilson (1969) aparece la maldición del ganador y con Milgrom y Weber (1982) la
+       teoría general con valores afiliados, que ordena los formatos por recaudación y muestra que,
+       para el vendedor, la honestidad es la mejor política. Cerramos con el diseño de mercados:
+       subastas de múltiples objetos (bonos del Tesoro, espectro radioeléctrico) y mecanismos de
+       reputación online.
+
+
+
+1.     El problema: vender sin saber cuánto vale
+
+1.1.    Una subasta es un mecanismo de revelación
+
+Un vendedor tiene un objeto indivisible —una obra de arte, un lote de petróleo, una licencia de
+telefonía— y varios compradores interesados. Si supiera cuánto lo valora cada uno, se lo vendería
+al que más lo valora y le cobraría exactamente eso. El problema es que esa información la tienen
+los compradores, y ninguno tiene interés en revelarla: quien declara una valoración alta paga
+más. Es un problema de selección adversa con varios agentes (Clase 8), en el que la parte
+no informada es el vendedor.
+Vickrey (1961) llegó al tema por un camino indirecto. Lerner había sugerido que, en mercados
+imperfectos, una agencia pública podía “contraespecular” y fijar el precio competitivo. Vickrey
+muestra que para hacerlo la agencia necesita conocer las curvas de oferta y demanda de cada
+participante, que nadie reporta con sinceridad, y que los esquemas que inducen a decir la verdad
+son carísimos para el fisco (sec. I). Pero cuando lo que se vende es un solo objeto indivisible,
+el panorama mejora: el mecanismo adecuado consigue que cada comprador revele lo que vale el
+objeto para él. Ese mecanismo es una subasta.
+Definición 1.1 (Subasta). Una subasta es un mecanismo que asigna uno o varios objetos
+y determina los pagos a partir de las ofertas de los participantes, según reglas anunciadas de
+antemano. Las reglas especifican quién gana, cuánto paga cada uno y qué información se revela
+durante el proceso.
+
+                                                     1
+La Figura 1 muestra la secuencia. Lo esencial es que el vendedor se compromete con las reglas
+antes de que los compradores revelen nada: igual que el principal de la Clase 8 se comprometía
+con un menú de contratos.
+                                                                                               t
+       El vendedor     N asigna     Los oferentes      Se asigna       Se cobran   Con valor
+       anuncia las    valuaciones      eligen          el objeto       los pagos   común: se
+       reglas (y la    o señales     sus ofertas    según las reglas               conoce V
+        reserva r)    (privadas)
+
+
+                           Figura 1: Secuencia temporal de una subasta.
+
+
+1.2.     Las subastas en la economía
+
+Las subastas son antiguas —Heródoto describe subastas en Babilonia y los romanos subastaban
+botines de guerra— y hoy mueven volúmenes enormes (Milgrom y Weber, sec. 1): el Tesoro vende
+letras y bonos por licitación, los gobiernos asignan derechos de explotación de petróleo y licencias
+de espectro, el Estado compra obras y suministros por licitación pública (una subasta “al revés”,
+donde gana la oferta más baja), y en internet se venden a diario millones de objetos y espacios
+publicitarios. En Argentina, el Tesoro coloca sus Letras por licitación y en 2014 se asignó por
+subasta el espectro para la telefonía 4G (Sección 9).
+
+  Idea clave. Una subasta es un mecanismo para que quien no sabe (el vendedor) obtenga
+  la información de quienes sí saben (los compradores) haciéndolos competir. La pregunta de
+  la unidad es qué reglas conviene usar: cuáles asignan bien el objeto (eficiencia) y cuáles
+  recaudan más (ingreso esperado).
+
+
+2.     Elementos de teoría de los juegos
+
+En una subasta lo que conviene ofertar depende de lo que hagan los demás. Para analizar estas in-
+terdependencias necesitamos el lenguaje de la teoría de los juegos, que ya usamos implícitamente
+en la Clase 9 (equilibrio bayesiano perfecto).
+
+
+2.1.     Juegos en forma normal
+
+Definición 2.1 (Juego en forma normal). Un juego está formado por (i) un conjunto de ju-
+gadores i = 1, . . . , N ; (ii) para cada jugador, un conjunto de estrategias Si ; (iii) para cada
+jugador, una función de pagos ui (s1 , . . . , sN ) que depende de las estrategias de todos.
+
+Escribimos s−i para las estrategias de todos los jugadores salvo i.
+
+Definición 2.2 (Estrategia dominante). La estrategia s∗i es débilmente dominante si para
+todo s−i y todo si ,
+                                ui (s∗i , s−i ) ≥ ui (si , s−i ),
+con desigualdad estricta para algún s−i . Es la mejor respuesta haga lo que haga el resto: el
+jugador no necesita predecir a los demás.
+
+Las estrategias dominantes son raras. El concepto general es el de Nash (1950).
+
+
+
+                                                    2
+Definición 2.3 (Equilibrio de Nash). Un perfil (s∗1 , . . . , s∗N ) es un equilibrio de Nash si cada
+estrategia es una mejor respuesta a las de los demás: ui (s∗i , s∗−i ) ≥ ui (si , s∗−i ) para todo i y todo
+si . Nadie gana desviándose unilateralmente.
+Ejemplo 2.1 (Dilema del prisionero). Dos empresas eligen precio alto (A) o bajo (B). Los pagos
+(empresa 1, empresa 2) son
+
+                                                   A        B
+
+                                             A    (3, 3)   (0, 4)
+                                             B    (4, 0)   (1, 1)
+
+B es estrictamente dominante para ambas (4 > 3 y 1 > 0): el único equilibrio de Nash es (B, B),
+aunque (A, A) es mejor para las dos. Vickrey (sec. II) pone como condición para su análisis que
+no haya colusión entre los oferentes: el equilibrio es no cooperativo. Volveremos sobre la colusión
+en la Sección 7.
+
+
+2.2.    Juegos con información incompleta
+
+En una subasta cada jugador conoce su propia valuación pero no la de los demás. Harsanyi
+(1967–68) propuso modelar esto como si la Naturaleza sorteara primero un tipo vi para cada
+jugador a partir de una distribución conocida por todos; cada uno observa sólo el suyo. Vickrey
+(sec. II) usa la misma imagen: un juego de salón en el que cada jugador saca una carta de un
+mazo cuya composición conocen todos, mira la suya y oferta sin ver las de los demás.
+Definición 2.4 (Equilibrio bayesiano de Nash). En un juego con información incompleta, una
+estrategia es una función bi (vi ) que dice qué hace cada tipo. Un perfil (b1 , . . . , bN ) es un equilibrio
+bayesiano de Nash si para cada jugador y cada tipo vi , la acción bi (vi ) maximiza la utilidad
+esperada, dadas las estrategias de los demás y las creencias sobre sus tipos.
+
+Wilson (1969, sec. 1) destaca una consecuencia: en muchos juegos con información completa los
+equilibrios requieren estrategias aleatorias (como el de Vickrey, App. III, en el que un oferente
+con valor conocido debe sortear su oferta). Al agregar incertidumbre sobre lo que sabe el rival,
+existen equilibrios en estrategias puras: “la incertidumbre del oponente sobre la información de
+uno suele ser un disfraz suficiente”.
+
+
+2.3.    Remates y economía de equipos
+
+Las subastas son juegos competitivos: los oferentes compiten por un objeto y el vendedor apro-
+vecha esa competencia. La economía de equipos estudia el caso opuesto: varios agentes que
+producen juntos y comparten el resultado. Allí el problema no es la competencia sino el free
+riding. Lo estudiamos en la Sección 6, después de las subastas, porque ambos temas se conectan:
+una de las soluciones al problema del equipo es vender el derecho al residuo, y la forma natural
+de venderlo es subastarlo.
+
+
+3.     Tipos de subastas
+
+3.1.    Los cuatro formatos clásicos
+
+     Subasta ascendente o inglesa. El precio sube hasta que queda un solo interesado, que se
+     lleva el objeto al último precio. Milgrom y Weber modelan la variante “japonesa”: el precio
+     sube en forma continua, los oferentes se retiran de a uno y todos ven cuántos quedan.
+
+                                                       3
+   Subasta descendente u holandesa. El precio parte de un valor muy alto y baja hasta que
+   alguien lo acepta. Se usa en los mercados de flores de Holanda; Vickrey destaca que ahorra
+   mucho tiempo.
+   Primer precio en sobre cerrado. Cada uno entrega una oferta sellada; gana la más alta
+   y paga su oferta. Es el formato habitual de las licitaciones.
+   Segundo precio en sobre cerrado (subasta de Vickrey). Gana la oferta más alta, pero
+   paga la segunda más alta.
+
+
+Equivalencia estratégica: holandesa y primer precio. En la subasta holandesa, lo único
+que decide un oferente es a qué precio “levantar la mano” si nadie lo hizo antes; mientras el precio
+baja no aprende nada útil, porque cuando aprende algo (que otro aceptó) la subasta terminó.
+Gana quien elige el precio más alto y paga ese precio: exactamente como en el sobre cerrado
+de primer precio. Los dos juegos tienen los mismos conjuntos de estrategias y la misma función
+de resultados, de modo que tienen los mismos equilibrios (Vickrey, sec. III; Milgrom y Weber,
+sec. 2.1). Esta equivalencia vale siempre, sin supuestos sobre las valuaciones.
+
+
+Equivalencia débil: inglesa y segundo precio. En la subasta inglesa, la puja termina
+cuando se retira el penúltimo oferente, y el ganador paga (aproximadamente) el precio al que este
+se retiró. Si cada uno conoce su valuación, conviene quedarse hasta que el precio alcanza la propia
+valuación, y el ganador paga la segunda valuación más alta: como en el segundo precio. Vickrey
+(sec. III) diseña el sobre cerrado de segundo precio precisamente para que sea “lógicamente
+isomorfo” a la subasta ascendente. La equivalencia es más débil que la anterior: con valor común
+y tres o más oferentes falla, porque en la inglesa se aprende de los que se retiran (Sección 8).
+
+ Formato                 Gana                   Paga                   Equivale a
+
+ Ascendente (inglesa)    el último que queda    precio de retiro del   segundo precio (valores priva-
+                                                penúltimo              dos)
+ Descendente   (holan-   el primero que acep-   el precio aceptado     primer precio (siempre)
+ desa)                   ta
+ Primer precio, sobre    la oferta más alta     su oferta              holandesa
+ Segundo precio, sobre   la oferta más alta     la segunda oferta      inglesa (valores privados)
+
+
+3.2.   Modelos de valuación
+
+Que una subasta funcione bien depende de qué saben los oferentes sobre el valor del objeto.
+Distinguimos tres modelos (Milgrom y Weber, secs. 2–3):
+
+   Valores privados independientes (VPI). Cada oferente conoce lo que el objeto vale para
+   él, vi , y las valuaciones son independientes. Es razonable para bienes de consumo que no se
+   revenden: cuánto disfruto un cuadro es asunto mío.
+   Valor común. El objeto vale lo mismo, V , para todos, pero nadie lo conoce: cada uno tiene
+   una estimación o señal Xi . Es el caso de un yacimiento de petróleo, cuyo valor depende de
+   cuánto crudo hay, y es igual para cualquier compañía.
+   Modelo general (valores afiliados). El valor para cada oferente depende de su señal, de
+   las señales de los demás y de variables desconocidas; las señales están afiliadas (positivamente
+   relacionadas). Incluye los dos anteriores y casos intermedios, como un cuadro que se disfruta
+   pero también se revende.
+
+                                                 4
+Las Secciones 4 y 5 trabajan con VPI; las Secciones 7 y 8, con valor común y valores afiliados.
+
+
+4.     Equilibrios con valores privados independientes
+
+Supuestos: N oferentes neutrales al riesgo; la valuación vi de cada uno se extrae en forma inde-
+pendiente de una distribución continua F en [0, v̄]; cada uno conoce la suya y la distribución de
+las demás. Llamamos v(1) ≥ v(2) ≥ . . . a las valuaciones ordenadas.
+
+
+4.1.   Segundo precio: decir la verdad es dominante
+
+Proposición 4.1 (Vickrey, 1961). En la subasta de segundo precio, ofertar la propia valuación,
+bi = vi , es una estrategia débilmente dominante.
+
+Demostración. Sea m la oferta más alta de los demás. Si i gana, paga m, que no depende de su
+oferta; su oferta sólo decide si gana. Le conviene ganar si y sólo si vi > m. Ofertar bi = vi logra
+exactamente eso. Ofertar menos (bi < vi ) sólo cambia el resultado cuando bi < m < vi : pierde un
+objeto que le habría dado vi − m > 0. Ofertar más (bi > vi ) sólo lo cambia cuando vi < m < bi :
+gana y paga m > vi , una “victoria pírrica”.
+
+Vickrey subraya dos ventajas. Primera, el resultado es eficiente (Pareto óptimo): gana quien más
+valora el objeto y paga v(2) . Segunda, cada oferente sólo necesita evaluar cuánto vale el objeto
+para él ; no gasta recursos en estudiar el mercado ni en adivinar a los rivales, lo que puede atraer
+más participantes. También advierte sus debilidades: hay que mostrarle al ganador la segunda
+oferta para que confíe en que no es inventada, y un vendedor deshonesto podría introducir una
+oferta falsa (un “shill ”) justo debajo de la ganadora. ¿Y una subasta de tercer precio? No: allí
+conviene ofertar más que la valuación, y vuelve a depender de lo que hagan los demás.
+
+
+4.2.   Primer precio: el dilema de rebajar la oferta
+
+En el primer precio, el ganador paga lo que ofertó. Ofertar la propia valuación asegura ganancia
+nula; rebajar la oferta aumenta la ganancia si se gana, pero reduce la probabilidad de ganar.
+Vickrey (sec. II) describe así el dilema: cada oferente debe equilibrar estos dos factores según lo
+que sabe sobre los demás. Su elección depende de cómo creen que ofertarán los otros: es un juego
+en sentido técnico.
+
+
+El caso uniforme (Vickrey, App. I). Sea vi ∼ U [0, 1]. Conjeturemos que los demás ofertan
+b(v) = βv. Si i oferta b, gana cuando todos los demás ofertan menos, es decir, cuando βvj < b
+para todo j:
+                                                 (︃ )︃N −1
+                                                   b
+                                    Pr(ganar) =            .
+                                                   β
+El oferente i resuelve máxb (vi − b) (b/β)N −1 . La condición de primer orden es
+                 (︃ )︃N −1
+                   b                        bN −2
+               −           + (vi − b)(N − 1) N −1 = 0 ⇐⇒ b = (N − 1)(vi − b),
+                   β                        β
+
+de donde
+                                                    N −1
+                                         b∗ (v) =        v                                      (1)
+                                                     N
+
+
+                                                    5
+(que efectivamente tiene la forma βv conjeturada). Con dos oferentes se oferta la mitad de la
+valuación; con diez, el 90 %. La competencia reduce la rebaja: cuantos más rivales, más cerca
+se oferta de la valuación.
+
+
+El caso general. Con cualquier distribución F , el equilibrio simétrico es (Anexo A)
+
+                                b∗ (v) = E Y1 | Y1 < v ,
+                                          [︁            ]︁
+                                                                                                  (2)
+
+donde Y1 es la valuación más alta entre los otros N − 1 oferentes. Cada uno oferta lo que espera
+que valga su rival más fuerte, suponiendo que le gana. Con U [0, 1], Y1 | Y1 < v tiene media NN−1 v,
+y se recupera (1). Como b∗ es creciente, gana quien más valora el objeto: con oferentes simétricos,
+también el primer precio es eficiente.
+
+                     b(v)
+
+                     1                                           segundo precio: b = v
+
+                                                                 primer precio, N = 10
+
+
+
+                                                                 primer precio, N = 3
+
+
+                     1
+                     2
+                                                                 primer precio, N = 2
+
+
+
+
+                                                                     v
+                                                             1
+
+
+Figura 2: Ofertas de equilibrio con v ∼ U [0, 1]. En el segundo precio se oferta la valuación; en el
+primero se la rebaja, tanto menos cuanto más oferentes hay.
+
+
+4.3.   ¿Cuál recauda más?
+
+En el primer precio las ofertas son menores, pero se paga la propia oferta; en el segundo, las ofertas
+son mayores, pero se paga la de otro. Calculemos con U [0, 1] (Vickrey, App. I). La valuación más
+                                                                                     −1
+alta, v(1) , tiene densidad N v N −1 y media NN+1 ; la segunda, v(2) , tiene media N
+                                                                                   N +1 .
+
+
+   Primer precio (u holandesa): el precio es NN−1 v(1) , con media NN−1 · NN+1 = N −1
+                                                                                 N +1 .
+                                                               −1
+   Segundo precio (o inglesa): el precio es v(2) , con media N
+                                                             N +1 .
+
+
+La recaudación esperada es la misma. También es la misma la ganancia esperada de los
+                      −1
+compradores, NN+1 − N       1
+                    N +1 = N +1 . Lo que difiere es la dispersión:
+                                                                                         ◦
+        1◦      (N − 1)2                        2◦    2(N − 1)               Var(p 2 )    2N
+  Var(p ) =                    ,         Var(p ) =                  ,               ◦  =       .
+            N (N + 1)2 (N + 2)                     (N + 1)2 (N + 2)                1
+                                                                             Var(p )     N −1
+                                                                                               (3)
+                                                2
+La varianza de la ganancia del comprador es N veces mayor en el segundo precio. Si se evalúan los
+resultados con aversión al riesgo, dice Vickrey, la subasta holandesa resulta “levemente superior”.
+
+                                                     6
+Ejemplo 4.1 (Dos y tres oferentes). Con N = 2: en el primer precio cada uno oferta v/2; el
+precio esperado es 13 en ambos formatos; las varianzas son 72
+                                                           1            1
+                                                              ≈ 0.014 y 18 ≈ 0.056, cuatro veces
+mayor en el segundo precio. Si las valuaciones resultan ser 0.8 y 0.3: en el primer precio gana
+quien vale 0.8 y paga 0.4; en el segundo, gana el mismo y paga 0.3. Con N = 3, se oferta 2v/3 y
+el precio esperado sube a 12 .
+
+
+  Idea clave. En el primer precio se rebaja la oferta para ganar algo; en el segundo se oferta
+  la verdad pero se paga la oferta del rival. Con valores privados independientes y oferentes
+  simétricos, las dos cosas se compensan exactamente: mismo ganador, mismo precio
+  esperado.
+
+
+5.     Equivalencia de recaudación
+
+5.1.   El teorema
+
+La coincidencia del ejemplo uniforme no es casualidad.
+
+Teorema 5.1 (Equivalencia de recaudación; Vickrey, 1961; Myerson, 1981; Riley y Samuelson,
+1981). Supongamos valores privados independientes, oferentes neutrales al riesgo y simétricos, y
+un mecanismo de subasta con un equilibrio en el que (i) el objeto lo gana siempre el oferente con
+la valuación más alta y (ii) un oferente con la valuación más baja posible tiene pago esperado
+nulo. Entonces la recaudación esperada es E[v(2) ], el valor esperado de la segunda valuación más
+alta, cualquiera sea el mecanismo.
+
+Las cuatro subastas clásicas cumplen las condiciones: por lo tanto, recaudan lo mismo en pro-
+medio. Milgrom y Weber (Teorema 0) le dan una interpretación económica: cualquiera sea el
+mecanismo competitivo, en promedio el objeto se vende al menor precio al que la oferta (una
+unidad) iguala a la demanda.
+
+
+5.2.   Por qué: el enfoque de autoselección
+
+La demostración usa el mismo razonamiento que el menú de contratos de la Clase 8 (Milgrom y
+Weber, sec. 2.1). Fijadas las estrategias de los demás, cada oferente elige, a través de su oferta,
+una probabilidad de ganar p y un pago esperado e(p). Gracias a la independencia, el conjunto de
+pares (p, e(p)) disponibles depende de las reglas y de los rivales, pero no de la propia valuación.
+Un oferente de valuación v obtiene vp − e: sus curvas de indiferencia en el plano (p, e) son rectas
+de pendiente v (Figura 3).
+En el óptimo, e′ (p∗ (v)) = v. Como en la Clase 8, a mayor valuación, mayor probabilidad elegida:
+p∗ es no decreciente. Y por el mismo argumento de la renta informacional (Anexo A),
+                                                       ∫︂ v
+                                  (︁ ∗ )︁    (︁ ∗ )︁
+                                 e p (v) = e p (0) +        t dp∗ (t).                        (4)
+                                                        0
+
+El pago esperado de cada tipo depende sólo de dos cosas: cuánto paga el tipo más bajo y la
+función p∗ . Si dos mecanismos asignan el objeto siempre al que más lo valora, la probabilidad
+de ganar de un oferente de valuación v es F (v)N −1 en ambos; si además el tipo más bajo paga
+cero en ambos, los pagos esperados coinciden tipo por tipo. La recaudación, que es la suma de
+los pagos, también.
+
+
+
+
+                                                7
+               e (pago esperado)
+                             mayor utilidad
+                              hacia abajo                        e(p)
+                                                                 pendiente v
+
+
+                                        óptimo
+
+
+
+                                                                      p (prob. de ganar)
+                                              p∗ (v)
+
+
+Figura 3: El problema de un oferente visto como autoselección (basado en Milgrom y Weber,
+1982, Fig. 1). La curva muestra las combinaciones (p, e) disponibles; el oferente con valuación v
+elige el punto donde la pendiente de la curva es v. Los valores dibujados corresponden a N = 2
+y U [0, 1], donde e(p) = p2 /2.
+
+
+5.3.   Cuándo falla
+
+El teorema es un punto de referencia, como el teorema de Modigliani y Miller de la Clase 9: dice
+qué no importa bajo ciertos supuestos, y por lo tanto dónde buscar lo que sí importa.
+
+   Aversión al riesgo de los compradores. En el segundo precio ofertar la valuación sigue
+   siendo dominante, porque la aversión al riesgo no cambia el argumento. En el primer precio,
+   en cambio, un oferente averso rebaja menos su oferta para no correr el riesgo de perder:
+   se “asegura” pagando más. El primer precio recauda más (Milgrom y Weber, sec. 8). Con
+                                                                             −1
+   u(x) = xρ , 0 < ρ ≤ 1, y U [0, 1], la oferta de equilibrio es b∗ (v) = NN−1+ρ v (Ejercicio 3).
+
+   Aversión al riesgo del vendedor. Con la misma media, prefiere el formato con menos
+   varianza del precio: el primer precio, por (3).
+
+   Asimetrías entre oferentes. Si los oferentes extraen sus valuaciones de distribuciones dis-
+   tintas, el segundo precio sigue siendo eficiente, pero el primero puede no serlo: los oferentes
+   reaccionan distinto ante el mismo valor y el objeto puede quedar en manos de quien menos
+   lo valora (Vickrey, sec. II y App. II). En el ejemplo de Vickrey con un oferente v1 ∼ U [0, 1]
+   y otro con valor fijo a, la subasta ascendente recauda en promedio a − a2 /2; la holandesa
+   recauda más si a ≳ 0.43 y menos si a ≲ 0.43.
+
+   Valores no independientes. Con valores afiliados el orden es inglesa ≥ segundo precio ≥
+   primer precio (Sección 8).
+
+   Colusión, entrada y restricciones de liquidez. Las subastas ascendentes facilitan la
+   colusión, porque los miembros de un acuerdo ven en el momento si alguien lo rompe; y
+   pueden desalentar la entrada de oferentes débiles que saben que perderán (Klemperer, 2002).
+
+
+5.4.   Precio de reserva y subasta óptima
+
+El vendedor puede fijar un precio de reserva r: no vende por menos de r. Con U [0, 1] y N = 2,
+en el segundo precio la recaudación esperada es (Ejercicio 4)
+                                                 1       4
+                                      R(r) =       + r2 − r3 ,                                (5)
+                                                 3       3
+que se maximiza en r∗ = 21 con R = 125
+                                       ≈ 0.417, contra 31 sin reserva. La reserva tiene un costo
+—con probabilidad r2 = 14 nadie la supera y el objeto no se vende, aunque algún comprador lo
+
+                                                       8
+valore más que el vendedor— y un beneficio: cuando un solo oferente la supera, paga r en lugar
+de la otra valuación.
+Es el mismo dilema eficiencia–extracción de renta de la Clase 8: para extraer renta, el principal
+monopolista distorsiona la asignación. Myerson (1981) y Riley y Samuelson (1981) muestran que,
+con valores privados independientes y distribuciones regulares, la subasta óptima es cualquiera
+de las cuatro clásicas con un precio de reserva que cumple
+
+                                              1 − F (r∗ )
+                                       r∗ −               = v0 ,
+                                                f (r∗ )
+
+donde v0 es la valuación del vendedor. Notablemente, r∗ no depende del número de oferentes.
+
+  Idea clave. Con valores privados independientes, el formato no importa para la recaudación
+  esperada: importan la asignación y lo que paga el tipo más bajo. Lo que sí importa es la
+  reserva, que extrae renta a costa de eficiencia, igual que el menú del monopolista de la
+  Clase 8.
+
+
+6.     Economía de equipos
+
+6.1.   Producción en equipo
+
+Alchian y Demsetz (1972) definen la producción en equipo como aquella en la que el producto
+es conjunto y no puede atribuirse a cada miembro: dos personas que cargan un camión, un equipo
+de investigación, los socios de un estudio. Si sólo se observa el producto total, ninguno puede ser
+pagado según su aporte y cada uno tiene incentivos a esforzarse poco. Es el riesgo moral de
+la Clase 7, pero ahora entre pares y sin incertidumbre: el problema no es el ruido, sino que el
+producto mezcla los esfuerzos de todos.
+
+
+6.2.   El teorema de Holmström (1982)
+
+Sea un equipo de n agentes neutrales al riesgo. Cada uno elige un esfuerzo ei no observable, con
+costo c(ei ); el producto es x(e1 , . . . , en ), observable.
+                                                      ∑︁      Un esquema de reparto asigna a cada
+agente si (x), con presupuesto equilibrado: i si (x) = x para todo x.
+
+Proposición 6.1 (Holmström, 1982). Con producto determinístico y diferenciable, no existe
+ningún esquema de reparto con presupuesto equilibrado cuyo equilibrio de Nash sea eficiente.
+
+La intuición: la eficiencia exige que cada agente se
+                                                  ∑︁ apropie  de todo el producto marginal de su
+esfuerzo, s′i (x) = 1 para todo i; pero entonces      s′ (x) = n > 1, incompatible con repartir
+                                                     i i
+exactamente el producto.
+
+Ejemplo 6.1 (Dos socios). Sea x = e1 + e2 y c(e) = e2 /2. El esfuerzo eficiente maximiza
+e1 + e2 − e21 /2 − e22 /2: ei = 1, producto 2 y excedente 1 ( 21 por socio).
+Reparto en partes iguales, si = x/2. Cada socio maximiza (ei + ej )/2 − e2i /2: ei = 21 . El producto
+cae a 1 y cada uno obtiene 12 − 18 = 38 < 12 . Cada socio recibe sólo la mitad de lo que aporta: el
+free riding reduce el esfuerzo a la mitad.
+Contrato forzante con un tercero. Cada socio cobra 1 si x ≥ 2 y 0 si x < 2; si el producto no
+alcanza, se lo queda un tercero (el “principal ”). Es un equilibrio que ambos elijan ei = 1: cada
+uno obtiene 1 − 12 = 21 , y si reduce su esfuerzo pierde todo. El presupuesto ya no está equilibrado
+fuera del equilibrio: alguien tiene que “romperlo”.
+
+
+                                                   9
+6.3.   El propietario residual
+
+Alchian y Demsetz proponen que un monitor observe el esfuerzo y que, para que tenga incentivos
+a monitorear, sea el propietario residual: se queda con lo que sobra después de pagar a los
+demás. Ese es, para ellos, el origen de la empresa capitalista. Holmström agrega que el papel del
+principal no es necesariamente monitorear, sino romper el presupuesto: absorber las penalidades
+cuando el producto no alcanza. Para que el esquema sea creíble, el principal no debe poder
+sabotear el producto para quedarse con él: por eso conviene que sea externo al equipo.
+¿Cómo se elige al propietario residual? Si el derecho al residuo vale distinto para distintos can-
+didatos —porque difieren en su capacidad de organizar el equipo—, venderlo al mejor postor lo
+asigna a quien más lo valora. Es lo que hace, por ejemplo, el Estado cuando licita la concesión
+de un servicio: el concesionario se convierte en propietario residual y el pago que ofrece revela
+cuánto vale para él. La subasta y el equipo se complementan: la primera asigna el derecho a
+dirigir; el segundo explica por qué hace falta alguien que lo tenga.
+
+  Idea clave. En un equipo, repartir todo el producto entre sus miembros genera free riding:
+  nadie se apropia de todo lo que aporta. Hace falta alguien de afuera que absorba las pérdidas
+  (Holmström) o que monitoree y se quede con el residuo (Alchian y Demsetz). Ese derecho
+  al residuo puede asignarse mediante una subasta.
+
+
+7.     Valor común y maldición del ganador
+
+7.1.   La maldición del ganador
+
+En los años sesenta las compañías petroleras compraron por licitación lotes en el Golfo de México
+y obtuvieron rendimientos muy por debajo de lo esperado. Tres ingenieros de Atlantic Richfield
+(Capen, Clapp y Campbell, 1971) dieron la explicación. El petróleo vale aproximadamente lo
+mismo para cualquier compañía; cada una lo estima con error, y la que gana es la que tiene la
+estimación más alta. Aunque las estimaciones sean insesgadas una por una, la del ganador no lo
+es: ganar es una mala noticia sobre el valor del objeto. Es la maldición del ganador.
+Ejemplo 7.1 (Estimaciones con error uniforme). Sea V el valor común y Xi = V + εi la
+estimación de la empresa i, con εi ∼ U [−a, a] independientes. Cada estimación es insesgada,
+E[Xi | V ] = V . Pero la más alta cumple
+                                 [︁          ]︁     N −1
+                                E máx Xi | V = V +      a.
+                                    i               N +1
+Con a = 10 (millones), el ganador sobrestima en promedio 3.3 con N = 2, 6.7 con N = 5 y 8.2
+con N = 10. Una empresa que oferta su estimación, sin corregirla, pierde dinero en promedio
+cada vez que gana. Y la corrección necesaria crece con el número de competidores: con más
+rivales, haberle ganado a todos es una noticia todavía peor.
+
+La corrección racional consiste en ofertar pensando en el valor del objeto condicional a ganar.
+En el Ejemplo 7.1, en una subasta de segundo precio la oferta de equilibrio es (Ejercicio 5)
+                                                            N −2
+                        b∗ (x) = E V | X1 = x, Y1 = x = x −
+                                  [︁                 ]︁
+                                                                 a,
+                                                             N
+el valor esperado si el rival más fuerte tuviera exactamente la misma estimación: si i gana con
+ella y el segundo tenía y < x, paga b∗ (y) y su ganancia esperada no es negativa.
+La maldición del ganador se observa también en el laboratorio. Bazerman y Samuelson (1983)
+subastaron frascos con monedas entre estudiantes de MBA: la estimación media era inferior
+
+                                               10
+al contenido real, pero la oferta ganadora lo superaba ampliamente, y los ganadores perdieron
+dinero en promedio (ver también Thaler, 1988). La maldición del ganador “ingenua” es un error;
+en equilibrio, los oferentes racionales la anticipan y rebajan sus ofertas.
+
+
+7.2.    El modelo de Wilson (1969)
+
+Wilson (1969) es el primer análisis formal de una licitación en sobre cerrado con valor común y
+información dispar. Dos oferentes compiten por un premio de valor monetario v que ninguno
+conoce. Ambos parten de la misma distribución a priori g(v); cada uno observa una señal privada
+θi con densidad hi (θi | v), independiente de la del otro dado v, y calcula por la regla de Bayes
+su distribución a posteriori para v y para la señal del rival. Sea
+                                                     [︁           ]︁
+                                      ν(θ1 , θ2 ) = E v | θ1 , θ2
+
+el valor esperado del premio dadas ambas señales. Cada oferente maximiza
+                                ∫︂ Πj (pi )
+                                            [︁                ]︁
+                          máx                ν(θi , θj ) − pi fji (θj | θi ) dθj ,
+                              pi     −∞
+
+donde Πj es la inversa de la estrategia del rival: gana si la señal del otro es lo bastante baja como
+para que oferte menos. Wilson caracteriza el par de estrategias puras de equilibrio mediante un
+sistema de ecuaciones diferenciales y lo resuelve en un caso.
+Ejemplo 7.2 (Wilson: señales normales). Supongamos que ambos tienen el mismo tipo de
+información: a priori difusa y θi = v + ei con errores normales, de modo que la distribución a
+posteriori de v dada θi es normal con media θi y desvío s. La oferta de equilibrio es
+                                                     √
+                                   pi (θi ) = θi −       π s ≈ θi − 1.77 s                       (6)
+
+Cada uno oferta el fractil 3.8 % de su propia distribución a posteriori para el valor del premio:
+una rebaja muy grande. Por ejemplo, si una petrolera estima un lote en 100 millones con un
+desvío de 10, oferta 82.3. La rebaja es proporcional a la incertidumbre: con estimaciones más
+precisas se oferta más cerca de la estimación.
+
+La rebaja de (6) combina dos efectos. Uno es la rebaja estratégica del primer precio que vimos
+con valores privados: se oferta menos para ganar algo. El otro es la corrección por la maldi-
+ción del ganador: ganar indica que la señal del rival era más baja y, por lo tanto, que el valor
+probablemente también lo es.
+
+
+7.3.    Competencia imperfecta e información
+
+El valor común cambia varias conclusiones de los mercados competitivos:
+
+   Más competidores no siempre implican ofertas más agresivas. Con valores privados,
+   más rivales reducen la rebaja (Figura 2). Con valor común, más rivales agravan la maldición
+   del ganador y obligan a rebajar más la estimación. La recaudación puede crecer poco —o, en
+   algunos casos, caer— al agregar oferentes.
+   El precio agrega información. El precio de la subasta transmite más información que
+   la que tenía el ganador: indica que todas las demás estimaciones eran menores. Con muchos
+   oferentes, el precio de un primer precio converge al verdadero valor V , aunque ningún oferente
+   pueda estimarlo bien por sí solo (Wilson, 1977; Milgrom, 1979). Es el análogo, en una subasta,
+   de los precios que agregan información dispersa.
+
+                                                         11
+     Las ganancias dependen de la privacidad de la información, no de su precisión. Un
+     oferente cuya información también la tiene otro obtiene ganancia esperada nula en el primer
+     precio; en cambio, uno con información peor pero propia puede ganar (Milgrom y Weber,
+     sec. 2.2). Si una empresa ya explotó el lote vecino —un “drainage tract”—, los oferentes sin
+     esa información deben ser muy cautos, porque sólo ganan cuando a la empresa informada no
+     le interesó ganar (Engelbrecht-Wiggans, Milgrom y Weber, 1983).
+
+     Colusión y repetición. Cuando los mismos oferentes se enfrentan una y otra vez (ase-
+     rraderos que compiten por madera estatal), la teoría de juegos repetidos muestra que un
+     comportamiento colusivo puede sostenerse como equilibrio no cooperativo (Milgrom y Weber,
+     sec. 9). La pregunta de diseño es qué formatos son más vulnerables.
+
+  Idea clave. Con valor común, ganar es una mala noticia: el ganador es quien más
+  sobrestimó. Los oferentes racionales rebajan sus ofertas por debajo de su estimación, tanto
+  más cuanto más incierta es y cuantos más rivales tienen (Wilson, 1969). Quien no lo hace
+  sufre la maldición del ganador.
+
+
+8.     La teoría general: Milgrom y Weber (1982)
+
+8.1.     Valores afiliados
+
+Milgrom y Weber se preguntan por qué, si según la teoría con valores privados los cuatro formatos
+recaudan lo mismo, se estima que más del 75 % de las subastas del mundo son ascendentes
+(Cassady, 1967). Proponen un modelo que incluye como casos particulares los valores privados
+y el valor común. Cada oferente observa una señal Xi ; hay además variables S que afectan el
+valor (una tasación del vendedor, el gusto de coleccionistas que no participan). El valor para el
+oferente i es
+                                     Vi = u(S, Xi , {Xj }j̸=i ),
+simétrica, no decreciente en todos sus argumentos. Si S no existe y Vi = Xi , son valores privados;
+si Vi = S para todos, es valor común.
+
+Definición 8.1 (Afiliación). Las variables Z = (S, X1 , . . . , XN ) con densidad f están afiliadas
+si
+                     f (z ∨ z ′ ) f (z ∧ z ′ ) ≥ f (z) f (z ′ ) para todo z, z ′ ,
+donde ∨ y ∧ son el máximo y el mínimo componente a componente.
+
+Aproximadamente, afiliación significa que valores altos de unas variables hacen más pro-
+bables valores altos de las otras: si a mí el cuadro me parece muy bueno, es probable que
+a los demás también. Las variables independientes están afiliadas (con igualdad); el modelo de
+valor común con señales que cumplen la propiedad de cociente de verosimilitud monótono —que
+vimos en la Clase 7— también lo está.
+
+
+8.2.     Equilibrios y orden de recaudación
+
+Sea Y1 la señal más alta entre los rivales de 1 y
+                                            [︁                 ]︁
+                                v(x, y) = E V1 | X1 = x, Y1 = y ,
+
+el valor esperado del objeto si mi señal es x y la del rival más fuerte es y.
+
+
+
+                                                12
+   Segundo precio (Teorema 6). La oferta de equilibrio es b∗ (x) = v(x, x): lo que valdría el
+   objeto si empatara con el rival más fuerte. Ya no es una estrategia dominante: depende de lo
+   que infiero de los demás.
+   Inglesa (Teorema 10). Cada oferente sigue en carrera hasta el precio al que le daría lo
+   mismo ganar o perder, usando la información de los precios a los que se retiraron los demás.
+   Con dos oferentes coincide con el segundo precio; con tres o más, no.
+   Primer precio (Teorema 14). La oferta de equilibrio es b∗ (x) = v(a, a) dL(a | x), un
+                                                                         ∫︁
+
+   promedio ponderado de v(a, a) para a ≤ x. Con valores privados independientes se reduce a
+   (2).
+
+Teorema 8.1 (Milgrom y Weber, Teoremas 11 y 15). Con oferentes neutrales al riesgo y señales
+afiliadas,
+
+       E[precio]inglesa ≥ E[precio]segundo precio ≥ E[precio]primer precio = E[precio]holandesa .
+
+
+                  Inglesa                     Segundo precio                    Primer precio
+               precio ligado a       ≥        precio ligado a la       ≥         = holandesa
+              todas las señales                segunda señal                  sólo la propia oferta
+
+             menos vínculos del precio con la información de los demás ⇒ menor recaudación esperada
+
+
+Figura 4: El orden de recaudación con valores afiliados y el principio de vinculación (Milgrom y
+Weber, 1982, sec. 6).
+
+
+El principio de vinculación (linkage principle). La explicación común a todos los re-
+sultados (Milgrom y Weber, sec. 6) es la siguiente. El ganador con señal x espera ganar algo
+porque tiene información que los demás no tienen. Cuanto más vinculado está el precio a varia-
+bles afiliadas con su señal —las señales de los rivales, la información del vendedor—, más rápido
+crece el precio con su señal y menos renta informacional le queda. En el primer precio el precio
+depende sólo de la propia oferta; en el segundo, también de la señal del segundo; en la inglesa,
+de las señales de todos los que se retiraron. Por eso la inglesa recauda más. Intuitivamente: en
+la inglesa cada oferente observa cuándo se retiran los demás, aprende de ellos, la maldición del
+ganador se atenúa y oferta con más agresividad.
+
+
+8.3.    La honestidad es la mejor política
+
+Supongamos que el vendedor tiene información propia X0 (una tasación experta) y puede com-
+prometerse de antemano con una política: ocultarla, revelarla completa, revelar sólo lo favorable,
+resumirla o agregarle ruido.
+Proposición 8.1 (Milgrom y Weber, Teoremas 8, 9, 13, 16 y 17). En las subastas inglesa, de
+segundo precio y de primer precio, revelar públicamente X0 no reduce —y en general aumenta—
+la recaudación esperada. Ninguna política de revelación parcial recauda más que revelar todo.
+
+Revelar la información vincula el precio a X0 y reduce la renta informacional del ganador. ¿Y
+si el vendedor revelara sólo las tasaciones favorables? Los oferentes racionales interpretarían el
+silencio como una mala noticia, como en el mercado de limones de Akerlof (Clase 8). Milgrom
+y Weber concluyen que este resultado puede explicar por qué las casas de subastas de prestigio
+publican tasaciones de expertos y usan subastas ascendentes. Aquí la reputación de veracidad es
+clave: la información del vendedor sólo sirve si es creíble.
+
+                                                      13
+Otros resultados. Con un precio de reserva fijo, el orden de recaudación se mantiene. Entre
+combinaciones de precio de reserva y derecho de entrada que excluyen a los mismos oferentes,
+conviene un derecho de entrada alto y una reserva baja (Teorema 19). Con aversión al riesgo,
+primer y segundo precio ya no pueden ordenarse en general, pero si la aversión absoluta al riesgo
+es constante (Clase 2) siguen valiendo el orden entre inglesa y segundo precio y el resultado de
+revelación (Teoremas 20 y 21).
+
+  Idea clave. Con información correlacionada, los formatos dejan de ser equivalentes. Cuanto
+  más depende el precio de la información de los demás y del vendedor, menor es la renta
+  informacional del ganador y mayor la recaudación: la subasta ascendente y la revelación
+  honesta son las mejores para el vendedor.
+
+
+9.     Diseño de mercados y subastas de múltiples objetos
+
+9.1.   El economista como ingeniero
+
+El diseño de mercados (market design) usa la teoría —y la experimentación— para construir
+instituciones concretas de asignación, como un ingeniero que diseña un puente (Roth, 2002). Las
+subastas son su herramienta más conocida, pero no la única: los mecanismos de emparejamiento
+(matching) asignan médicos residentes a hospitales, alumnos a escuelas y donantes de riñón a
+pacientes sin usar precios (Gale y Shapley, 1962; Roth, 2002). En 2012 Roth y Shapley recibieron
+el Premio Nobel por estos trabajos; en 2020 lo recibieron Milgrom y Wilson —director de tesis
+de Milgrom— por sus contribuciones a la teoría de subastas y la invención de nuevos formatos.
+
+
+9.2.   Varias unidades idénticas
+
+Vickrey (secs. IV y V) ya analizaba la venta de varias unidades idénticas, como una emisión de
+bonos.
+
+
+Demanda unitaria. Si cada oferente quiere a lo sumo una unidad y se venden m unidades, la
+subasta ascendente simultánea termina en el (m + 1)-ésimo valor más alto: ganan los m que más
+valoran y todos pagan el mismo precio, de modo que el resultado es eficiente. En sobre cerrado,
+el análogo es el precio uniforme igual a la primera oferta rechazada: cada uno oferta su
+valuación. Si en cambio el precio uniforme es la última oferta aceptada, o si cada ganador paga
+su oferta (subasta discriminatoria o pay-as-bid ), vuelven los incentivos a rebajar. Vickrey
+argumenta que el precio de la primera oferta rechazada, aunque parezca regalar dinero, recauda
+en promedio lo mismo, porque induce ofertas más altas.
+
+
+Subastas sucesivas. Si las unidades se venden de a una, quien pierde la primera puede ganar
+la segunda más barata. Con dos unidades, N oferentes U [0, 1] y segundo precio en la primera, la
+                          −2                           N −2
+oferta de equilibrio es N
+                        N −1 v y el precio esperado es N +1 en ambas: otra vez el mismo que en la
+subasta simultánea (Vickrey, sec. IV).
+
+
+Demanda múltiple y reducción de demanda. Cuando un oferente quiere varias unidades,
+Vickrey advierte que no puede tratárselo como varios oferentes de una unidad: “combinarlos
+introduce una colusión incorporada”. Su oferta por la segunda unidad puede fijar el precio que
+paga por la primera, y le conviene ofertar menos de lo que la valora.
+
+
+
+                                               14
+Ejemplo 9.1 (Reducción de demanda). Se venden dos unidades a precio uniforme igual a la
+primera oferta rechazada. La empresa A valora cada una de dos unidades en 10; la empresa B
+quiere una unidad que valora en 6.
+
+   Si A oferta (10, 10) y B oferta 6: A gana ambas, el precio es 6 y A obtiene 20 − 12 = 8.
+   Si A oferta (10, 0): cada una gana una unidad, la primera oferta rechazada es 0 y A obtiene
+   10 − 0 = 10 > 8.
+
+A A le conviene reducir su demanda. El resultado es ineficiente —la segunda unidad vale 10
+para A y 6 para B— y el vendedor no recauda nada. En el mecanismo general de Vickrey, cada
+ganador paga el valor que su victoria le quita a los demás: A pagaría 6 por las dos unidades,
+obtendría 14 y ofertar sus valuaciones volvería a ser dominante.
+
+
+Las licitaciones del Tesoro argentino. La Secretaría de Finanzas licita sus Letras “mediante
+indicación de precio, por sistema holandés de precio único”. Pese al nombre, no es una subasta
+descendente: es una licitación en sobre cerrado de precio uniforme, en la que se aceptan todas
+las ofertas por encima del precio de corte y todos pagan ese precio. Suele haber además un
+tramo no competitivo, en el que los inversores aceptan de antemano el precio de corte. En la
+nomenclatura de esta clase, el precio es la última oferta aceptada, no la primera rechazada: los
+grandes inversores tienen incentivos a reducir demanda.
+
+
+9.3.   Varios objetos distintos: el espectro radioeléctrico
+
+Las licencias de espectro son el caso emblemático. Las licencias de regiones o bandas vecinas son
+complementarias: una empresa puede valorar mucho dos licencias juntas y poco cada una por
+separado. Venderlas por separado y en sobre cerrado genera el problema de exposición: quien
+oferta por un paquete puede terminar ganando sólo una parte, que no le sirve, a un precio alto.
+Para las subastas de la Comisión Federal de Comunicaciones de Estados Unidos (FCC), iniciadas
+en 1994, Milgrom, Wilson y McAfee diseñaron la subasta ascendente simultánea: todas las
+licencias se subastan al mismo tiempo, en rondas, y ninguna se cierra hasta que no hay nuevas
+ofertas por ninguna. Así los oferentes ven los precios de todas mientras ofertan y pueden armar
+sus paquetes: es el principio de vinculación aplicado a muchos objetos. Una regla de actividad
+obliga a ofertar desde el principio para no esperar escondido. Variantes posteriores —la subasta
+de reloj combinatoria, la subasta incentiva de 2016–2017 para recomprar espectro a canales de
+televisión— permiten ofertar por paquetes. Las subastas de la FCC recaudaron mucho más de
+US$100.000 millones; sólo la subasta de la banda C, en 2021, superó los US$80.000 millones.
+
+
+La subasta 4G argentina (2014). El 31 de octubre de 2014 la Secretaría de Comunicaciones
+subastó diez lotes de espectro para 3G y 4G (bandas de 700 MHz y AWS). Participaron las
+cuatro empresas precalificadas —Claro, Movistar, Personal y Arlink— y la subasta, que terminó
+cerca de las 23 horas tras una larga puja por las bandas 4G, recaudó unos US$2.233 millones. El
+diseño incluyó un bloque reservado para un operador entrante, que Arlink obtuvo pagando
+el precio mínimo. La reserva de espectro para entrantes es una decisión de diseño típica: sacrifica
+recaudación inmediata a cambio de competencia futura en el mercado. Arlink no llegó a usar ese
+espectro, que en 2015 pasó por ley a la empresa estatal ARSAT.
+
+  Idea clave. Con muchos objetos, el diseño importa todavía más: precio uniforme o discrimi-
+  natorio, simultáneo o secuencial, ofertas por paquetes o por unidad, reservas para entrantes.
+  Los principios son los de esta clase —vincular el precio a la información de todos, no dejar
+  que una oferta fije el propio precio—, aplicados con reglas concretas y probadas.
+
+                                                15
+10.     Mecanismos de reputación online
+
+10.1.   El problema: comprar a un desconocido
+
+En una plataforma de comercio electrónico el comprador paga antes de ver el producto, a un
+vendedor que no conoce y al que probablemente no volverá a comprarle. Están presentes los dos
+problemas de información de la segunda parte del curso: selección adversa (el vendedor sabe si
+el producto es bueno; el mercado puede convertirse en uno de limones, Clase 8) y riesgo moral
+(el vendedor elige cuánto esfuerzo pone en describir bien, embalar y enviar a tiempo, Clase 7).
+¿Por qué funcionan entonces estas plataformas?
+Spence (Clase 9) señalaba que un emisor que está muchas veces en el mercado puede invertir en
+una reputación. El sistema de reputación de una plataforma permite que vendedores pequeños,
+que individualmente entran pocas veces, acumulen una historia visible para todos los compradores
+futuros. El vendedor honesto se comporta bien hoy para cobrar mejores precios —o vender más—
+mañana: es un juego repetido, y la reputación es el valor de su historia.
+
+
+10.2.   Evidencia
+
+   eBay. Desde 1996 compradores y vendedores se califican mutuamente después de cada tran-
+   sacción. Resnick y Zeckhauser (2002) encontraron que más del 99 % de las calificaciones eran
+   positivas, en parte por reciprocidad y temor a represalias: quien califica negativo se expone a
+   recibir una calificación negativa. En un experimento de campo, Resnick, Zeckhauser, Swanson
+   y Lockwood (2006) vendieron objetos idénticos con un vendedor de larga trayectoria y con
+   vendedores nuevos: la trayectoria obtenía un sobreprecio de alrededor del 8 %.
+
+   Dinámica de la reputación. Cabral y Hortaçsu (2010) muestran que, cuando un vendedor
+   de eBay recibe su primera calificación negativa, la tasa de crecimiento de sus ventas cae
+   bruscamente y aumenta la probabilidad de que abandone el mercado: la reputación cumple
+   un papel de señalización (identifica tipos) y de disciplina (castiga el mal comportamiento).
+
+   Subastas online. En eBay el oferente indica un máximo y un “agente” puja por él en in-
+   crementos mínimos: en la práctica es una subasta de segundo precio. Sin embargo, muchos
+   ofertan en los últimos segundos (sniping). Roth y Ockenfels (2002) muestran que esto ocurre
+   mucho más con cierre en hora fija (eBay) que con cierre que se extiende mientras haya ofertas
+   (el que usaba Amazon): una regla de diseño cambia el comportamiento.
+
+
+10.3.   Problemas y soluciones de diseño
+
+  Problema                       Respuesta de diseño
+
+  Represalias e inflación de     calificación simultánea y ciega: ninguna parte ve la nota de la otra
+  notas                          antes de dar la suya (Airbnb); calificación unilateral del vendedor
+  Opiniones falsas               sólo pueden calificar compradores verificados; detección de patrones
+  Cambio de identidad (whi-      costo de entrada o de verificación; los nuevos empiezan sin reputación
+  tewashing)                     (Clase 9: la falta de historia es una señal)
+  Calificaciones subjetivas      métricas objetivas de desempeño (reclamos, demoras, cancelaciones)
+  Riesgo de no recibir el pro-   pago retenido hasta la entrega (custodia o escrow ); garantía de la
+  ducto                          plataforma
+
+
+
+
+                                                   16
+MercadoLibre. La reputación de un vendedor se muestra como un termómetro de colores,
+del rojo (la más baja) al verde (la más alta), calculado a partir de tres métricas objetivas:
+reclamos, cancelaciones atribuibles al vendedor y demoras en los despachos. Los vendedores con
+mejores métricas y mayor volumen acceden a la categoría MercadoLíder, con niveles superiores.
+Al usar métricas de comportamiento en lugar de opiniones libres, el sistema reduce el problema
+de la reciprocidad; y la retención del pago hasta la entrega, a través de la billetera de la propia
+plataforma, atenúa el riesgo moral del vendedor.
+
+  Idea clave. Un sistema de reputación convierte transacciones aisladas entre desconocidos
+  en un juego repetido: la historia del vendedor es su reputación, y ponerla en riesgo es
+  costoso. Funciona como señal (separa tipos) y como incentivo (disciplina el esfuerzo), y su
+  diseño —qué se califica, quién y cuándo— es diseño de mercados.
+
+
+11.    Síntesis
+
+La Unidad X estudia la asignación de objetos cuando quien vende no conoce las valuaciones de
+los compradores y los hace competir. Con valores privados independientes y oferentes simétricos,
+ofertar la verdad es dominante en el segundo precio, en el primero se rebaja la oferta, y ambos
+formatos —y cualquier otro que asigne bien y no cobre al tipo más bajo— recaudan lo mismo
+en promedio: es el teorema de equivalencia de recaudación. Lo que sí importa es la reserva, la
+aversión al riesgo, las asimetrías y la colusión. En los equipos, repartir todo el producto genera
+free riding, y hace falta un principal externo —que puede elegirse por subasta— para romper el
+presupuesto. Con valor común, ganar es una mala noticia: los oferentes racionales rebajan sus
+ofertas por la maldición del ganador (Wilson), y con valores afiliados los formatos que vinculan
+el precio a la información de todos —la subasta inglesa, la revelación honesta del vendedor—
+recaudan más (Milgrom y Weber). El diseño de mercados aplica estos principios a muchos objetos
+y a las plataformas online, donde la reputación resuelve problemas de selección adversa y de riesgo
+moral.
+
+
+                        Valores privados independien-        Valor común / afiliados
+                        tes
+
+ Segundo precio         ofertar el valor es dominante        b∗ (x) = v(x, x): corregir por la maldi-
+                                                             ción
+ Primer precio          rebajar: b∗ (v) = E[Y1 | Y1 < v]     rebaja estratégica + corrección (Wil-
+                                                             son)
+ Recaudación            equivalencia (cuatro formatos)       inglesa ≥ segundo ≥ primer = holan-
+                                                             desa
+ Más oferentes          ofertas más agresivas                mayor corrección por la maldición
+ Información del ven-   irrelevante                          revelarla aumenta la recaudación
+ dedor
+ Referencia             Vickrey (1961)                       Wilson (1969); Milgrom y Weber
+                                                             (1982)
+
+
+
+Ejercicios
+
+1. Estrategias en la subasta de segundo precio (basado en Vickrey, 1961, sec. III). Tres
+   oferentes con valores privados v1 = 50, v2 = 40 y v3 = 30 participan en una subasta de
+
+
+
+                                                  17
+   segundo precio. (a) Muestre que ofertar la valuación es débilmente dominante para el oferen-
+   te 2 comparando, para cada oferta máxima de los rivales m ∈ {20, 35, 45, 60}, sus resultados
+   al ofertar 30, 40 y 50. (b) ¿Quién gana y cuánto paga si todos ofertan su valuación? ¿Qué
+   resultado esperaría en una subasta inglesa? (c) Muestre que en una subasta de tercer precio
+   ofertar la valuación ya no es dominante. (d) ¿Qué riesgo corre el ganador si el vendedor puede
+   introducir ofertas falsas? ¿Cómo propone Vickrey evitarlo?
+
+2. Primer precio y equivalencia de recaudación (basado en Vickrey, 1961, App. I). Tres
+   oferentes con valuaciones independientes U [0, 1]. (a) Verifique que b(v) = 23 v es un equilibrio
+   de la subasta de primer precio. (b) Calcule la recaudación esperada en el primer y en el
+   segundo precio, y la ganancia esperada del ganador. (c) Calcule la varianza del precio en
+   ambos formatos y su cociente. (d) Si las valuaciones resultan 0.9, 0.3 y 0.2, ¿cuánto recauda
+   cada formato? ¿Contradice esto el teorema? (e) ¿Qué formato preferiría un vendedor averso
+   al riesgo?
+
+3. Aversión al riesgo (basado en Milgrom y Weber, 1982, sec. 8). Dos oferentes con valuaciones
+   U [0, 1] y utilidad u(x) = xρ , 0 < ρ ≤ 1. (a) Muestre que en el segundo precio la oferta de
+   equilibrio sigue siendo b = v. (b) Conjeture b(v) = βv en el primer precio y muestre que
+           1
+   β = 1+ρ   . (c) Con ρ = 21 , calcule la recaudación esperada de cada formato. (d) Explique la
+   intuición: ¿por qué la aversión al riesgo afecta sólo al primer precio?
+
+4. Precio de reserva (basado en Myerson, 1981). Dos oferentes con valuaciones U [0, 1]; el
+   vendedor valora el objeto en 0 y usa una subasta de segundo precio con reserva r. (a) Muestre
+   que la recaudación esperada es R(r) = 13 + r2 − 43 r3 . (b) Encuentre la reserva óptima y la
+   recaudación máxima. (c) ¿Con qué probabilidad el objeto queda sin vender? ¿Es eficiente?
+   (d) Calcule la reserva óptima si el vendedor valora el objeto en v0 = 0.2. (e) Relacione con
+   el menú del monopolista de la Clase 8.
+
+5. Maldición del ganador (basado en Wilson, 1969, y Capen, Clapp y Campbell, 1971). Cinco
+   petroleras estiman el valor común V de un lote con Xi = V + εi , εi ∼ U [−20, 20] (millones).
+   (a) ¿Cuánto sobrestima V , en promedio, la empresa con la estimación más alta? (b) Si la
+   empresa que ganó estimó X = 150 y ofertó 150 en un primer precio, ¿cuál es su ganancia
+   esperada? (c) Muestre que en el segundo precio la oferta de equilibrio es b(x) = x − NN−2 a y
+   calcúlela. (d) En el modelo de Wilson con señales normales, una empresa estima el lote en
+   150 con un desvío a posteriori s = 12. ¿Cuánto oferta? ¿Qué pasa con la oferta si s se reduce
+   a 6? (e) ¿Por qué, con valor común, agregar oferentes puede no aumentar las ofertas?
+
+6. Producción en equipo (basado en Holmström, 1982). Tres socios producen x = e1 +e2 +e3 ,
+   cada uno con costo c(e) = e2 /2. (a) Calcule el esfuerzo eficiente y el excedente total. (b) Con
+   reparto igualitario, calcule el equilibrio de Nash, el producto y la utilidad de cada socio.
+   (c) Diseñe un contrato forzante con un principal externo que implemente el esfuerzo eficiente
+   y verifique que es un equilibrio. (d) ¿Por qué el principal no puede ser uno de los socios?
+   (e) Si tres empresas compiten por ser el principal y valoran el derecho al residuo en 1.2, 0.9
+   y 0.5, ¿quién lo obtiene y cuánto paga en una subasta inglesa?
+
+7. Subastas de varias unidades (basado en Vickrey, 1961, secs. IV y V). Se venden dos
+   unidades idénticas. A valora cada una de dos unidades en 12; B y C quieren una unidad
+   cada uno y la valoran en 8 y 3. (a) Con precio uniforme igual a la primera oferta rechazada y
+   ofertas sinceras, ¿quién gana, a qué precio y cuánto recauda el vendedor? (b) Muestre que A
+   gana reduciendo su demanda. ¿Es eficiente el resultado? (c) Calcule los pagos del mecanismo
+   de Vickrey (cada ganador paga el valor que su victoria le quita a los demás). (d) Con subasta
+   discriminatoria, ¿ofertarían los participantes sus valuaciones? (e) El Tesoro argentino licita
+   sus Letras “por sistema holandés de precio único”. ¿A cuál de los formatos de esta clase
+
+
+                                                18
+  corresponde? ¿Qué incentivos genera?
+
+8. Aplicaciones conceptuales. (a) Una casa de subastas puede publicar o no la tasación de
+   un experto independiente sobre la autenticidad de un cuadro. Según Milgrom y Weber, ¿qué
+   le conviene? ¿Por qué no le conviene publicarla sólo cuando es favorable? (b) En la subasta
+   4G argentina de 2014, un bloque se reservó para un operador entrante y se adjudicó al precio
+   mínimo. Discuta el costo y el beneficio de esa reserva. (c) Explique por qué el termómetro de
+   reputación de MercadoLibre usa reclamos, cancelaciones y demoras en lugar de calificaciones
+   libres de los compradores. (d) ¿Por qué el sniping es más frecuente con cierre en hora fija
+   que con cierre extendido? (e) Clasifique cada problema según lo visto en las Clases 7 a 9: un
+   comprador online no sabe si el producto es original; un vendedor no sabe si el envío llegará
+   a tiempo porque depende de su propio esfuerzo; un vendedor nuevo ofrece envío gratis y
+   devolución sin cargo.
+
+
+
+
+                                              19
+                                                Anexo
+
+A.     El equilibrio del primer precio y la equivalencia de recaudación
+
+Sea F la distribución de las valuaciones en [0, v̄], con densidad f , y G(y) = F (y)N −1 la distribu-
+ción de Y1 , la mayor valuación entre los N − 1 rivales.
+
+
+Equilibrio del primer precio. Supongamos que los rivales ofertan β(v), creciente. Un oferente
+de valuación v que oferta como si su valuación fuera z obtiene
+                                                  (︁       )︁
+                                   Π(z, v) = G(z) v − β(z) .
+
+En equilibrio, el óptimo es z = v:
+            ∂Π ⃓⃓                                        d [︁
+                   = g(v) v − β(v) − G(v)β ′ (v) = 0 ⇐⇒
+                         (︁       )︁                                  ]︁
+                                                              G(v)β(v) = v g(v).
+            ∂z z=v                                      dv
+                ⃓
+
+Integrando con β(0) = 0,
+                                         ∫︂ v
+                                   1                         [︁          ]︁
+                           β(v) =               y g(y) dy = E Y1 | Y1 < v .
+                                  G(v)    0
+                                                         ∫︁ v          N −1 dy = N −1 v.
+Con F (v) = v en [0, 1], G(y) = y N −1 y β(v) = vN1−1     0 (N − 1)y              N
+
+
+Pago esperado y equivalencia. Sea, en cualquier mecanismo, P (v) la probabilidad de ganar
+y m(v) el pago esperado de un oferente de valuación v que juega su estrategia de equilibrio, y
+U (v) = vP (v) − m(v) su utilidad esperada. Como podría hacerse pasar por un tipo z, U (v) =
+máxz {vP (z) − m(z)}, y por el teorema de la envolvente U ′ (v) = P (v). Entonces
+                               ∫︂ v                             ∫︂ v
+               U (v) = U (0) +      P (t) dt, m(v) = vP (v) −        P (t) dt − U (0),
+                                0                                      0
+
+que es la ecuación (4). Si el mecanismo asigna el objeto al que más lo valora, P (v) = G(v); si
+U (0) = 0, el pago esperado queda determinado:
+                                ∫︂ v           ∫︂ v
+                m(v) = vG(v) −       G(t) dt =      y g(y) dy = G(v) E[Y1 | Y1 < v].
+                                     0              0
+
+En el segundo precio es inmediato: se gana con probabilidad G(v) y se paga E[Y1 | Y1 < v]. En
+el primero, se gana con la misma probabilidad y se paga β(v), que es lo mismo. La recaudación
+esperada es N E[m(v)] = E[v(2) ]. Es la misma lógica que la renta informacional de la Clase 8: la
+utilidad de cada tipo queda fijada por la asignación, y con ella los pagos.
+
+
+B.    Maldición del ganador con errores uniformes
+
+Sea Xi = V + εi , εi ∼ U [−a, a] independientes y V con distribución a priori difusa. Dado V ,
+(εi + a)/2a ∼ U [0, 1], y el máximo de N uniformes tiene media NN+1 ; por lo tanto E[máxi εi ] =
+                  −1
+2a NN+1 − a = a N
+                N +1 .
+Para la oferta de segundo precio, condicionamos a X1 = x, Y1 = x y las otras N − 2 señales
+menores que x. Dado V , cada una de esas N − 2 es menor que x con probabilidad t = (x − V +
+
+
+                                                   20
+a)/2a; con a priori difusa, la densidad a posteriori de V en [x − a, x + a] es proporcional a tN −2 ,
+de modo que t ∼ Beta(N − 1, 1), con media NN−1 . Como V = x + a − 2at,
+                           [︁              ]︁            N −1     N −2
+                v(x, x) = E V | X1 = Y1 = x = x + a − 2a      =x−      a.
+                                                          N        N
+Con dos oferentes, b∗ (x) = x: por simetría, si los dos tienen la misma estimación, esa es la mejor
+estimación de V . (El resultado vale lejos de los extremos del soporte de V .)
+
+
+C.     El caso normal de Wilson
+
+Con información simétrica, Wilson (sec. 4) muestra que Π1 = Π2 = Π y que la condición de
+equilibrio se reduce a
+                        F (Π(p) | Π(p)) [︁
+                                         = ν(Π(p), Π(p)) − p Π′ (p),
+                                                            ]︁
+                         f (Π(p) | Π(p))
+donde F y f son la distribución y la densidad de la señal del rival dada la propia. Con a priori
+difusa y θi = v + ei , ei ∼ N (0, s2 ): la distribución a posteriori de v dada θi es N (θi , s2√
+                                                                                               ), la√señal
+                                        2                                       1
+del rival dada la propia es N (θi , 2s ) y ν(θ, θ) = θ. En la mediana, F = 2 y f = 1/( 2 s 2π),
+                        √                                                          √
+de modo que F/f = s π. Con Π(p) = p + c, Π′ = 1 y la condición da c = s π:
+                                √               (︁          )︁     (︁ √ )︁
+                   p(θ) = θ − π s,           Pr v < p(θ) | θ = Φ − π ≈ 0.038.
+
+
+
+Referencias
+ [1] Alchian, A. A., & Demsetz, H. (1972). Production, information costs, and economic organization.
+     American Economic Review, 62(5), 777–795.
+ [2] Bazerman, M. H., & Samuelson, W. F. (1983). I won the auction but don’t want the prize. Journal
+     of Conflict Resolution, 27(4), 618–634.
+ [3] Cabral, L., & Hortaçsu, A. (2010). The dynamics of seller reputation: Evidence from eBay. The
+     Journal of Industrial Economics, 58(1), 54–78.
+ [4] Capen, E. C., Clapp, R. V., & Campbell, W. M. (1971). Competitive bidding in high-risk situations.
+     Journal of Petroleum Technology, 23(6), 641–653.
+ [5] Cassady, R., Jr. (1967). Auctions and Auctioneering. University of California Press.
+ [6] Engelbrecht-Wiggans, R., Milgrom, P. R., & Weber, R. J. (1983). Competitive bidding and proprie-
+     tary information. Journal of Mathematical Economics, 11(2), 161–169.
+ [7] Gale, D., & Shapley, L. S. (1962). College admissions and the stability of marriage. The American
+     Mathematical Monthly, 69(1), 9–15.
+ [8] Harsanyi, J. C. (1967–68). Games with incomplete information played by “Bayesian” players, I–III.
+     Management Science, 14(3, 5, 7), 159–182, 320–334, 486–502.
+ [9] Holmström, B. (1982). Moral hazard in teams. The Bell Journal of Economics, 13(2), 324–340.
+[10] Klemperer, P. (2002). What really matters in auction design. Journal of Economic Perspectives,
+     16(1), 169–189.
+[11] Milgrom, P. R. (1979). A convergence theorem for competitive bidding with differential information.
+     Econometrica, 47(3), 679–688.
+[12] Milgrom, P. (2004). Putting Auction Theory to Work. Cambridge University Press.
+[13] Milgrom, P. R., & Weber, R. J. (1982). A theory of auctions and competitive bidding. Econometrica,
+     50(5), 1089–1122. https://www.jstor.org/stable/1911865
+
+
+                                                   21
+[14] Myerson, R. B. (1981). Optimal auction design. Mathematics of Operations Research, 6(1), 58–73.
+[15] Nash, J. F. (1950). Equilibrium points in n-person games. Proceedings of the National Academy of
+     Sciences, 36(1), 48–49.
+[16] Resnick, P., & Zeckhauser, R. (2002). Trust among strangers in Internet transactions: Empirical
+     analysis of eBay’s reputation system. En M. R. Baye (Ed.), The Economics of the Internet and
+     E-Commerce (Advances in Applied Microeconomics, Vol. 11, pp. 127–157). Elsevier.
+[17] Resnick, P., Zeckhauser, R., Swanson, J., & Lockwood, K. (2006). The value of reputation on eBay:
+     A controlled experiment. Experimental Economics, 9(2), 79–101.
+[18] Riley, J. G., & Samuelson, W. F. (1981). Optimal auctions. American Economic Review, 71(3),
+     381–392.
+[19] Roth, A. E. (2002). The economist as engineer: Game theory, experimentation, and computation as
+     tools for design economics. Econometrica, 70(4), 1341–1378.
+[20] Roth, A. E., & Ockenfels, A. (2002). Last-minute bidding and the rules for ending second-price
+     auctions: Evidence from eBay and Amazon auctions on the Internet. American Economic Review,
+     92(4), 1093–1103.
+[21] Thaler, R. H. (1988). Anomalies: The winner’s curse. Journal of Economic Perspectives, 2(1), 191–
+     202.
+[22] Vickrey, W. (1961). Counterspeculation, auctions, and competitive sealed tenders. The
+     Journal of Finance, 16(1), 8–37. https://www.cramton.umd.edu/market-design-papers/
+     vickrey-counterspeculation-auctions-and-competitive-sealed-tenders.pdf
+[23] Wilson, R. B. (1969). Competitive bidding with disparate information. Management Science, 15(7),
+     446–448. https://doi.org/10.1287/mnsc.15.7.446
+[24] Wilson, R. (1977). A bidding model of perfect competition. The Review of Economic Studies, 44(3),
+     511–518.
+
+
+
+
+                                                 22
+

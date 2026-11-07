@@ -1,0 +1,728 @@
+                  El problema del riesgo moral
+                                 Unidad VII
+
+
+
+
+                     Economía del Riesgo y de la Información
+                    UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 3; Holmström (1979)
+
+
+                     Clase 7 · 2do cuatrimestre 2026
+
+
+
+
+     (UADE)                   Clase 7 — Riesgo moral            Clase 7          1 / 22
+Hoja de ruta
+
+1   El problema del riesgo moral
+2   Dos esfuerzos posibles
+3   Análisis gráfico
+4   Cociente de verosimilitud
+5   Enfoque de primer orden
+6   Información valiosa
+7   Información oculta
+8   Aplicaciones
+9   Síntesis
+
+          (UADE)                Clase 7 — Riesgo moral   Clase 7   2 / 22
+Donde quedamos en la Clase 6
+
+
+   Con información simétrica, el contrato eficiente es un reparto de
+   Borch: principal neutral ⇒ salario fijo w o = u −1 (U + v (e)).
+                                                                 √
+   Ejemplo: x ∈ {0, 100}, Pr(100) = 0.8 con eH y 0.4 con eL ; u = w ,
+   v (eH ) = 2, U = 5 ⇒ w = 49, beneficio 31.
+                                    √            √
+   Si el esfuerzo no es verificable: 49 − 2 = 5 < 49 − 0 = 7 ⇒ el
+   agente elige eL y el principal pierde 9.
+
+
+
+
+       (UADE)               Clase 7 — Riesgo moral        Clase 7      3 / 22
+Donde quedamos en la Clase 6
+
+
+     Con información simétrica, el contrato eficiente es un reparto de
+     Borch: principal neutral ⇒ salario fijo w o = u −1 (U + v (e)).
+                                                                   √
+     Ejemplo: x ∈ {0, 100}, Pr(100) = 0.8 con eH y 0.4 con eL ; u = w ,
+     v (eH ) = 2, U = 5 ⇒ w = 49, beneficio 31.
+                                      √            √
+     Si el esfuerzo no es verificable: 49 − 2 = 5 < 49 − 0 = 7 ⇒ el
+     agente elige eL y el principal pierde 9.
+
+Riesgo moral (acción oculta)
+Después de firmar, el agente elige una acción no verificable que afecta la
+distribución del resultado. El resultado x sí es verificable.
+Ejemplos: el esfuerzo de un trabajador (se paga según ventas), la inversión de una
+empresa regulada, el cuidado de un asegurado.
+
+
+         (UADE)                 Clase 7 — Riesgo moral           Clase 7       3 / 22
+Secuencia temporal y el problema del principal
+
+                                                                                       t
+       P diseña        A acepta         A elige esfuerzo   N determina   Resultado x
+         w (x)         o rechaza         no verificable     el estado     y pagos
+
+                  ∑︁             (︁            )︁
+       máx        i pi (e) B    xi − w (xi )
+     e,{w (xi )}
+
+         s.a.
+                 ∑︁           (︁        )︁
+                    i pi (e) u w (xi ) − v (e) ≥ U(participación)
+
+                                     i pi (ê) u w (xi ) − v (ê) (incentivos)
+                                  ∑︁            (︁      )︁
+                 e ∈ arg máx
+                            ê
+
+
+
+
+       (UADE)                         Clase 7 — Riesgo moral                Clase 7        4 / 22
+Secuencia temporal y el problema del principal
+
+                                                                                         t
+         P diseña        A acepta         A elige esfuerzo   N determina   Resultado x
+           w (x)         o rechaza         no verificable     el estado     y pagos
+
+                    ∑︁             (︁            )︁
+         máx        i pi (e) B    xi − w (xi )
+       e,{w (xi )}
+
+           s.a.
+                   ∑︁           (︁        )︁
+                      i pi (e) u w (xi ) − v (e) ≥ U(participación)
+
+                                       i pi (ê) u w (xi ) − v (ê) (incentivos)
+                                    ∑︁            (︁      )︁
+                   e ∈ arg máx
+                              ê
+
+
+    Salario fijo ⇒ esfuerzo mínimo. Franquicia ⇒ incentivos perfectos,
+    pero el agente averso carga todo el riesgo.
+
+Idea clave
+Trade-off entre seguro e incentivos: Borch pide asegurar al agente; los
+incentivos piden que su pago dependa del resultado.
+
+         (UADE)                         Clase 7 — Riesgo moral                Clase 7        4 / 22
+El modelo con dos esfuerzos
+e ∈ {eH , eL }, v (eH ) > v (eL ), piH = pi (eH ), piL = pi (eL ) > 0. Principal
+neutral, agente averso.
+     Si P quiere eL : salario fijo, no hay problema.
+     Si quiere eH , la condición de incentivos es
+                    ∑︁ (︁ H     L
+                                  )︁ (︁    )︁
+                       i pi − pi u w (xi ) ≥ v (eH ) − v (eL ).
+
+
+
+
+         (UADE)                  Clase 7 — Riesgo moral            Clase 7         5 / 22
+El modelo con dos esfuerzos
+e ∈ {eH , eL }, v (eH ) > v (eL ), piH = pi (eH ), piL = pi (eL ) > 0. Principal
+neutral, agente averso.
+     Si P quiere eL : salario fijo, no hay problema.
+     Si quiere eH , la condición de incentivos es
+                    ∑︁ (︁ H     L
+                                  )︁ (︁    )︁
+                       i pi − pi u w (xi ) ≥ v (eH ) − v (eL ).
+
+Con multiplicadores λ (PC) y µ (IC):
+
+              1                   piL                                    piH
+                              (︃      )︃                       ∑︂
+                    )︁ = λ + µ 1 − H     ,                λ=                      > 0.
+                                                                    u ′ (w (xi ))
+           (︁
+        u ′ w (xi )               pi                           i
+
+
+
+Proposición
+λ > 0 y µ > 0: ambas restricciones se saturan. Si µ = 0 el salario sería fijo
+y no induciría eH . El riesgo moral cuesta.
+         (UADE)                  Clase 7 — Riesgo moral                   Clase 7        5 / 22
+El ejemplo con riesgo moral
+
+       √               √
+uS =       wS , uF =       wF :
+
+ 0.8 uS + 0.2 uF = 7,             (0.8 − 0.4)(uS − uF ) = 2 ⇒ uS = 8, uF = 3.
+
+
+
+Contrato óptimo con riesgo moral
+  wS = 64,             wF = 9,       EH [w ] = 53,           beneficio 80 − 53 = 27.
+
+
+
+
+           (UADE)                   Clase 7 — Riesgo moral             Clase 7         6 / 22
+El ejemplo con riesgo moral
+
+       √               √
+uS =       wS , uF =       wF :
+
+ 0.8 uS + 0.2 uF = 7,             (0.8 − 0.4)(uS − uF ) = 2 ⇒ uS = 8, uF = 3.
+
+
+
+Contrato óptimo con riesgo moral
+  wS = 64,             wF = 9,       EH [w ] = 53,           beneficio 80 − 53 = 27.
+
+    Sigue conviniendo eH (27 > 15), pero gana 4 menos que con
+    información simétrica (31).
+    Multiplicadores: p L /p H = 21 (éxito), 3 (fracaso) ⇒ µ = 4, λ = 14.
+    Equivalente cierto de la lotería (64, 9): (0.8 · 8 + 0.2 · 3)2 = 49.
+    ⇒ el costo del riesgo moral (4) es una prima de riesgo.
+
+
+           (UADE)                   Clase 7 — Riesgo moral             Clase 7         6 / 22
+                                                           √
+Una fórmula para el costo (con u =                               w)
+Con A = U + v (eH ), ∆v = v (eH ) − v (eL ) y ri = piL /piH :
+
+                        ∆v                                 ∑︂ (p H − p L )2
+             ui = A +      (1 − ri ),               χ2 =              i         i
+                                                                                      ,
+                        χ2                                                piH
+                                                             i
+
+                                                           (∆v )2
+                  EH [w ] =        A2           +                               .
+                                  ⏞⏟⏟⏞                       χ2
+                              info. simétrica              ⏞ ⏟⏟ ⏞
+                                                    costo del riesgo moral
+
+
+     χ2 mide cuán informativo es el resultado sobre el esfuerzo.
+     Ejemplo: χ2 = 0.42 /0.8 + 0.42 /0.2 = 1 ⇒ costo = 22 /1 = 4.
+
+
+
+
+         (UADE)                   Clase 7 — Riesgo moral                            Clase 7   7 / 22
+                                                           √
+Una fórmula para el costo (con u =                               w)
+Con A = U + v (eH ), ∆v = v (eH ) − v (eL ) y ri = piL /piH :
+
+                        ∆v                                 ∑︂ (p H − p L )2
+             ui = A +      (1 − ri ),               χ2 =              i         i
+                                                                                      ,
+                        χ2                                                piH
+                                                             i
+
+                                                           (∆v )2
+                  EH [w ] =        A2           +                               .
+                                  ⏞⏟⏟⏞                       χ2
+                              info. simétrica              ⏞ ⏟⏟ ⏞
+                                                    costo del riesgo moral
+
+
+     χ2 mide cuán informativo es el resultado sobre el esfuerzo.
+     Ejemplo: χ2 = 0.42 /0.8 + 0.42 /0.2 = 1 ⇒ costo = 22 /1 = 4.
+
+¿Qué esfuerzo exige? Sea X el valor del éxito
+Info. simétrica: 0.8X − 49 vs. 0.4X − 25 ⇒ eH si X ≥ 60.
+Riesgo moral: 0.8X − 53 vs. 0.4X − 25 ⇒ eH si X ≥ 70.
+Para X ∈ (60, 70): esfuerzo ineficientemente bajo.
+         (UADE)                   Clase 7 — Riesgo moral                            Clase 7   7 / 22
+El contrato en el plano (wF , wS )
+
+  wS
+                                                       Frontera IC:
+                                                       u(wS ) = u(wF ) + pH∆v   L . Por
+                                                                            S −pS
+
+       H′                                              encima, A elige eH .
+                                                       PC con eH al nivel U.
+
+                          H                            Rectas: isocostos del principal.
+                                  PC
+
+
+            frontera IC
+
+            L
+
+
+
+
+                                       wF
+
+
+
+
+        (UADE)                Clase 7 — Riesgo moral                  Clase 7        8 / 22
+El contrato en el plano (wF , wS )
+
+  wS
+                                                       Frontera IC:
+                                                       u(wS ) = u(wF ) + pH∆v   L . Por
+                                                                            S −pS
+
+       H′                                              encima, A elige eH .
+                                                       PC con eH al nivel U.
+
+                          H                            Rectas: isocostos del principal.
+                                  PC
+
+
+            frontera IC
+                                                       H = (49, 49): óptimo simétrico,
+                                                       pero induce eL .
+            L
+                                                       H ′ = (9, 64): el contrato más
+                                                       barato que el agente acepta y
+                                       wF              que lo hace esforzarse.
+                                                       Costo: distancia entre
+                                                       isocostos, 53 − 49 = 4.
+
+
+        (UADE)                Clase 7 — Riesgo moral                  Clase 7        8 / 22
+El salario como respuesta a una señal
+
+
+        1                                          piL
+                   = λ + µ (1 − ri ),       ri =       (cociente de verosimilitud)
+   u ′ (w (xi ))                                   piH
+
+
+     ri < 1: xi es señal de esfuerzo ⇒ premio. ri > 1: señal de
+     holgazanería ⇒ castigo. ri = 1: salario de referencia w̄ .
+     Los xi no aparecen: importa cuánto informa cada resultado, no cuánto
+     vale.
+
+
+
+
+            (UADE)                  Clase 7 — Riesgo moral           Clase 7         9 / 22
+El salario como respuesta a una señal
+
+
+        1                                          piL
+                   = λ + µ (1 − ri ),       ri =       (cociente de verosimilitud)
+   u ′ (w (xi ))                                   piH
+
+
+     ri < 1: xi es señal de esfuerzo ⇒ premio. ri > 1: señal de
+     holgazanería ⇒ castigo. ri = 1: salario de referencia w̄ .
+     Los xi no aparecen: importa cuánto informa cada resultado, no cuánto
+     vale.
+
+Idea clave
+El principal usa el resultado como en un problema de inferencia
+estadística. . . aunque en equilibrio sabe qué esfuerzo se eligió: paga según
+x porque es la única forma de influir sobre el esfuerzo.
+
+
+            (UADE)                  Clase 7 — Riesgo moral           Clase 7         9 / 22
+¿Salarios crecientes en el resultado?
+
+MLRP
+piL /piH decreciente en i ⇒ w (xi ) creciente. La MLRP es más fuerte que la
+dominancia estocástica.
+
+
+
+
+        (UADE)                Clase 7 — Riesgo moral        Clase 7     10 / 22
+¿Salarios crecientes en el resultado?
+
+MLRP
+piL /piH decreciente en i ⇒ w (xi ) creciente. La MLRP es más fuerte que la
+dominancia estocástica.
+
+Un salario no monótono
+p H = (0.1, 0.4, 0.5), p L = (0.3, 0.2, 0.5): hay dominancia, pero
+r = (3, 12 , 1).
+            √
+Con u = w , v (eH ) = 2, U = 8: ui = 10 + 4(1 − ri ) = (2, 12, 10)
+
+                            w = (4, 144, 100)
+
+El resultado intermedio es la mejor señal de esfuerzo: se paga más que el
+más alto.
+
+
+
+        (UADE)                Clase 7 — Riesgo moral        Clase 7     10 / 22
+¿Salarios crecientes en el resultado?
+
+MLRP
+piL /piH decreciente en i ⇒ w (xi ) creciente. La MLRP es más fuerte que la
+dominancia estocástica.
+
+Un salario no monótono
+p H = (0.1, 0.4, 0.5), p L = (0.3, 0.2, 0.5): hay dominancia, pero
+r = (3, 12 , 1).
+            √
+Con u = w , v (eH ) = 2, U = 8: ui = 10 + 4(1 − ri ) = (2, 12, 10)
+
+                               w = (4, 144, 100)
+
+El resultado intermedio es la mejor señal de esfuerzo: se paga más que el
+más alto.
+El contrato no busca repartir el riesgo sino dar incentivos.
+
+         (UADE)                  Clase 7 — Riesgo moral        Clase 7   10 / 22
+Señales perfectas y castigos severos
+
+
+    Si algún xk tiene pkH = 0 < pkL , observarlo prueba que el agente
+    holgazaneó.
+    Salario de información simétrica en los demás resultados + castigo
+    severo en xk ⇒ óptimo de primer mejor (Harris y Raviv).
+    Los castigos son una amenaza: “sólo un mal cochero usa el látigo”. Ej.:
+    despido por ausencia.
+
+Idea clave
+El riesgo moral es costoso porque todo resultado es posible con cualquier
+esfuerzo (pi (e) > 0): un mal resultado nunca prueba la falta de esfuerzo.
+
+
+
+
+        (UADE)                Clase 7 — Riesgo moral        Clase 7      11 / 22
+Esfuerzo continuo: el enfoque de primer orden
+Reemplazar la IC por la condición de primer orden del agente:
+                        ∑︁ ′        (︁      )︁  ′
+                          i pi (e) u w (xi ) = v (e).
+
+
+
+
+        (UADE)               Clase 7 — Riesgo moral        Clase 7   12 / 22
+Esfuerzo continuo: el enfoque de primer orden
+Reemplazar la IC por la condición de primer orden del agente:
+                        ∑︁ ′        (︁      )︁  ′
+                          i pi (e) u w (xi ) = v (e).
+
+
+
+
+Fórmula de Mirrlees–Holmström
+                    B ′ x − w (x)
+                       (︁         )︁
+                                            fe (x; e)
+                            (︁ )︁ = ⏞⏟⏟⏞
+                                      λ +µ
+                          ′
+                       u w (x)              f (x; e)
+                                     Borch ⏞ ⏟⏟ ⏞
+                                                      incentivos
+
+
+    Holmström (Prop. 1): con dominancia estocástica, µ > 0 ⇒ el
+    segundo mejor es estrictamente peor.
+    fe /f = ∂ ln f /∂e: cociente beneficio–costo de desviarse de Borch.
+                                                     √
+    Técnico de Holmström: x ∼ exponencial, u = 2 w ⇒
+    w (x) = 41 (x + 12 )2 , convexo.
+        (UADE)               Clase 7 — Riesgo moral                Clase 7   12 / 22
+¿Cuándo es válido?
+
+
+EU(e)                                                  La CPO es sólo necesaria: si EU(e)
+                                                       no es cóncava, el principal elige
+                                                       entre demasiados candidatos
+                                                       (Mirrlees).
+                                                       Soluciones:
+                                                              MLRP + convexidad de F (x; e) en
+                                           e                  e (Rogerson, 1985).
+           e1       e2         e3
+                                                              Dos etapas (Grossman y Hart,
+Los tres cumplen la CPO; el agente elige e3 .                 1983).
+
+
+
+
+          (UADE)                     Clase 7 — Riesgo moral                Clase 7        13 / 22
+¿Cuándo es válido?
+
+
+EU(e)                                                  La CPO es sólo necesaria: si EU(e)
+                                                       no es cóncava, el principal elige
+                                                       entre demasiados candidatos
+                                                       (Mirrlees).
+                                                       Soluciones:
+                                                              MLRP + convexidad de F (x; e) en
+                                           e                  e (Rogerson, 1985).
+           e1       e2         e3
+                                                              Dos etapas (Grossman y Hart,
+Los tres cumplen la CPO; el agente elige e3 .                 1983).
+
+Distribución lineal: pi (e) = e piH + (1 − e) piL
+EU ′′ (e) = −v ′′ (e) ≤ 0 para cualquier contrato ⇒ el enfoque es válido, y
+w (xi ) crece en i bajo la misma MLRP.
+
+
+
+          (UADE)                     Clase 7 — Riesgo moral                Clase 7        13 / 22
+Holmström (1979): el estadístico suficiente
+
+Otra señal verificable y (supervisor, contabilidad, clima, ventas de otro):
+
+                          B ′ (︁     )︁       fe (x, y ; e)
+                            ′
+                                 x, y = λ + µ
+                          u                   f (x, y ; e)
+
+
+Teorema (Prop. 3)
+y es valiosa ⇐⇒ es informativa, es decir, ⇐⇒ no vale
+f (x, y ; e) = g (x, y ) h(x; e) (x no es estadístico suficiente).
+
+
+
+
+         (UADE)                  Clase 7 — Riesgo moral              Clase 7   14 / 22
+Holmström (1979): el estadístico suficiente
+
+Otra señal verificable y (supervisor, contabilidad, clima, ventas de otro):
+
+                          B ′ (︁     )︁       fe (x, y ; e)
+                            ′
+                                 x, y = λ + µ
+                          u                   f (x, y ; e)
+
+
+Teorema (Prop. 3)
+y es valiosa ⇐⇒ es informativa, es decir, ⇐⇒ no vale
+f (x, y ; e) = g (x, y ) h(x; e) (x no es estadístico suficiente).
+
+     No informativa: sólo agrega ruido (Jensen).
+     Informativa, por ruidosa que sea: dado x, las partes son neutrales en el
+     margen ⇒ mejores incentivos sin más riesgo.
+     Contraste con la Clase 6: con esfuerzo verificable, esas señales se
+     ignoran.
+
+         (UADE)                  Clase 7 — Riesgo moral              Clase 7   14 / 22
+Ejemplo: el informe del supervisor
+y ∈ {1, 0} independiente de x dado e: Pr(y = 1 | eH ) = 0.8,
+Pr(y = 1 | eL ) = 0.4.
+
+                     (éxito, fav.)    (éxito, desf.)    (fracaso, fav.)   (fracaso, desf.)
+
+      Prob. con eH       0.64             0.16                0.16             0.04
+      ri                 1/4               3/2                 3/2               9
+      wi                56.25             44.44               44.44            2.78
+
+
+    1 + χ2 = (1 + 1)(1 + 1) = 4 ⇒ EH [w ] = 49 + 4/3 = 50.33: beneficio
+    de 27 a 29.67.
+    El informe vale hasta 2.67: reduce en dos tercios el costo del riesgo
+    moral.
+
+
+
+
+        (UADE)                       Clase 7 — Riesgo moral                  Clase 7         15 / 22
+Ejemplo: el informe del supervisor
+y ∈ {1, 0} independiente de x dado e: Pr(y = 1 | eH ) = 0.8,
+Pr(y = 1 | eL ) = 0.4.
+
+                     (éxito, fav.)    (éxito, desf.)    (fracaso, fav.)   (fracaso, desf.)
+
+      Prob. con eH       0.64             0.16                0.16             0.04
+      ri                 1/4               3/2                 3/2               9
+      wi                56.25             44.44               44.44            2.78
+
+
+    1 + χ2 = (1 + 1)(1 + 1) = 4 ⇒ EH [w ] = 49 + 4/3 = 50.33: beneficio
+    de 27 a 29.67.
+    El informe vale hasta 2.67: reduce en dos tercios el costo del riesgo
+    moral.
+
+Idea clave
+La información imperfecta permite dar los mismos incentivos con menos
+pérdida de reparto del riesgo.
+        (UADE)                       Clase 7 — Riesgo moral                  Clase 7         15 / 22
+Consecuencias del resultado de Holmström
+
+
+   Señales sobre el estado: una buena cosecha con mal clima es mejor
+   señal de esfuerzo ⇒ se paga más. Una variable que no afecta ni al
+   esfuerzo ni al resultado se ignora.
+   Evaluación relativa: dos vendedores de paraguas (shock común) ⇒
+   pagar según ambos resultados; libros vs. paraguas ⇒ sólo el propio.
+   Torneos.
+   Controles: condicionales (sólo si x es malo) o aleatorios.
+   Contratos dicotómicos: capturan parte del valor de y con reglas
+   simples.
+   Contratos reales detallados: huelgas, accidentes, catástrofes.
+
+
+
+
+       (UADE)               Clase 7 — Riesgo moral         Clase 7   16 / 22
+Riesgo moral con información oculta
+
+                                                                                     t
+         P diseña     A acepta     N elige el estado,        A elige     Resultado
+        el contrato   o rechaza      sólo A lo ve          su decisión    y pagos
+
+
+
+Agente de exportación; intermediario financiero. Participación ex ante o ex post.
+
+
+
+
+         (UADE)                   Clase 7 — Riesgo moral                   Clase 7       17 / 22
+Riesgo moral con información oculta
+
+                                                                                         t
+         P diseña     A acepta     N elige el estado,        A elige         Resultado
+        el contrato   o rechaza      sólo A lo ve          su decisión        y pagos
+
+
+
+Agente de exportación; intermediario financiero. Participación ex ante o ex post.
+
+Ejemplo: E = θ + e, θ ∈ {0, 1}, agente w − e 2 /2, part. ex post
+Info. simétrica: e ∗ = 1 en ambos estados, beneficio 1.
+Riesgo moral: con θ = 1 el agente muestra E = 1 sin esforzarse. Contrato
+óptimo:
+
+eG = 1 (sin distorsión),      eB = 21 (distorsión),             renta 18 ,     beneficio 0.875
+
+Idea clave
+Se parece a la selección adversa: distorsión en el estado malo y renta
+informacional en el bueno. (Unidad VIII)
+
+         (UADE)                   Clase 7 — Riesgo moral                       Clase 7       17 / 22
+Franquicias en los seguros (Holmström, 3)
+
+
+Cuidado e reduce p(e) pero no el daño:              riqueza
+
+                                                              cobertura completa
+fe       −p ′           fe       p′
+   (0) =      > 0,         (x) =    (x < 0)
+f        1−p            f        p
+
+constante en el daño ⇒ el daño no informa                        con franquicia
+⇒ franquicia pura.
+                       √
+Ejemplo: riqueza 100, w , p = 0.1 vs. 0.3,
+costo 0.2, daño 19 o 51.                                                 sin seguro
+
+     Prima 1.99, franquicia d = 18.80.
+                                                                                D
+    Beneficio 0.37 (vs. 0.46 si el cuidado
+    fuera verificable).
+A diferencia de Arrow (1970), la franquicia es un incentivo, no un efecto de los
+costos de administración.
+
+
+          (UADE)                Clase 7 — Riesgo moral             Clase 7            18 / 22
+Gerentes y responsabilidad limitada
+
+
+Incentivos a gerentes. Ventas x = e + ε, ε ∼ N(0, σ 2 ):
+fe /f = (x − e)/σ 2 creciente ⇒ bono según ventas. Con u = ln w :
+                 µ
+   w (x) = λ +      (x − e) (contrato lineal por razones de incentivos).
+                 σ2
+
+
+
+
+        (UADE)                Clase 7 — Riesgo moral        Clase 7        19 / 22
+Gerentes y responsabilidad limitada
+
+
+Incentivos a gerentes. Ventas x = e + ε, ε ∼ N(0, σ 2 ):
+fe /f = (x − e)/σ 2 creciente ⇒ bono según ventas. Con u = ln w :
+                  µ
+   w (x) = λ +       (x − e) (contrato lineal por razones de incentivos).
+                  σ2
+Responsabilidad limitada (ambos neutrales, w ≥ 0).
+Pr(éxito) = 0.9 vs. 0.2, v (eH ) = 7, U = 1 ⇒ IC: wS − wF ≥ 10.
+     Sin límite: wS = 9, wF = −1, costo 8 (primer mejor).
+     Con w ≥ 0: wS = 10, wF = 0, costo 9 ⇒ renta de 1.
+
+Idea clave
+Sin aversión al riesgo, el trade-off pasa a ser entre renta e incentivos.
+
+
+
+         (UADE)                Clase 7 — Riesgo moral          Clase 7      19 / 22
+Racionamiento del crédito (Bester y Hellwig)
+
+Proyecto a: pa = 0.9, Xa = 100; proyecto
+b: pb = 0.3, Xb = 150; I = 40. El banco
+cobra R sólo si hay éxito.
+                       pa Xa − pb Xb
+elige a ⇐⇒ R ≤ R̂ =                  = 75
+                          pa − pb
+
+
+
+
+          (UADE)                Clase 7 — Riesgo moral   Clase 7   20 / 22
+Racionamiento del crédito (Bester y Hellwig)
+
+Proyecto a: pa = 0.9, Xa = 100; proyecto           Πbanco
+b: pb = 0.3, Xb = 150; I = 40. El banco                             27.5
+cobra R sólo si hay éxito.
+                         pa Xa − pb Xb                                                5
+elige a ⇐⇒ R ≤ R̂ =                    = 75
+                            pa − pb                                                            R
+                                                                       R̂             Xb
+
+
+     R = 75: banco 27.5; R = 150:
+     banco 5.
+     Firma: 0.9(100 − 75) = 22.5 > 0 ⇒
+     todas piden ⇒ racionamiento.
+     El banco no sube la tasa: cambiaría
+     el proyecto.
+Ineficiencia con agentes neutrales: la resp. limitada impide la franquicia.
+
+
+          (UADE)                    Clase 7 — Riesgo moral                  Clase 7        20 / 22
+Cuadro comparativo
+
+
+
+                         Info. simétrica (VI)                  Riesgo moral (VII)
+
+   Restricciones         participación                         participación e incentivos
+   Condición             B ′ /u ′ = λ (Borch)                  B ′ /u ′ = λ + µfe /f
+   Principal neutral     salario fijo                          salario contingente
+   Agente neutral        franquicia                            franquicia (salvo resp. limitada)
+   Forma del salario     tolerancias al riesgo                 cociente de verosimilitud
+   Señales adicionales   se ignoran                            valiosas ⇐⇒ informativas
+   Costo                 —                                     prima de riesgo y/o esfuerzo bajo
+
+
+El riesgo moral deforma el contrato de Borch para dar incentivos: el salario
+responde a la información que contiene cada resultado.
+
+
+
+
+           (UADE)                     Clase 7 — Riesgo moral                       Clase 7         21 / 22
+ Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 3; Holmström (1979).
+Complementaria: Arrow (1970); Bester & Hellwig (1987); Grossman & Hart (1983);
+ Harris & Raviv (1979); Holmström & Milgrom (1987); Mirrlees (1974); Rogerson
+   (1985); Laffont & Martimort (2002); Mas-Colell, Whinston & Green (1995).
+
+
+
+
+       (UADE)                  Clase 7 — Riesgo moral           Clase 7       22 / 22
+

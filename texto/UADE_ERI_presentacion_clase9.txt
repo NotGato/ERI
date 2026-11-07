@@ -1,0 +1,933 @@
+               El problema de la señalización
+                               Unidad IX
+
+
+
+
+                   Economía del Riesgo y de la Información
+                  UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 5; Spence (1973)
+
+
+                   Clase 9 · 2do cuatrimestre 2026
+
+
+
+
+    (UADE)                  Clase 9 — Señalización             Clase 9        1 / 27
+               El problema de la señalización
+                               Unidad IX
+
+
+
+
+                   Economía del Riesgo y de la Información
+                  UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 5; Spence (1973)
+
+
+                   Clase 9 · 2do cuatrimestre 2026
+
+
+
+
+    (UADE)                  Clase 9 — Señalización             Clase 9        2 / 27
+Hoja de ruta
+
+1   El problema de la señalización
+
+2   El modelo de Spence
+
+3   Capital humano y señalización
+
+4   El modelo general y el criterio intuitivo
+
+5   Índices y discriminación
+
+6   El contrato como señal
+
+7   Otras aplicaciones
+
+8   Síntesis
+
+
+          (UADE)                Clase 9 — Señalización   Clase 9   3 / 27
+“Se busca graduado reciente”. . . de cualquier carrera
+
+    Si el contenido del título no importa, ¿para qué se lo exige?
+    Spence (1973): el título es una señal de capacidad para aprender.
+
+
+
+
+        (UADE)               Clase 9 — Señalización         Clase 9     4 / 27
+“Se busca graduado reciente”. . . de cualquier carrera
+
+    Si el contenido del título no importa, ¿para qué se lo exige?
+    Spence (1973): el título es una señal de capacidad para aprender.
+¿Quién quiere revelar su información privada?
+
+         Marco                        ¿Le conviene al agente revelarla?
+
+         Riesgo moral                      indiferente (queda en U)
+         Sel. adversa, monopolio              no: pierde su renta
+         Sel. adversa, competencia    sí: el bueno obtiene EU G < U G ∗
+
+
+Idea clave
+Se señala sólo si revelarse vale más que el costo de la señal: el marco
+natural es la competencia entre principales.
+
+
+         (UADE)               Clase 9 — Señalización            Clase 9   4 / 27
+¿Qué es una señal? Bruce el Audaz
+
+   El rey busca un yerno valiente; todos dicen serlo.
+   Prueba: pasar una noche en un castillo embrujado. Sólo Bruce se
+   atreve.
+
+
+
+
+       (UADE)               Clase 9 — Señalización      Clase 9      5 / 27
+¿Qué es una señal? Bruce el Audaz
+
+   El rey busca un yerno valiente; todos dicen serlo.
+   Prueba: pasar una noche en un castillo embrujado. Sólo Bruce se
+   atreve.
+   Es una señal porque cuesta mucho a los cobardes y poco a los
+   valientes.
+   La prueba no hace más valiente a Bruce: es improductiva.
+
+
+
+
+       (UADE)               Clase 9 — Señalización      Clase 9      5 / 27
+¿Qué es una señal? Bruce el Audaz
+
+    El rey busca un yerno valiente; todos dicen serlo.
+    Prueba: pasar una noche en un castillo embrujado. Sólo Bruce se
+    atreve.
+    Es una señal porque cuesta mucho a los cobardes y poco a los
+    valientes.
+    La prueba no hace más valiente a Bruce: es improductiva.
+
+Señal
+Acción observable de la parte informada, con un costo menor para el tipo
+que quiere distinguirse, que revela su tipo.
+
+Spence: índices (inalterables: sexo, edad) vs. señales (alterables a un costo:
+educación). Postulantes que entran pocas veces al mercado: no hay reputación ⇒
+la señal debe ser costosa.
+
+         (UADE)                Clase 9 — Señalización        Clase 9       5 / 27
+Contratar es comprar una lotería
+
+   El empleador no ve la
+   productividad: ve señales e
+   índices.
+   Salario = productividad esperada
+   condicional a las señales.
+   El mercado es un ciclo de
+   retroalimentación.
+
+
+
+
+        (UADE)                   Clase 9 — Señalización   Clase 9   6 / 27
+Contratar es comprar una lotería
+
+                                                       Creencias          Salarios
+     El empleador no ve la                           del empleador    ofrecidos W (y )
+     productividad: ve señales e
+     índices.
+     Salario = productividad esperada               Contratación y    Elección de y :
+                                                     observación     máx. W (y )−costo
+     condicional a las señales.
+     El mercado es un ciclo de
+     retroalimentación.
+
+Equilibrio (Spence)
+Creencias autoconfirmadas: los datos
+que generan no las contradicen.
+
+Sobre señales que nadie elige no hay
+datos: esas creencias nunca se
+contradicen.
+
+           (UADE)                  Clase 9 — Señalización            Clase 9             6 / 27
+Secuencia temporal
+
+                                                                                               t
+       N elige         A elige     Los P ven t    Los P ofrecen    A acepta        Resultado
+        el tipo      la señal t      y actua-       contratos      o rechaza        y pagos
+    (sólo A lo ve)                  lizan q(t)
+
+
+
+
+                         Riesgo moral (VII)       Sel. adversa (VIII)     Señalización (IX)
+
+     P ignora                   la acción               el tipo                   el tipo
+     Mueve primero            P (contrato)             P (menú)                  A (señal)
+     Mecanismo                 incentivos              screening               señal costosa
+
+
+
+Idea clave
+Screening: la parte no informada diseña contratos. Signaling: la parte
+informada actúa primero para distinguirse.
+
+
+           (UADE)                      Clase 9 — Señalización                    Clase 9           7 / 27
+Supuestos
+
+
+
+            Grupo       Productividad     Proporción   Costo de y
+
+            I (baja)         1                 q1          y
+            II (alta)        2               1 − q1       y /2
+
+   La educación y es observable y no aumenta la productividad.
+   Estudiar le cuesta menos al más productivo.
+   Competencia: salario = productividad esperada dada y .
+
+
+
+
+      (UADE)                  Clase 9 — Señalización             Clase 9   8 / 27
+Supuestos
+
+
+
+            Grupo       Productividad     Proporción   Costo de y
+
+            I (baja)         1                 q1          y
+            II (alta)        2               1 − q1       y /2
+
+   La educación y es observable y no aumenta la productividad.
+   Estudiar le cuesta menos al más productivo.
+   Competencia: salario = productividad esperada dada y .
+   Información simétrica: salarios 1 y 2; nadie estudia.
+   Sin ninguna señal: todos cobran w̄ = q1 · 1 + (1 − q1 ) · 2 = 2 − q1 .
+
+
+
+
+       (UADE)                 Clase 9 — Señalización             Clase 9    8 / 27
+El equilibrio separador
+
+
+Creencias: y < y ∗ ⇒ I; y ≥ y ∗ ⇒ II.
+W (y ) = 1 si y < y ∗ , W (y ) = 2 si
+y ≥ y ∗.
+Sólo se elige y = 0 o y = y ∗ .
+
+
+
+
+           (UADE)                 Clase 9 — Señalización   Clase 9   9 / 27
+El equilibrio separador
+
+
+Creencias: y < y ∗ ⇒ I; y ≥ y ∗ ⇒ II.                                              y
+                                                                                       W (y )
+W (y ) = 1 si y < y ∗ , W (y ) = 2 si            2
+y ≥ y ∗.
+Sólo se elige y = 0 o y = y ∗ .                                                            y /2
+
+                              ∗                  1
+             I:     1 ≥ 2−y
+                        ∗
+            II:     2 − y2 ≥ 1
+                                                                                                y
+                                                                      y∗
+
+              1 ≤ y∗ ≤ 2                                       y ∗ de equilibrio
+
+
+Cara para I, no demasiado cara para II.
+Ej.: y ∗ = 1.5: I obtiene 1 (vs. 0.5); II, 1.25 (vs. 1): creencias confirmadas.
+
+
+
+           (UADE)                   Clase 9 — Señalización              Clase 9             9 / 27
+Multiplicidad y bienestar
+
+
+    Infinitos equilibrios: uno por cada y ∗ ∈ [1, 2].
+    Grupo I: cobra 1 siempre; está peor que sin señal (2 − q1 ).
+    Grupo II: neto 2 − y ∗ /2, cae con y ∗ ⇒ los y ∗ > 1 son Pareto
+    inferiores.
+
+
+
+
+        (UADE)                 Clase 9 — Señalización       Clase 9   10 / 27
+Multiplicidad y bienestar
+
+
+    Infinitos equilibrios: uno por cada y ∗ ∈ [1, 2].
+    Grupo I: cobra 1 siempre; está peor que sin señal (2 − q1 ).
+    Grupo II: neto 2 − y ∗ /2, cae con y ∗ ⇒ los y ∗ > 1 son Pareto
+    inferiores.
+    II gana con la señal sólo si y ∗ < 2q1 :
+         q1 = 0.5: nunca ⇒ todos preferirían que la señal no exista.
+         q1 = 0.8 (II es minoría): con y ∗ = 1, 1.5 > 1.2.
+    General (costos a1 y , a2 y ): II puede ganar si q1 > a2 /a1 .
+
+
+
+
+        (UADE)                 Clase 9 — Señalización           Clase 9   10 / 27
+Multiplicidad y bienestar
+
+
+    Infinitos equilibrios: uno por cada y ∗ ∈ [1, 2].
+    Grupo I: cobra 1 siempre; está peor que sin señal (2 − q1 ).
+    Grupo II: neto 2 − y ∗ /2, cae con y ∗ ⇒ los y ∗ > 1 son Pareto
+    inferiores.
+    II gana con la señal sólo si y ∗ < 2q1 :
+         q1 = 0.5: nunca ⇒ todos preferirían que la señal no exista.
+         q1 = 0.8 (II es minoría): con y ∗ = 1, 1.5 > 1.2.
+    General (costos a1 y , a2 y ): II puede ganar si q1 > a2 /a1 .
+
+Idea clave
+Retorno privado de la educación: 1. Retorno social en producto: 0. Puede
+haber sobreinversión en educación sin que nadie sea irracional.
+
+
+
+        (UADE)                 Clase 9 — Señalización           Clase 9   10 / 27
+Equilibrios agrupadores
+
+Nadie se educa: creencias y < y ∗ ⇒ cualquiera; y ≥ y ∗ ⇒ II.
+                                         ∗
+                     2 − q1 ≥ 2 − y2 ⇐⇒ y ∗ ≥ 2q1
+
+Sobre y ≥ y ∗ no hay datos: la creencia se confirma “en forma degenerada”.
+
+
+
+
+         (UADE)                 Clase 9 — Señalización          Clase 9      11 / 27
+Equilibrios agrupadores
+
+Nadie se educa: creencias y < y ∗ ⇒ cualquiera; y ≥ y ∗ ⇒ II.
+                                         ∗
+                     2 − q1 ≥ 2 − y2 ⇐⇒ y ∗ ≥ 2q1
+
+Sobre y ≥ y ∗ no hay datos: la creencia se confirma “en forma degenerada”.
+Todos se educan: y < y ∗ ⇒ I; y ≥ y ∗ ⇒ cualquiera.
+
+                   2 − q1 − y ∗ ≥ 1 ⇐⇒ y ∗ ≤ 1 − q1
+
+Requisitos estables que no cumplen ninguna función.
+
+
+
+
+         (UADE)                 Clase 9 — Señalización          Clase 9      11 / 27
+Equilibrios agrupadores
+
+Nadie se educa: creencias y < y ∗ ⇒ cualquiera; y ≥ y ∗ ⇒ II.
+                                         ∗
+                     2 − q1 ≥ 2 − y2 ⇐⇒ y ∗ ≥ 2q1
+
+Sobre y ≥ y ∗ no hay datos: la creencia se confirma “en forma degenerada”.
+Todos se educan: y < y ∗ ⇒ I; y ≥ y ∗ ⇒ cualquiera.
+
+                   2 − q1 − y ∗ ≥ 1 ⇐⇒ y ∗ ≤ 1 − q1
+
+Requisitos estables que no cumplen ninguna función.
+
+Con q1 = 12 (netos I / II)
+Separador y ∗ = 1: 1 / 1.5   Separador y ∗ = 2: 1 / 1
+Agrupador en 0: 1.5 / 1.5    Agrupador en 0.4: 1.1 / 1.3
+
+
+
+         (UADE)                 Clase 9 — Señalización          Clase 9      11 / 27
+Condiciones para que una señal funcione
+
+
+
+  1   Costos negativamente correlacionados con la productividad (el
+      “supuesto crítico”).
+          Es la condición de Spence–Mirrlees (cruce único) de la Clase 8.
+          Un atributo puede ser señal para un puesto y no para otro.
+
+
+
+
+         (UADE)                 Clase 9 — Señalización          Clase 9     12 / 27
+Condiciones para que una señal funcione
+
+
+
+  1   Costos negativamente correlacionados con la productividad (el
+      “supuesto crítico”).
+          Es la condición de Spence–Mirrlees (cruce único) de la Clase 8.
+          Un atributo puede ser señal para un puesto y no para otro.
+  2   Señales suficientes en el rango adecuado.
+          Si y ∈ {1, 3}: y = 3 es caro para II (2 − 1.5 < 1) y y = 1 no excluye a I.
+          Señales cuyo costo supera la ganancia se vuelven índices (ser
+          propietario, en el crédito).
+
+
+
+
+         (UADE)                  Clase 9 — Señalización           Clase 9       12 / 27
+Dos explicaciones de la misma correlación
+Mincer: ln wi = β0 + ρSi + β1 expi + β2 exp2i + εi
+
+
+
+
+                          Capital humano                     Señalización
+
+     La educación. . .    aumenta la productividad           revela la productividad
+     Retorno social       = privado                          < privado (puede ser 0)
+     Inversión            eficiente                          posible sobreinversión
+     Se paga              lo aprendido                       la credencial
+     Subsidiar   educa-   aumenta el producto                puede sólo encarecer la señal
+     ción
+
+
+
+
+          (UADE)                    Clase 9 — Señalización                   Clase 9         13 / 27
+Dos explicaciones de la misma correlación
+Mincer: ln wi = β0 + ρSi + β1 expi + β2 exp2i + εi
+
+
+
+
+                          Capital humano                     Señalización
+
+     La educación. . .    aumenta la productividad           revela la productividad
+     Retorno social       = privado                          < privado (puede ser 0)
+     Inversión            eficiente                          posible sobreinversión
+     Se paga              lo aprendido                       la credencial
+     Subsidiar   educa-   aumenta el producto                puede sólo encarecer la señal
+     ción
+
+
+     Observacionalmente equivalentes en la regresión de Mincer.
+     Evidencia: efecto diploma (sheepskin); la señal pierde peso con la
+     experiencia.
+
+
+
+          (UADE)                    Clase 9 — Señalización                   Clase 9         13 / 27
+Un modelo con ambos efectos
+
+Productividades 1 + αy y 2 + αy , 0 ≤ α < 12 ; costos y y y /2.
+    Simétrica: α < costo marginal ⇒ nadie estudia.
+
+
+
+
+        (UADE)               Clase 9 — Señalización        Clase 9   14 / 27
+Un modelo con ambos efectos
+
+Productividades 1 + αy y 2 + αy , 0 ≤ α < 12 ; costos y y y /2.
+    Simétrica: α < costo marginal ⇒ nadie estudia.
+    Asimétrica: I elige 0, II elige y ∗ :
+                                   1                              2
+                       I: y ∗ ≥       ,            II: y ∗ ≤
+                                  1−α                          1 − 2α
+
+
+
+
+        (UADE)                    Clase 9 — Señalización                Clase 9   14 / 27
+Un modelo con ambos efectos
+
+Productividades 1 + αy y 2 + αy , 0 ≤ α < 12 ; costos y y y /2.
+     Simétrica: α < costo marginal ⇒ nadie estudia.
+     Asimétrica: I elige 0, II elige y ∗ :
+                                     1                              2
+                         I: y ∗ ≥       ,            II: y ∗ ≤
+                                    1−α                          1 − 2α
+
+α = 0.2: separador de menor costo y ∗ = 1.25
+Salarios: 1 vs. 2.25. Diferencia 1.25, pero sólo 0.25 es capital humano; el resto (1)
+es productividad revelada.
+Neto de II: 1.625 (vs. 2 con información simétrica).
+
+Idea clave
+La educación puede formar y señalar: cambia la lectura normativa.
+
+         (UADE)                     Clase 9 — Señalización                Clase 9   14 / 27
+El modelo general (Macho Stadler y Pérez Castrillo, sec. 5.4)
+
+
+    Mercado de Rothschild–Stiglitz (Clase 8): p G > p B , principales
+    compiten.
+    Simétrica: U G ∗ , U B∗ . Asimétrica sin señal: EU G < U G ∗ y U B∗ .
+    Antes del mercado, A elige t ∈ {0, t ′ }, inútil para todos, con costos
+    vG, vB.
+
+
+
+
+        (UADE)                 Clase 9 — Señalización         Clase 9       15 / 27
+El modelo general (Macho Stadler y Pérez Castrillo, sec. 5.4)
+
+
+     Mercado de Rothschild–Stiglitz (Clase 8): p G > p B , principales
+     compiten.
+     Simétrica: U G ∗ , U B∗ . Asimétrica sin señal: EU G < U G ∗ y U B∗ .
+     Antes del mercado, A elige t ∈ {0, t ′ }, inútil para todos, con costos
+     vG, vB.
+
+Equilibrio bayesiano perfecto
+(i) Cada uno juega óptimamente dadas sus creencias; (ii) creencias q(t)
+por la regla de Bayes cuando es posible.
+Para señales no enviadas, Bayes no restringe: creencias libres.
+
+Separador: q(t ′ ) = 1, q(0) = 0. Agrupador: q(t) = q.
+
+
+
+         (UADE)                  Clase 9 — Señalización           Clase 9    15 / 27
+Equilibrio separador (Resultados 5.1 y 5.2)
+
+
+Con q(t ′ ) = 1, q(0) = 0 se ofrecen los contratos simétricos: w (t ′ ) = w G ∗ ,
+w (0) = w B∗ .
+
+          Bueno: U G ∗ − v G ≥ U B∗ ⇐⇒ v G ≤ U G ∗ − U B∗
+            Malo: U B∗ ≥ U G ∗ − v B ⇐⇒ v B ≥ U G ∗ − U B∗
+
+
+
+
+         (UADE)                 Clase 9 — Señalización           Clase 9      16 / 27
+Equilibrio separador (Resultados 5.1 y 5.2)
+
+
+Con q(t ′ ) = 1, q(0) = 0 se ofrecen los contratos simétricos: w (t ′ ) = w G ∗ ,
+w (0) = w B∗ .
+
+          Bueno: U G ∗ − v G ≥ U B∗ ⇐⇒ v G ≤ U G ∗ − U B∗
+            Malo: U B∗ ≥ U G ∗ − v B ⇐⇒ v B ≥ U G ∗ − U B∗
+
+
+     Necesario: v G ≤ v B (Spence–Mirrlees), pero no suficiente.
+     Desaparece la distorsión de selección adversa. . .
+     . . . a cambio de v G , un gasto que no beneficia a nadie.
+     El separador “al revés” no existe: nadie paga por ser identificado como
+     malo.
+
+
+
+         (UADE)                 Clase 9 — Señalización            Clase 9     16 / 27
+Equilibrio agrupador (Resultado 5.3)
+
+    Sólo puede ser en t = 0 (si todos eligen t ′ , el malo se desvía y ahorra
+    v B ).
+    Con q(0) = q: menú de la Clase 8, utilidades (EU G , U B∗ ).
+    Sostenido por la creencia q(t ′ ) = 0: quien se educa es tratado como
+    malo.
+
+
+
+
+        (UADE)                Clase 9 — Señalización         Clase 9      17 / 27
+Equilibrio agrupador (Resultado 5.3)
+
+    Sólo puede ser en t = 0 (si todos eligen t ′ , el malo se desvía y ahorra
+    v B ).
+    Con q(0) = q: menú de la Clase 8, utilidades (EU G , U B∗ ).
+    Sostenido por la creencia q(t ′ ) = 0: quien se educa es tratado como
+    malo.
+¿Es razonable esa creencia? Supongamos lo más optimista: quien se
+desvía cobra w G ∗ .
+
+            v B > U G ∗ − U B∗         y        v G < U G ∗ − EU G
+
+
+    El malo nunca gana desviándose; el bueno sí, si lo reconocen.
+    Lo razonable es q(t ′ ) = 1 ⇒ el bueno se desvía ⇒ el agrupador cae.
+
+
+        (UADE)                Clase 9 — Señalización           Clase 9    17 / 27
+Criterio intuitivo y clasificación (Resultado 5.5)
+
+
+                                               vB          (a)
+Criterio intuitivo (Cho y Kreps)
+Ante una señal fuera del equilibrio,
+                                                                 (b)
+probabilidad cero a los tipos que
+nunca ganarían enviándola.
+                                              ∆
+∆ = U G ∗ − U B∗ ,
+δ = U G ∗ − EU G < ∆
+                                                                             (c)
+(a) v B > ∆, v G < δ: sólo separador.
+(b) v B > ∆, δ ≤ v G ≤ ∆: ambos.                                                     vG
+                                                  δ                    ∆
+
+ (c) v B < ∆ o v G > ∆: sólo
+     agrupador.
+
+
+
+
+          (UADE)                  Clase 9 — Señalización                   Clase 9   18 / 27
+Criterio intuitivo y clasificación (Resultado 5.5)
+
+
+                                               vB          (a)
+Criterio intuitivo (Cho y Kreps)
+Ante una señal fuera del equilibrio,
+                                                                 (b)
+probabilidad cero a los tipos que
+nunca ganarían enviándola.
+                                              ∆
+∆ = U G ∗ − U B∗ ,
+δ = U G ∗ − EU G < ∆
+                                                                             (c)
+(a) v B > ∆, v G < δ: sólo separador.
+(b) v B > ∆, δ ≤ v G ≤ ∆: ambos.                                                     vG
+                                                  δ                    ∆
+
+(c) v B < ∆ o v G > ∆: sólo
+     agrupador.
+Una prueba que cualquiera puede pasar, o que nadie se anima a intentar, no
+informa.
+
+
+          (UADE)                  Clase 9 — Señalización                   Clase 9   18 / 27
+Ejemplo: el mercado de seguros de la Clase 8
+                                              √
+xS = 100, xF = 0, p G = 0.9, p B = 0.6, u =       w , q = 21 :
+
+
+
+ U G ∗ ≈ 9.487,   U B∗ ≈ 7.746,     EU G ≈ 9.350 ⇒ ∆ ≈ 1.741, δ ≈ 0.137
+
+
+
+
+         (UADE)                 Clase 9 — Señalización           Clase 9   19 / 27
+Ejemplo: el mercado de seguros de la Clase 8
+                                                  √
+xS = 100, xF = 0, p G = 0.9, p B = 0.6, u =           w , q = 21 :
+
+
+
+ U G ∗ ≈ 9.487,     U B∗ ≈ 7.746,       EU G ≈ 9.350 ⇒ ∆ ≈ 1.741, δ ≈ 0.137
+
+
+
+              (v G , v B )   Caso   Equilibrios       Bueno en el separador
+
+              (0.1, 2)       (a)    separador         9.387 > 9.350: gana
+               (1, 2)        (b)      ambos           8.487 < 9.350: pierde
+              (0.1, 1)       (c)    agrupador         el malo imitaría
+
+
+
+
+         (UADE)                     Clase 9 — Señalización              Clase 9   19 / 27
+Ejemplo: el mercado de seguros de la Clase 8
+                                                  √
+xS = 100, xF = 0, p G = 0.9, p B = 0.6, u =           w , q = 21 :
+
+
+
+ U G ∗ ≈ 9.487,     U B∗ ≈ 7.746,       EU G ≈ 9.350 ⇒ ∆ ≈ 1.741, δ ≈ 0.137
+
+
+
+              (v G , v B )   Caso   Equilibrios       Bueno en el separador
+
+              (0.1, 2)       (a)    separador         9.387 > 9.350: gana
+               (1, 2)        (b)      ambos           8.487 < 9.350: pierde
+              (0.1, 1)       (c)    agrupador         el malo imitaría
+
+
+En el modelo de Spence (señal continua)
+El criterio elimina los separadores con y ∗ > 1 y todos los agrupadores: sobrevive
+el separador de menor costo, y ∗ = 1 (Riley, 1979), aunque el agrupador en 0 sea
+mejor para todos.
+         (UADE)                     Clase 9 — Señalización              Clase 9   19 / 27
+Bienestar y señales sin costo
+
+    Separador: contratos sin distorsión − costo de la señal.
+    Agrupador: sin costo de señal + distorsión de selección adversa.
+    El efecto neto es ambiguo; a veces el agrupamiento es mejor para
+    todos.
+
+
+
+
+        (UADE)               Clase 9 — Señalización        Clase 9     20 / 27
+Bienestar y señales sin costo
+
+     Separador: contratos sin distorsión − costo de la señal.
+     Agrupador: sin costo de señal + distorsión de selección adversa.
+     El efecto neto es ambiguo; a veces el agrupamiento es mejor para
+     todos.
+
+Cheap talk (Crawford y Sobel, 1982)
+Mensajes gratuitos, no vinculantes, no verificables. En Spence, “soy productivo”
+no informa: todos lo dirían. Pueden informar (en forma gruesa) si los tipos
+prefieren respuestas distintas y los intereses no son opuestos.
+
+Idea clave
+Las creencias fuera del equilibrio son libres; el criterio intuitivo las disciplina
+y suele seleccionar el separador de menor costo.
+
+
+         (UADE)                  Clase 9 — Señalización          Clase 9       20 / 27
+Índices: el sexo como ejemplo (Spence, sec. 6)
+
+    Varones (M) y mujeres (W ) con igual distribución de productividad y
+    costos.
+    Si el empleador condiciona en el sexo, el ciclo se segmenta: dos
+    mercados independientes.
+                ∗                 ∗                               ∗    ∗
+           1 ≤ yW ≤ 2,       1 ≤ yM ≤ 2,              nada exige yW = yM
+
+
+
+
+        (UADE)               Clase 9 — Señalización             Clase 9    21 / 27
+Índices: el sexo como ejemplo (Spence, sec. 6)
+
+     Varones (M) y mujeres (W ) con igual distribución de productividad y
+     costos.
+     Si el empleador condiciona en el sexo, el ciclo se segmenta: dos
+     mercados independientes.
+                 ∗                  ∗                                ∗    ∗
+            1 ≤ yW ≤ 2,        1 ≤ yM ≤ 2,               nada exige yW = yM
+
+ ∗         ∗
+yM = 1.1, yW = 1.9
+Neto de alta productividad: varones 2 − 0.55 = 1.45; mujeres 2 − 0.95 = 1.05.
+Si las mujeres agrupan en y = 0 (q1 = 12 ): todas cobran 1.5.
+
+
+
+
+         (UADE)                 Clase 9 — Señalización             Clase 9    21 / 27
+Índices: el sexo como ejemplo (Spence, sec. 6)
+
+     Varones (M) y mujeres (W ) con igual distribución de productividad y
+     costos.
+     Si el empleador condiciona en el sexo, el ciclo se segmenta: dos
+     mercados independientes.
+                  ∗                 ∗                                ∗    ∗
+             1 ≤ yW ≤ 2,       1 ≤ yM ≤ 2,               nada exige yW = yM
+
+ ∗         ∗
+yM = 1.1, yW = 1.9
+Neto de alta productividad: varones 2 − 0.55 = 1.45; mujeres 2 − 0.95 = 1.05.
+Si las mujeres agrupan en y = 0 (q1 = 12 ): todas cobran 1.5.
+
+
+Idea clave
+Trampa de equilibrio de nivel bajo: la diferencia surge de la estructura
+informativa del mercado, no de capacidades ni de prejuicios.
+
+         (UADE)                 Clase 9 — Señalización             Clase 9    21 / 27
+El principal informado (sec. 5.5)
+
+
+    El empresario sabe si el trabajo es fácil (tipo 1) o arduo (tipo k):
+
+          fácil: B 1 = Π(e) − w ,            U 1 = u(w ) − v (e)
+        arduo: B k = k Π(e) − w ,            U k = u(w ) − k v (e),          k>1
+
+    Ambos prefieren C 1∗ : el tipo k quiere disfrazarse de tipo 1.
+
+
+
+
+        (UADE)                Clase 9 — Señalización               Clase 9         22 / 27
+El principal informado (sec. 5.5)
+
+
+    El empresario sabe si el trabajo es fácil (tipo 1) o arduo (tipo k):
+
+          fácil: B 1 = Π(e) − w ,              U 1 = u(w ) − v (e)
+        arduo: B k = k Π(e) − w ,              U k = u(w ) − k v (e),          k>1
+
+    Ambos prefieren C 1∗ : el tipo k quiere disfrazarse de tipo 1.
+    Resultado 5.6: en un separador, C k = C k∗ (nadie quiere imitarlo).
+    Resultado 5.8 (criterio intuitivo): C 1∗∗ con
+
+           u(w 1 ) − v (e 1 ) = U,        kΠ(e k∗ ) − w k∗ = kΠ(e 1 ) − w 1
+
+    Siempre e 1 < e k∗ : pocas horas señalan trabajo fácil.
+
+
+
+        (UADE)                  Clase 9 — Señalización               Clase 9         22 / 27
+Ejemplo: Π = 4e, u = w , v = e 2 /2, k = 2, U = 0
+
+
+Simétrica: C 1∗ = (8, 4), beneficio 8;
+C k∗ = (16, 4), beneficio 16.
+Imitando, el tipo k ganaría 32 − 8 = 24.
+
+
+
+
+          (UADE)                 Clase 9 — Señalización   Clase 9   23 / 27
+Ejemplo: Π = 4e, u = w , v = e 2 /2, k = 2, U = 0
+
+
+Simétrica: C 1∗ = (8, 4), beneficio 8;             w
+                                                                      Uk = 0        B k = 16
+                                                                                          U1 = 0
+C k∗ = (16, 4), beneficio 16.
+Imitando, el tipo k ganaría 32 − 8 = 24.
+                                                                     C k∗
+        2                     √
+ 8e − e2 = 16 ⇒ e 1 = 8 − 4 2 ≈ 2.34
+
+w 1 ≈ 2.75; beneficio 6.63 < 8.                                              C 1∗
+
+
+     El tipo k: indiferente (16).                            C 1∗∗
+
+
+     El tipo 1 imitando a k: 0.                                                                    e
+
+Idea clave
+El contrato de quien tiene información transmite información: se ofrece
+algo que el otro tipo nunca ofrecería.
+
+
+
+          (UADE)                    Clase 9 — Señalización                  Clase 9            23 / 27
+Precios de lanzamiento (Milgrom y Roberts, 1986)
+
+    Calidad buena: excedente X , costo c G ; mala: excedente 0, costo
+    cB < cG .
+    Quien compra en t = 1 aprende la calidad. Si qX < c B : no hay
+    agrupador.
+
+
+
+
+       (UADE)                Clase 9 — Señalización        Clase 9      24 / 27
+Precios de lanzamiento (Milgrom y Roberts, 1986)
+
+    Calidad buena: excedente X , costo c G ; mala: excedente 0, costo
+    cB < cG .
+    Quien compra en t = 1 aprende la calidad. Si qX < c B : no hay
+    agrupador.
+    Separador: p1 = c B (el malo no imita). Beneficio del bueno:
+
+                       ΠG = (c B − c G ) + δ (X − c G )
+
+    El producto bueno se lanza por debajo de su costo.
+
+
+
+
+       (UADE)                Clase 9 — Señalización        Clase 9      24 / 27
+Precios de lanzamiento (Milgrom y Roberts, 1986)
+
+     Calidad buena: excedente X , costo c G ; mala: excedente 0, costo
+     cB < cG .
+     Quien compra en t = 1 aprende la calidad. Si qX < c B : no hay
+     agrupador.
+     Separador: p1 = c B (el malo no imita). Beneficio del bueno:
+
+                          ΠG = (c B − c G ) + δ (X − c G )
+
+     El producto bueno se lanza por debajo de su costo.
+
+X = 10, c G = 4, c B = 2, q = 0.15
+δ = 0.9: ΠG = −2 + 5.4 = 3.4 > 0.       δ = 0.3: −0.2 < 0 ⇒ no hay mercado.
+
+Misma lógica: muestras gratis, publicidad de marca (“quemar dinero”), garantías.
+
+
+         (UADE)                 Clase 9 — Señalización          Clase 9       24 / 27
+La deuda como señal (Ross, 1977) y las licencias
+
+Deuda: ganancias ∼ U[0, k]; multa L si quiebra (prob. D/k).
+                                                       (︂ k       LD )︂
+                 U(D) = (1 − γ)V0 (D) + γ                     −
+                                                         2         k
+
+
+    La deuda es más barata para la empresa buena ⇒ falla
+    Modigliani–Miller.
+                      G   B
+                        −k ) B                 −k ) G         G   B
+    Separador: (1−γ)(k
+                    2γL     k ≤ D G ≤ (1−γ)(k
+                                           2γL     k .
+    Ej.: k G = 200, k B = 100, γ = 12 , L = 100: D G ∈ [50, 100]; con 50:
+    87.5 vs. 75.
+
+
+
+
+        (UADE)                Clase 9 — Señalización                      Clase 9   25 / 27
+La deuda como señal (Ross, 1977) y las licencias
+
+Deuda: ganancias ∼ U[0, k]; multa L si quiebra (prob. D/k).
+                                                        (︂ k       LD )︂
+                  U(D) = (1 − γ)V0 (D) + γ                     −
+                                                          2         k
+
+
+    La deuda es más barata para la empresa buena ⇒ falla
+    Modigliani–Miller.
+                       G   B
+                        −k ) B                 −k ) G          G   B
+    Separador: (1−γ)(k
+                    2γL     k ≤ D G ≤ (1−γ)(k
+                                           2γL     k .
+    Ej.: k G = 200, k B = 100, γ = 12 , L = 100: D G ∈ [50, 100]; con 50:
+    87.5 vs. 75.
+Licencias: el laboratorio sabe si la innovación es buena.
+    Mala: (F B∗ , 0). Buena: regalía ε > 0 y pago fijo menor.
+    Con la innovación buena se vende más: las regalías rinden más a quien
+    la tiene.
+        (UADE)                 Clase 9 — Señalización                      Clase 9   25 / 27
+Cuadro comparativo
+
+
+
+                     Selección adversa (VIII)               Señalización (IX)
+
+   Mueve primero     no informado (menú)                    informado (señal)
+   Instrumento       contratos autoseleccionables           acción costosa previa
+   Condición clave   cruce único                            señal más barata para el bueno
+   Equilibrio        único o inexistente                    múltiples; criterio intuitivo
+   Bienestar         renta y distorsión                     información a cambio del costo de
+                                                            la señal
+
+
+Una señal funciona porque es creíble: cuesta menos a quien tiene algo
+bueno que mostrar, y por eso sólo él la envía.
+
+
+
+
+          (UADE)                   Clase 9 — Señalización                       Clase 9      26 / 27
+     Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 5; Spence (1973).
+Complementaria: Banks & Sobel (1987); Becker (1964); Cho & Kreps (1987); Crawford
+& Sobel (1982); Milgrom & Roberts (1986); Mincer (1974); Modigliani & Miller (1958);
+                Riley (1979); Ross (1977); Rothschild & Stiglitz (1976).
+
+
+
+
+         (UADE)                  Clase 9 — Señalización           Clase 9       27 / 27
+

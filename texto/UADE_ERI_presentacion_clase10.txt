@@ -1,0 +1,989 @@
+  Subastas, información y diseño de mercados
+                             Unidad X
+
+
+
+
+                Economía del Riesgo y de la Información
+               UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Vickrey (1961); Wilson (1969); Milgrom & Weber (1982)
+
+
+               Clase 10 · 2do cuatrimestre 2026
+
+
+
+
+ (UADE)                   Clase 10 — Subastas             Clase 10    1 / 25
+Hoja de ruta
+
+1    El problema y la teoría de juegos
+2    Tipos de subastas
+3    Valores privados: Vickrey (1961)
+4    Equivalencia de recaudación
+5    Economía de equipos
+6    Valor común: la maldición del ganador
+7    Milgrom y Weber (1982)
+8    Diseño de mercados
+9    Reputación online
+10   Síntesis
+
+           (UADE)                Clase 10 — Subastas   Clase 10   2 / 25
+Vender sin saber cuánto vale
+    Un vendedor, un objeto, varios compradores: ellos saben cuánto lo
+    valoran.
+    Nadie quiere revelarlo: quien declara mucho, paga mucho.
+    Selección adversa (Clase 8) con varios agentes que compiten.
+
+
+
+
+       (UADE)                Clase 10 — Subastas         Clase 10       3 / 25
+Vender sin saber cuánto vale
+    Un vendedor, un objeto, varios compradores: ellos saben cuánto lo
+    valoran.
+    Nadie quiere revelarlo: quien declara mucho, paga mucho.
+    Selección adversa (Clase 8) con varios agentes que compiten.
+
+Subasta
+Mecanismo que asigna el objeto y fija los pagos a partir de las ofertas, con
+reglas anunciadas de antemano.
+                                                                                          t
+    El vendedor      N asigna    Los oferentes    Se asigna   Se cobran    Valor común:
+      anuncia      valuaciones      eligen        el objeto   los pagos    se conoce V
+       reglas       (privadas)    sus ofertas
+    y reserva r
+
+
+
+Idea clave
+Hacer competir a quienes saben para que revelen lo que saben. ¿Qué reglas
+asignan bien (eficiencia) y cuáles recaudan más?
+          (UADE)                       Clase 10 — Subastas                Clase 10            3 / 25
+Elementos de teoría de los juegos
+
+
+   Juego: jugadores, estrategias Si ,
+   pagos ui (s1 , . . . , sN ).
+   Estrategia dominante: mejor
+   respuesta haga lo que haga el resto.
+   Equilibrio de Nash: nadie gana
+   desviándose unilateralmente.
+
+
+
+
+       (UADE)                   Clase 10 — Subastas   Clase 10   4 / 25
+Elementos de teoría de los juegos
+
+
+   Juego: jugadores, estrategias Si ,
+                                              Dilema del prisionero
+   pagos ui (s1 , . . . , sN ).
+                                                                   A        B
+   Estrategia dominante: mejor
+   respuesta haga lo que haga el resto.                 A     (3, 3)      (0, 4)
+                                                        B     (4, 0)      (1, 1)
+   Equilibrio de Nash: nadie gana
+   desviándose unilateralmente.                 B es dominante: equilibrio (B, B).
+                                                Las subastas se analizan sin colusión:
+   Información incompleta                             equilibrio no cooperativo.
+   (Harsanyi): la Naturaleza sortea
+                                              Wilson (1969): la incertidumbre sobre lo
+   tipos vi ; cada uno ve el suyo.
+                                              que sabe el rival permite equilibrios en
+   Equilibrio bayesiano: cada tipo            estrategias puras.
+   maximiza su utilidad esperada.
+
+
+
+       (UADE)                   Clase 10 — Subastas                    Clase 10      4 / 25
+Los cuatro formatos clásicos
+
+ Formato                Gana                 Paga                   Equivale a
+
+ Ascendente (inglesa)   el último que que-   retiro del penúltimo   2.º precio (val. priva-
+                        da                                          dos)
+ Descendente (holan-    el primero que       el precio aceptado     1.er precio (siempre)
+ desa)                  acepta
+ 1.er precio, sobre     oferta más alta      su oferta              holandesa
+ 2.º precio, sobre      oferta más alta      la 2.ª oferta          inglesa (val. privados)
+ (Vickrey)
+
+
+
+
+           (UADE)                    Clase 10 — Subastas                 Clase 10             5 / 25
+Los cuatro formatos clásicos
+
+ Formato                Gana                 Paga                   Equivale a
+
+ Ascendente (inglesa)   el último que que-   retiro del penúltimo   2.º precio (val. priva-
+                        da                                          dos)
+ Descendente (holan-    el primero que       el precio aceptado     1.er precio (siempre)
+ desa)                  acepta
+ 1.er precio, sobre     oferta más alta      su oferta              holandesa
+ 2.º precio, sobre      oferta más alta      la 2.ª oferta          inglesa (val. privados)
+ (Vickrey)
+
+
+    Holandesa ≡ primer precio: sólo se elige a qué precio “levantar la mano”;
+    no se aprende nada antes de que termine.
+    Inglesa ≈ segundo precio: quedarse hasta el propio valor; se paga el del
+    segundo. Falla con valor común y N ≥ 3.
+
+
+
+
+           (UADE)                    Clase 10 — Subastas                 Clase 10             5 / 25
+Los cuatro formatos clásicos
+
+ Formato                Gana                 Paga                   Equivale a
+
+ Ascendente (inglesa)   el último que que-   retiro del penúltimo   2.º precio (val. priva-
+                        da                                          dos)
+ Descendente (holan-    el primero que       el precio aceptado     1.er precio (siempre)
+ desa)                  acepta
+ 1.er precio, sobre     oferta más alta      su oferta              holandesa
+ 2.º precio, sobre      oferta más alta      la 2.ª oferta          inglesa (val. privados)
+ (Vickrey)
+
+
+    Holandesa ≡ primer precio: sólo se elige a qué precio “levantar la mano”;
+    no se aprende nada antes de que termine.
+    Inglesa ≈ segundo precio: quedarse hasta el propio valor; se paga el del
+    segundo. Falla con valor común y N ≥ 3.
+
+Modelos de valuación
+Valores privados independientes (cuánto disfruto el cuadro) · Valor común (el
+petróleo de un lote) · Afiliados (el caso general).
+           (UADE)                    Clase 10 — Subastas                 Clase 10             5 / 25
+Segundo precio: decir la verdad es dominante
+
+
+Sea m la oferta más alta de los demás. Si gano, pago m: mi oferta sólo
+decide si gano.
+    Me conviene ganar sii vi > m ⇒ ofertar bi = vi logra exactamente eso.
+
+
+
+
+        (UADE)                Clase 10 — Subastas         Clase 10       6 / 25
+Segundo precio: decir la verdad es dominante
+
+
+Sea m la oferta más alta de los demás. Si gano, pago m: mi oferta sólo
+decide si gano.
+    Me conviene ganar sii vi > m ⇒ ofertar bi = vi logra exactamente eso.
+    bi < vi : pierdo cuando bi < m < vi (resignando vi − m > 0).
+    bi > vi : gano cuando vi < m < bi y pago más de lo que vale: victoria
+    pírrica.
+
+
+
+
+        (UADE)                Clase 10 — Subastas         Clase 10       6 / 25
+Segundo precio: decir la verdad es dominante
+
+
+Sea m la oferta más alta de los demás. Si gano, pago m: mi oferta sólo
+decide si gano.
+    Me conviene ganar sii vi > m ⇒ ofertar bi = vi logra exactamente eso.
+    bi < vi : pierdo cuando bi < m < vi (resignando vi − m > 0).
+    bi > vi : gano cuando vi < m < bi y pago más de lo que vale: victoria
+    pírrica.
+
+Ventajas                                       Debilidades
+Eficiente: gana quien más valora.              Mostrar la 2.ª oferta al ganador.
+Cada uno sólo evalúa el objeto para sí:        Riesgo de ofertas falsas
+no gasta en estudiar a los rivales.            ¿Tercer precio? No: conviene
+                                               sobreofertar.
+
+
+
+         (UADE)                  Clase 10 — Subastas               Clase 10        6 / 25
+Primer precio: el dilema de rebajar
+
+
+vi ∼ U[0, 1]; los demás ofertan βv :
+                       (︂ b )︂N−1
+          máx (vi − b)
+           b              β
+
+        CPO: b = (N − 1)(vi − b)
+
+
+                          N −1
+             b ∗ (v ) =        v
+                            N
+
+
+
+
+          (UADE)                    Clase 10 — Subastas   Clase 10   7 / 25
+Primer precio: el dilema de rebajar
+
+
+vi ∼ U[0, 1]; los demás ofertan βv :                        b
+                                                                 2.º precio
+                        (︂ b )︂N−1                      1
+           máx (vi − b)                                                          N = 10
+            b              β
+
+         CPO: b = (N − 1)(vi − b)                                                 N =3
+
+                                                                                  N =2
+
+
+                           N −1
+              b ∗ (v ) =        v
+                             N
+General: b ∗ (v ) = E[Y1 | Y1 < v ]                                                  v
+                                                                              1
+(Y1 : valuación más alta de los rivales).
+Más competencia, menos rebaja.
+
+
+
+
+           (UADE)                      Clase 10 — Subastas      Clase 10                   7 / 25
+¿Cuál recauda más? (Vickrey, App. I)
+Con U[0, 1]: E[v(1) ] = N+1
+                         N
+                             , E[v(2) ] = N+1
+                                          N−1
+                                              .
+      er
+    1. precio: E N v(1) = N+1 . 2.º precio: E[v(2) ] = N−1
+                                                        N+1 .
+                 [︁ N−1    ]︁ N−1
+
+    Misma recaudación esperada; misma ganancia de los compradores,
+      1
+    N+1 .
+
+
+
+
+        (UADE)              Clase 10 — Subastas       Clase 10       8 / 25
+¿Cuál recauda más? (Vickrey, App. I)
+Con U[0, 1]: E[v(1) ] = N+1
+                         N
+                             , E[v(2) ] = N+1
+                                          N−1
+                                              .
+      er
+    1. precio: E N v(1) = N+1 . 2.º precio: E[v(2) ] = N−1
+                                                        N+1 .
+                 [︁ N−1    ]︁ N−1
+
+    Misma recaudación esperada; misma ganancia de los compradores,
+      1
+    N+1 .
+       Var(p 2 )
+                 ◦
+                    2N
+             1
+                 =           (ganancia del comprador: N 2 veces)
+       Var(p ) ◦
+                   N −1
+
+
+
+
+        (UADE)              Clase 10 — Subastas        Clase 10      8 / 25
+¿Cuál recauda más? (Vickrey, App. I)
+Con U[0, 1]: E[v(1) ] = N+1
+                         N
+                             , E[v(2) ] = N+1
+                                          N−1
+                                              .
+      er
+    1. precio: E N v(1) = N+1 . 2.º precio: E[v(2) ] = N−1
+                                                        N+1 .
+                 [︁ N−1    ]︁ N−1
+
+    Misma recaudación esperada; misma ganancia de los compradores,
+      1
+    N+1 .
+        Var(p 2 )
+                  ◦
+                     2N
+              1
+                  =               (ganancia del comprador: N 2 veces)
+        Var(p ) ◦
+                    N −1
+
+N =2
+Ofertas v /2. Precio esperado 13 en ambos; varianzas 72 1
+                                                          y 18
+                                                             1
+                                                               .
+Valuaciones 0.8 y 0.3: 1.er precio cobra 0.4; 2.º precio cobra 0.3. Con N = 3:
+E[p] = 12 .
+
+Idea clave
+Rebajar la oferta pero pagar la propia, o decir la verdad pero pagar la del
+rival: con VPI se compensan exactamente.
+         (UADE)                  Clase 10 — Subastas             Clase 10        8 / 25
+El teorema de equivalencia de recaudación
+
+Vickrey (1961); Myerson (1981); Riley y Samuelson (1981)
+VPI, neutrales al riesgo, simétricos. Si en equilibrio (i) gana siempre quien
+más valora y (ii) el tipo más bajo paga cero, la recaudación esperada es
+E[v(2) ] cualquiera sea el mecanismo.
+
+
+
+
+         (UADE)                 Clase 10 — Subastas          Clase 10       9 / 25
+El teorema de equivalencia de recaudación
+
+Vickrey (1961); Myerson (1981); Riley y Samuelson (1981)
+VPI, neutrales al riesgo, simétricos. Si en equilibrio (i) gana siempre quien
+más valora y (ii) el tipo más bajo paga cero, la recaudación esperada es
+E[v(2) ] cualquiera sea el mecanismo.
+
+Autoselección (Milgrom y Weber,                          e
+Fig. 1): cada oferente elige (p, e(p));                           pendiente v   e(p)
+utilidad vp − e.
+     Óptimo: e ′ (p ∗ ) = v .
+    Como la renta de la Clase 8:
+                             ∫︂ v                            p ∗ (v )            p
+  e(p ∗ (v )) = e(p ∗ (0)) +      t dp ∗ (t)
+                                0
+
+Misma asignación + mismo pago del
+tipo bajo ⇒ mismos pagos.
+
+           (UADE)                      Clase 10 — Subastas          Clase 10           9 / 25
+Cuándo falla la equivalencia
+
+    Compradores aversos: en 2.º precio b = v sigue dominante; en 1.er
+    precio rebajan menos (b = N−1+ρ
+                               N−1
+                                    v con u = x ρ ) ⇒ 1.er precio
+    recauda más.
+    Vendedor averso: prefiere menos varianza ⇒ 1.er precio.
+
+
+
+
+       (UADE)               Clase 10 — Subastas         Clase 10   10 / 25
+Cuándo falla la equivalencia
+
+    Compradores aversos: en 2.º precio b = v sigue dominante; en 1.er
+    precio rebajan menos (b = N−1+ρ
+                               N−1
+                                    v con u = x ρ ) ⇒ 1.er precio
+    recauda más.
+    Vendedor averso: prefiere menos varianza ⇒ 1.er precio.
+    Asimetrías: el 1.er precio puede asignar a quien menos valora.
+    Vickrey: v1 ∼ U[0, 1] vs. valor fijo a: la holandesa recauda más si
+    a ≳ 0.43, menos si a ≲ 0.43.
+    Valores afiliados: inglesa ≥ 2.º ≥ 1.er (Milgrom y Weber).
+    Colusión y entrada: la ascendente facilita la colusión y desalienta a
+    los débiles (Klemperer, 2002).
+
+Idea clave
+Como Modigliani–Miller: el teorema dice qué no importa y, por lo tanto,
+dónde buscar lo que sí.
+
+        (UADE)                Clase 10 — Subastas           Clase 10      10 / 25
+Precio de reserva y subasta óptima
+
+N = 2, U[0, 1], segundo precio con reserva
+r:
+         R(r ) = 13 + r 2 − 34 r 3
+    r ∗ = 12 ⇒ R = 12
+                   5
+                      ≈ 0.417 > 13
+
+
+
+
+          (UADE)                 Clase 10 — Subastas   Clase 10   11 / 25
+Precio de reserva y subasta óptima
+
+N = 2, U[0, 1], segundo precio con reserva              R(r )
+r:                                                              5
+                                                                12
+
+         R(r ) = 13 + r 2 − 34 r 3
+                                                        1
+                                                        3
+    r ∗ = 12 ⇒ R = 12
+                   5
+                      ≈ 0.417 > 13                              1
+                                                                                r
+                                                                2
+
+
+
+
+     Beneficio: si sólo uno supera r , paga
+     r.
+     Costo: con prob. 14 no se vende.
+                           ∗
+     Myerson: r ∗ − 1−F  (r )
+                     f (r ∗ ) = v0 ,
+     independiente de N.
+
+Idea clave
+La reserva extrae renta a costa de eficiencia: el mismo dilema del
+monopolista de la Clase 8.
+
+          (UADE)                       Clase 10 — Subastas           Clase 10   11 / 25
+Producción en equipo (Alchian–Demsetz, 1972; Holmström,
+1982)
+
+   Producto conjunto: no se puede atribuir a cada miembro ⇒ free riding.
+   Holmström: con presupuesto equilibrado ( i si (x) = x) ningún
+                                                ∑︁
+   reparto es eficiente: haría falta si′ = 1 para todos.
+
+
+
+
+      (UADE)                Clase 10 — Subastas         Clase 10    12 / 25
+Producción en equipo (Alchian–Demsetz, 1972; Holmström,
+1982)
+
+     Producto conjunto: no se puede atribuir a cada miembro ⇒ free riding.
+     Holmström: con presupuesto equilibrado ( i si (x) = x) ningún
+                                                  ∑︁
+     reparto es eficiente: haría falta si′ = 1 para todos.
+
+Dos socios: x = e1 + e2 , c(e) = e 2 /2
+Eficiente: ei = 1, producto 2, excedente 12 por socio.
+                                       e2
+                                     − 2i ⇒ ei = 21 ; producto 1; utilidad 83 .
+                            ei +ej
+Reparto igualitario: máx      2
+
+
+
+
+          (UADE)                            Clase 10 — Subastas                   Clase 10   12 / 25
+Producción en equipo (Alchian–Demsetz, 1972; Holmström,
+1982)
+
+     Producto conjunto: no se puede atribuir a cada miembro ⇒ free riding.
+     Holmström: con presupuesto equilibrado ( i si (x) = x) ningún
+                                                  ∑︁
+     reparto es eficiente: haría falta si′ = 1 para todos.
+
+Dos socios: x = e1 + e2 , c(e) = e 2 /2
+Eficiente: ei = 1, producto 2, excedente 12 por socio.
+                                 e2
+Reparto igualitario: máx i 2 j − 2i ⇒ ei = 21 ; producto 1; utilidad 83 .
+                         e +e
+
+Contrato forzante: cada uno cobra 1 si x ≥ 2, 0 si no; lo que falte va a un tercero.
+ei = 1 es equilibrio: 1 − 21 = 12 vs. 0 si se desvía.
+
+
+
+
+          (UADE)                      Clase 10 — Subastas             Clase 10         12 / 25
+Producción en equipo (Alchian–Demsetz, 1972; Holmström,
+1982)
+
+     Producto conjunto: no se puede atribuir a cada miembro ⇒ free riding.
+     Holmström: con presupuesto equilibrado ( i si (x) = x) ningún
+                                                  ∑︁
+     reparto es eficiente: haría falta si′ = 1 para todos.
+
+Dos socios: x = e1 + e2 , c(e) = e 2 /2
+Eficiente: ei = 1, producto 2, excedente 12 por socio.
+                                 e2
+Reparto igualitario: máx i 2 j − 2i ⇒ ei = 21 ; producto 1; utilidad 83 .
+                         e +e
+
+Contrato forzante: cada uno cobra 1 si x ≥ 2, 0 si no; lo que falte va a un tercero.
+ei = 1 es equilibrio: 1 − 21 = 12 vs. 0 si se desvía.
+
+     Alchian–Demsetz: un monitor que sea propietario residual (origen de la empresa).
+     Holmström: el principal rompe el presupuesto; debe ser externo (no sabotear).
+     ¿Quién es el propietario residual? Se puede subastar el derecho (concesiones).
+
+
+          (UADE)                      Clase 10 — Subastas             Clase 10         12 / 25
+La maldición del ganador
+    Petróleo del Golfo de México, años ’60: rendimientos muy bajos
+    (Capen, Clapp y Campbell, 1971).
+    El lote vale lo mismo para todos; cada uno lo estima con error; gana
+    quien más sobrestimó.
+
+
+
+
+       (UADE)                Clase 10 — Subastas          Clase 10    13 / 25
+La maldición del ganador
+     Petróleo del Golfo de México, años ’60: rendimientos muy bajos
+     (Capen, Clapp y Campbell, 1971).
+     El lote vale lo mismo para todos; cada uno lo estima con error; gana
+     quien más sobrestimó.
+Xi = V + εi , εi ∼ U[−a, a]
+Cada estimación es insesgada, pero E[máxi Xi | V ] = V + N−1
+                                                          N+1 a.
+Con a = 10: el ganador sobrestima 3.3 (N = 2), 6.7 (N = 5), 8.2 (N = 10).
+
+
+
+
+         (UADE)                 Clase 10 — Subastas          Clase 10       13 / 25
+La maldición del ganador
+     Petróleo del Golfo de México, años ’60: rendimientos muy bajos
+     (Capen, Clapp y Campbell, 1971).
+     El lote vale lo mismo para todos; cada uno lo estima con error; gana
+     quien más sobrestimó.
+Xi = V + εi , εi ∼ U[−a, a]
+Cada estimación es insesgada, pero E[máxi Xi | V ] = V + N−1
+                                                          N+1 a.
+Con a = 10: el ganador sobrestima 3.3 (N = 2), 6.7 (N = 5), 8.2 (N = 10).
+
+     Ofertar pensando en el valor condicional a ganar: 2.º precio
+     ⇒ b ∗ (x) = x − N−2
+                       N a.
+     Laboratorio: frascos de monedas (Bazerman y Samuelson, 1983): los
+     ganadores pierden.
+Idea clave
+Con valor común, ganar es una mala noticia: implica que todos los demás
+estimaron menos.
+         (UADE)                 Clase 10 — Subastas          Clase 10       13 / 25
+Wilson (1969): información dispar
+
+    Dos oferentes, premio de valor v desconocido; a priori común g (v ); señales
+    θi independientes dado v .
+    ν(θ1 , θ2 ) = E[v | θ1 , θ2 ]. Cada uno resuelve
+                               ∫︂ Πj (pi )
+                                             [︁                ]︁
+                        máx                   ν(θi , θj ) − pi fji (θj | θi ) dθj
+                         pi      −∞
+
+    Equilibrio en estrategias puras, caracterizado por ecuaciones diferenciales.
+
+
+
+
+        (UADE)                         Clase 10 — Subastas                           Clase 10   14 / 25
+Wilson (1969): información dispar
+
+    Dos oferentes, premio de valor v desconocido; a priori común g (v ); señales
+    θi independientes dado v .
+    ν(θ1 , θ2 ) = E[v | θ1 , θ2 ]. Cada uno resuelve
+                               ∫︂ Πj (pi )
+                                             [︁                ]︁
+                        máx                   ν(θi , θj ) − pi fji (θj | θi ) dθj
+                         pi      −∞
+
+    Equilibrio en estrategias puras, caracterizado por ecuaciones diferenciales.
+
+Caso normal: a posteriori v | θi ∼ N(θi , s 2 )
+                                                √
+                        pi (θi ) = θi −          π s ≈ θi − 1.77 s
+         Se oferta el fractil 3.8 % de la propia distribución a posteriori.
+
+
+
+
+        (UADE)                         Clase 10 — Subastas                           Clase 10   14 / 25
+Wilson (1969): información dispar
+
+     Dos oferentes, premio de valor v desconocido; a priori común g (v ); señales
+     θi independientes dado v .
+     ν(θ1 , θ2 ) = E[v | θ1 , θ2 ]. Cada uno resuelve
+                                ∫︂ Πj (pi )
+                                              [︁                ]︁
+                         máx                   ν(θi , θj ) − pi fji (θj | θi ) dθj
+                          pi      −∞
+
+     Equilibrio en estrategias puras, caracterizado por ecuaciones diferenciales.
+
+Caso normal: a posteriori v | θi ∼ N(θi , s 2 )
+                                                 √
+                         pi (θi ) = θi −          π s ≈ θi − 1.77 s
+          Se oferta el fractil 3.8 % de la propia distribución a posteriori.
+
+Ej.: estimación 100, desvío 10 ⇒ oferta 82.3. Rebaja = rebaja estratégica del 1.er
+precio + corrección por la maldición; crece con la incertidumbre.
+
+
+         (UADE)                         Clase 10 — Subastas                           Clase 10   14 / 25
+Competencia imperfecta e información
+
+
+
+   Más rivales: con VPI, ofertas más agresivas; con valor común, más
+   corrección. La recaudación puede crecer poco.
+
+
+
+
+      (UADE)               Clase 10 — Subastas         Clase 10    15 / 25
+Competencia imperfecta e información
+
+
+
+   Más rivales: con VPI, ofertas más agresivas; con valor común, más
+   corrección. La recaudación puede crecer poco.
+   El precio agrega información: revela que todas las demás
+   estimaciones eran menores; con muchos oferentes converge a V
+   (Wilson, 1977; Milgrom, 1979).
+
+
+
+
+      (UADE)               Clase 10 — Subastas         Clase 10    15 / 25
+Competencia imperfecta e información
+
+
+
+   Más rivales: con VPI, ofertas más agresivas; con valor común, más
+   corrección. La recaudación puede crecer poco.
+   El precio agrega información: revela que todas las demás
+   estimaciones eran menores; con muchos oferentes converge a V
+   (Wilson, 1977; Milgrom, 1979).
+   Privacidad > precisión: quien comparte su información con otro
+   gana cero; uno peor informado pero con información propia puede
+   ganar. Lotes vecinos (drainage tracts).
+
+
+
+
+      (UADE)               Clase 10 — Subastas         Clase 10      15 / 25
+Competencia imperfecta e información
+
+
+
+   Más rivales: con VPI, ofertas más agresivas; con valor común, más
+   corrección. La recaudación puede crecer poco.
+   El precio agrega información: revela que todas las demás
+   estimaciones eran menores; con muchos oferentes converge a V
+   (Wilson, 1977; Milgrom, 1979).
+   Privacidad > precisión: quien comparte su información con otro
+   gana cero; uno peor informado pero con información propia puede
+   ganar. Lotes vecinos (drainage tracts).
+   Colusión: si los mismos oferentes se enfrentan una y otra vez, un
+   acuerdo puede sostenerse como equilibrio de un juego repetido.
+
+
+
+
+      (UADE)                Clase 10 — Subastas          Clase 10      15 / 25
+Valores afiliados
+
+     ¿Por qué más del 75 % de las subastas del mundo son ascendentes
+     (Cassady, 1967)?
+     Modelo general: Vi = u(S, Xi , {Xj }j̸=i ). VPI y valor común son casos
+     particulares.
+
+Afiliación
+                       f (z ∨ z ′ ) f (z ∧ z ′ ) ≥ f (z) f (z ′ )
+  Valores altos de unas variables hacen más probables valores altos de las otras.
+
+
+
+
+         (UADE)                    Clase 10 — Subastas              Clase 10   16 / 25
+Valores afiliados
+
+     ¿Por qué más del 75 % de las subastas del mundo son ascendentes
+     (Cassady, 1967)?
+     Modelo general: Vi = u(S, Xi , {Xj }j̸=i ). VPI y valor común son casos
+     particulares.
+
+Afiliación
+                       f (z ∨ z ′ ) f (z ∧ z ′ ) ≥ f (z) f (z ′ )
+  Valores altos de unas variables hacen más probables valores altos de las otras.
+
+Sea v (x, y ) = E[V1 | X1 = x, Y1 = y ].
+     2.º precio (T. 6): b ∗ (x) = v (x, x) — lo que valdría si empatara con el más
+     fuerte.
+     Inglesa (T. 10): seguir hasta la indiferencia usando los precios de retiro de
+     los demás.
+     1.er precio (T. 14): b ∗ (x) = v (a, a) dL(a | x).
+                                   ∫︁
+
+
+         (UADE)                    Clase 10 — Subastas              Clase 10    16 / 25
+Orden de recaudación y principio de vinculación
+
+Teoremas 11 y 15
+      E[p]inglesa ≥ E[p]2.º precio ≥ E[p]1.er precio = E[p]holandesa
+
+             Inglesa                 2.º precio             1.er precio = holandesa
+         precio ligado a    ≥   ligado a la 2.ª señal   ≥     sólo la propia oferta
+        todas las señales
+
+
+
+
+       (UADE)                   Clase 10 — Subastas                   Clase 10        17 / 25
+Orden de recaudación y principio de vinculación
+
+Teoremas 11 y 15
+       E[p]inglesa ≥ E[p]2.º precio ≥ E[p]1.er precio = E[p]holandesa
+
+              Inglesa                 2.º precio             1.er precio = holandesa
+          precio ligado a    ≥   ligado a la 2.ª señal   ≥     sólo la propia oferta
+         todas las señales
+
+
+
+    Linkage principle: cuanto más vinculado está el precio a variables afiliadas
+    con la señal del ganador, menor su renta informacional.
+    En la inglesa se aprende de los que se retiran: la maldición se atenúa y se
+    oferta más.
+
+
+
+
+        (UADE)                   Clase 10 — Subastas                   Clase 10        17 / 25
+Orden de recaudación y principio de vinculación
+
+Teoremas 11 y 15
+         E[p]inglesa ≥ E[p]2.º precio ≥ E[p]1.er precio = E[p]holandesa
+
+               Inglesa                 2.º precio             1.er precio = holandesa
+           precio ligado a    ≥   ligado a la 2.ª señal   ≥     sólo la propia oferta
+          todas las señales
+
+
+
+     Linkage principle: cuanto más vinculado está el precio a variables afiliadas
+     con la señal del ganador, menor su renta informacional.
+     En la inglesa se aprende de los que se retiran: la maldición se atenúa y se
+     oferta más.
+
+La honestidad es la mejor política (T. 8, 9, 13, 16, 17)
+Revelar la tasación del vendedor X0 no reduce, y en general aumenta, la
+recaudación. Revelar sólo lo favorable no sirve: el silencio se lee como mala
+noticia (limones, Clase 8).
+
+         (UADE)                   Clase 10 — Subastas                   Clase 10        17 / 25
+Otros resultados de Milgrom y Weber
+
+
+    Con reserva fija, el orden de recaudación se mantiene.
+    A igual nivel de exclusión: mejor derecho de entrada alto y reserva
+    baja (T. 19).
+    Aversión al riesgo: 1.er vs. 2.º ya no se ordenan; con CARA siguen
+    valiendo inglesa ≥ 2.º y la revelación (T. 20–21).
+    Puede explicar por qué las casas de subastas de prestigio usan
+    subastas ascendentes y publican tasaciones de expertos.
+
+Idea clave
+Con información correlacionada los formatos dejan de ser equivalentes:
+vincular el precio a la información de todos aumenta la recaudación.
+
+
+
+        (UADE)                Clase 10 — Subastas            Clase 10     18 / 25
+El economista como ingeniero
+
+
+   Market design (Roth, 2002): teoría + experimentos para construir
+   instituciones.
+   Subastas y matching sin precios: residentes–hospitales, escuelas,
+   riñones (Gale y Shapley, 1962).
+   Nobel 2012: Roth y Shapley. Nobel 2020: Milgrom y Wilson (teoría de
+   subastas y nuevos formatos).
+
+
+
+
+       (UADE)                Clase 10 — Subastas          Clase 10     19 / 25
+El economista como ingeniero
+
+
+    Market design (Roth, 2002): teoría + experimentos para construir
+    instituciones.
+    Subastas y matching sin precios: residentes–hospitales, escuelas,
+    riñones (Gale y Shapley, 1962).
+    Nobel 2012: Roth y Shapley. Nobel 2020: Milgrom y Wilson (teoría de
+    subastas y nuevos formatos).
+Varias unidades idénticas (Vickrey, secs. IV–V)
+    Demanda unitaria: precio uniforme = primera oferta rechazada ⇒ ofertar el
+    valor; eficiente.
+    Última oferta aceptada o pay-as-bid: vuelven los incentivos a rebajar.
+    Sucesivas: 1.a unidad se oferta N−2
+                                    N−1 v ; precio esperado N+1 en ambas.
+                                                            N−2
+
+
+
+
+        (UADE)                  Clase 10 — Subastas             Clase 10     19 / 25
+Demanda múltiple: reducción de demanda
+Vickrey: un oferente de varias unidades trae una “colusión incorporada”.
+
+
+Dos unidades, precio uniforme = primera oferta rechazada
+A valora dos unidades en 10 c/u; B quiere una, valor 6.
+
+              Ofertas de A    Asignación      Precio    Excedente de A
+
+              (10, 10)           A: 2            6       20 − 12 = 8
+              (10, 0)         A: 1, B: 1         0       10 − 0 = 10
+
+Reducir demanda conviene: ineficiente y el vendedor recauda 0.
+
+
+
+
+          (UADE)                  Clase 10 — Subastas              Clase 10   20 / 25
+Demanda múltiple: reducción de demanda
+Vickrey: un oferente de varias unidades trae una “colusión incorporada”.
+
+
+Dos unidades, precio uniforme = primera oferta rechazada
+A valora dos unidades en 10 c/u; B quiere una, valor 6.
+
+              Ofertas de A    Asignación      Precio    Excedente de A
+
+              (10, 10)           A: 2            6       20 − 12 = 8
+              (10, 0)         A: 1, B: 1         0       10 − 0 = 10
+
+Reducir demanda conviene: ineficiente y el vendedor recauda 0.
+
+     Mecanismo de Vickrey: cada ganador paga el valor que su victoria quita a
+     los demás ⇒ A paga 6 por las dos y ofertar la verdad vuelve a ser dominante.
+     Tesoro argentino: “sistema holandés de precio único” = sobre cerrado de
+     precio uniforme (no descendente); precio = última oferta aceptada; tramo
+     no competitivo.
+
+          (UADE)                  Clase 10 — Subastas              Clase 10   20 / 25
+Espectro radioeléctrico
+
+    Licencias complementarias: el paquete vale más que las partes ⇒
+    problema de exposición.
+    FCC (desde 1994): subasta ascendente simultánea (Milgrom, Wilson,
+    McAfee): todo se subasta a la vez, en rondas; nada cierra hasta que
+    no hay ofertas; reglas de actividad.
+    Variantes: reloj combinatorio, subasta incentiva (2016–17). Banda C
+    (2021): >US$80.000 millones.
+
+
+
+
+       (UADE)                Clase 10 — Subastas         Clase 10     21 / 25
+Espectro radioeléctrico
+
+     Licencias complementarias: el paquete vale más que las partes ⇒
+     problema de exposición.
+     FCC (desde 1994): subasta ascendente simultánea (Milgrom, Wilson,
+     McAfee): todo se subasta a la vez, en rondas; nada cierra hasta que
+     no hay ofertas; reglas de actividad.
+     Variantes: reloj combinatorio, subasta incentiva (2016–17). Banda C
+     (2021): >US$80.000 millones.
+
+Argentina, subasta 4G (31/10/2014)
+Diez lotes (700 MHz y AWS); Claro, Movistar, Personal y Arlink; ≈US$2.233
+millones.
+Bloque reservado para un entrante: Arlink lo obtuvo al precio mínimo (pasó a
+ARSAT en 2015).
+Menos recaudación hoy a cambio de competencia mañana.
+
+
+         (UADE)                 Clase 10 — Subastas            Clase 10        21 / 25
+Comprar a un desconocido
+
+
+   Selección adversa: ¿es original? (limones, Clase 8). Riesgo moral:
+   ¿enviará a tiempo? (Clase 7).
+   Reputación: la historia del vendedor, visible para todos ⇒ juego
+   repetido (Spence, Clase 9).
+
+
+
+
+       (UADE)                Clase 10 — Subastas          Clase 10      22 / 25
+Comprar a un desconocido
+
+
+   Selección adversa: ¿es original? (limones, Clase 8). Riesgo moral:
+   ¿enviará a tiempo? (Clase 7).
+   Reputación: la historia del vendedor, visible para todos ⇒ juego
+   repetido (Spence, Clase 9).
+   eBay: > 99 % de calificaciones positivas (reciprocidad, represalias) (Resnick
+   y Zeckhauser, 2002). Experimento: la trayectoria vale ≈ 8 % de sobreprecio
+   (Resnick et al., 2006).
+   Primera calificación negativa: caen las ventas y aumenta la salida (Cabral y
+   Hortaçsu, 2010): señal y disciplina.
+   Agente que puja por uno ≈ 2.º precio; sniping mucho mayor con cierre fijo
+   que con cierre extendido (Roth y Ockenfels, 2002).
+
+
+
+
+       (UADE)                  Clase 10 — Subastas             Clase 10      22 / 25
+Diseño de sistemas de reputación
+
+    Problema                      Respuesta de diseño
+
+    Represalias, notas infladas   calificación simultánea y ciega (Airbnb)
+    Opiniones falsas              sólo compradores verificados
+    Cambio de identidad           costo de entrada; los nuevos sin historia
+    Notas subjetivas              métricas objetivas de desempeño
+    No recibir el producto        pago retenido hasta la entrega (escrow)
+
+
+
+
+        (UADE)                      Clase 10 — Subastas                   Clase 10   23 / 25
+Diseño de sistemas de reputación
+
+     Problema                      Respuesta de diseño
+
+     Represalias, notas infladas   calificación simultánea y ciega (Airbnb)
+     Opiniones falsas              sólo compradores verificados
+     Cambio de identidad           costo de entrada; los nuevos sin historia
+     Notas subjetivas              métricas objetivas de desempeño
+     No recibir el producto        pago retenido hasta la entrega (escrow)
+
+
+
+MercadoLibre
+Termómetro del rojo al verde según reclamos, cancelaciones y demoras; categoría
+MercadoLíder. Métricas de comportamiento, no opiniones: reduce la reciprocidad.
+El pago retenido atenúa el riesgo moral.
+
+Idea clave
+La reputación es señal (separa tipos) e incentivo (disciplina el esfuerzo).
+Diseñarla es diseño de mercados.
+         (UADE)                      Clase 10 — Subastas                   Clase 10   23 / 25
+Cuadro comparativo
+
+
+                        Valores privados indep.              Valor común / afiliados
+
+   2.º precio           ofertar el valor (dominante)         b ∗ (x) = v (x, x)
+   1.er precio          b ∗ (v ) = E[Y1 | Y1 < v ]           rebaja + corrección (Wilson)
+   Recaudación          equivalencia                         inglesa ≥ 2.º ≥ 1.er
+   Más oferentes        ofertas más agresivas                más corrección por la maldición
+   Info. del vendedor   irrelevante                          revelarla aumenta la recaudación
+   Referencia           Vickrey (1961)                       Wilson (1969); Milgrom y Weber
+                                                             (1982)
+
+
+Una subasta hace competir a quienes saben: con valores privados el
+formato no cambia la recaudación esperada; con información
+correlacionada, vincular el precio a la información de todos sí la cambia.
+
+
+
+          (UADE)                       Clase 10 — Subastas                        Clase 10      24 / 25
+        Bibliografía: Vickrey (1961); Wilson (1969); Milgrom & Weber (1982).
+Complementaria: Alchian & Demsetz (1972); Bazerman & Samuelson (1983); Cabral &
+  Hortaçsu (2010); Capen, Clapp & Campbell (1971); Holmström (1982); Klemperer
+(2002); Milgrom (2004); Myerson (1981); Resnick & Zeckhauser (2002); Resnick et al.
+     (2006); Riley & Samuelson (1981); Roth (2002); Roth & Ockenfels (2002).
+
+
+
+
+         (UADE)                  Clase 10 — Subastas             Clase 10      25 / 25
+

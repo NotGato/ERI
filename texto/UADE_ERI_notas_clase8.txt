@@ -1,0 +1,1278 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                      Notas de Clase 8
+                       Unidad VIII — El problema de la selección adversa
+
+
+
+                     Macho Stadler & Pérez Castrillo (1994), cap. 4; Akerlof (1970)
+
+
+
+                                                 Resumen
+
+       En la Clase 7 la información asimétrica aparecía después de firmar el contrato: el agente
+       elegía una acción que el principal no podía verificar. Estas notas estudian el caso en que
+       la asimetría existe antes de firmar: el agente conoce una característica propia (su costo, su
+       productividad, su riesgo, la calidad de lo que vende) que el principal ignora. Es el problema
+       de selección adversa. Comenzamos con el mercado de “limones” de Akerlof (1970), que
+       muestra que la información privada puede hacer desaparecer un mercado, y presentamos la
+       secuencia temporal del problema. Luego resolvemos el modelo con dos tipos de agente
+       de Macho Stadler y Pérez Castrillo: el principal ofrece un menú de contratos autoseleccionable,
+       el agente eficiente obtiene una renta informacional y el contrato del agente ineficiente se
+       distorsiona para abaratar esa renta. Representamos la solución gráficamente y analizamos
+       los incentivos que la generan. Tercero, estudiamos qué cambia cuando varios principales
+       compiten por los agentes (Rothschild y Stiglitz, 1976): no hay equilibrios agrupadores, el
+       equilibrio, si existe, es separador, y puede no existir. Cuarto, extendemos el modelo a un
+       continuo de tipos, con la condición de cruce único y el costo virtual. Cerramos con las
+       aplicaciones de Akerlof (seguros de salud, costo de la deshonestidad, crédito en países en
+       desarrollo) y con las instituciones correctoras: garantías, marcas, cadenas, licencias y
+       seguros obligatorios.
+
+
+
+1.     El problema de la selección adversa
+
+1.1.    Información privada antes de firmar
+
+Muchas veces el problema más serio de una relación contractual no es lo que el agente hará
+después de firmar, sino lo que ya sabe antes. Quien contrata a un carpintero para reformar su
+casa sabe qué tarea quiere, pero no conoce la habilidad, la prolijidad ni el cuidado del carpintero.
+Un abogado conoce mejor que su cliente su propio interés y capacidad para el caso; un conductor
+sabe más que su aseguradora sobre sus hábitos al volante; una empresa conoce mejor que el
+gobierno los costos de un proyecto (Macho Stadler y Pérez Castrillo, sec. 4.1).
+
+Definición 1.1 (Selección adversa). Hay selección adversa cuando, antes de firmar el contrato,
+el agente tiene información privada sobre alguna variable relevante para la relación —su tipo— y
+el principal sólo conoce la distribución de probabilidad de esos tipos. El esfuerzo u otras acciones
+pueden ser verificables; lo que el principal no observa es quién es el agente.
+
+La información privada no tiene por qué referirse a características personales. Una empresa
+que compra la licencia de una tecnología suele saber más que el dueño de la patente sobre la
+rentabilidad del mercado donde la usará; una empresa regulada sabe más que el regulador sobre
+su demanda y sus costos. En todos los casos, la información sólo se revela si al agente le conviene
+revelarla.
+
+                                                     1
+1.2.   El mercado de “limones”
+
+El artículo pionero de esta literatura es Akerlof (1970). En el mercado de autos usados conviven
+vehículos de calidades muy distintas: algunos se venden porque su dueño quiere uno mejor,
+otros porque tuvieron un accidente grave o fueron autos de alquiler. Quien vendió el auto lo usó
+durante años; el comprador sólo puede mirarlo y probarlo un rato. Los vendedores saben mucho
+más que los compradores sobre la calidad. Los autos malos se llaman, en Estados Unidos, lemons
+(“limones”).
+
+
+La ley de Gresham, modificada. Akerlof parte de una observación: la gran diferencia de
+precio entre un auto nuevo y uno que acaba de salir de la concesionaria. Un auto nuevo puede
+ser bueno o malo, y nadie lo sabe al comprarlo. Después de usarlo, el dueño sí lo sabe. Si un
+auto usado se pagara igual que uno nuevo, convendría vender los limones y comprar otro nuevo.
+Por eso los autos usados, buenos y malos, se venden al mismo precio, que no puede ser el de un
+auto bueno: el dueño de un buen auto queda “atrapado”. Los autos malos tienden a expulsar del
+mercado a los buenos, como la moneda mala desplaza a la buena. La analogía no es completa:
+en la ley de Gresham, comprador y vendedor distinguen la moneda buena de la mala; aquí sólo
+el vendedor distingue.
+
+
+Un continuo de calidades. Siguiendo a Macho Stadler y Pérez Castrillo, sea κ ∈ [0, 1] la
+calidad de un auto, con distribución uniforme. Comprador y vendedor son neutrales al riesgo.
+El vendedor está dispuesto a vender un auto de calidad κ a un precio mayor o igual que p0 κ; el
+comprador lo valora en p1 κ, con p1 = 32 p0 . Con información simétrica todos los autos se venden,
+a algún precio entre p0 κ y p1 κ: todo intercambio genera ganancias.
+Con información asimétrica, el comprador que observa un precio P razona como un bayesiano: a
+ese precio sólo se ofrecen los autos que el vendedor valora en a lo sumo P , es decir, las calidades
+κ ≤ P/p0 . La calidad media de lo que se ofrece es entonces
+                                                       P
+                                           κ̄(P ) =       ,                                     (1)
+                                                      2p0
+y el comprador obtiene, en promedio, p1 κ̄(P ) = 43 P < P . Ningún comprador está dispuesto
+a pagar P , cualquiera sea P > 0: sólo P = 0, con la certeza de llevarse la peor calidad. El
+mercado desaparece, aunque para cada auto existe un comprador que lo valora más que su
+dueño (Figura 1).
+Akerlof plantea el mismo argumento con dos grupos de agentes con utilidad lineal. El grupo 1
+posee N autos de calidad x uniforme en [0, 2] y valora cada auto en x; el grupo 2 no tiene autos
+y los valora en 32 x. A un precio p, el grupo 1 ofrece los autos con x ≤ p, de calidad media
+µ = p/2, y el grupo 2 sólo compra si 32 µ ≥ p, es decir, si 43 p ≥ p. No hay intercambio a ningún
+precio, aunque a cualquier precio entre 0 y 3 hay vendedores dispuestos a vender a compradores
+dispuestos a pagar. Con información simétrica, en cambio, cada auto pasaría a manos de quien
+más lo valora y la ganancia sería de 12 unidad de utilidad por auto (si el grupo 2 tiene ingreso
+suficiente): N/2 en total.
+
+  Idea clave. La calidad media de lo que se ofrece depende del precio. Un precio más bajo
+  expulsa primero a los mejores vendedores; un comprador racional lo sabe y paga menos. El
+  resultado puede ser una espiral en la que lo malo expulsa a lo menos malo, que expulsa a lo
+  regular. . . hasta que no queda mercado.
+
+Ejemplo 1.1 (Dos calidades). Una fracción q de los autos usados es buena y 1 − q son limones.
+Un vendedor valora un auto bueno en 100 y un limón en 40; un comprador los valora en 120
+
+                                                 2
+                    pesos
+
+                                                                 P : lo que se paga
+
+
+
+                                                                 p1 κ̄(P ) = 34 P : lo que vale en promedio
+
+
+
+                                              pérdida esperada
+
+
+
+
+                                                            p0
+                                                                      precio P
+                                          P
+
+
+Figura 1: El mercado de limones (Akerlof, 1970; versión de Macho Stadler y Pérez Castrillo,
+sec. 4.1). Cuando sube el precio, también sube la calidad media de lo que se ofrece, pero menos:
+a cualquier precio positivo, el comprador paga más de lo que espera recibir.
+
+
+y 50. Hay muchos compradores, de modo que el precio se iguala a la valoración esperada del
+comprador.
+Si se venden ambos tipos, el comprador paga 120q + 50(1 − q) = 50 + 70q. Los dueños de autos
+buenos venden sólo si 50 + 70q ≥ 100, es decir, si q ≥ 5/7 ≈ 0.71.
+
+   Si q ≥ 5/7, hay un equilibrio agrupador : todos los autos se venden al mismo precio. Los dueños
+   de limones ganan a costa de los de autos buenos, pero no se pierde ningún intercambio.
+   Si q < 5/7, los autos buenos no se ofrecen. Los compradores lo anticipan y pagan 50: sólo se
+   venden limones. Se pierden las ganancias de intercambio de los autos buenos, 120 − 100 = 20
+   por auto.
+
+Con q = 12 , por ejemplo, el precio agrupador sería 85 < 100: el mercado de autos buenos
+desaparece aunque la mitad de los autos sean buenos.
+
+
+1.3.      Secuencia temporal
+
+La Figura 2 muestra el juego que estudiaremos en la Sección 2. A diferencia del riesgo moral, la
+primera jugada es de la naturaleza, que elige el tipo del agente; el agente lo observa y el principal
+no. Luego el principal diseña el contrato, sin saber con qué tipo trata.
+
+                                                                                                                   t
+       N elige el tipo       P diseña     A acepta            A realiza          N determina           Resultado
+       de A (sólo A         el contrato   o rechaza          el esfuerzo          el estado             y pagos
+        lo observa)         (un menú)     (elige un         (verificable)
+                                          contrato)
+
+
+Figura 2: Secuencia temporal de la selección adversa (Macho Stadler y Pérez Castrillo, Fig. 4.1).
+
+Comparemos con las Clases 6 y 7:
+
+
+
+
+                                                        3
+                                   Info. simétrica (VI)       Riesgo moral (VII)         Selección adversa (VIII)
+
+ ¿Qué ignora P ?                           nada                  la acción de A                  el tipo de A
+ ¿Cuándo surge la asimetría?                —                  después de firmar                antes de firmar
+ ¿Es verificable el esfuerzo?               sí                        no                                sí
+
+Observación 1.1 (Selección adversa y señalización). En el modelo de esta clase es la parte no
+informada (el principal) la que diseña el contrato para que el agente revele su tipo: se habla
+de screening o tamizado. Si la parte informada mueve primero y ofrece algo —por ejemplo, el
+vendedor de un buen auto que ofrece una garantía, o un trabajador que invierte en educación—,
+el contrato puede funcionar como una señal.
+
+
+2.     El modelo con dos tipos de agente
+
+2.1.    Supuestos
+
+Retomamos el marco de la Clase 6 (Macho Stadler y Pérez Castrillo, sec. 4.2). Un principal
+neutral al riesgo contrata a un agente para que realice un  ∑︁esfuerzo e, que es verificable. El
+esfuerzo genera al principal un beneficio esperado Π(e) = i pi (e)xi , con Π′ > 0 y Π′′ < 0. El
+agente puede ser de dos tipos, que sólo difieren en la desutilidad del esfuerzo:
+
+                   U G (w, e) = u(w) − v(e),        U B (w, e) = u(w) − k v(e),                k > 1.             (2)
+
+El tipo G (bueno) se esfuerza a menor costo; el tipo B (malo) exige más salario por el mismo
+esfuerzo. Ambos tienen la misma utilidad de reserva U . El principal cree que el agente es de tipo
+G con probabilidad q ∈ (0, 1).
+
+
+2.2.    El punto de referencia: información simétrica
+
+Si el principal conoce el tipo, resuelve para cada uno el problema de la Clase 6. Con el tipo G,
+
+                                   máx Π(e) − w     s.a. u(w) − v(e) ≥ U ,
+                                    e,w
+
+y el contrato óptimo (eG∗ , wG∗ ) queda caracterizado por
+
+                                                                              v ′ (eG∗ )
+                                u(wG∗ ) − v(eG∗ ) = U ,        Π′ (eG∗ ) =               .                        (3)
+                                                                              u′ (wG∗ )
+La primera condición es la participación; la segunda, la condición de eficiencia: la tasa mar-
+ginal de sustitución entre esfuerzo y salario del agente iguala la del principal. Para el tipo B,
+
+                                                                              k v ′ (eB∗ )
+                            u(wB∗ ) − k v(eB∗ ) = U ,           Π′ (eB∗ ) =                .                      (4)
+                                                                              u′ (wB∗ )
+
+Al tipo al que el esfuerzo le cuesta menos se le pide más: eG∗ > eB∗ . Los salarios, en cambio, no
+tienen un orden definido: a igual esfuerzo B exige más, pero se le pide menos esfuerzo.
+
+
+2.3.    Por qué el contrato de información simétrica deja de servir
+
+Si el principal no observa el tipo y ofrece los dos contratos anteriores dejando que el agente elija,
+el tipo B elige el suyo, pero el tipo G también elige el de B:
+
+          U G (wB∗ , eB∗ ) = u(wB∗ ) − v(eB∗ ) > u(wB∗ ) − k v(eB∗ ) = U = U G (wG∗ , eG∗ ).
+
+                                                          4
+El contrato de B compensa un esfuerzo que a G le cuesta menos. Haciéndose pasar por B, el
+agente bueno obtiene más que su utilidad de reserva. Como en el riesgo moral, los contratos de
+información simétrica no son óptimos con información asimétrica. Notemos quién tiene incentivos
+a mentir: el agente eficiente quiere hacerse pasar por ineficiente, no al revés.
+
+
+2.4.     El menú de contratos y el principio de revelación
+
+¿Qué puede hacer el principal? Podría ofrecer un único contrato para ambos tipos, pero en general
+puede hacerlo mejor con un menú de contratos {(eG , wG ), (eB , wB )}: es como decirle al agente
+“tengo estos contratos, uno para cada tipo; decime de qué tipo sos y te doy el que corresponde”.
+El contrato único es un caso particular, con los dos contratos iguales. Para que el menú funcione,
+cada tipo debe preferir el contrato diseñado para él: el menú debe ser autoseleccionable.
+Los menús son comunes: los empleadores ofrecen distintas modalidades de contratación y las
+aseguradoras, distintas pólizas, para que cada cliente elija la que más le conviene.
+Teorema 2.1 (Principio de revelación). En la búsqueda del contrato óptimo, el principal puede
+restringirse, sin pérdida de generalidad, a menús con un contrato por tipo en los que a cada tipo
+le convenga revelar la verdad (mecanismos directos y veraces).
+
+La intuición es simple. Si el principal usara un mecanismo más complicado —preguntarle al
+agente por sus gastos, sus pasatiempos o sus opiniones para deducir de allí su tipo mediante
+una regla conocida—, el agente tendría exactamente los mismos incentivos a manipular esas
+respuestas que a mentir directamente sobre su tipo. Cualquier resultado que se obtenga con un
+mecanismo indirecto puede obtenerse preguntando directamente el tipo y ofreciendo los contratos
+que ese mecanismo asignaría (Gibbard, 1973; Myerson, 1979). Y ofrecer tres contratos a dos tipos
+es inútil: alguno no lo elegiría nadie.
+
+
+2.5.     El problema del principal
+
+El principal resuelve
+
+                                            q Π(eG ) − wG + (1 − q) Π(eB ) − wB
+                                             [︁          ]︁        [︁           ]︁
+                            máx
+                      (eG ,wG ),(eB ,wB )
+
+                                    s.a. u(wG ) − v(eG ) ≥ U                               (PCG )
+                                               B          B
+                                            u(w ) − k v(e ) ≥ U                            (PCB )
+                                            u(wG ) − v(eG ) ≥ u(wB ) − v(eB )               (ICG )
+                                               B          B         G           G
+                                            u(w ) − k v(e ) ≥ u(w ) − k v(e )               (ICB )
+
+Las dos primeras son las restricciones de participación; las dos últimas, las de autoselección
+o compatibilidad de incentivos: cada tipo prefiere su contrato al del otro.
+Antes de resolver, tres observaciones simplifican el problema.
+
+(i) Sólo importa la participación del tipo malo. (PCG ) se deduce de (ICG ) y (PCB ):
+
+                     u(wG ) − v(eG ) ≥ u(wB ) − v(eB ) ≥ u(wB ) − k v(eB ) ≥ U .
+
+       Si el tipo bueno no quiere hacerse pasar por malo, y el malo acepta su contrato, el bueno
+       también obtiene al menos U : imitando al malo tendría lo mismo con menos desutilidad.
+(ii) Al tipo bueno se le pide más esfuerzo. Sumando (ICG ) y (ICB ),
+
+                   v(eG ) − v(eB ) ≤ u(wG ) − u(wB ) ≤ k v(eG ) − v(eB ) ,
+                                                        [︁              ]︁
+                                                                                               (5)
+
+                                                      5
+       que con k > 1 exige v(eG ) ≥ v(eB ), es decir, eG ≥ eB . Y el tipo bueno cobra más: nadie
+       elegiría un contrato con más esfuerzo y menos salario.
+(iii) Sólo una restricción de autoselección se satura. Si eG > eB , las dos desigualdades de
+      (5) no pueden ser igualdades a la vez. La que se satura es (ICG ): quien tiene incentivos a
+      mentir es el tipo bueno.
+
+
+2.6.     El menú óptimo
+
+Proposición 2.1 (Menú óptimo; Resultado 4.1). El menú óptimo {(eG , wG ), (eB , wB )} queda
+caracterizado por
+
+                        u(wB ) − k v(eB ) = U ,                                                    (6)
+                             G        G                      B
+                         u(w ) − v(e ) = U + (k − 1) v(e ),                                        (7)
+                                            v ′ (eG )
+                                  Π′ (eG ) =          ,                                            (8)
+                                            u′ (wG )
+                                            k v ′ (eB )  q (k − 1) v ′ (eB )
+                                  Π′ (eB ) = ′ B +                           .                     (9)
+                                             u (w )     1−q   u′ (wG )
+
+Los resultados 4.1 a 4.3 corresponden a Macho Stadler y Pérez Castrillo (cap. 4). La demos-
+tración, con los multiplicadores de Kuhn–Tucker, está en el Anexo A. Cada ecuación tiene una
+interpretación clara.
+
+   (6): el tipo malo obtiene exactamente su utilidad de reserva. Nadie quiere hacerse pasar
+   por él. . . salvo el tipo bueno, que no obtiene nada imitándolo si el contrato de B no deja
+   renta.
+   (7): el tipo bueno obtiene una renta informacional (k − 1) v(eB ) por encima de U . Es lo
+   que ganaría haciéndose pasar por malo: realizar eB le cuesta v(eB ) en lugar de k v(eB ). La
+   renta no es un premio a la eficiencia: es el precio de que revele su tipo.
+   (8): no hay distorsión en la cima. El contrato del tipo bueno cumple la condición de
+   eficiencia. Si el agente es neutral al riesgo, u′ es constante y eG = eG∗ . Si es averso, el salario
+   wG difiere de wG∗ (incluye la renta) y el esfuerzo también puede diferir, pero el contrato sigue
+   siendo eficiente.
+   (9): el esfuerzo del tipo malo se distorsiona hacia abajo. El segundo término del lado
+   derecho actúa como un costo adicional: cada unidad de esfuerzo pedida a B aumenta la renta
+   que hay que pagarle a G, en (k − 1)v ′ (eB ), y eso ocurre con probabilidad relativa q/(1 − q).
+
+   Idea clave. Con selección adversa el principal enfrenta un trade-off entre eficiencia y
+   renta informacional. Para que el agente bueno revele su tipo debe dejarle una renta igual
+   a lo que ganaría imitando al malo. Para achicar esa renta, vuelve menos atractivo el contrato
+   del malo pidiéndole menos esfuerzo del eficiente. El contrato del bueno no se distorsiona; el
+   del malo sí.
+
+
+2.7.     Un ejemplo numérico
+
+Ejemplo 2.1 (Menú óptimo con agente neutral). Sea Π(e) = 6e, u(w) = w, v(e) = e2 /2, k = 2
+y U = 0. El tipo bueno tiene costo e2 /2 y el malo, e2 .
+
+
+
+                                                  6
+Información simétrica. Con u′ = 1, la condición de eficiencia es Π′ (e) = k v ′ (e):
+
+       tipo G : 6 = e ⇒ eG∗ = 6, wG∗ = 18;               tipo B : 6 = 2e ⇒ eB∗ = 3, wB∗ = 9.
+
+El principal gana 36 − 18 = 18 con el tipo bueno y 18 − 9 = 9 con el malo.
+¿Por qué no funciona con información asimétrica? Con el contrato (3, 9) el tipo bueno obtiene
+9 − 29 = 4.5 > 0, más que con el suyo.
+Menú óptimo. Por (8), eG = 6. La ecuación (9) con u′ = 1 queda
+
+                                         q                             6(1 − q)
+                            6 = 2eB +       eB          =⇒      eB =            .
+                                        1−q                             2−q
+
+Con q = 12 : eB = 2. Por (6), wB = k v(eB ) = 4; la renta del tipo bueno es (k − 1)v(eB ) = 2 y,
+por (7), wG = 18 + 2 = 20:
+
+                            (eG , wG ) = (6, 20),        (eB , wB ) = (2, 4) .
+
+Verificación. El tipo bueno obtiene 20 − 18 = 2 con su contrato y 4 − 2 = 2 imitando al malo
+(indiferente: (ICG ) saturada). El malo obtiene 4 − 4 = 0 con el suyo y 20 − 36 = −16 con el del
+bueno ((ICB ) holgada).
+Beneficios. 36 − 20 = 16 con el bueno y 12 − 4 = 8 con el malo: en promedio, 12, contra 13.5
+con información simétrica. La pérdida de 1.5 tiene dos componentes: la renta pagada al bueno
+( 21 · 2 = 1) y la ineficiencia en el contrato del malo ( 12 [(18 − 9) − (12 − 4)] = 0.5).
+
+La distorsión depende de la proporción de tipos buenos:
+
+                        q                           0    0.25    0.5    0.75   →1
+
+                        eB = 6(1 − q)/(2 − q)       3    2.57     2      1.2   →0
+                        Renta de G, (eB )2 /2    4.5     3.31     2     0.72   →0
+
+
+Si casi todos los agentes son malos (q → 0), distorsionar su contrato es caro y la renta se paga
+rara vez: eB se acerca al eficiente. Si casi todos son buenos (q → 1), conviene distorsionar mucho
+el contrato de los pocos malos para casi no pagar renta.
+
+
+2.8.    Análisis gráfico
+
+En el plano (esfuerzo, salario), la curva de indiferencia de cada tipo al nivel U es w = u−1 (U +v(e))
+para G y w = u−1 (U + k v(e)) para B: la de B es más empinada, porque necesita más salario por
+cada unidad de esfuerzo. Esta propiedad —las curvas de indiferencia de los dos tipos se cortan
+una sola vez — es la condición de cruce único, que volveremos a encontrar en la Sección 4.
+Las curvas de isobeneficio del principal son w = Π(e) − cte. El principal prefiere los contratos
+más bajos (menos salario); el agente, los más altos y a la izquierda (más salario, menos esfuerzo).
+La Figura 3 muestra cómo se construye el menú. Partamos de los contratos simétricos G∗ y B ∗ .
+Para que el bueno no elija B ∗ , el principal podría dejar B ∗ como está y subir el salario del bueno
+hasta la curva punteada: le pagaría una renta de 4.5. Pero puede hacerlo mejor moviendo también
+el contrato del malo: al bajar B ∗ a lo largo de la curva de reserva de B hacia B ′ , la indiferencia
+de G que pasa por el contrato del malo baja, y con ella la renta que hay que dejarle al bueno. El
+costo es que el contrato del malo se aleja de la tangencia con la isobeneficio: se vuelve ineficiente.
+
+
+
+                                                    7
+              w
+                                                              UB = 0                 UG = 0
+                                                                       UG = 2
+
+
+
+                                                                       G′
+
+                                                                                G∗
+
+
+
+
+                                             B∗
+
+
+
+
+                                    B′
+
+                                              isobeneficios
+
+                                                                                        e
+                                2        3                                  6
+
+
+Figura 3: El menú óptimo del Ejemplo 2.1 con q = 21 (basado en Macho Stadler y Pérez Castrillo,
+Figs. 4.2–4.5). G∗ = (6, 18) y B ∗ = (3, 9) son los contratos de información simétrica. La curva
+punteada es la indiferencia de G que pasa por B ∗ : el tipo bueno prefiere B ∗ a G∗ . El menú óptimo
+baja el contrato del malo a B ′ = (2, 4), sobre su curva de reserva, y sube el salario del bueno a
+G′ = (6, 20), sobre la curva de indiferencia de G que pasa por B ′ (renta = 2).
+
+
+2.9.   Análisis de incentivos
+
+Por qué siempre conviene distorsionar. En el punto B ∗ el contrato del malo es eficiente,
+así que una pequeña reducción de eB tiene un efecto de segundo orden sobre el beneficio que
+el principal obtiene del malo (la derivada en el óptimo es cero). En cambio, reduce la renta del
+bueno en (k − 1)v ′ (eB ) de, un efecto de primer orden. Empezar a distorsionar siempre conviene;
+el principal se detiene donde (9) iguala ambos efectos ponderados por las probabilidades.
+
+
+La aversión al riesgo no es esencial. A diferencia del riesgo moral, la selección adversa
+aparece aunque el agente sea neutral al riesgo (como en el Ejemplo 2.1). En el riesgo moral el
+problema era un conflicto entre seguro e incentivos; aquí no hay nada que asegurar: el principal
+simplemente no sabe con quién contrata.
+
+
+Excluir al tipo malo. El principal tiene otra opción: ofrecer sólo el contrato eficiente para el
+bueno, (eG∗ , wG∗ ), que el malo rechaza, y dejar el puesto vacante si el agente es malo. No hay
+distorsión ni renta, pero no hay intercambio con probabilidad 1 − q. Conviene ofrecer el menú si
+
+                  q Π(eG ) − wG + (1 − q) Π(eB ) − wB ≥ q Π(eG∗ ) − wG∗ .
+                    [︁          ]︁         [︁           ]︁     [︁             ]︁
+
+
+En el Ejemplo 2.1 la exclusión da 18q y el menú, 18q + 18(1 − q)2 /(2 − q): el menú siempre es
+mejor, aunque la ventaja tiende a cero cuando q → 1. En otros casos (por ejemplo, si el tipo
+malo es muy poco productivo o el principal tiene un costo fijo de contratar) la exclusión puede
+ser óptima: es el equivalente contractual de un mercado que se cierra para una parte de los tipos,
+como el de los autos buenos en el mercado de limones.
+
+
+                                                   8
+Observación 2.1 (Riesgo moral con información oculta). En la Clase 7 vimos el riesgo moral
+con información oculta: el agente aprende el estado después de firmar. El contrato óptimo tenía
+la misma estructura que aquí: decisión eficiente en el estado bueno, distorsión hacia abajo en el
+malo y una renta en el bueno (Macho Stadler y Pérez Castrillo, complemento 4A.2). La diferencia
+está en la participación: con selección adversa el agente ya conoce su tipo al firmar, de modo que
+la participación es siempre ex post.
+
+
+3.     Selección adversa con competencia entre principales
+
+3.1.     Un modelo de mercado
+
+¿Qué cambia si varios principales compiten por los agentes? Cada principal debe ofrecer al
+agente más que su utilidad de reserva para que acepte su contrato y no el de otro. Siguiendo a
+Macho Stadler y Pérez Castrillo (sec. 4.3), que a su vez se basan en Rothschild y Stiglitz (1976),
+modificamos el modelo:
+
+     Los tipos ya no difieren en el costo del esfuerzo sino en la probabilidad de éxito: el tipo
+     G (más cuidadoso, comete menos errores) tiene éxito con probabilidad pG y el tipo B, con
+     pB < pG . El esfuerzo es único y observable, y su costo está incluido en la utilidad de reserva.
+     El resultado puede ser éxito (xS ) o fracaso (xF ), y es verificable. El contrato especifica un
+     pago para cada uno: (wF , wS ).
+     Los principales son neutrales al riesgo y los agentes, aversos. Si un agente de tipo T firma
+     (wF , wS ), el principal espera ganar ΠT = pT (xS − wS ) + (1 − pT )(xF − wF ) y el agente,
+     obtener EU T = pT u(wS ) + (1 − pT )u(wF ).
+
+La interpretación de seguros es inmediata: el “éxito” es no tener un accidente, los principales son
+aseguradoras y los agentes son asegurados de bajo riesgo (G) y de alto riesgo (B). Allí fue donde
+se estudió originalmente el problema.
+
+
+Pendientes. En el plano (wF , wS ), la pendiente de la curva de indiferencia del tipo T es
+
+                                                1 − pT u′ (wF )
+                                 ⃓
+                           dwS ⃓⃓
+                                           =  −                 ,
+                           dwF ⃓EU T =cte.        pT u′ (wS )
+
+y la de las rectas de isobeneficio, −(1−pT )/pT . En cualquier contrato, la curva de indiferencia del
+tipo G es menos empinada que la del B: como G tiene éxito más a menudo, valora relativamente
+más el pago en el éxito y acepta resignar más wF a cambio de wS . Es otra vez la condición de
+cruce único. Sobre la recta de 45◦ (wS = wF , seguro completo), las curvas de indiferencia son
+tangentes a las isobeneficio del tipo correspondiente.
+
+
+3.2.     El punto de referencia: información simétrica
+
+Si los principales distinguen los tipos, el mercado de cada tipo funciona por separado y el contrato
+de equilibrio C T ∗ debe cumplir dos condiciones:
+
+(1) Beneficio esperado nulo. Si un contrato diera beneficio positivo, otro principal ofrecería
+    uno un poco mejor para el agente y se llevaría a todos los clientes.
+(2) Eficiencia. Si existiera un contrato preferido por ambas partes, algún principal lo ofrecería.
+
+                                                  9
+Como en la Clase 6, la eficiencia exige que el principal neutral asegure completamente al agente
+averso. Con beneficio nulo,
+
+                        wST ∗ = wFT ∗ = pT xS + (1 − pT )xF ,        T = G, B.                  (10)
+
+Con información asimétrica estos contratos no pueden coexistir: todos los agentes elegirían C G∗ ,
+que paga más. Ahora, a diferencia de la sección anterior, son los malos quienes quieren hacerse
+pasar por buenos.
+
+
+3.3.   Equilibrio con información asimétrica
+
+Un equilibrio es un par de contratos {C G , C B } (que pueden coincidir) tal que ningún principal
+puede agregar un contrato que, firmado por los agentes que lo prefieren a C G y C B , le dé beneficio
+esperado positivo. Si C G = C B el equilibrio es agrupador; si son distintos, separador.
+
+Proposición 3.1 (No hay equilibrio agrupador). En este mercado no existe un equilibrio agru-
+pador.
+
+Argumento. Un contrato agrupador C I debe dar beneficio nulo cuando lo firman ambos tipos,
+es decir, debe estar sobre la recta ΠI = 0, con pI = qpG + (1 − q)pB . Por el cruce único, en C I la
+indiferencia de G es menos empinada que la de B, y entre ambas queda una región de contratos
+(sombreada en la Figura 4) que pagan más en el éxito y menos en el fracaso: los prefiere G pero
+no B. Un principal que ofrezca un contrato de esa región, por debajo de la recta ΠG = 0, atrae
+sólo a los buenos y gana. Los malos quedan en C I , que con ellos solos da pérdidas. C I no es un
+equilibrio.
+
+                       wS
+                                       sólo la eligen los G
+                                                                           45◦
+
+                                                                 ΠG = 0
+                            ΠI = 0
+
+
+
+
+                                                                CI         UG
+
+
+                                                                           UB
+
+
+
+
+                                                                             wF
+
+Figura 4: Un contrato agrupador C I no es un equilibrio (basado en Macho Stadler y Pérez
+Castrillo, Fig. 4.7). Datos del Ejemplo 3.1 con q = 12 . Los contratos de la región sombreada
+atraen sólo a los agentes buenos y dan beneficio positivo.
+
+
+
+
+                                                   10
+El candidato a equilibrio separador. Si existe un equilibrio, es separador. El contrato de los
+malos debe ser su contrato de información simétrica, C B = C B∗ : tiene que dar beneficio nulo y
+cualquier otro punto de la recta ΠB = 0 es peor para el agente, de modo que un principal podría
+mejorarlo. El contrato de los buenos, C G , debe estar sobre la recta ΠG = 0 y no puede gustarle
+a los malos más que C B∗ ; el mejor de esos contratos para los buenos está en la intersección de
+la recta ΠG = 0 con la curva de indiferencia de B que pasa por C B∗ .
+Proposición 3.2 (Separación; Resultado 4.2). El candidato a equilibrio separador es {C G , C B }
+con C B = C B∗ y C G = (wFG , wSG ) dado por
+   u(wB∗ ) = pB u(wSG ) + (1 − pB )u(wFG ),      pG xS + (1 − pG )xF = pG wSG + (1 − pG )wFG .     (11)
+
+Falta verificar que ningún contrato agrupador rompa este par: no debe existir un contrato que
+ambos tipos prefieran a los suyos y que dé beneficio con ambos. Gráficamente, la recta ΠI = 0
+no debe cortar la curva de indiferencia de G que pasa por C G .
+Proposición 3.3 (Existencia; Resultado 4.3). Existe q ◦ ∈ (0, 1) tal que: (i) si q < q ◦ , {C G , C B∗ }
+es un equilibrio separador; (ii) si q > q ◦ , no existe equilibrio.
+
+Si hay pocos agentes buenos, la recta ΠI = 0 está cerca de la de los malos y un contrato agrupador
+no es atractivo para los buenos: el equilibrio separador existe. Si hay muchos buenos, la recta
+ΠI = 0 se acerca a la de los buenos y un contrato agrupador les gusta más que C G , cuyo riesgo los
+perjudica. Pero ese contrato agrupador tampoco es un equilibrio (Proposición 3.1): el mercado
+no tiene equilibrio.
+                                                                                              √
+Ejemplo 3.1 (Equilibrio separador). Sea xS = 100, xF = 0, pG = 0.9, pB = 0.6 y u(w) = w.
+Información simétrica. Seguro completo con beneficio nulo: C G∗ = (90, 90) y C B∗ = (60, 60).
+                                                  √
+Equilibrio separador. C B = (60, 60), con utilidad 60 ≈ 7.746 para el malo. C G resuelve (11):
+                         √          √       √
+                      0.6 wS + 0.4 wF = 60,         0.9 wS + 0.1 wF = 90,
+de donde C G ≈ (20.59, 97.71). El agente bueno recibe el mismo pago√    esperado
+                                                                               √ que con infor-
+mación√simétrica (90), pero con riesgo: su utilidad esperada es 0.9 97.71 + 0.1 20.59 ≈ 9.350,
+contra 90 ≈ 9.487 con seguro completo.
+Existencia. Con q = 12 , pI = 0.75; el contrato agrupador que más le gusta al bueno sobre la recta
+ΠI = 0 le da 9.165 < 9.350: el equilibrio existe. Calculando lo mismo para cada q, el umbral es
+q ◦ ≈ 0.88. Con q = 0.95 (pI = 0.885), por ejemplo, hay contratos agrupadores que ambos tipos
+prefieren y que dan beneficio: no hay equilibrio (Figura 5).
+
+
+3.4.   Conclusiones
+
+   La selección adversa puede provocar la inexistencia de equilibrio. Para resolverlo se pro-
+   pusieron otros conceptos de equilibrio en los que los principales anticipan las reacciones de
+   sus rivales (Wilson, 1977; Riley, 1979).
+   Si existe, el equilibrio es separador: el mercado ofrece contratos distintos para cada tipo.
+   Los pagos contingentes al resultado no son necesariamente síntomas de riesgo moral: pueden
+   servir para separar tipos. Una aseguradora puede ofrecer una franquicia para que la elijan
+   sólo los conductores prudentes.
+   Los malos obtienen lo mismo que con información simétrica; los buenos pierden: cargan con
+   riesgo para demostrar que son buenos. La propiedad de “no distorsión en la cima” vale ahora
+   para los malos, porque la “cima” es el tipo al que nadie quiere imitar, que no siempre es el
+   más eficiente.
+
+                                                  11
+                      wS
+
+                                  CG                                45◦
+
+
+                                                                      ΠG = 0
+                                                             C G∗
+                                       zona ampliada abajo
+
+                                                                      ΠI = 0 (q = 0.5)
+
+                                                  C B = C B∗
+
+
+
+                                                                      ΠB = 0
+
+
+
+
+                                                                          wF
+
+                             wS
+
+
+                           98
+                                CG
+
+
+
+
+                           94
+
+
+
+
+                           90
+                                                             ΠG = 0
+                                                                I
+                                  agrupadores que ambos tiposΠ = 0 (q = 0.95)
+                           86       prefieren y dan beneficio U G por C G
+
+                                                               wF
+
+Figura 5: El equilibrio separador del Ejemplo 3.1 (basado en Macho Stadler y Pérez Castrillo,
+Figs. 4.9–4.11). Arriba: C G está en la intersección de la recta ΠG = 0 con la indiferencia del
+malo que pasa por C B∗ . Con q = 0.5 la recta agrupadora queda por debajo de la indiferencia del
+bueno que pasa por C G (curva azul): el equilibrio existe. Abajo: con q = 0.95 la recta agrupadora
+corta esa indiferencia; los contratos sombreados atraen a ambos tipos y dan beneficio, de modo
+que no hay equilibrio.
+
+
+
+
+                                                   12
+  Idea clave. Con un principal monopolista, el tipo eficiente gana una renta y el ineficiente
+  recibe un contrato distorsionado. Con competencia, la renta desaparece pero el costo de la
+  información se traslada: el tipo bueno, que quiere diferenciarse, acepta un contrato distor-
+  sionado (con riesgo) para que el malo no lo imite.
+
+
+4.     Selección adversa con un continuo de tipos
+
+4.1.   Planteo
+
+Volvemos al principal monopolista de la Sección 2, pero ahora el tipo puede tomar cualquier valor
+en un intervalo (Macho Stadler y Pérez Castrillo, sec. 4.4). El agente tiene utilidad U (w, e; k) =
+u(w) − k v(e), con k ∈ K = [k, k̄] conocido sólo por él. El principal cree que k tiene distribu-
+ción F (k) con densidad f (k) > 0. Por el principio de revelación, el principal ofrece un menú
+{(e(k), w(k)) : k ∈ K} tal que a cada tipo le convenga elegir el contrato diseñado para él:
+                                     ∫︂ k̄
+                                             [︁              ]︁
+                         máx                  Π(e(k)) − w(k) f (k) dk
+                       {e(k),w(k)}    k
+                              s.a. u(w(k)) − k v(e(k)) ≥ U               ∀k,                     (12)
+                                     k ∈ arg max u(w(k̂)) − k v(e(k̂))         ∀k.               (13)
+                                               k̂∈K
+
+Hay infinitas restricciones de incentivos, pero el problema tiene una estructura que permite
+simplificarlo.
+
+
+4.2.   Cuatro propiedades
+
+(a) Cruce único. Las preferencias cumplen la condición de Spence–Mirrlees: la tasa
+marginal de sustitución entre esfuerzo y salario,
+
+                                                 ∂U/∂e  k v ′ (e)
+                                             −         = ′        ,
+                                                 ∂U/∂w   u (w)
+
+es creciente en k. Cuanto más eficiente es el agente, menos salario necesita para aceptar un
+esfuerzo adicional. Las curvas de indiferencia de dos tipos se cortan una sola vez, lo que permite
+“ordenar” los contratos por tipo.
+
+
+(b) Monotonía. Con cruce único, un esfuerzo e(k) puede implementarse (existe un w(k) que
+lo hace autoseleccionable) si y sólo si e(k) es no creciente en k: a los más eficientes se les pide al
+menos tanto esfuerzo como a los menos eficientes (Anexo B).
+
+
+(c) Sólo importa la participación del peor tipo. Como en el caso de dos tipos, si el tipo
+k̄ acepta y nadie quiere imitar a nadie, todos aceptan: imitando a k̄, cualquier tipo obtiene al
+menos lo que obtiene k̄.
+
+
+(d) La renta se obtiene por el teorema de la envolvente. Sea I(k) = máxk̂ u(w(k̂)) −
+k v(e(k̂)) = u(w(k)) − k v(e(k)) la utilidad que obtiene el tipo k. Por el teorema de la envolvente,
+
+                                          I ′ (k) = −v e(k) ,
+                                                      (︁   )︁
+                                                                                                (14)
+
+
+
+                                                       13
+y como la participación del peor tipo se satura, I(k̄) = U . Integrando,
+                                                                 ∫︂ k̄
+                                                                          (︁   )︁
+                                                    I(k) = U +           v e(x) dx.                                      (15)
+                                                                  k
+
+La renta informacional del tipo k es la integral de la desutilidad del esfuerzo de todos los tipos
+menos eficientes que él. Es mayor cuanto más eficiente es el agente y, sobre todo, aumenta con
+el esfuerzo que se pide a los tipos menos eficientes: el mismo mecanismo que en el caso discreto.
+
+
+4.3.   El esfuerzo óptimo: el costo virtual
+
+Con las propiedades anteriores, el salario queda determinado por el esfuerzo: u(w(k)) = U +
+            ∫︁ k̄
+k v(e(k)) + k v(e(x)) dx. Supongamos que el agente es neutral (u(w) = w). Reemplazando en el
+objetivo e integrando por partes,
+                       ∫︂ [︄∫︂
+                            k̄       k̄
+                                          ]︄         ∫︂                          k̄
+                                          v(e(x)) dx f (k) dk =                       v(e(k)) F (k) dk,
+                        k        k                                           k
+
+y el problema del principal se reduce a
+              ∫︂ k̄ [︃         (︃         )︃        ]︃
+                                    F (k)
+        máx          Π(e(k)) − k +          v(e(k)) f (k) dk − U                              s.a. e(k) no creciente.   (16)
+        {e(k)} k                    f (k)
+
+Ignorando por un momento la monotonía, se maximiza punto a punto:
+                                                           (︃         )︃
+                                           ′                    F (k)
+                                                                         v ′ e(k) .
+                                               (︁
+                                                )︁                          (︁   )︁
+                                          Π e(k) =           k+                                                          (17)
+                                                                f (k)
+
+Con información simétrica, en cambio, Π′ (e∗ (k)) = k v ′ (e∗ (k)). El término k + F (k)/f (k) es el
+costo virtual del tipo k: su costo verdadero más el costo de la renta que su esfuerzo genera en
+los tipos más eficientes, que tienen masa F (k).
+
+Proposición 4.1 (Propiedades del contrato óptimo). (a) No distorsión en la cima: como
+   F (k) = 0, el tipo más eficiente realiza el esfuerzo eficiente, e(k) = e∗ (k).
+(b) Todos los demás tipos realizan menos esfuerzo que el eficiente: F (k)/f (k) > 0 implica
+    e(k) < e∗ (k).
+(c) Sólo el peor tipo, k̄, obtiene su utilidad de reserva; los demás obtienen una renta (15), mayor
+    cuanto más eficientes son.
+
+                                                                                    q
+Comparemos con (9): en el caso de dos tipos el “costo virtual” del malo era k + 1−q    (k − 1). Allí
+q/(1 − q) era la masa relativa de tipos más eficientes y k − 1 la diferencia de costos; aquí ambos
+se combinan en F (k)/f (k).
+
+
+¿Se cumple la monotonía? La solución de (17) es decreciente en k si el costo virtual
+                 )︁ que se garantiza con la hipótesis de monotonía del cociente de riesgo:
+es (︁creciente, lo
+ d
+dk   F (k)/f (k)    ≥ 0. La cumplen la uniforme, la normal, la exponencial y la logística, entre
+otras. Si no se cumple, la solución de (17) puede ser creciente en algún tramo; el óptimo ver-
+dadero reemplaza ese tramo por un esfuerzo constante: varios tipos reciben el mismo contrato
+(agrupamiento o bunching; Guesnerie y Laffont, 1984).
+
+
+
+
+                                                                 14
+Ejemplo 4.1 (Continuo de tipos). Con los datos del Ejemplo 2.1 —Π(e) = 6e, u(w) = w,
+v(e) = e2 /2, U = 0—, sea k uniforme en [1, 2]: F (k) = k − 1, f (k) = 1, de modo que F/f = k − 1
+y el costo virtual es 2k − 1. Entonces
+                                                    6                     6
+                                        e∗ (k) =      ,      e(k) =            .
+                                                    k                   2k − 1
+El tipo más eficiente (k = 1) hace e = 6 en ambos casos; el menos eficiente (k = 2), e = 2 en
+lugar de 3 (los mismos valores que en el caso de dos tipos con q = 12 ). La renta es
+                                         ∫︂ 2                          (︃                  )︃
+                                                    18                        1     1
+                               I(k) =                      dx = 9                 −             ,
+                                             k   (2x − 1)2                  2k − 1 3
+
+que vale 6 para k = 1, 1.5 para k = 1.5 y 0 para k = 2; el salario es w(k) = k e(k)2 /2 + I(k). El
+beneficio esperado del principal es
+               ∫︂ 2                                  ∫︂ 2
+                    [︁                         ]︁           18
+                      Π(e(k)) − (2k − 1)v(e(k)) dk =            dk = 9 ln 3 ≈ 9.89,
+                 1                                     1  2k −1
+       ∫︁ 2
+contra 1 18/k dk = 18 ln 2 ≈ 12.48 con información simétrica (Figura 6).
+
+                          e
+                              sin distorsión en la cima
+                      6
+                                                      distorsión
+                                                     hacia abajo
+
+                      4
+
+                                                                                  e∗ (k) = 6/k
+
+                      2                                                           e(k) = 6/(2k − 1)
+
+
+
+                                                                                       k
+                          1           1.25          1.5         1.75          2
+
+
+     Figura 6: Esfuerzo con información simétrica y con selección adversa en el Ejemplo 4.1.
+
+
+
+5.     Aplicaciones
+
+Akerlof (1970) presenta su modelo como un “ejercicio” con autos, pero su objetivo es más am-
+plio: mostrar que la dificultad de distinguir lo bueno de lo malo explica muchas instituciones
+económicas. Esta sección recorre sus aplicaciones.
+
+
+5.1.    Seguros de salud para mayores
+
+En la época del artículo, las personas mayores de 65 años tenían grandes dificultades para comprar
+un seguro médico. ¿Por qué no subía la prima hasta cubrir el riesgo? Porque al subir la prima,
+los que siguen comprando son los que están cada vez más seguros de que lo van a necesitar:
+el solicitante conoce su salud mejor que la aseguradora. El estado de salud promedio de los
+asegurados empeora con la prima, y puede ocurrir que no se venda ningún seguro. Es el caso de
+los autos con el precio y la calidad invertidos: aquí, al subir el precio, empeora la “calidad” de
+los clientes.
+
+
+                                                           15
+Ejemplo 5.1 (La espiral de la selección adversa). El gasto médico esperado c de cada individuo
+es su información privada, con distribución uniforme en [0, 100]. Por aversión al riesgo, cada
+uno está dispuesto a pagar hasta 1.2 c por un seguro que cubra su gasto. Una aseguradora en
+competencia cobra una prima P igual al gasto medio de quienes compran.
+A la prima P compran quienes tienen 1.2c ≥ P , es decir, c ≥ P/1.2, y el gasto medio de ese
+grupo es 12 (P/1.2 + 100). Si la aseguradora empieza cobrando el gasto medio de la población,
+P = 50, compran los que tienen c ≥ 41.7, cuyo gasto medio es 70.8; con P = 70.8, compran los
+de c ≥ 59.0, con gasto medio 79.5; y así sucesivamente. La prima de equilibrio cumple
+
+                            P = 12 P/1.2 + 100
+                                   (︁           )︁
+                                                   =⇒ P ≈ 85.7,
+
+y sólo se aseguran quienes tienen c ≥ 71.4: el 29 % de la población, aunque todos valoran el
+seguro por encima de su costo esperado (Figura 7).
+
+                    gasto medio de los asegurados
+                                                              45◦
+                                                                     1
+                                                                     2
+                                                                       (P/1.2 + 100)
+
+                                                            P ∗ ≈ 85.7
+
+
+
+
+                                                                     prima P
+                                      50        70.8 79.5
+
+
+Figura 7: La espiral de la selección adversa en el seguro de salud (Ejemplo 5.1). Cada aumento
+de la prima expulsa a los asegurados de menor riesgo y eleva el gasto medio de los que quedan.
+
+Akerlof cita un manual de seguros de la época que reconoce el problema: hay selección adversa
+siempre que el asegurado tiene libertad para comprar o no, elegir el monto y continuar o abando-
+nar la póliza. Y deriva de allí un argumento a favor de un seguro público obligatorio (Medicare):
+si todos están asegurados a una prima igual al gasto medio de la población, todos podrían estar
+mejor, aunque ninguna aseguradora privada pueda ofrecerlo, porque a cualquier precio atraería
+demasiados “limones”. En el Ejemplo 5.1, un seguro obligatorio a P = 50 genera un excedente
+de 0.2 c por persona, 10 en promedio, contra unos 4.9 en el equilibrio privado. Akerlof compara
+este argumento con el que justifica el gasto público en caminos.
+
+  Idea clave. En los mercados con selección adversa los beneficios privados y los sociales
+  difieren: quien vende calidad no se apropia de todo su valor, porque el precio refleja la
+  calidad media. Eso abre espacio para intervenciones públicas —o instituciones privadas—
+  que mejoren el bienestar de todos.
+
+
+5.2.   Estadísticas de grupo y certificación
+
+El mismo principio se aplica al mercado de trabajo. Si el empleador no puede observar la calidad
+de un postulante, usará alguna estadística visible —el barrio, la escuela, el grupo social— como
+indicador de su calidad media. Akerlof señala que esta forma de discriminación estadística
+puede resultar de la maximización de beneficios y no sólo del prejuicio, y que tiene dos conse-
+cuencias inquietantes. Primero, un trabajador talentoso de un grupo con mala “estadística” no es
+
+                                               16
+contratado: en palabras de Stigler, en un régimen de ignorancia Enrico Fermi habría sido jardine-
+ro. Segundo, los incentivos para capacitarse se debilitan, porque el rendimiento de la capacitación
+se reparte entre todo el grupo (sube su calidad media) en lugar de quedar en quien se capacita.
+Una certificación creíble —un sistema educativo que califique bien a sus alumnos— reemplaza
+esa estadística por información individual. Volveremos sobre este punto en la Unidad IX.
+
+
+5.3.   El costo de la deshonestidad
+
+En un mercado donde la calidad puede ser representada honestamente o falseada, la presencia de
+quienes están dispuestos a vender lo malo como bueno tiende a expulsar los negocios legítimos.
+Akerlof subraya que el costo de la deshonestidad no es sólo lo que pierde el comprador engañado:
+incluye la pérdida por los intercambios honestos que dejan de realizarse. En el modelo de Akerlof,
+el falseo de la calidad cuesta 12 unidad de utilidad por auto y reduce el mercado de N autos a
+cero. En el Ejemplo 1.1 con q < 5/7, cuesta 20 por cada auto bueno que no se vende.
+Akerlof usa este argumento para dar estructura a la afirmación de que hacer negocios en los
+países en desarrollo es difícil. La variabilidad de la calidad parece mayor allí —sus ejemplos son
+los controles de calidad de exportaciones en la India y las piedras mezcladas con el arroz en
+los mercados locales—, y eso tiene dos costos para el desarrollo. La habilidad de identificar y
+garantizar la calidad es un recurso escaso, propio de los comerciantes, que suelen convertirse en
+los primeros empresarios industriales. Como esa habilidad es escasa, la variabilidad de la calidad
+la desvía hacia el comercio y aumenta el tiempo empresarial necesario por unidad producida.
+
+
+5.4.   Crédito en países en desarrollo
+
+Grupos de confianza. Akerlof observa que en la India buena parte de la industria estaba
+controlada por managing agencies, a las que los promotores de nuevos proyectos recurrían por
+su reputación, y que esas agencias estaban organizadas por comunidades. Donde los inversores
+externos corren el riesgo de ser estafados, hay dos salidas: que las empresas construyan una
+reputación de honestidad, que les da una renta, o que el financiamiento quede dentro de grupos
+cuyos lazos comunitarios o familiares favorecen el trato honesto.
+
+
+El prestamista local. El segundo ejemplo son las tasas usurarias de los prestamistas de aldea.
+Mientras los grandes bancos de las ciudades cobraban entre 6 y 10 %, el prestamista local cobraba
+15, 25 y hasta 50 %. ¿Por qué no aparece un intermediario que tome prestado en el banco y preste
+en la aldea? Porque el prestamista otorga crédito sólo donde puede hacer cumplir el contrato o
+conoce personalmente al deudor; quien intente arbitrar las tasas atraerá a todos los “limones” y
+perderá dinero.
+
+Ejemplo 5.2 (El arbitrajista que atrae limones). En una aldea hay deudores seguros, que de-
+vuelven siempre, y riesgosos, que devuelven con probabilidad 12 (y nada si no devuelven). El costo
+de los fondos es 10 %. El prestamista local conoce a cada deudor: presta a los seguros al 10 % y
+a los riesgosos a una tasa r con 21 (1 + r) = 1.1, es decir, r = 120 %. Llega un intermediario de
+la ciudad que no distingue a los deudores y ofrece 30 % a todos. Los seguros ya consiguen 10 %
+y no le piden; los riesgosos, que pagaban 120 %, acuden en masa. El intermediario recupera en
+promedio 12 · 1.3 = 0.65 por peso prestado, cuando el peso le costó 1.1: pierde. Las tasas altas
+del prestamista no reflejan sólo poder de mercado, sino el riesgo de los deudores que nadie más
+puede evaluar.
+
+Stiglitz y Weiss (1981) formalizaron una idea relacionada: un banco que no distingue a los
+deudores puede preferir no subir la tasa aunque haya exceso de demanda de crédito, porque una
+
+
+                                                17
+tasa más alta empeora la composición de los deudores (sólo piden los más riesgosos). Es otra
+explicación, por selección adversa, del racionamiento del crédito que en la Clase 7 explicamos
+con riesgo moral.
+
+
+6.     Instituciones correctoras
+
+Si la selección adversa destruye ganancias de intercambio, hay incentivos para crear instituciones
+que la contrarresten. Akerlof (sec. IV) menciona varias, y el análisis de esta clase permite agregar
+otras.
+
+     Garantías. La mayoría de los bienes durables tienen garantía, que asegura al comprador una
+     calidad mínima esperada. Una consecuencia natural del modelo es que el riesgo lo soporta el
+     vendedor, que es quien conoce la calidad. Además, una garantía es un contrato que sólo le
+     conviene ofrecer a quien vende calidad (ejemplo siguiente).
+     Marcas. Una marca no sólo indica calidad: le da al consumidor un medio de represalia,
+     porque si la calidad defrauda dejará de comprar. Los productos nuevos suelen lanzarse con
+     marcas viejas para aprovechar esa confianza.
+     Cadenas. Las cadenas de hoteles y restaurantes cumplen el mismo papel. Akerlof observa
+     que en Estados Unidos las cadenas de comida aparecen sobre todo en las rutas interurbanas:
+     sus clientes no son locales y no conocen los restaurantes de la zona; el cliente local, que sí los
+     conoce, suele elegir otro.
+     Licencias y certificaciones. La matrícula de médicos, abogados o peluqueros, y los títulos —
+     secundario, universitario, doctorado, incluso el Premio Nobel— certifican niveles de idoneidad.
+     La educación y los mercados de trabajo tienen sus propias “marcas”.
+     Menús de contratos. Como vimos en las Secciones 2 y 3, la parte no informada puede
+     diseñar contratos para que cada tipo se autoseleccione: pólizas con y sin franquicia, tarifas
+     con descuentos por cantidad, contratos con distintas combinaciones de salario y exigencia.
+     Seguros obligatorios y otras intervenciones públicas. Cuando la espiral destruye el
+     mercado, la obligatoriedad lo restablece agrupando a todos (Ejemplo 5.1). Los controles y
+     auditorías reducen la asimetría directamente: pueden valer la pena aunque sean costosos.
+
+Ejemplo 6.1 (La garantía como mecanismo de autoselección). Volvamos al Ejemplo 1.1 con
+q < 5/7, donde sólo se venden limones, a 50. Un vendedor ofrece una garantía: si el auto se
+rompe en los primeros seis meses, paga al comprador una suma D. Un auto bueno se rompe con
+probabilidad 0.1 y un limón, con probabilidad 0.6. Si los compradores creen que sólo los autos
+buenos se venden con garantía, pagan por ellos 120 + 0.1D.
+
+     El vendedor de un auto bueno obtiene, en valor esperado, 120 + 0.1D − 0.1D = 120 ≥ 100: le
+     conviene.
+     El vendedor de un limón que lo ofreciera con garantía obtendría 120 + 0.1D − 0.6D = 120 −
+     0.5D; sin garantía obtiene 50. No imita si 120 − 0.5D ≤ 50, es decir, si D ≥ 140.
+
+Con una garantía de al menos 140, los autos buenos vuelven a venderse y el mercado recupera
+las ganancias de intercambio. La garantía funciona porque su costo esperado es mucho mayor
+para quien vende un limón.
+
+Akerlof advierte un costo de estas instituciones privadas: por naturaleza no son atomísticas, de
+modo que pueden generar concentraciones de poder, con sus propias consecuencias negativas.
+
+                                                   18
+Y concluye con una idea que recorre toda la segunda parte de la materia: en estos modelos la
+confianza es importante; las garantías informales son una condición previa para el comercio y la
+producción, y cuando son inciertas, los negocios sufren.
+
+  Idea clave. Las instituciones correctoras funcionan de tres maneras: generan información
+  (certificaciones, auditorías), crean consecuencias para quien defrauda (marcas, cadenas,
+  reputación) o separan a los tipos con contratos que sólo convienen a los buenos (garantías,
+  franquicias). Cuando nada de eso alcanza, la obligatoriedad puede restablecer el mercado.
+
+
+7.    Síntesis
+
+La Unidad VIII estudia qué ocurre cuando el agente conoce, antes de firmar, una característica
+que el principal ignora. En un mercado, la calidad media de lo que se ofrece depende del precio
+y la información privada puede hacer desaparecer el intercambio (Akerlof). En una relación
+principal–agente, el principal ofrece un menú autoseleccionable: el tipo eficiente recibe una renta
+informacional igual a lo que ganaría imitando al ineficiente, y para achicarla se distorsiona hacia
+abajo el contrato del ineficiente; el contrato del eficiente no se distorsiona. Con un continuo
+de tipos el mismo resultado se expresa con el costo virtual k + F (k)/f (k). Con competencia
+entre principales no hay equilibrio agrupador, el equilibrio separador (si existe) obliga a los
+buenos a cargar con riesgo y puede no haber equilibrio. Las aplicaciones de Akerlof —seguros,
+discriminación estadística, deshonestidad y crédito— y las instituciones correctoras muestran la
+amplitud del problema.
+
+                        Riesgo moral (VII)                       Selección adversa (VIII)
+
+ Información oculta     acción (después de firmar)               tipo (antes de firmar)
+ Restricciones clave    participación e incentivos               participación del peor tipo y autoselec-
+                                                                 ción del mejor
+ Instrumento            salario contingente al resultado         menú de contratos
+ Trade-off              seguro vs. incentivos                    eficiencia vs. renta informacional
+ ¿Hace falta aversión   sí (o resp. limitada)                    no
+ al riesgo?
+ Quién gana renta       nadie (con agente averso sin resp. li-   el tipo eficiente
+                        mitada)
+ Distorsión             riesgo para el agente; esfuerzo bajo     esfuerzo del tipo ineficiente
+ En un mercado          racionamiento del crédito                desaparición del mercado; no existen-
+                                                                 cia del equilibrio
+
+
+Ejercicios
+
+1. Menú óptimo con dos tipos (basado en Macho Stadler y Pérez Castrillo, ejs. 4.2 y 4.4). Un
+   empresario neutral valora el esfuerzo de un trabajador en Π(e) = 4e. El trabajador es neutral
+   al riesgo, con U = 0, y puede ser de tipo G, con utilidad w − e2 , o de tipo B, con utilidad
+   w − 2e2 . La probabilidad de que sea G es q = 21 . (a) Calcule los contratos de información
+   simétrica y muestre que no son autoseleccionables. (b) Plantee el problema con selección
+   adversa e indique qué restricciones se saturan y por qué. (c) Calcule el menú óptimo, la renta
+   del tipo G y el beneficio esperado. (d) Compare con información simétrica y descomponga
+   la pérdida en renta e ineficiencia. (e) Obtenga eB en función de q y muestre que, en este
+   ejemplo, ofrecer el menú es siempre mejor que contratar sólo al tipo G.
+
+                                                  19
+2. El brujo (Macho Stadler y Pérez Castrillo, ej. 4.3). Una ciudad padece una sequía y su
+   intendente evalúa contratar a un brujo que dice poder hacer llover. Con un brujo falso,
+   la probabilidad de lluvia en la semana es 2/100; con uno auténtico, 20/100. Ambos tienen
+           √
+   u(w) = w; el auténtico no trabaja por menos de U = 10 y el falso se conforma con U = 1. El
+   intendente, neutral al riesgo, quiere un contrato (wllueve , wno llueve ) que sólo acepte un brujo
+   auténtico. (a) Plantee el problema. (b) Calcule el contrato óptimo. (c) Calcule el costo de la
+   información asimétrica.
+
+3. Competencia en el mercado de seguros (Macho Stadler y Pérez Castrillo, ej. 4.8). El
+   señor Pérez quiere asegurar su auto. Tiene riqueza 64, un accidente le cuesta 63 y su utili-
+   dad es ln x. Si es prudente, su probabilidad de accidente es 1/3; si es imprudente, 1/2. Hay
+   muchas aseguradoras neutrales que ofrecen contratos (p, z): prima p y cobertura z en caso
+   de accidente. (a) Escriba su utilidad esperada según su tipo y el beneficio de una asegura-
+   dora. (b) Calcule los contratos de información simétrica. (c) Explique por qué no pueden
+   ofrecerse con información asimétrica. (d) Calcule el candidato a equilibrio separador. (e) Si
+   la proporción de prudentes es 2/3, muestre que no es un equilibrio.
+
+4. Limones (basado en Akerlof, 1970). La calidad θ de los autos usados es uniforme en [0, 1]
+   y la conoce sólo el vendedor, que valora su auto en θ. Hay muchos compradores, neutrales
+   al riesgo, y el precio iguala la valoración esperada de los autos que se venden. (a) Si los
+   compradores valoran un auto en θ + c, con c > 0, calcule el precio de equilibrio y la fracción
+   de autos que se venden para c = 0.25. Compare el excedente con el de información simétrica.
+   (b) ¿Para qué valores de c se venden todos los autos? (c) Si los compradores valoran el auto
+   en βθ, con β > 1, ¿para qué valores de β hay intercambio? Relacione con la Figura 1.
+
+5. Un continuo de tipos (basado en Macho Stadler y Pérez Castrillo, ej. 4.15). Un gobierno
+   quiere que las empresas reduzcan su contaminación. Una reducción e vale 2e para la sociedad,
+   y a una empresa de tipo c le cuesta c e2 , con c uniforme en [1, 2] y conocido sólo por ella.
+   El gobierno ofrece un menú {(e(c), t(c))}, donde t es una transferencia, y maximiza 2e − t.
+   La empresa acepta si t − c e2 ≥ 0. (a) Calcule e∗ (c) y t∗ (c) con información simétrica.
+   (b) Con información asimétrica, obtenga la renta informacional en función de e(·) y reescriba
+   el problema. (c) Calcule el menú óptimo, la renta de cada tipo y el bienestar esperado del
+   gobierno. (d) Suponga que el gobierno sólo contrata a las empresas con c ≤ c◦ . Muestre que
+   le conviene c◦ = 2.
+
+6. La espiral en el seguro de salud. El gasto médico esperado c de cada persona es uniforme
+   en [20, 100] y es información privada; cada persona paga hasta 1.25 c por un seguro que lo
+   cubra. Las aseguradoras compiten y cobran el gasto medio de sus asegurados. (a) Calcule la
+   prima de equilibrio y la fracción asegurada. (b) Partiendo de P = 60, calcule las dos primeras
+   iteraciones de la espiral. (c) Compare el excedente total con el de un seguro obligatorio a
+   P = 60. ¿Quiénes pierden con la obligatoriedad?
+
+7. Aplicaciones conceptuales (Macho Stadler y Pérez Castrillo, ejs. 4.1 y 4.11; Akerlof, 1970).
+   (a) En el modelo de la Sección 2, ¿qué tipo obtiene exactamente su utilidad de reserva? ¿Qué
+   contrato es eficiente? ¿Por qué el tipo que no recibe renta no se hace pasar por el que sí la
+   recibe? (b) Una aseguradora ofrece una póliza cara con cobertura completa y otra más barata
+   con una franquicia voluntaria de $500. Un amigo dice que las franquicias existen para que los
+   conductores que chocan mucho paguen $500 cada vez. ¿Es un buen argumento? Responda
+   con un modelo de selección adversa y compare con la explicación de la Clase 7. (c) ¿Por qué
+   las cadenas de comida rápida se concentran en las rutas y no en los barrios? (d) Explique
+   por qué una plataforma de compraventa de autos usados puede ganar dinero ofreciendo un
+   informe técnico independiente de cada vehículo.
+
+
+
+                                                20
+                                                 Anexo
+
+A.     Demostración de la Proposición 2.1
+
+Ya vimos que (PCG ) es redundante. Sean λ, µ y δ los multiplicadores de (PCB ), (ICG ) y (ICB ).
+Las condiciones de primer orden respecto de wG , wB , eG y eB son
+                                                                       q
+                            −q + (µ − δ) u′ (wG ) = 0 ⇐⇒ µ − δ = ′ G ,                         (18)
+                                                                    u (w )
+                                                                          1−q
+                −(1 − q) + (λ − µ + δ) u′ (wB ) = 0 ⇐⇒ λ − µ + δ = ′ B ,                       (19)
+                                                                         u (w )
+                                                                     q Π′ (eG )
+                     q Π′ (eG ) − (µ − kδ) v ′ (eG ) = 0 ⇐⇒ µ − kδ = ′ G ,                     (20)
+                                                                      v (e )
+                                                                            (1 − q) Π′ (eB )
+        (1 − q) Π′ (eB ) − (kλ − µ + kδ) v ′ (eB ) = 0 ⇐⇒ kλ − µ + kδ =                      . (21)
+                                                                                v ′ (eB )
+
+
+Paso 1: λ > 0 y µ > 0. Sumando (18) y (19), λ = q/u′ (wG ) + (1 − q)/u′ (wB ) > 0: la
+participación del malo se satura. Si fuera µ = 0, (18) daría δ < 0, imposible; luego µ > 0 y (ICG )
+se satura.
+
+
+Paso 2: los contratos son distintos. Si eG = eB = e, por (5) también wG = wB = w.
+Entonces λ = 1/u′ (w) y, sumando (20) y (21), kλ = Π′ (e)/v ′ (e), es decir, Π′ (e)/v ′ (e) = k/u′ (w).
+Restando (20) de (18), (k − 1)δ = q/u′ (w) − q Π′ (e)/v ′ (e) = −q(k − 1)/u′ (w), de modo que δ < 0,
+imposible. Luego eG > eB .
+
+
+Paso 3: δ = 0. Con eG > eB , una de las desigualdades de (5) es estricta; como (ICG ) se satura,
+(ICB ) no: δ = 0.
+
+
+Paso 4: las cuatro ecuaciones. Con δ = 0, (ICG ) saturada y (PCB ) saturada dan
+   u(wG ) − v(eG ) = u(wB ) − v(eB ) = u(wB ) − k v(eB ) + (k − 1) v(eB ) = U + (k − 1) v(eB ),
+que son (6) y (7). De (18) y (20) con δ = 0, q/u′ (wG ) = q Π′ (eG )/v ′ (eG ), que es (8). Por último,
+λ − µ = (1 − q)/u′ (wB ) y µ = q/u′ (wG ); reemplazando en (21), kλ − µ = k(λ − µ) + (k − 1)µ,
+de modo que
+                              (1 − q)k q(k − 1)      (1 − q) Π′ (eB )
+                                        +          =                  ,
+                               u′ (wB )   u′ (wG )        v ′ (eB )
+que, dividiendo por (1 − q) y multiplicando por v ′ (eB ), es (9).                                        □
+
+
+B.     Continuo de tipos: implementabilidad y costo virtual
+
+Monotonía necesaria. Sea U (k̂; k) = u(w(k̂)) − k v(e(k̂)) la utilidad del tipo k que declara
+k̂. Para que decir la verdad sea óptimo, las condiciones de primer y segundo orden en k̂ = k son
+                                                                  ∂ 2 U ⃓⃓
+                      u′ (w(k)) w′ (k) − k v ′ (e(k)) e′ (k) = 0,        ⃓    ≤ 0.
+                                                                  ∂ k̂ 2 k̂=k
+Derivando la primera respecto de k (vale para todo k) se obtiene ∂ 2 U/∂ k̂ 2 = −∂ 2 U/∂ k̂ ∂k =
+v ′ (e(k)) e′ (k), así que la segunda exige v ′ (e) e′ (k) ≤ 0, es decir, e′ (k) ≤ 0: el esfuerzo debe ser no
+creciente en el costo.
+
+                                                     21
+Monotonía suficiente. Si e es no creciente y w cumple la condición de primer orden, para
+k̂ > k,
+                                    ∫︂ k̂                    ∫︂ k̂
+                                            ∂U (x; k)
+                                                                     (x − k) v ′ (e(x)) − e′ (x) dx ≥ 0,
+                                                                                       (︁       )︁
+         U (k; k) − U (k̂; k) = −                     dx =
+                                     k        ∂x              k
+
+donde se usó que u′ (w(x))w′ (x) = x v ′ (e(x))e′ (x). El caso k̂ < k es simétrico. Ningún tipo gana
+mintiendo: la monotonía es también suficiente (en general, esto depende de la condición de cruce
+único).
+
+                                           ∫︁ k̄
+Integración por partes. Sea R(k) = k v(e(x)) dx, con R(k̄) = 0 y R′ (k) = −v(e(k)).
+Entonces
+         ∫︂ k̄               [︂        ]︂k̄ ∫︂ k̄                 ∫︂ k̄
+                                                   ′
+               R(k)f (k) dk = R(k)F (k) −         R (k)F (k) dk =       v(e(k)) F (k) dk,
+             k                                    k    k                          k
+
+porque R(k̄) = 0 y F (k) = 0. Así se obtiene (16): el costo esperado de las rentas equivale a
+sumarle a cada tipo F (k)/f (k) veces la desutilidad de su esfuerzo. Maximizando punto a punto
+el integrando resulta (17). Si el costo virtual es creciente, la solución es decreciente en k y la
+restricción de monotonía no está activa.
+
+
+Referencias
+ [1] Akerlof, G. A. (1970). The market for “lemons”: Quality uncertainty and the market mechanism. The
+     Quarterly Journal of Economics, 84(3), 488–500. https://www.jstor.org/stable/1879431
+ [2] Arrow, K. J. (1963). Uncertainty and the welfare economics of medical care. American Economic
+     Review, 53(5), 941–973.
+ [3] Baron, D. P., & Myerson, R. B. (1982). Regulating a monopolist with unknown costs. Econometrica,
+     50(4), 911–930.
+ [4] Gibbard, A. (1973). Manipulation of voting schemes: A general result. Econometrica, 41(4), 587–601.
+ [5] Guesnerie, R., & Laffont, J. J. (1984). A complete solution to a class of principal-agent problems with
+     an application to the control of a self-managed firm. Journal of Public Economics, 25(3), 329–369.
+ [6] Laffont, J. J., & Martimort, D. (2002). The Theory of Incentives: The Principal-Agent Model. Prin-
+     ceton University Press.
+ [7] Macho Stadler, I., & Pérez Castrillo, D. (1994). Introducción a la economía de la información. Ariel.
+     (Cap. 4.)
+ [8] Mas-Colell, A., Whinston, M. D., & Green, J. R. (1995). Microeconomic Theory. Oxford University
+     Press. (Caps. 13 y 14.)
+ [9] Mirrlees, J. A. (1971). An exploration in the theory of optimum income taxation. The Review of
+     Economic Studies, 38(2), 175–208.
+[10] Mussa, M., & Rosen, S. (1978). Monopoly and product quality. Journal of Economic Theory, 18(2),
+     301–317.
+[11] Myerson, R. B. (1979). Incentive compatibility and the bargaining problem. Econometrica, 47(1),
+     61–73.
+[12] Riley, J. G. (1979). Informational equilibrium. Econometrica, 47(2), 331–359.
+[13] Rothschild, M., & Stiglitz, J. (1976). Equilibrium in competitive insurance markets: An essay on the
+     economics of imperfect information. The Quarterly Journal of Economics, 90(4), 629–649.
+[14] Spence, M. (1973). Job market signaling. The Quarterly Journal of Economics, 87(3), 355–374.
+
+
+                                                       22
+[15] Stiglitz, J. E., & Weiss, A. (1981). Credit rationing in markets with imperfect information. American
+     Economic Review, 71(3), 393–410.
+[16] Wilson, C. (1977). A model of insurance markets with incomplete information. Journal of Economic
+     Theory, 16(2), 167–207.
+
+
+
+
+                                                   23
+

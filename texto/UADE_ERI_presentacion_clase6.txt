@@ -1,0 +1,622 @@
+         Introducción a la información asimétrica
+                                 Unidad VI
+
+
+
+
+                    Economía del Riesgo y de la Información
+                   UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Macho Stadler & Pérez Castrillo (1994), caps. 1–2; Borch (1962)
+
+
+                    Clase 6 · 2do cuatrimestre 2026
+
+
+
+
+     (UADE)              Clase 6 — Información asimétrica       Clase 6         1 / 21
+Hoja de ruta
+
+1   De la incertidumbre a la información asimétrica
+
+2   La relación principal–agente
+
+3   El modelo básico con información simétrica
+
+4   El teorema de Borch reencontrado
+
+5   Contratos lineales
+
+6   El esfuerzo óptimo
+
+7   Los problemas de información asimétrica
+
+8   Síntesis
+
+
+          (UADE)           Clase 6 — Información asimétrica   Clase 6   2 / 21
+Un cambio de pregunta
+
+   Primera parte del curso: incertidumbre simétrica. Todos ignoran lo
+   mismo; la pregunta es cómo decidir o cómo repartir el riesgo.
+   Borch (1962): en un tratado de reaseguro ambas partes examinan
+   toda la información; “ocultarle información a la otra parte es lisa y
+   llanamente un fraude”.
+
+
+
+
+       (UADE)            Clase 6 — Información asimétrica   Clase 6        3 / 21
+Un cambio de pregunta
+
+    Primera parte del curso: incertidumbre simétrica. Todos ignoran lo
+    mismo; la pregunta es cómo decidir o cómo repartir el riesgo.
+    Borch (1962): en un tratado de reaseguro ambas partes examinan
+    toda la información; “ocultarle información a la otra parte es lisa y
+    llanamente un fraude”.
+
+Tres preguntas cotidianas (Macho Stadler y Pérez Castrillo)
+    ¿Por qué los empleados de una oficina pública no se apuran? ¿Salario
+    fijo o variable?
+    ¿Por qué la aseguradora ofrece pólizas con y sin franquicia?
+    ¿Por qué un aviso pide “graduado reciente” sin decir de qué carrera?
+
+
+
+
+        (UADE)            Clase 6 — Información asimétrica   Clase 6        3 / 21
+Un cambio de pregunta
+
+    Primera parte del curso: incertidumbre simétrica. Todos ignoran lo
+    mismo; la pregunta es cómo decidir o cómo repartir el riesgo.
+    Borch (1962): en un tratado de reaseguro ambas partes examinan
+    toda la información; “ocultarle información a la otra parte es lisa y
+    llanamente un fraude”.
+
+Tres preguntas cotidianas (Macho Stadler y Pérez Castrillo)
+    ¿Por qué los empleados de una oficina pública no se apuran? ¿Salario
+    fijo o variable?
+    ¿Por qué la aseguradora ofrece pólizas con y sin franquicia?
+    ¿Por qué un aviso pide “graduado reciente” sin decir de qué carrera?
+
+En los tres casos una parte sabe algo que la otra no sabe, y el contrato se
+adapta a esa asimetría.
+
+        (UADE)             Clase 6 — Información asimétrica   Clase 6       3 / 21
+Mercados incompletos e información asimétrica
+    Clase 3: con un derecho contingente por estado (mercados
+    completos), el equilibrio reparte el riesgo de forma Pareto-óptima.
+    Pero “pago $1 si ocurre s” sólo es exigible si un juez puede constatar
+    que ocurrió s.
+
+Variable verificable
+Observable por las partes y demostrable ante un tercero. Sólo ellas pueden
+figurar en un contrato.
+
+
+
+
+        (UADE)            Clase 6 — Información asimétrica   Clase 6     4 / 21
+Mercados incompletos e información asimétrica
+    Clase 3: con un derecho contingente por estado (mercados
+    completos), el equilibrio reparte el riesgo de forma Pareto-óptima.
+    Pero “pago $1 si ocurre s” sólo es exigible si un juez puede constatar
+    que ocurrió s.
+
+Variable verificable
+Observable por las partes y demostrable ante un tercero. Sólo ellas pueden
+figurar en un contrato.
+
+    Si el estado depende del cuidado del asegurado, la calidad de un auto
+    usado o la habilidad de un trabajador, el derecho contingente no
+    puede escribirse.
+
+Idea clave
+La información asimétrica es una causa endógena de mercados incompletos.
+La pregunta pasa a ser: dado lo verificable, ¿cuál es el mejor contrato?
+        (UADE)            Clase 6 — Información asimétrica   Clase 6     4 / 21
+Los elementos del problema
+
+
+   Principal: diseña y ofrece el contrato. Agente: acepta o rechaza y, si
+   acepta, realiza la tarea.
+   Ejemplos: accionistas–gerente, empleador–empleado,
+   aseguradora–asegurado, regulador–empresa.
+
+
+
+
+      (UADE)             Clase 6 — Información asimétrica   Clase 6    5 / 21
+Los elementos del problema
+
+
+      Principal: diseña y ofrece el contrato. Agente: acepta o rechaza y, si
+      acepta, realiza la tarea.
+      Ejemplos: accionistas–gerente, empleador–empleado,
+      aseguradora–asegurado, regulador–empresa.
+  1   El principal tiene todo el poder de negociación: “tómelo o déjelo”.
+  2   El agente acepta si obtiene al menos su utilidad de reserva U.
+  3   El agente realiza un esfuerzo (e) costoso que afecta el resultado.
+
+
+
+
+          (UADE)            Clase 6 — Información asimétrica   Clase 6      5 / 21
+Los elementos del problema
+
+
+      Principal: diseña y ofrece el contrato. Agente: acepta o rechaza y, si
+      acepta, realiza la tarea.
+      Ejemplos: accionistas–gerente, empleador–empleado,
+      aseguradora–asegurado, regulador–empresa.
+  1   El principal tiene todo el poder de negociación: “tómelo o déjelo”.
+  2   El agente acepta si obtiene al menos su utilidad de reserva U.
+  3   El agente realiza un esfuerzo (e) costoso que afecta el resultado.
+
+Contrato
+Promesa creíble que fija obligaciones y pagos en cada contingencia. Sólo
+puede depender de variables verificables.
+
+
+
+          (UADE)            Clase 6 — Información asimétrica   Clase 6      5 / 21
+Conflicto de intereses y secuencia temporal
+
+
+Conflicto: al principal le importa el resultado; al agente, el esfuerzo (le es
+costoso); y más esfuerzo hace más probables los buenos resultados.
+
+Sin conflicto, la asimetría es irrelevante
+Con objetivos comunes, el informado no tiene motivos para ocultar lo que
+sabe.
+
+
+
+
+         (UADE)             Clase 6 — Información asimétrica   Clase 6       6 / 21
+Conflicto de intereses y secuencia temporal
+
+
+Conflicto: al principal le importa el resultado; al agente, el esfuerzo (le es
+costoso); y más esfuerzo hace más probables los buenos resultados.
+
+Sin conflicto, la asimetría es irrelevante
+Con objetivos comunes, el informado no tiene motivos para ocultar lo que
+sabe.
+
+                                                                                    t
+         P diseña     A acepta          A aporta        N determina   Resultado x
+        el contrato   o rechaza       el esfuerzo e      el estado     y pagos
+
+
+
+Solución: equilibrio perfecto en subjuegos (inducción hacia atrás): esfuerzo →
+aceptación → contrato.
+
+
+
+
+         (UADE)               Clase 6 — Información asimétrica           Clase 6        6 / 21
+Planteo
+
+Resultados: x ∈ {x1 < · · · < xn }, con Pr[xi | e] = pi (e) > 0 para todo
+i, e.
+Principal: B(x − w ),                    Agente: u(w ) − v (e),
+B ′ > 0, B ′′ ≤ 0.                       u ′′ ≤ 0, v ′′ ≥ 0.
+Con esfuerzo verificable, el principal resuelve
+                   ∑︂          (︁           )︁
+             máx     pi (e) B xi − w (xi )
+         e,{w (xi )}
+                       i
+                       ∑︂
+              s.a.                                                  (participación).
+                                    (︁      )︁
+                            pi (e) u w (xi ) − v (e) ≥ U
+                       i
+
+
+     Maximizar la utilidad de uno dado el nivel del otro: es un óptimo de
+     Pareto. Variando U se recorre la frontera.
+     Bien comportado en salarios; no necesariamente en esfuerzo.
+
+         (UADE)                  Clase 6 — Información asimétrica            Clase 6   7 / 21
+La condición de eficiencia
+
+Condición de primer orden respecto de cada w (xi ):
+
+                      B ′ xi − w o (xi )
+                         (︁               )︁
+                   o
+                  λ =       (︁         )︁             para todo i
+                         u ′ w o (xi )
+
+
+
+
+        (UADE)             Clase 6 — Información asimétrica         Clase 6   8 / 21
+La condición de eficiencia
+
+Condición de primer orden respecto de cada w (xi ):
+
+                       B ′ xi − w o (xi )
+                          (︁               )︁
+                    o
+                   λ =       (︁         )︁             para todo i
+                          u ′ w o (xi )
+
+
+Proposición: la participación se satura
+λo > 0 (si no, B ′ = 0 o u ′ = ∞). El agente obtiene exactamente U.
+
+Intuición: si obtuviera más, el principal bajaría todos los salarios un poco y
+el agente seguiría aceptando.
+Idea clave
+El cociente de utilidades marginales B ′ /u ′ es el mismo en todos los
+resultados: igualdad de relaciones marginales de sustitución.
+
+         (UADE)             Clase 6 — Información asimétrica         Clase 6   8 / 21
+Repaso: el teorema de Borch (Clase 3)
+
+
+Reparto de una riqueza agregada W (s) entre n agentes. Es Pareto-óptimo
+si y sólo si
+                λj uj′ cj (s) = λk uk′ ck (s)
+                      (︁     )︁       (︁     )︁
+                                                ∀j, k, ∀s.
+
+
+    Mutualidad: cada cj depende del estado sólo a través de W (equivale
+    a un pool).
+                      dcj      Tj               uj′
+    Regla de reparto:      = ∑︁     , Tj = − ′′ .
+                      dW       k Tk             uj
+    Borch (1962), utilidad cuadrática: cada compañía paga una cuota fija
+    del siniestro total.
+
+
+
+
+        (UADE)           Clase 6 — Información asimétrica   Clase 6   9 / 21
+El contrato principal–agente como reparto de Borch
+
+Dos “compañías” se reparten x: el principal cP = x − w , el agente cA = w .
+Con peso 1 para P y λ para A:
+
+    B ′ (xi − wi ) = λ u ′ (wi ) ∀i         ⇐⇒             condición de eficiencia.
+
+
+
+
+        (UADE)               Clase 6 — Información asimétrica          Clase 6        10 / 21
+El contrato principal–agente como reparto de Borch
+
+Dos “compañías” se reparten x: el principal cP = x − w , el agente cA = w .
+Con peso 1 para P y λ para A:
+
+    B ′ (xi − wi ) = λ u ′ (wi ) ∀i         ⇐⇒             condición de eficiencia.
+
+
+    Indeterminación de Borch: los pesos kj “pueden elegirse
+    arbitrariamente” ⇒ negociación, juego de n personas.
+    Aquí se resuelve con un supuesto: el principal tiene todo el poder de
+    negociación ⇒ λ queda fijado por U.
+    Señales adicionales: con esfuerzo verificable, el contrato ignora
+    cualquier variable que no afecte x (sólo agregaría riesgo). En la
+    Unidad VII eso cambia.
+
+
+        (UADE)               Clase 6 — Información asimétrica          Clase 6        10 / 21
+La caja de Edgeworth (para e dado)
+
+                                  OP                                                       OP
+
+
+
+                  óptimo          cert. A                                                  cert. A
+
+
+           w2                                                    w2              w1 = w2
+                                  U
+
+       cert. P                                               cert. P
+                                                                                           U
+
+
+
+          OA         w1 →                                       OA        w1 →
+
+
+(a) Ambos aversos: el óptimo está entre las dos         (b) Principal neutral: isobeneficio rectas
+  líneas de certeza, 0 < w2 − w1 < x2 − x1 .         (−p1 /p2 ); óptimo sobre la certeza del agente:
+                                                                    seguro completo.
+Lados: x1 y x2 . El agente cobra wi desde OA ; el principal recibe xi − wi desde OP . Azul: curva de
+contrato. Dorado: indiferencia de reserva del agente. Gris: indiferencia del principal. Punteadas:
+certeza de A (w1 = w2 ) y de P (x1 − w1 = x2 − w2 ). Como x1 ̸= x2 hay riesgo agregado.
+
+
+            (UADE)                 Clase 6 — Información asimétrica              Clase 6             11 / 21
+Tres casos según la actitud frente al riesgo
+(i) Principal neutral, agente averso ⇒ salario fijo:
+
+                         w o = u −1 U + v (e) .
+                                   (︁        )︁
+
+
+
+
+        (UADE)            Clase 6 — Información asimétrica   Clase 6   12 / 21
+Tres casos según la actitud frente al riesgo
+(i) Principal neutral, agente averso ⇒ salario fijo:
+
+                         w o = u −1 U + v (e) .
+                                   (︁        )︁
+
+
+(ii) Agente neutral, principal averso ⇒ franquicia:
+
+            w o (xi ) = xi − k,
+                                     ∑︁
+                                 k = i pi (e)xi − U − v (e).
+
+
+
+
+        (UADE)            Clase 6 — Información asimétrica   Clase 6   12 / 21
+Tres casos según la actitud frente al riesgo
+(i) Principal neutral, agente averso ⇒ salario fijo:
+
+                         w o = u −1 U + v (e) .
+                                   (︁        )︁
+
+
+(ii) Agente neutral, principal averso ⇒ franquicia:
+
+            w o (xi ) = xi − k,
+                                     ∑︁
+                                 k = i pi (e)xi − U − v (e).
+
+(iii) Ambos aversos ⇒ reparto según tolerancias (derivando la CPO):
+
+                   dw o      rP        TA
+                        =          =         ∈ (0, 1)
+                    dx    rP + r A   TA + TP
+
+
+Idea clave
+Con información simétrica el contrato responde sólo al reparto del riesgo: el
+neutral asegura al averso. Los incentivos todavía no juegan ningún papel.
+        (UADE)             Clase 6 — Información asimétrica   Clase 6    12 / 21
+Ejemplo: salario fijo versus franquicia
+
+x ∈ {0, 100}; Pr(x = 100) = 0.8 con eH y 0.4 con eL ; v (eH ) = 2,
+v (eL ) = 0, U = 5.
+                                  √
+(a) Principal neutral, u(w ) =     w
+            w o (eH ) = (5 + 2)2 = 49,            w o (eL ) = 52 = 25.
+Beneficio: 80 − 49 = 31 con eH y 40 − 25 = 15 con eL ⇒ exige eH con
+salario fijo 49.
+
+
+
+
+        (UADE)            Clase 6 — Información asimétrica         Clase 6   13 / 21
+Ejemplo: salario fijo versus franquicia
+
+x ∈ {0, 100}; Pr(x = 100) = 0.8 con eH y 0.4 con eL ; v (eH ) = 2,
+v (eL ) = 0, U = 5.
+                                  √
+(a) Principal neutral, u(w ) =     w
+            w o (eH ) = (5 + 2)2 = 49,            w o (eL ) = 52 = 25.
+Beneficio: 80 − 49 = 31 con eH y 40 − 25 = 15 con eL ⇒ exige eH con
+salario fijo 49.
+
+(b) Agente neutral, principal averso
+Franquicia con eH : k = 80 − 5 − 2 = 73. El agente cobra 27 o −73; su
+utilidad esperada es 0.8(27) + 0.2(−73) − 2 = 5 = U. Con eL ,
+k = 35 < 73.
+
+
+        (UADE)            Clase 6 — Información asimétrica         Clase 6   13 / 21
+¿Cuándo es óptimo un contrato lineal?
+
+  w (x) = c + b x      (comisiones, aparcería, participación en utilidades)
+Hace falta dw o /dx = b constante, es decir, rP /(rP + rA ) constante.
+Proposición (CARA)
+Con u(w ) = −e −rA w y B(x − w ) = −e −rP (x−w ) :
+                                                rP
+                          w o (x) = c +               x.
+                                             rP + r A
+
+
+
+
+         (UADE)            Clase 6 — Información asimétrica   Clase 6     14 / 21
+¿Cuándo es óptimo un contrato lineal?
+
+  w (x) = c + b x       (comisiones, aparcería, participación en utilidades)
+Hace falta dw o /dx = b constante, es decir, rP /(rP + rA ) constante.
+Proposición (CARA)
+Con u(w ) = −e −rA w y B(x − w ) = −e −rP (x−w ) :
+                                                  rP
+                           w o (x) = c +                x.
+                                               rP + r A
+
+Ejemplo
+rA = 2, rP = 1 ⇒ b = 1/3. Límites: rA → 0 ⇒ b → 1 (franquicia);
+rP → 0 ⇒ b → 0 (salario fijo).
+
+Borch (1962), utilidad cuadrática: cuotas fijas. Ambos casos pertenecen a la
+familia HARA con igual “cautela”. Fuera de ella, los contratos óptimos rara vez
+son lineales.
+          (UADE)             Clase 6 — Información asimétrica    Clase 6      14 / 21
+El esfuerzo óptimo
+
+(i) Principal neutral:                                          e
+                                                                     Π(e) − w = cte.
+        ∑︁ − u (U + v (e)), con
+máxe Π(e)     −1
+
+Π(e) = i pi (e)xi :
+
+                          v ′ (e o )                                        u−v =U
+            Π′ (e o ) =              .                     eo
+                          u ′ (w o )
+
+(ii) Agente neutral: franquicia,
+
+             Π′ (e o ) = v ′ (e o ).                                                   w
+                                                                     wo
+
+Condición suficiente: i pi′′ (e)xi ≤ 0
+                     ∑︁
+
+(resultado esperado cóncavo en e).
+ En el ejemplo, con dos niveles de esfuerzo basta comparar: eH es eficiente en (a)
+ y en (b).
+
+
+          (UADE)                  Clase 6 — Información asimétrica    Clase 6          15 / 21
+Riesgo moral
+
+
+
+La asimetría surge después de firmar: acción oculta o información oculta.
+                                                                                     t
+         P diseña     A acepta          A aporta         N determina   Resultado x
+        el contrato   o rechaza         esfuerzo          el estado     y pagos
+                                      no verificable
+
+                                                                                     t
+         P diseña     A acepta      N elige el estado,    A aporta     Resultado x
+        el contrato   o rechaza       sólo A lo ve       el esfuerzo    y pagos
+
+
+
+Ejemplos: vendedor de enciclopedias, investigador de un laboratorio, asegurado
+que se descuida, agente de exportación.
+
+
+
+
+         (UADE)               Clase 6 — Información asimétrica            Clase 6        16 / 21
+Por qué falla el salario fijo
+
+Volvamos al ejemplo (a): salario fijo w = 49 exigiendo eH . Si el esfuerzo no
+es verificable:
+                √                           √
+                  49 − v (eH ) = 5    <       49 − v (eL ) = 7.
+
+El agente elige eL y el principal obtiene 0.4 · 100 − 49 = −9.
+
+
+
+
+        (UADE)             Clase 6 — Información asimétrica   Clase 6    17 / 21
+Por qué falla el salario fijo
+
+Volvamos al ejemplo (a): salario fijo w = 49 exigiendo eH . Si el esfuerzo no
+es verificable:
+                √                           √
+                  49 − v (eH ) = 5    <       49 − v (eL ) = 7.
+
+El agente elige eL y el principal obtiene 0.4 · 100 − 49 = −9.
+    Para inducir eH , el pago debe depender del resultado ⇒ el agente
+    averso soporta riesgo.
+    Con agente neutral, la franquicia sigue funcionando: con k = 73,
+    obtiene 5 con eH y −33 con eL .
+
+Idea clave
+Riesgo moral = trade-off entre seguro e incentivos. Borch pide asegurar al
+agente; los incentivos piden exponerlo al resultado. (Unidad VII)
+
+
+        (UADE)             Clase 6 — Información asimétrica   Clase 6    17 / 21
+Selección adversa
+El agente tiene información privada antes de firmar: su tipo.
+                                                                                                    t
+      N elige el tipo,    P diseña       A acepta        A aporta         N determina   Resultado
+       sólo A lo ve      el contrato     o rechaza      el esfuerzo        el estado     y pagos
+
+
+
+Ejemplos: conductor prudente o temerario; regulador que no conoce los costos del
+monopolio; autos usados (Akerlof, 1970).
+
+
+
+
+           (UADE)                      Clase 6 — Información asimétrica                 Clase 6         18 / 21
+Selección adversa
+El agente tiene información privada antes de firmar: su tipo.
+                                                                                                    t
+      N elige el tipo,    P diseña       A acepta        A aporta         N determina   Resultado
+       sólo A lo ve      el contrato     o rechaza      el esfuerzo        el estado     y pagos
+
+
+
+Ejemplos: conductor prudente o temerario; regulador que no conoce los costos del
+monopolio; autos usados (Akerlof, 1970).
+                 √
+Ejemplo: Π(e) = 4 e, agente w − θe, U = 0, θG = 1, θB = 2
+Información simétrica: e = 4/θ2 , w = θe ⇒ G : (4, 4), B : (1, 2).
+Si el tipo es privado, G elige el contrato de B: 2 − 1 · 1 = 1 > 0.
+
+Idea clave
+El tipo “bueno” se hace pasar por “malo” y obtiene una renta informacional.
+Respuesta: un menú que induzca la autoselección. (Unidad VIII)
+
+           (UADE)                      Clase 6 — Información asimétrica                 Clase 6         18 / 21
+Señalización
+
+La parte informada toma, antes del contrato, una acción observable que
+modifica las creencias de la otra.
+                                                                                                    t
+     N elige el tipo,    A envía       P diseña       A acepta          A aporta     N, resultado
+      sólo A lo ve      una señal     el contrato     o rechaza        el esfuerzo     y pagos
+
+
+
+
+    El graduado del aviso (Spence, 1973); el endeudamiento de una firma
+    leído por los inversores.
+    Si el informado es el principal, usa el contrato como señal: el
+    lavarropas más caro trae una garantía más larga.
+
+¿Cuándo es creíble una señal?
+Cuando es más barata para los tipos buenos que para los malos. (Unidad
+IX)
+
+
+          (UADE)                    Clase 6 — Información asimétrica                 Clase 6            19 / 21
+Cuadro comparativo
+
+
+Problema            Qué ignora P            Cuándo               Respuesta contractual        Unidad
+
+Info. simétrica     nada                    —                    reparto de Borch: fijo,        VI
+                                                                 franquicia, tolerancias
+Riesgo moral        acción o info. pos-     después de fir-      pago contingente: incenti-    VII
+                    terior                  mar                  vos vs. seguro
+Selección ad-       tipo del agente         antes de firmar      menú de contratos (auto-      VIII
+versa                                                            selección)
+Señalización        tipo del informado      antes; el infor-     acción costosa que revela      IX
+                                            mado mueve           el tipo
+                                            primero
+
+
+El contrato de información simétrica es un reparto de Borch; las próximas
+unidades estudian cómo se deforma para enfrentar cada asimetría.
+
+
+
+           (UADE)                     Clase 6 — Información asimétrica            Clase 6        20 / 21
+  Bibliografía: Macho Stadler & Pérez Castrillo (1994), caps. 1–2; Borch (1962).
+Complementaria: Akerlof (1970); Holmström (1979); Spence (1973); Wilson (1968);
+        Laffont & Martimort (2002); Mas-Colell, Whinston & Green (1995).
+
+
+
+
+       (UADE)              Clase 6 — Información asimétrica     Clase 6       21 / 21
+

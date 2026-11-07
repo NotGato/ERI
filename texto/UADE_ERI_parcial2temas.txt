@@ -1,0 +1,571 @@
+                               UADE — Facultad de Ciencias Económicas
+                 Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                         Guía de estudio
+                            Segundo examen parcial — Unidades VI a X
+
+
+                       Punteo de ejercicios y conceptos clave para preparar el parcial
+
+
+1.      Ejercicios
+
+1.1.      Clase 6
+
+6.1. Clasificación de problemas de información
+
+     Para cada situación, indique si se trata de riesgo moral (acción oculta o información oculta),
+     selección adversa o señalización, identifique principal y agente, y describa la secuencia temporal.
+     (a) Una aseguradora no puede observar si el asegurado deja el auto con alarma. (b) Un banco no
+     conoce la probabilidad de éxito de los proyectos de quienes le piden crédito. (c) Un recién graduado
+     incluye en su CV un posgrado no relacionado con el puesto. (d) Un gerente, ya contratado, conoce el
+     estado de la demanda antes de fijar la estrategia comercial; los accionistas no. (e) Un regulador fija
+     la tarifa de una distribuidora de gas sin conocer sus costos. (f) Un fabricante de electrodomésticos
+     ofrece una garantía de tres años en lugar de dos.
+
+
+6.2. Modelo básico con principal neutral
+
+     El resultado es√x ∈ {0, 60}. Con esfuerzo alto, Pr(x = 60) = 3/4; con esfuerzo bajo, 1/4. El agente
+     tiene u(w) = w, v(eH ) = 1, v(eL ) = 0 y U = 3; el principal es neutral. (a) Explique por qué el
+     salario óptimo no depende del resultado. (b) Calcule el salario óptimo para cada nivel de esfuerzo.
+     (c) ¿Qué esfuerzo exige el principal? ¿Cuál es su beneficio esperado? (d) Si el esfuerzo dejara de ser
+     verificable y el principal mantuviera el salario de (c), ¿qué esfuerzo elegiría el agente y cuál sería
+     el beneficio del principal? (e) Repita (b) y (c) suponiendo que el agente es neutral (u(w) = w) y el
+     principal averso, y compruebe que la franquicia induce el esfuerzo eficiente aun sin verificabilidad.
+
+
+6.3. Seguro con información simétrica
+
+     Un individuo con riqueza w0 posee una propiedad de valor L que se incendia con probabilidad
+     π, conocida por ambas partes. Puede contratar una cobertura q a cambio de una prima P . La
+     aseguradora es neutral al riesgo y el individuo tiene utilidad u(·). (a) ¿Cuál es la utilidad de reserva
+     del individuo? (b) ¿Qué variables verificables puede incluir el contrato? (c) Si la aseguradora elige
+     prima y cobertura, calcule el contrato óptimo para un individuo averso y relacione el resultado con
+     el teorema de Borch. (d) ¿Qué ocurre si el individuo es neutral al riesgo? (e) ¿Qué prima resultaría
+     con competencia perfecta entre aseguradoras? (f) Muestre que, si la aseguradora también es aversa,
+     no es óptimo asegurar por completo al individuo.
+
+
+6.4. Contrato lineal bajo CARA
+
+     Sean u(w) = −e−rA w y B(x − w) = −e−rP (x−w) . (a) A partir de la condición de Borch B ′ (x − w) =
+     λu′ (w), derive el contrato óptimo y muestre que es lineal con b = rP /(rP + rA ). (b) Calcule ∂b/∂rA
+     y ∂b/∂rP e interprételas. (c) Evalúe b para rA = 3 y rP = 1, y en los límites rA → 0 y rP → 0;
+     relacione esos límites con el salario fijo y la franquicia. (d) Reescriba b en términos de tolerancias
+     al riesgo y compárelo con la regla de reparto de la Clase 3.
+
+                                                        1
+6.5. Dos resultados
+
+  Sea un modelo con éxito (xS ) y fracaso (xF ), xF < xS , y probabilidad de éxito pS (e). (a) Escriba
+  el contrato óptimo y la condición necesaria para el esfuerzo óptimo cuando el principal es neutral
+  y el agente∑︁averso, y cuando el agente es neutral y el principal averso. (b) Escriba la condición
+  suficiente i p′′i (e)xi ≤ 0 para este caso e interprétela como rendimientos decrecientes del esfuerzo.
+  (c) Verifique que pS (e) = e/(1 + e) la satisface.
+
+
+6.6. Contratos implícitos en el mercado de trabajo
+
+  Una firma neutral al riesgo contrata n trabajadores idénticos con utilidad u(w)−e, donde e ∈ {0, 1}
+  y u′′ < 0. La producción es x = f (n, ε), con ε un shock aleatorio que nadie conoce al firmar pero que
+  todos observan después. Un trabajador desempleado recibe un subsidio s, de modo que U = u(s).
+  (a) Calcule el salario contingente óptimo en función del nivel de empleo. (b) La teoría de los
+  contratos implícitos sostiene que el contrato laboral es también un contrato de seguro. Comente
+  esta idea a partir de (a) y explique por qué el salario no tiene por qué igualar la productividad
+  marginal en cada estado. (c) Calcule el nivel óptimo de empleo y analice cómo varía con s.
+
+
+1.2.   Clase 7
+
+7.1. Riesgo moral con dos esfuerzos
+
+                                                                                        √
+  Retome el ejercicio 6.2: x ∈ {0, 60}, Pr(x = 60) = 3/4 con eH y 1/4 con eL , u(w) = w, v(eH ) = 1,
+  v(eL ) = 0, U = 3 y principal neutral. Suponga ahora que el esfuerzo no es verificable. (a) Plantee
+  el problema del principal que quiere inducir eH . (b) Calcule el contrato óptimo y verifique las
+  dos restricciones. (c) Calcule los multiplicadores λ y µ y relacione los salarios con los cocientes de
+  verosimilitud. (d) ¿Qué esfuerzo exige el principal? Compare su beneficio con el de información
+  simétrica y verifique la fórmula EH [w] = A2 + (∆v)2 /χ2 . (e) Sea X el valor del éxito. ¿Para qué
+  valores de X el riesgo moral lleva al principal a exigir un esfuerzo ineficiente?
+
+
+7.2. Cociente de verosimilitud y estructura salarial
+
+                                                              √
+  Un empresario neutral contrata a un trabajador con u(w) = w, v(eH ) = 1.5, v(eL ) = 0 y U = 8.5.
+  Hay tres resultados x1 < x2 < x3 con pH = (0.25, 0.5, 0.25) y pL = (0.5, 0.25, 0.25). (a) Verifique
+  que se cumple la dominancia estocástica de primer orden pero no la MLRP. (b) Plantee el problema
+  que induce eH y sus condiciones de primer orden. ¿Es posible que el trabajador cobre menos por
+  x3 que por x2 ? Calcule el contrato óptimo. (c) Interprete el salario pagado en x3 . (d) Suponga
+  ahora que pH = (0, 0.75, 0.25) y pL = (0.5, 0.25, 0.25). ¿Puede el principal alcanzar el óptimo de
+  información simétrica? ¿Qué castigo necesita en x1 ?
+
+
+7.3. Información valiosa
+
+  Con los datos del ejercicio 7.1: (a) Un supervisor emite un informe verificable y ∈ {1, 0}, indepen-
+  diente del resultado dado el esfuerzo, con Pr(y = 1 | eH ) = 3/4 y Pr(y = 1 | eL ) = 1/4. Calcule
+  el contrato óptimo w(x, y) y el máximo que el principal pagaría por el informe. (b) En lugar del
+  supervisor, se observa el clima y ∈ {bueno, malo}, con probabilidad 1/2 cada uno e independiente
+  del esfuerzo. Con buen clima, Pr(x = 60) es 7/8 con eH y 3/8 con eL ; con mal clima, 5/8 y 1/8.
+  Verifique que las probabilidades marginales son las del ejercicio 7.1, decida si el clima es informativo
+  y calcule el costo del riesgo moral. ¿El éxito se paga más con buen o con mal clima? (c) Muestre
+  que una moneda arrojada al aire, independiente de todo, no tiene valor.
+
+
+7.4. Responsabilidad limitada
+
+                                                     2
+  Principal y agente son neutrales. x ∈ {0, 60}, Pr(x = 60) = 3/4 con eH y 1/4 con eL , v(eH ) = 1,
+  v(eL ) = 0 y U = 0. (a) Calcule el contrato de franquicia que induce eH y verifique que funciona
+  aunque el esfuerzo no sea verificable. (b) Suponga que los salarios no pueden ser negativos. Calcule el
+  contrato óptimo que induce eH y la renta del agente. (c) ¿Para qué valores de U la responsabilidad
+  limitada no tiene costo? (d) Sea X el valor del éxito (con U = 0). ¿Para qué valores de X la
+  responsabilidad limitada lleva al principal a exigir eL cuando lo eficiente es eH ?
+
+
+7.5. Riesgo moral en el mercado de crédito
+
+  Un empresario elige entre el proyecto a (pa = 0.8, Xa = 50) y el b (pb = 0.4, Xb = 80); necesita
+  un préstamo I = 20 de un banco monopolista, que sólo cobra R si el proyecto tiene éxito. Todos
+  son neutrales. (a) Calcule el contrato de información simétrica. (b) Calcule R̂. (c) ¿Qué reembolso
+  fija el banco con riesgo moral? ¿Qué proyecto se realiza? ¿Hay racionamiento? (d) Manteniendo
+  pb = 0.4, ¿para qué valores de Xb > 50 habría racionamiento? (e) Suponga que el empresario tiene
+  un activo C que el banco puede cobrar si el proyecto fracasa, de modo que el contrato es (RS , RF )
+  con RF ≤ C. ¿Qué valor mínimo de C permite al banco alcanzar el resultado de información
+  simétrica?
+
+
+7.6. Contratos lineales con riesgo moral (Holmström–Milgrom)
+
+  El resultado es x = e + ε, con ε ∼ N (0, σ 2 ), y el principal (neutral) ofrece w(x) = A + Bx. El agente
+  valora el contrato por su equivalente cierto E[w] − 2r Var(w) − 12 e2 y lo acepta si es no negativo.
+  (a) Calcule el contrato óptimo con esfuerzo verificable. (b) Calcule el contrato óptimo con esfuerzo
+  no verificable y el beneficio del principal. (c) Analice cómo dependen B y e de r y σ 2 . Evalúe para
+  r = 2 y σ 2 = 0.5. (d) Compare con el contrato lineal de la Clase 6: ¿por qué aquí B > 0 aunque el
+  principal sea neutral?
+
+
+7.7. Aplicaciones conceptuales
+
+  (a) En 1995 el garrochista Sergei Bubka cobraba $30 000 cada vez que batía el récord mundial.
+  Los expertos creían que podía mejorarlo en unos 10 cm, pero hasta septiembre de 1995 lo había
+  batido 35 veces, siempre por un centímetro. Comente este esquema de incentivos. (b) Para reducir
+  los accidentes causados por conductores alcoholizados, compare: controles de alcoholemia al azar
+  con multa a quien dé positivo, y controles sólo a quienes causan un accidente. (c) Un partido
+  propone multas más altas si en el accidente hay heridos, aunque que haya heridos no depende de
+  si el conductor bebió. (d) El mismo partido propone multar también a los conductores sobrios que
+  causan accidentes. Evalúe (c) y (d) a la luz del resultado de Holmström.
+
+
+1.3.   Clase 8
+
+8.1. Menú óptimo con dos tipos
+
+  Un empresario neutral valora el esfuerzo de un trabajador en Π(e) = 4e. El trabajador es neutral
+  al riesgo, con U = 0, y puede ser de tipo G, con utilidad w − e2 , o de tipo B, con utilidad w − 2e2 .
+  La probabilidad de que sea G es q = 21 . (a) Calcule los contratos de información simétrica y
+  muestre que no son autoseleccionables. (b) Plantee el problema con selección adversa e indique qué
+  restricciones se saturan y por qué. (c) Calcule el menú óptimo, la renta del tipo G y el beneficio
+  esperado. (d) Compare con información simétrica y descomponga la pérdida en renta e ineficiencia.
+  (e) Obtenga eB en función de q y muestre que, en este ejemplo, ofrecer el menú es siempre mejor
+  que contratar sólo al tipo G.
+
+
+8.2. El brujo
+
+                                                     3
+  Una ciudad padece una sequía y su intendente evalúa contratar a un brujo que dice poder hacer
+  llover. Con un brujo falso, la probabilidad
+                                   √           de lluvia en la semana es 2/100; con uno auténtico,
+  20/100. Ambos tienen u(w) = w; el auténtico no trabaja por menos de U = 10 y el falso se
+  conforma con U = 1. El intendente, neutral al riesgo, quiere un contrato (wL , wN ) (pago si llueve
+  y si no llueve) que sólo acepte un brujo auténtico. (a) Plantee el problema. (b) Calcule el contrato
+  óptimo. (c) Calcule el costo de la información asimétrica.
+
+8.3. Competencia en el mercado de seguros
+
+  El señor Pérez quiere asegurar su auto. Tiene riqueza 64, un accidente le cuesta 63 y su utilidad
+  es ln x. Si es prudente, su probabilidad de accidente es 1/3; si es imprudente, 1/2. Hay muchas
+  aseguradoras neutrales que ofrecen contratos (p, z): prima p y cobertura z en caso de accidente.
+  (a) Escriba su utilidad esperada según su tipo y el beneficio de una aseguradora. (b) Calcule los
+  contratos de información simétrica. (c) Explique por qué no pueden ofrecerse con información
+  asimétrica. (d) Calcule el candidato a equilibrio separador. (e) Si la proporción de prudentes es
+  2/3, muestre que no es un equilibrio.
+
+8.4. Limones
+
+  La calidad θ de los autos usados es uniforme en [0, 1] y la conoce sólo el vendedor, que valora su
+  auto en θ. Hay muchos compradores, neutrales al riesgo, y el precio iguala la valoración esperada
+  de los autos que se venden. (a) Si los compradores valoran un auto en θ + c, con c > 0, calcule
+  el precio de equilibrio y la fracción de autos que se venden para c = 0.25. Compare el excedente
+  con el de información simétrica. (b) ¿Para qué valores de c se venden todos los autos? (c) Si los
+  compradores valoran el auto en βθ, con β > 1, ¿para qué valores de β hay intercambio? Relacione
+  con la figura del mercado de limones.
+
+8.5. Un continuo de tipos
+
+  Un gobierno quiere que las empresas reduzcan su contaminación. Una reducción e vale 2e para la
+  sociedad, y a una empresa de tipo c le cuesta c e2 , con c uniforme en [1, 2] y conocido sólo por
+  ella. El gobierno ofrece un menú {(e(c), t(c))}, donde t es una transferencia, y maximiza 2e − t.
+  La empresa acepta si t − c e2 ≥ 0. (a) Calcule e∗ (c) y t∗ (c) con información simétrica. (b) Con
+  información asimétrica, obtenga la renta informacional en función de e(·) y reescriba el problema.
+  (c) Calcule el menú óptimo, la renta de cada tipo y el bienestar esperado del gobierno. (d) Suponga
+  que el gobierno sólo contrata a las empresas con c ≤ c◦ . Muestre que le conviene c◦ = 2.
+
+8.6. La espiral en el seguro de salud
+
+  El gasto médico esperado c de cada persona es uniforme en [20, 100] y es información privada; cada
+  persona paga hasta 1.25 c por un seguro que lo cubra. Las aseguradoras compiten y cobran el gasto
+  medio de sus asegurados. (a) Calcule la prima de equilibrio y la fracción asegurada. (b) Partiendo
+  de P = 60, calcule las dos primeras iteraciones de la espiral. (c) Compare el excedente total con el
+  de un seguro obligatorio a P = 60. ¿Quiénes pierden con la obligatoriedad?
+
+8.7. Aplicaciones conceptuales
+
+  (a) En el modelo con dos tipos y un principal, ¿qué tipo obtiene exactamente su utilidad de reserva?
+  ¿Qué contrato es eficiente? ¿Por qué el tipo que no recibe renta no se hace pasar por el que sí la
+  recibe? (b) Una aseguradora ofrece una póliza cara con cobertura completa y otra más barata
+  con una franquicia voluntaria de $500. Un amigo dice que las franquicias existen para que los
+  conductores que chocan mucho paguen $500 cada vez. ¿Es un buen argumento? Responda con un
+  modelo de selección adversa y compare con la explicación de la Clase 7. (c) ¿Por qué las cadenas de
+  comida rápida se concentran en las rutas y no en los barrios? (d) Explique por qué una plataforma
+  de compraventa de autos usados puede ganar dinero ofreciendo un informe técnico independiente
+  de cada vehículo.
+
+                                                   4
+1.4.   Clase 9
+
+9.1. La educación como señal
+
+  Hay dos tipos de trabajador, con productividad θ ∈ {1, 3}; la proporción de trabajadores de
+  productividad alta es λ. Alcanzar un nivel de educación e le cuesta e/θ a un trabajador de tipo
+  θ, y su utilidad es w − e/θ. Las empresas compiten y la educación no afecta la productividad.
+  (a) ¿Qué nivel de educación elegiría cada tipo con información simétrica? (b) Suponga que las
+  empresas pagan w = 3 si e ≥ e0 y w = 1 si e < e0 . Encuentre los valores de e0 para los que hay
+  un equilibrio separador y verifique que las creencias son coherentes. (c) Con λ = 0.4, describa el
+  equilibrio agrupador en e = 0 y muestre que no supera el criterio intuitivo. ¿Qué equilibrio sí lo
+  supera? (d) Compare el bienestar de cada tipo en el equilibrio seleccionado y en el agrupador, con
+  λ = 0.4 y con λ = 0.9. (e) Suponga ahora que la educación aumenta la productividad en 0.1 e
+  para ambos tipos. Calcule el equilibrio separador de menor costo y discuta qué parte del diferencial
+  salarial se debe al capital humano.
+
+
+9.2. Clasificación de equilibrios
+
+  En el mercado de seguros de la nota (U G∗ ≈ 9.487, U B∗ ≈ 7.746, EU G ≈ 9.350), los agentes pueden
+  obtener un certificado cuyo costo es v G para el tipo bueno y v B para el malo. Para cada par (v G , v B )
+  —(0.05, 3), (0.5, 3), (0.5, 1.2) y (2, 3)— indique qué equilibrios superan el criterio intuitivo. En los
+  casos con equilibrio separador, ¿gana el tipo bueno con la existencia del certificado? Explique por
+  qué en el caso (0.5, 3) el agrupador sobrevive al criterio.
+
+
+9.3. El principal informado
+
+  Un empresario puede ofrecer un trabajo fácil, con beneficio 6e − w y utilidad para el trabajador
+  w − e2 /2, o uno arduo, con beneficio 18e − w y utilidad w − 3e2 /2. Sólo el empresario sabe de
+  qué tipo es el trabajo; U = 0. (a) Calcule los contratos de información simétrica. (b) Muestre que
+  no pueden ofrecerse con información asimétrica. (c) Calcule el contrato separador que supera el
+  criterio intuitivo y el costo de señalar para el empresario con trabajo fácil. (d) Interprete: ¿por qué
+  pocas horas de trabajo son una buena señal de un trabajo fácil?
+
+
+9.4. Precios de lanzamiento
+
+  Un monopolista lanza una bebida cuya calidad sólo él conoce. Si es buena, cada consumidor obtiene
+  un excedente X = 12 y el costo unitario es cG = 5; si es mala, el excedente es 0 y el costo cB = 3.
+  La probabilidad de buena calidad es q = 0.2. Quien compra en el primer período aprende la
+  calidad; quien no compra en el primero no compra en el segundo. (a) Muestre que no hay equilibrio
+  agrupador. (b) Encuentre el equilibrio separador y el factor de descuento mínimo para que el
+  mercado exista. (c) Con δ = 0.5, calcule el beneficio del monopolista bueno. (d) ¿Por qué el criterio
+  intuitivo descarta los precios iniciales menores que cB ? (e) Relacione con el uso de la publicidad de
+  marca.
+
+
+9.5. La deuda como señal
+
+  Con el modelo de Ross (1977) de la nota, sea k G = 120, k B = 60, γ = 21 y L = 60. (a) Calcule
+  el intervalo de deuda que separa los tipos. (b) Calcule la utilidad del gerente de cada tipo en el
+  separador de menor costo y compárela con la que obtendría sin señalar. (c) ¿Cómo cambia la deuda
+  mínima si la multa por quiebra se duplica? ¿Y si k G sube a 180? Interprete.
+
+
+9.6. Índices y discriminación
+
+                                                      5
+  Dos grupos visibles, A y B, tienen la misma composición: la mitad tiene productividad 1 y costo
+  de educación y, y la otra mitad productividad 2 y costo y/2. (a) Muestre que puede haber un
+  equilibrio con yA∗
+                     = 1.2 y yB
+                              ∗
+                                = 1.8, y calcule el neto de cada tipo en cada grupo. (b) Suponga que
+  el grupo B está en el agrupador en y = 0. ¿Qué condición debe cumplir yB     ∗
+                                                                                 ? ¿Quiénes del grupo
+  B ganan y quiénes pierden respecto del grupo A? (c) ¿Puede atribuirse la diferencia de educación
+  entre grupos a una diferencia de capacidades? (d) Discuta el efecto de una ley que prohíba pagar
+  distinto salario a igual educación según el grupo.
+
+
+9.7. Aplicaciones conceptuales
+
+  (a) El rey Salomón propone partir al niño en dos. ¿Quién no actuó racionalmente? ¿Por qué no
+  se usa ese método en los juicios de custodia? (b) Las ciudades candidatas a los Juegos Olímpicos
+  suelen construir parte de la infraestructura antes de ser elegidas. Explique este fenómeno como
+  una señal. (c) ¿Por qué en una entrevista de trabajo decir “soy muy productivo” no transmite
+  información, pero presentar un título sí? (d) Explique la diferencia entre la franquicia de un seguro
+  (Clase 8) y la garantía que ofrece un vendedor (esta clase): ¿quién diseña el contrato y quién tiene
+  la información en cada caso?
+
+
+1.5.   Clase 10
+
+10.1. Estrategias en la subasta de segundo precio
+
+  Tres oferentes con valores privados v1 = 50, v2 = 40 y v3 = 30 participan en una subasta de
+  segundo precio. (a) Muestre que ofertar la valuación es débilmente dominante para el oferente 2
+  comparando, para cada oferta máxima de los rivales m ∈ {20, 35, 45, 60}, sus resultados al ofertar
+  30, 40 y 50. (b) ¿Quién gana y cuánto paga si todos ofertan su valuación? ¿Qué resultado esperaría
+  en una subasta inglesa? (c) Muestre que en una subasta de tercer precio ofertar la valuación ya
+  no es dominante. (d) ¿Qué riesgo corre el ganador si el vendedor puede introducir ofertas falsas?
+  ¿Cómo propone Vickrey evitarlo?
+
+
+10.2. Primer precio y equivalencia de recaudación
+
+  Tres oferentes con valuaciones independientes U [0, 1]. (a) Verifique que b(v) = 23 v es un equilibrio
+  de la subasta de primer precio. (b) Calcule la recaudación esperada en el primer y en el segundo
+  precio, y la ganancia esperada del ganador. (c) Calcule la varianza del precio en ambos formatos y su
+  cociente. (d) Si las valuaciones resultan 0.9, 0.3 y 0.2, ¿cuánto recauda cada formato? ¿Contradice
+  esto el teorema? (e) ¿Qué formato preferiría un vendedor averso al riesgo?
+
+
+10.3. Aversión al riesgo
+
+  Dos oferentes con valuaciones U [0, 1] y utilidad u(x) = xρ , 0 < ρ ≤ 1. (a) Muestre que en el
+  segundo precio la oferta de equilibrio sigue siendo b = v. (b) Conjeture b(v) = βv en el primer
+  precio y muestre que β = 1+ρ 1
+                                 . (c) Con ρ = 21 , calcule la recaudación esperada de cada formato.
+  (d) Explique la intuición: ¿por qué la aversión al riesgo afecta sólo al primer precio?
+
+
+10.4. Precio de reserva
+
+  Dos oferentes con valuaciones U [0, 1]; el vendedor valora el objeto en 0 y usa una subasta de segundo
+  precio con reserva r. (a) Muestre que la recaudación esperada es R(r) = 13 +r2 − 34 r3 . (b) Encuentre
+  la reserva óptima y la recaudación máxima. (c) ¿Con qué probabilidad el objeto queda sin vender?
+  ¿Es eficiente? (d) Calcule la reserva óptima si el vendedor valora el objeto en v0 = 0.2. (e) Relacione
+  con el menú del monopolista de la Clase 8.
+
+                                                    6
+10.5. Maldición del ganador
+
+     Cinco petroleras estiman el valor común V de un lote con Xi = V + εi , εi ∼ U [−20, 20] (millones).
+     (a) ¿Cuánto sobrestima V , en promedio, la empresa con la estimación más alta? (b) Si la empresa
+     que ganó estimó X = 150 y ofertó 150 en un primer precio, ¿cuál es su ganancia esperada?
+     (c) Muestre que en el segundo precio la oferta de equilibrio es b(x) = x − NN−2 a y calcúlela. (d) En
+     el modelo de Wilson con señales normales, una empresa estima el lote en 150 con un desvío a
+     posteriori s = 12. ¿Cuánto oferta? ¿Qué pasa con la oferta si s se reduce a 6? (e) ¿Por qué, con
+     valor común, agregar oferentes puede no aumentar las ofertas?
+
+
+10.6. Producción en equipo
+
+     Tres socios producen x = e1 + e2 + e3 , cada uno con costo c(e) = e2 /2. (a) Calcule el esfuerzo
+     eficiente y el excedente total. (b) Con reparto igualitario, calcule el equilibrio de Nash, el producto
+     y la utilidad de cada socio. (c) Diseñe un contrato forzante con un principal externo que implemente
+     el esfuerzo eficiente y verifique que es un equilibrio. (d) ¿Por qué el principal no puede ser uno de
+     los socios? (e) Si tres empresas compiten por ser el principal y valoran el derecho al residuo en 1.2,
+     0.9 y 0.5, ¿quién lo obtiene y cuánto paga en una subasta inglesa?
+
+
+10.7. Subastas de varias unidades
+
+     Se venden dos unidades idénticas. A valora cada una de dos unidades en 12; B y C quieren una
+     unidad cada uno y la valoran en 8 y 3. (a) Con precio uniforme igual a la primera oferta rechazada
+     y ofertas sinceras, ¿quién gana, a qué precio y cuánto recauda el vendedor? (b) Muestre que A gana
+     reduciendo su demanda. ¿Es eficiente el resultado? (c) Calcule los pagos del mecanismo de Vickrey
+     (cada ganador paga el valor que su victoria le quita a los demás). (d) Con subasta discriminatoria,
+     ¿ofertarían los participantes sus valuaciones? (e) El Tesoro argentino licita sus Letras “por sistema
+     holandés de precio único”. ¿A cuál de los formatos de esta clase corresponde? ¿Qué incentivos
+     genera?
+
+
+10.8. Aplicaciones conceptuales
+
+     (a) Una casa de subastas puede publicar o no la tasación de un experto independiente sobre la
+     autenticidad de un cuadro. Según Milgrom y Weber, ¿qué le conviene? ¿Por qué no le conviene
+     publicarla sólo cuando es favorable? (b) En la subasta 4G argentina de 2014, un bloque se reservó
+     para un operador entrante y se adjudicó al precio mínimo. Discuta el costo y el beneficio de
+     esa reserva. (c) Explique por qué el termómetro de reputación de MercadoLibre usa reclamos,
+     cancelaciones y demoras en lugar de calificaciones libres de los compradores. (d) ¿Por qué el sniping
+     es más frecuente con cierre en hora fija que con cierre extendido? (e) Clasifique cada problema según
+     lo visto en las Clases 7 a 9: un comprador online no sabe si el producto es original; un vendedor no
+     sabe si el envío llegará a tiempo porque depende de su propio esfuerzo; un vendedor nuevo ofrece
+     envío gratis y devolución sin cargo.
+
+
+2.      Conceptos teóricos
+
+2.1.      Nota de Clase 6 — Unidad VI
+
+       La información asimétrica es una fuente de mercados incompletos: sólo se pueden contratar
+       variables verificables (observables y demostrables ante un juez).
+       Relación principal–agente: el principal propone un contrato take-it-or-leave-it; el agente
+       acepta si obtiene al menos su utilidad de reserva U . La solución es un equilibrio perfecto en
+       subjuegos.
+
+                                                       7
+       Modelo básico con información simétrica: el principal maximiza su utilidad esperada sujeto
+       a la restricción de participación (PC), que se satura.
+       Condición de eficiencia (Borch): B ′ (x − w(x))/u′ (w(x)) = λ para todo resultado; el cociente
+       de utilidades marginales es constante entre estados.
+       Principal neutral y agente averso: salario fijo (seguro completo). Agente neutral y principal
+       averso: franquicia w = x − k, que además induce el esfuerzo eficiente sin necesidad de
+       verificarlo (pero exige poder cobrar salarios negativos).
+       Con preferencias CARA el contrato óptimo es lineal, w = c + bx, con b = rP /(rP + rA ) =
+       TA /(TA + TP ): cada parte absorbe el riesgo en proporción a su tolerancia (regla de Borch–
+       Wilson). Salario fijo y franquicia son los casos límite.
+       Esfuerzo óptimo con información simétrica: condición necesaria i p′i (e) xi = v ′ (e)/u′ (wo );
+                                                                        ∑︁
+       la concavidad de pS (e) da la condición suficiente.
+       Clasificación de los problemas por el momento en que surge la asimetría: riesgo moral (pos-
+       terior al contrato; acción oculta o información oculta), selección adversa (previa al contrato,
+       informa el agente; el principal ofrece el menú) y señalización (previa; la parte informada
+       actúa antes de contratar, el agente o el principal).
+       Contratos implícitos: el contrato laboral es también un seguro; el salario no depende del
+       estado ni iguala la productividad marginal en cada estado, lo que explica la rigidez salarial.
+
+
+2.2.     Nota de Clase 7 — Unidad VII
+
+       Riesgo moral: el esfuerzo no es verificable, y el contrato debe cumplir la restricción de
+       incentivos (IC) además de la PC; ambas se saturan en el óptimo cuando se quiere inducir el
+       esfuerzo alto.
+       Trade-off entre seguro e incentivos: el agente averso soporta riesgo para∑︁que le convenga
+       esforzarse. El riesgo moral cuesta (∆v)2 /χ2 en salario esperado, con χ2 = i (pH   L 2 H
+                                                                                      i −pi ) /pi .
+
+       Condición de primer orden: 1/u′ (wi ) = λ + µ(1 − ri ), con ri = pL   H
+                                                                         i /pi el cociente de verosi-
+       militud; se premian los resultados con ri < 1 y se castigan los de ri > 1. El pago remunera
+       el contenido informativo del resultado, no su valor para el principal.
+       FOSD vs. MLRP: la dominancia estocástica de primer orden no garantiza un salario cre-
+       ciente; hace falta el cociente de verosimilitud monótono (MLRP).
+       Castigos severos y señales perfectas: si algún resultado es imposible con el esfuerzo alto
+       (pH           L
+         i = 0 < pi ), el castigo sólo se aplica fuera de equilibrio y se alcanza el óptimo de
+       información simétrica.
+       Enfoque de primer orden (Mirrlees, Holmström; Rogerson y Grossman–Hart): validez de
+       reemplazar la IC por la condición de primer orden del agente.
+       Teorema de la informatividad de Holmström: toda variable informativa sobre el esfuerzo (aun
+       independiente del resultado) tiene valor; una variable no informativa (estadístico suficiente)
+       sólo agrega riesgo. Aplicaciones: evaluación relativa, auditorías y controles aleatorios.
+       Responsabilidad limitada: con agente neutral la franquicia resuelve el problema, pero si
+       los salarios no pueden ser negativos el agente recibe una renta y puede resultar ineficiente
+       inducir el esfuerzo alto.
+       Aplicaciones: franquicias y coaseguro en seguros; bonos y premios (el agente optimiza la
+       variable por la que se le paga); racionamiento de crédito (Bester–Hellwig) con R̂ = (pa Xa −
+       pb Xb )/(pa − pb ); garantías como solución.
+
+                                                   8
+       Contratos lineales de Holmström–Milgrom: B ∗ = 1/(1 + rσ 2 ), decreciente en la aversión al
+       riesgo y en el ruido del desempeño.
+       Información oculta (el agente observa un estado antes de actuar): variante de riesgo moral
+       en la que el contrato se condiciona a lo que se revele.
+
+
+2.3.     Nota de Clase 8 — Unidad VIII
+
+       Mercado de limones (Akerlof, 1970): con calidad desconocida el precio refleja la calidad
+       media, los buenos productos se retiran y el mercado puede desaparecer. Con valoración
+       aditiva θ + c el mercado funciona parcialmente; con valoración proporcional βθ es “todo o
+       nada”.
+       Modelo con dos tipos: el principal ofrece un menú de contratos. Principio de revelación:
+       basta considerar mecanismos en los que cada tipo elige el contrato pensado para él.
+       Restricciones activas: PC del tipo malo (menos eficiente) e IC del tipo bueno; PCG e ICB
+       no se saturan.
+       Resultados: renta informacional para el tipo bueno; sin distorsión en la cima (el tipo bueno
+       hace el esfuerzo eficiente); distorsión a la baja del tipo malo (reduce la renta del bueno);
+       posible exclusión del tipo malo.
+       Contratos de información simétrica no son autoseleccionables: el tipo bueno imitaría al malo.
+       Competencia en seguros (Rothschild–Stiglitz): no hay equilibrio agrupador; el candidato
+       separador da seguro completo al tipo de alto riesgo y cobertura parcial al de bajo riesgo;
+       existe sólo si la proporción de bajo riesgo está por debajo de un umbral, y si no el mercado
+       puede no tener equilibrio.
+       Continuo de tipos: condición de cruce único y monotonía del menú; renta por el teorema
+       de la envolvente, I ′ (c) = −v(e); costo virtual k + F (k)/f (k) (hazard rate); posibilidad de
+       bunching.
+       Aplicaciones: espiral en el seguro de salud (la prima de equilibrio sube y los de bajo riesgo se
+       van); discriminación estadística; costo de la deshonestidad; crédito en países en desarrollo.
+       Instituciones correctoras: garantías y certificaciones, licencias, marcas, seguro obligatorio,
+       informes independientes.
+       Franquicia: con selección adversa separa tipos (la eligen los de bajo riesgo); con riesgo moral
+       da incentivos al cuidado.
+
+
+2.4.     Nota de Clase 9 — Unidad IX
+
+       Señalización vs. tamizado: en la señalización mueve primero la parte informada; en el tami-
+       zado la parte no informada ofrece un menú. Para que una señal sea creíble su costo debe ser
+       menor para los tipos de mayor calidad (cruce único).
+       Modelo de Spence: equilibrios separadores (rango y ∗ ∈ [1, 2] en el ejemplo de la nota),
+       agrupadores y multiplicidad de equilibrios. Los retornos privados de la educación pueden
+       diferir de los sociales (la señal puede ser socialmente costosa).
+       Capital humano vs. señalización: el diferencial salarial no puede atribuirse sólo a la educa-
+       ción; hay que descontar la productividad preexistente que la educación revela.
+
+
+
+                                                   9
+       Equilibrio bayesiano perfecto (PBE): estrategias óptimas dadas las creencias, y creencias
+       coherentes con la regla de Bayes; las creencias fuera del equilibrio no están restringidas.
+       Criterio intuitivo (Cho–Kreps): asigna fuera del equilibrio la creencia de que la desviación
+       proviene del tipo que podría ganar; selecciona el separador de menor costo.
+       Índices (rasgos inmodificables) y discriminación: grupos idénticos pueden quedar en equi-
+       librios distintos (trampa de equilibrio de nivel bajo); una ley que prohíba condicionar el
+       salario al grupo elimina la segmentación pero no la ineficiencia de la señal.
+       Principal informado: el contrato mismo es una señal; el empresario con trabajo fácil acepta
+       distorsionar su contrato (menos horas) para separarse del arduo.
+       Aplicaciones: precios de lanzamiento (el bueno vende por debajo del costo para que el con-
+       sumidor pruebe; requiere δ suficientemente alto), publicidad de marca, estructura de capital
+       como señal (Ross, 1977), licencias, garantías.
+       Cheap talk : una señal sin costo no transmite información cuando todos los tipos tienen el
+       mismo interés en emitirla.
+
+
+2.5.     Nota de Clase 10 — Unidad X
+
+       Teoría de juegos: estrategia dominante, equilibrio de Nash, equilibrio bayesiano de Nash.
+       Cuatro formatos (inglesa, holandesa, primer precio en sobre cerrado, segundo precio en
+       sobre cerrado) y equivalencias estratégicas: inglesa ∼ segundo precio (con valores privados)
+       y holandesa ∼ primer precio.
+       Valores privados: en el segundo precio ofertar la valuación es débilmente dominante y efi-
+       ciente; en el primer precio la oferta óptima es b = NN−1 v con valuaciones uniformes.
+       Teorema de equivalencia de la recaudación: con valores privados independientes, agentes
+       neutrales y la misma regla de asignación, todos los formatos dan la misma recaudación
+       esperada. Falla con aversión al riesgo (favorece al primer precio), asimetrías, valores no
+       independientes o asignaciones distintas; la varianza del precio es menor en el primer precio.
+       Precio de reserva y subasta óptima (Myerson): r − 1−F  (r)
+                                                          f (r)   = v0 ; la reserva es mayor que
+       la valoración del vendedor y no depende del número de oferentes; sacrifica eficiencia para
+       extraer renta.
+       Equipos (Holmström, 1982): free riding, imposibilidad de balancear el presupuesto y alcanzar
+       el óptimo; solución con un principal externo que rompe el presupuesto y es residual claimant.
+       Valor común y maldición del ganador (Wilson): el ganador es quien más sobrestima el valor;
+                                                                                 √
+       la oferta racional debe corregir esa sobrestimación (en Wilson, b = θ − π s). Agregar
+       oferentes puede no aumentar las ofertas.
+       Milgrom–Weber: valores afiliados y principio de vinculación (linkage principle): recaudación
+       inglesa ≥ segundo precio ≥ primer precio; “la honestidad es la mejor política”: conviene
+       comprometerse a publicar la información del vendedor.
+       Diseño de mercados y subastas de varias unidades: reducción de demanda con precio uni-
+       forme, mecanismo de Vickrey (VCG) donde cada ganador paga el costo de oportunidad que
+       impone; subasta discriminatoria; licitaciones del Tesoro argentino; espectro y la subasta 4G
+       argentina (2014).
+       Reputación online (eBay, MercadoLibre): los reclamos y cancelaciones son conductas verifi-
+       cables, a diferencia de las calificaciones libres; sniping y reglas de cierre.
+
+
+                                                 10
+

@@ -1,0 +1,867 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                      Notas de Clase 6
+                     Unidad VI — Introducción a la información asimétrica
+
+
+
+                     Macho Stadler & Pérez Castrillo (1994), caps. 1–2; Borch (1962)
+
+
+
+
+                                                 Resumen
+
+       Con esta clase comienza la segunda parte del curso. Hasta ahora la incertidumbre era si-
+       métrica: todos los participantes compartían la misma información sobre los estados de la
+       naturaleza, y la pregunta era cómo decidir (Clases 1, 2 y 5) o cómo repartir el riesgo (Clases
+       3 y 4). A partir de aquí nos preguntamos qué ocurre cuando una de las partes sabe algo que
+       la otra no sabe. Estas notas construyen el andamiaje que usaremos en las Unidades VII a
+       IX. Primero, mostramos por qué la información asimétrica es una fuente de incompletitud de
+       los mercados de derechos contingentes y por qué su estudio natural es el de los contratos.
+       Segundo, presentamos la relación principal–agente: quién diseña el contrato, qué pue-
+       de incluirse en él (variables verificables), la utilidad de reserva y el conflicto de intereses.
+       Tercero, resolvemos el modelo básico con información simétrica de Macho Stadler y
+       Pérez Castrillo, y mostramos que su condición de eficiencia es exactamente el teorema de
+       Borch de la Clase 3 aplicado a dos partes: salario fijo si el principal es neutral al riesgo,
+       contrato de franquicia si lo es el agente, y reparto según las tolerancias al riesgo si ambos son
+       aversos. Allí aparecen los contratos lineales y el caso CARA. Por último, clasificamos los
+       tres problemas de información asimétrica —riesgo moral, selección adversa y señalización—
+       según el momento en que surge la asimetría, y usamos dos ejemplos numéricos para ver por
+       qué el contrato eficiente de información simétrica deja de funcionar en cada caso.
+
+
+
+1.     De la incertidumbre a la información asimétrica
+
+1.1.     Riesgo compartido versus información privada
+
+En la primera parte del curso la incertidumbre fue siempre simétrica. El asegurado y la asegura-
+dora de la Clase 3 conocían la misma probabilidad de accidente; las compañías del mercado de
+reaseguros de Borch (1962) compartían la misma distribución de siniestros; la firma de Sandmo
+(Clase 5) no sabía el precio futuro, pero nadie más lo sabía. En todos esos casos, el problema
+económico consistía en decidir bajo riesgo o en repartir un riesgo que todos veían igual.
+Borch es explícito al respecto. Al justificar por qué no introduce probabilidades subjetivas di-
+ferentes en su modelo, escribe que en un contrato de reaseguro ambas partes examinan toda la
+información relevante y que “ocultarle información a la otra parte es lisa y llanamente un fraude”
+(Borch, 1962). La teoría del reparto óptimo del riesgo presupone información simétrica.
+La segunda parte del curso levanta ese supuesto. Pensemos en situaciones cotidianas (Macho
+Stadler y Pérez Castrillo, cap. 1):
+
+     En una oficina pública hay largas colas mientras algunos empleados conversan entre sí. Alguien
+     comenta: “se nota que no cobran según cuántos clientes atienden”. El empleador no observa
+     el esfuerzo: ¿debe pagar un salario fijo o una parte variable?
+
+
+                                                      1
+     Una aseguradora de autos ofrece dos pólizas: cobertura total, o una mucho más barata con
+     franquicia (el asegurado paga los primeros pesos de cada siniestro). ¿Por qué ofrecer un menú
+     en lugar de un único contrato?
+     Un aviso pide “graduado universitario reciente”, sin especificar la carrera. ¿Qué le importa al
+     empleador de un título que no prepara para ninguna tarea concreta?
+
+Las tres preguntas tienen algo en común: una parte tiene (o tendrá) una ventaja informativa
+sobre la otra, y la forma del contrato se adapta a esa asimetría. Veremos que cada ejemplo
+corresponde, en ese orden, a uno de los tres problemas que estructuran el resto del curso: riesgo
+moral, selección adversa y señalización.
+
+
+1.2.     Mercados incompletos e información asimétrica
+
+En la Clase 3 (Anexo A) vimos que, si existe un derecho contingente para cada estado de la
+naturaleza —mercados completos—, el equilibrio competitivo reparte el riesgo de manera Pareto-
+óptima. Pero un derecho contingente es una promesa del tipo “pago 1 si ocurre el estado s”. Para
+que esa promesa pueda comprarse y venderse, ambas partes deben poder constatar si ocurrió s.
+Definición 1.1 (Variable verificable). Una variable es verificable si su valor es observable por
+las partes y puede, además, probarse ante un tercero independiente (un juez o un árbitro). Sólo
+las variables verificables pueden figurar en un contrato exigible.
+
+Si el estado relevante depende de algo que sólo una parte conoce —el cuidado con que maneja el
+asegurado, la calidad de un auto usado, la habilidad de un trabajador—, el derecho contingente
+correspondiente no puede escribirse: no hay forma de hacer cumplir una promesa condicionada
+a un evento que el juez no puede constatar. La información asimétrica es así una causa endógena
+de incompletitud de los mercados. El primer teorema del bienestar deja de estar disponible, y la
+pregunta pasa a ser: dado lo que es verificable, ¿cuál es el mejor contrato posible?
+
+  Idea clave. La teoría del reparto del riesgo (Borch, Arrow–Debreu) supone que todo lo
+  relevante es verificable. Cuando no lo es, faltan mercados de derechos contingentes y el re-
+  parto eficiente del riesgo puede volverse inalcanzable. La economía de la información estudia
+  cómo los contratos se adaptan a esa restricción.
+
+
+2.     Contratos y la relación principal–agente
+
+2.1.     Los elementos del problema
+
+Consideremos una relación bilateral en la que una parte contrata a otra para que realice alguna
+tarea o tome alguna decisión.
+Definición 2.1 (Principal y agente). El principal es quien diseña y ofrece el contrato; el agente
+es quien lo acepta o lo rechaza y, si lo acepta, realiza la tarea. Ambos pueden ser individuos,
+firmas u organizaciones: accionistas y gerente, empleador y empleado, aseguradora y asegurado,
+regulador y empresa regulada.
+
+El marco de Macho Stadler y Pérez Castrillo tiene los siguientes rasgos.
+
+(i) El principal tiene todo el poder de negociación. Ofrece el contrato bajo la forma
+    “tómelo o déjelo”; el agente no puede contraofertar.
+
+                                                  2
+(ii) El agente acepta si el contrato le conviene. Lo acepta si le asegura una utilidad
+     esperada no menor que su utilidad de reserva U , la que obtendría en su mejor alternativa
+     (otro empleo, el seguro de desempleo, no asegurarse, etc.).
+(iii) El agente realiza una acción o esfuerzo e que afecta el resultado de la relación y que
+      le resulta costoso.
+
+Definición 2.2 (Contrato). Un contrato es una promesa creíble de ambas partes que especifica
+las obligaciones de cada una y los pagos a realizar en cada contingencia posible. En particular,
+establece el mecanismo de pago con que se remunera al agente. Sólo puede depender de variables
+verificables.
+
+
+2.2.   El conflicto de intereses
+
+La información asimétrica sólo es un problema cuando los objetivos de las partes están en con-
+flicto. En nuestros modelos ese conflicto tiene tres fuentes:
+
+   al principal le interesa el resultado; al agente, no directamente;
+   al agente le interesa el esfuerzo, porque le es costoso; al principal, no directamente;
+   más esfuerzo hace más probables los buenos resultados.
+
+Además, el salario es un ingreso para el agente y un costo para el principal.
+Observación 2.1 (Sin conflicto, la asimetría es irrelevante). Si principal y agente tuvieran los
+mismos objetivos, coincidirían en la “mejor estrategia” y la pondrían en práctica —por delegación
+o comunicándose— cualquiera fuese la distribución de la información. El informado no tendría
+motivos para ocultar ni para distorsionar lo que sabe. Por eso estudiaremos siempre asimetría
+informativa + conflicto de intereses.
+
+
+2.3.   La secuencia temporal de referencia
+
+El modelo de referencia supone que ambas partes tienen la misma información durante toda la
+relación. Esto no significa información perfecta: puede haber variables aleatorias que ninguno
+conoce. Siguiendo la terminología de la teoría de juegos, decimos que “la Naturaleza (N ) elige”
+el estado. La Figura 1 resume el orden de las jugadas.
+
+                                                                                             t
+         P diseña         A acepta           A aporta       N determina       Resultado x
+        el contrato       o rechaza        el esfuerzo e     el estado          y pagos
+
+
+        Figura 1: Secuencia temporal del modelo de referencia (información simétrica).
+
+Como las decisiones son secuenciales, el concepto de solución es el equilibrio perfecto en
+subjuegos, que se obtiene por inducción hacia atrás: (1) dado un contrato aceptado, el agente
+elige el esfuerzo que maximiza su utilidad esperada; (2) anticipando esa decisión, decide si acepta;
+(3) el principal, previendo ambas respuestas para cada contrato posible, ofrece el que maximiza
+su propia utilidad esperada.
+
+  Idea clave. La relación principal–agente es un juego secuencial en el que el principal pro-
+  pone y el agente dispone. Todo lo que el contrato puede exigir está limitado por lo que es
+  verificable; todo lo que el principal puede extraer está limitado por la utilidad de reserva
+  del agente.
+
+                                                   3
+3.     El modelo básico con información simétrica
+
+3.1.     Planteo
+
+Definición 3.1 (Entorno del modelo básico).
+
+     Resultados. La relación genera un resultado monetario x ∈ X = {x1 , . . . , xn }, con x1 <
+     x2 < · · · < xn .
+     Tecnología. El resultado depende del esfuerzo e y del azar:
+                                                      n
+                                                     ∑︂
+                     Pr[x = xi | e] = pi (e),              pi (e) = 1,    pi (e) > 0 ∀i, e.
+                                                     i=1
+
+
+     Principal. Recibe el resultado y paga el salario w. Su utilidad vNM es B(x − w), con B ′ > 0,
+     B ′′ ≤ 0 (neutral o aversa).
+     Agente. Su utilidad es aditivamente separable,
+
+                   U (w, e) = u(w) − v(e),           u′ > 0, u′′ ≤ 0,      v ′ > 0, v ′′ ≥ 0.
+
+     Reserva. El agente acepta sólo si su utilidad esperada es al menos U .
+
+Observación 3.1 (¿Por qué pi (e) > 0 para todo i y todo e?). El supuesto dice que ningún
+resultado es imposible para ningún nivel de esfuerzo. Si lo fuera, observar ese resultado probaría
+qué esfuerzo se realizó, y el problema informativo se resolvería trivialmente. Retomaremos este
+punto en la Unidad VII.
+
+Observación 3.2 (Separabilidad). La forma u(w) − v(e) implica que la actitud del agente frente
+al riesgo no depende de cuánto se esfuerce. Es una restricción, pero simplifica mucho el análisis
+sin alterar las conclusiones cualitativas.
+
+Con información simétrica, el esfuerzo es verificable: el contrato puede exigir un esfuerzo e y fijar
+salarios contingentes al resultado, {w(xi )}ni=1 . Si el agente no cumple el esfuerzo pactado, un
+tribunal le impone una sanción suficientemente grande como para disuadirlo. El problema del
+principal es:
+
+                                           n
+                                          ∑︂            (︁           )︁
+                               máx             pi (e) B xi − w(xi )
+                            e, {w(xi )}
+                                          i=1
+                                           n                                                     (1)
+                                          ∑︂            (︁     )︁
+                                  s.a.          pi (e) u w(xi ) − v(e) ≥ U .
+                                          i=1
+
+La restricción es la condición de participación. Notemos que (1) maximiza la utilidad de una
+parte sujeto a que la otra obtenga al menos un nivel dado: es exactamente la definición de un
+óptimo de Pareto. Variando U se recorre toda la frontera de asignaciones eficientes.
+
+Observación 3.3 (Concavidad). Para un esfuerzo dado, el problema está bien comportado:
+el objetivo y la restricción son cóncavos en los salarios, y las condiciones de Kuhn–Tucker son
+necesarias y suficientes. En cambio, como las probabilidades dependen de e, nada garantiza la
+concavidad respecto del esfuerzo. Por eso estudiamos primero el mecanismo de pagos (dado e) y
+después el esfuerzo óptimo (Sección 6 y Anexo B).
+
+
+
+                                                       4
+3.2.   La condición de eficiencia
+
+Denotemos por eo el esfuerzo eficiente y por wo (xi ) los salarios asociados. La condición de primer
+orden respecto de cada w(xi ) es
+
+                      −pi (eo ) B ′ xi − wo (xi ) + λo pi (eo ) u′ wo (xi ) = 0,
+                                   (︁            )︁               (︁       )︁
+
+de donde
+                            B ′ xi − wo (xi )
+                               (︁            )︁
+                         o
+                        λ =       (︁      )︁          para todo i = 1, . . . , n.               (2)
+                               u′ wo (xi )
+
+Proposición 3.1 (La participación se satura). En el contrato óptimo, λo > 0 y la condición de
+participación se cumple con igualdad: el agente obtiene exactamente U .
+
+Demostración. Si λo = 0, (2) exigiría B ′ = 0 o u′ = +∞, lo que contradice los supuestos.
+Luego λo > 0 y, por holgura complementaria, la restricción se satura. Intuitivamente: si el agente
+obtuviera más que U , el principal podría reducir todos los salarios en una pequeña cantidad, el
+agente seguiría aceptando y ella ganaría más. Dicho de otro modo, un agente que obtiene más
+que U estaría dispuesto a pagar por firmar, y el principal podría cobrarle ese pago.
+
+  Idea clave. El contrato óptimo con información simétrica exige que el cociente de utilidades
+  marginales del principal y del agente, B ′ /u′ , sea el mismo en todos los resultados. Es la
+  condición de igualdad de relaciones marginales de sustitución que caracteriza a los óptimos
+  de Pareto.
+
+
+4.     El reparto óptimo del riesgo: el teorema de Borch reencontrado
+
+4.1.   Repaso: el teorema de Borch (Clase 3)
+
+En la Clase 3 vimos que, con n agentes con utilidades vNM uj y una riqueza agregada aleatoria
+W (s) a repartir, un reparto {cj (s)} es Pareto-óptimo si y sólo si existen pesos λj > 0 tales que,
+en cada estado,
+                       λj u′j cj (s) = λk u′k ck (s)
+                             (︁     )︁       (︁      )︁
+                                                        para todo par j, k,                     (3)
+y que de allí se siguen dos consecuencias: el principio de mutualidad —cada cj depende del
+estado sólo a través de W — y la regla marginal de reparto
+
+                      dcj     Tj                 u′j
+                          = ∑︁     ,       Tj ≡ − ′′ (tolerancia al riesgo).                    (4)
+                      dW      k Tk               uj
+
+Borch (1962) obtuvo este resultado para un mercado de reaseguros: cualquier conjunto Pareto-
+óptimo de tratados equivale a un pool en el que las compañías ponen sus carteras en común y
+acuerdan cómo repartir el siniestro total. Con utilidad cuadrática, el reparto óptimo resulta ser
+una cuota fija qj del siniestro total (reaseguro de cuota parte).
+
+
+4.2.   El contrato principal–agente como reparto de Borch
+
+Comparemos (2) con (3). En la relación principal–agente hay dos “compañías” que se reparten
+un resultado aleatorio x: el principal recibe cP = x − w y el agente cA = w, con cP + cA = x en
+cada estado. Normalizando el peso del principal a 1 y llamando λ al del agente, la condición de
+Borch es
+                              B ′ (xi − wi ) = λ u′ (wi ) para todo i,
+
+                                                  5
+que es exactamente (2). El multiplicador de la condición de participación desempeña el papel de
+la ponderación de Borch.
+Proposición 4.1 (Borch en el modelo principal–agente). Con información simétrica, el contrato
+óptimo reparte el resultado entre principal y agente como un reparto Pareto-óptimo del riesgo en
+el sentido de Borch (1962). En particular:
+
+(a) Mutualidad: el salario depende del estado sólo a través del resultado x (y del esfuerzo pac-
+    tado).
+(b) Regla de reparto: al aumentar el resultado, el salario aumenta en proporción a la tolerancia
+    al riesgo relativa del agente.
+
+Dos diferencias con el mercado de reaseguros de Borch merecen destacarse.
+Observación 4.1 (La indeterminación de Borch y el poder de negociación). Borch subraya que
+el óptimo de Pareto es indeterminado: las constantes kj (nuestros λj ) “pueden elegirse arbitra-
+riamente”, y cómo se reparten las ganancias del intercambio depende de la negociación —por eso
+concluye que el problema se analiza mejor como un juego cooperativo de n personas. El modelo
+principal–agente resuelve esa indeterminación con un supuesto fuerte: el principal tiene todo el
+poder de negociación y deja al agente en su utilidad de reserva. Así, λ queda fijado por U . Variar
+U equivale a recorrer la familia de repartos de Borch, es decir, la curva de contrato.
+Observación 4.2 (Señales adicionales). La mutualidad tiene una implicancia sutil. Si existiera
+otra variable verificable y correlacionada con el esfuerzo pero que no afecta a x (por ejemplo, un
+informe de un supervisor), el contrato eficiente la ignoraría: con esfuerzo verificable, condicionar
+el salario a y sólo agregaría riesgo sin ningún beneficio. En la Unidad VII veremos que, cuando
+el esfuerzo no es verificable, ese tipo de señales pasa a ser valiosa.
+
+
+4.3.   Representación gráfica: la caja de Edgeworth
+
+Con dos resultados, x1 < x2 , escribimos wi ≡ w(xi ). El contrato óptimo queda determinado por
+                                                   B ′ (x1 − w1 )  u′ (w1 )
+                                                     ′
+                                                                  = ′       ,                    (5)
+                                                   B (x2 − w2 )    u (w2 )
+                            p1 (e) u(w1 ) + p2 (e) u(w2 ) − v(e) = U .                           (6)
+La caja tiene lados x1 (horizontal) y x2 (vertical). El agente mide sus salarios desde OA (abajo
+a la izquierda) y el principal su ganancia xi − wi desde OP (arriba a la derecha). La línea de
+certeza del agente es w1 = w2 (la diagonal a 45◦ desde OA ); la del principal es x1 − w1 = x2 − w2
+(la paralela que pasa por OP ). Como x1 ̸= x2 , hay riesgo agregado: las dos líneas no coinciden
+y no es posible que ambos tengan ingreso cierto a la vez. La condición (5) es la tangencia entre
+curvas de indiferencia; (6) elige, sobre la curva de contrato, el punto en la curva de indiferencia
+de reserva del agente.
+
+
+4.4.   Tres casos según las actitudes frente al riesgo
+
+(i) Principal neutral, agente averso: salario fijo. Si B ′ es constante, (2) exige que u′ (wo (xi ))
+sea igual para todo i. Como u′ es estrictamente decreciente, eso sólo es posible si wo (x1 ) = · · · =
+wo (xn ). El principal asume todo el riesgo y asegura por completo al agente. Como la participación
+se satura,
+                                        wo = u−1 U + v(e) .
+                                                  (︁        )︁
+                                                                                                   (7)
+El salario no depende del resultado, pero sí del esfuerzo exigido: cuanto más esfuerzo se pide,
+más hay que compensar.
+
+                                                   6
+                                         OP                                                       OP
+
+
+
+
+                                         certeza A                                                certeza A
+                        óptimo
+
+
+         w2                                                       w2
+                                                                                        w1 = w2
+                                     U
+
+   certeza P
+                                                                                              U
+
+
+
+        OA               w1 →                                     OA            w1 →
+
+               (a) Ambos aversos al riesgo                             (b) Principal neutral al riesgo
+
+Figura 2: Contrato óptimo con información simétrica en la caja de Edgeworth (basado en Macho
+Stadler y Pérez Castrillo, Figs. 2.1 y 2.2). En (a) el óptimo está entre las dos líneas de certeza:
+ambos soportan parte del riesgo. En (b) las curvas de indiferencia del principal son rectas y el
+óptimo está sobre la línea de certeza del agente: el principal lo asegura por completo.
+
+(ii) Agente neutral, principal averso: franquicia. Si ahora u′ es constante y B ′′ < 0, el
+argumento se invierte: xi − wo (xi ) debe ser igual en todos los resultados. El agente asume todo
+el riesgo y asegura al principal:
+                                                           n
+                                                          ∑︂
+                                 o
+                             w (xi ) = xi − k,       k=         pi (e) xi − U − v(e).                         (8)
+                                                          i=1
+
+Es un contrato de franquicia: el agente se queda con el resultado y paga al principal una suma
+fija k. También puede leerse como que el agente compra la actividad (la firma) al principal a un
+precio igual al beneficio esperado menos lo necesario para que acepte.
+
+
+(iii) Ambos aversos: reparto según tolerancias al riesgo. Derivemos (2), escrita como
+−B ′ (x − wo (x)) + λo u′ (wo (x)) = 0, respecto de x (tratando x como continua):
+                                              dwo             dwo
+                                         (︃       )︃
+                                      ′′
+                                  −B 1 −             + λo u′′     = 0.
+                                               dx              dx
+Sustituyendo λo = B ′ /u′ y dividiendo por B ′ , con rP ≡ −B ′′ /B ′ y rA ≡ −u′′ /u′ los coeficientes
+de aversión absoluta de Arrow–Pratt,
+                                         dwo      rP
+                                             =         ∈ (0, 1).                                              (9)
+                                          dx   rP + rA
+                                /︁
+Como rP /(rP + rA ) = (1/rA ) (1/rA + 1/rP ) = TA /(TA + TP ), (9) es la regla marginal de reparto
+de Borch (4) para dos partes. El agente recibe sólo una fracción de cada aumento del resultado;
+esa fracción es menor cuanto más averso es él y mayor cuanto más averso es el principal. Los
+casos (i) y (ii) son los límites rP = 0 y rA = 0.
+
+  Idea clave. Con información simétrica, la forma del contrato responde sólo a consideracio-
+  nes de reparto del riesgo: quien es neutral asegura a quien es averso (salario fijo o franquicia),
+  y si ambos son aversos el riesgo se reparte en proporción a sus tolerancias. Los incentivos
+  todavía no cumplen ningún papel, porque el esfuerzo se exige por contrato.
+
+                                                      7
+Ejemplo 4.1 (Salario fijo versus franquicia). Un resultado toma los valores x ∈ {0, 100}. Con
+esfuerzo alto eH la probabilidad de éxito es 0.8; con esfuerzo bajo eL , 0.4. El costo del esfuerzo
+es v(eH ) = 2, v(eL ) = 0, y U = 5.
+                                          √
+(a) Principal neutral, agente con u(w) = w. Por (7),
+
+                      wo (eH ) = (5 + 2)2 = 49,         wo (eL ) = (5 + 0)2 = 25.
+
+El beneficio esperado del principal es 0.8 · 100 − 49 = 31 si exige eH y 0.4 · 100 − 25 = 15 si exige
+eL . Contrata eH con un salario fijo de 49.
+(b) Agente neutral (u(w) = w), principal averso. Por (8), con eH la franquicia es k = 80 − 5 − 2 =
+73: el agente cobra 100 − 73 = 27 si hay éxito y −73 si hay fracaso. Su utilidad esperada es
+0.8(27) + 0.2(−73) − 2 = 5 = U . Con eL sería k = 40 − 5 = 35 < 73, así que el principal prefiere
+exigir eH .
+
+
+5.    Contratos lineales
+
+Como muestra (9), los contratos óptimos pueden ser complicados: la pendiente dwo /dx depen-
+de, en general, del nivel de ingreso de cada parte. Un formato especialmente atractivo por su
+sencillez —y muy frecuente en la práctica: comisiones sobre ventas, aparcerías, participación en
+utilidades— es el contrato lineal
+                                         w(x) = c + b x,
+con un componente fijo c y una participación b en el resultado. ¿Cuándo es óptimo? Hace falta
+que dwo /dx = b sea constante, es decir, que rP /(rP + rA ) no dependa del resultado. El caso
+canónico es el de aversión absoluta constante (CARA) de ambas partes:
+
+                          u(w) = −e−rA w ,        B(x − w) = −e−rP (x−w) .
+
+Proposición 5.1 (Contrato lineal óptimo bajo CARA). Si principal y agente tienen utilidades
+CARA con coeficientes rP y rA , el contrato óptimo con información simétrica es lineal:
+                                                                 rP
+                                wo (x) = c + b x,        b=           ,
+                                                              rP + rA
+donde c se determina por la condición de participación.
+
+Demostración. La condición (2) es rP e−rP (x−w) = λ rA e−rA w . Tomando logaritmos, −rP (x −
+w) = ln(λrA /rP ) − rA w, y despejando,
+                                                        (︃     )︃
+                                      rP         1         λrA
+                              w=           x+         ln          .
+                                   rP + rA    rP + rA      rP
+Ejemplo 5.1 (Cuota de participación). Con rA = 2 y rP = 1, b = 1/(1 + 2) = 1/3: el agente,
+que es el doble de averso, recibe un tercio de cada peso adicional de resultado y el principal,
+dos tercios. Si el agente fuera casi neutral (rA → 0), b → 1 (franquicia); si lo fuera el principal
+(rP → 0), b → 0 (salario fijo).
+Observación 5.1 (Borch (1962) y la familia de repartos lineales). El resultado de la Clase 3
+(reparto lineal de Wilson bajo CARA) y el de Borch (1962) con utilidad cuadrática —cuotas fijas
+del siniestro total— son casos de un mismo hecho: el reparto óptimo es lineal cuando todas las
+partes tienen tolerancias al riesgo lineales en el ingreso con la misma pendiente (familia HARA
+con idéntica “prudencia”). Fuera de esa familia, el contrato óptimo con información simétrica
+es, en general, no lineal. Como dicen Macho Stadler y Pérez Castrillo, incluso con información
+simétrica los contratos óptimos rara vez son lineales.
+
+                                                    8
+  Idea clave. La linealidad de un contrato no es, en general, una propiedad del óptimo sino
+  de las preferencias (CARA, cuadráticas). Si en la práctica observamos contratos lineales
+  con información simétrica, la razón debe buscarse en su simplicidad o en su robustez; con
+  información asimétrica aparecerán argumentos adicionales en su favor.
+
+
+6.    El esfuerzo óptimo
+
+Resuelto el mecanismo de pagos para cada e, falta elegir el esfuerzo. Lo hacemos en los dos casos
+en que el contrato tiene forma explícita.
+
+
+(i) Principal neutral. Sustituyendo el salario fijo (7), el principal resuelve
+                                                                               n
+                                                                              ∑︂
+                       máx Π(e) − u−1 U + v(e) ,
+                                      (︁       )︁
+                                                                Π(e) ≡              pi (e) xi ,
+                        e
+                                                                              i=1
+
+donde Π(e) es el resultado esperado. Por el teorema de la función inversa, (u−1 )′ = 1/u′ , y la
+condición de primer orden (necesaria para un óptimo interior) es
+
+                                               n
+                                              ∑︂                     v ′ (eo )
+                                 Π′ (eo ) =         p′i (eo ) xi =             .                  (10)
+                                                                     u′ (wo )
+                                              i=1
+
+El beneficio esperado marginal del esfuerzo se iguala al aumento de salario necesario para com-
+pensar la mayor desutilidad del esfuerzo, medida en pesos.
+
+
+(ii) Agente neutral. Con franquicia, el principal cobra k = Π(e) − U − v(e), de modo que
+elige e para maximizar Π(e) − v(e):
+
+                                          Π′ (eo ) = v ′ (eo ).                                   (11)
+
+Es exactamente lo que elegiría el propio agente si fuera dueño del resultado.
+La Figura 3 representa el caso (i) en el plano (w, e). La condición de participación u(w)−v(e) = U
+es creciente (más esfuerzo exige más salario); las curvas de isobeneficio Π(e) − w = cte. también
+lo son, y el principal prefiere las que están más arriba y a la izquierda. El óptimo está en la
+tangencia.
+
+Observación 6.1 (Condiciones de segundo orden). Para que las curvas de isobeneficio tengan
+la forma dibujada y la tangencia sea un máximo, se necesitan supuestos       sobre cómo el esfuerzo
+afecta la distribución de resultados. Una condición suficiente es i p′′i (e) xi ≤ 0, es decir, que el
+                                                                 ∑︁
+resultado esperado sea cóncavo en el esfuerzo. El Anexo B desarrolla este punto.
+
+Ejemplo 6.1 (Continuación del Ejemplo 4.1). Con dos niveles de esfuerzo no hace falta derivar:
+basta comparar. En (a), el principal gana 31 con eH y 15 con eL ; en (b), cobra una franquicia
+de 73 con eH y de 35 con eL . En ambos casos el esfuerzo eficiente es eH .
+
+
+7.    Los problemas de información asimétrica
+
+El modelo de referencia es el punto de comparación de todo lo que sigue: ahora podemos identifi-
+car qué se pierde cuando la información deja de ser simétrica. Las situaciones se clasifican según
+qué ignora el principal y cuándo surge la asimetría respecto de la firma del contrato.
+
+                                                       9
+                           e
+                                                             Π(e) − w = cte.
+
+
+                                           mayor beneficio
+                                                                               u(w) − v(e) = U
+
+
+
+
+                      eo
+
+
+
+
+                                                                                  w
+                                                   wo
+
+Figura 3: Esfuerzo y salario óptimos con principal neutral (basado en Macho Stadler y Pérez
+Castrillo, Fig. 2.4). La tangencia entre la isobeneficio del principal y la condición de participación
+define (wo , eo ).
+
+
+7.1.   Riesgo moral
+
+Definición 7.1 (Riesgo moral). Hay riesgo moral cuando, habiendo información simétrica
+al firmar el contrato, la asimetría surge después: la acción del agente no es verificable (acción
+oculta), o el agente recibe información privada una vez iniciada la relación (información oculta).
+
+
+                                                                                                               t
+         P diseña              A acepta          A aporta              N determina               Resultado x
+        el contrato            o rechaza        un esfuerzo             el estado                  y pagos
+                                               no verificable
+
+                                                                                                               t
+         P diseña              A acepta           N elige el             A aporta                Resultado x
+        el contrato            o rechaza            estado,             el esfuerzo                y pagos
+                                                  sólo A lo
+                                                   observa
+
+
+          Figura 4: Riesgo moral: acción oculta (arriba) e información oculta (abajo).
+
+
+Ejemplos. Una editorial contrata a un vendedor de enciclopedias a domicilio: los pedidos son
+verificables, el esfuerzo no. Un laboratorio no puede distinguir a un investigador que piensa en el
+proyecto de uno que piensa en su fin de semana de pesca. Un asegurado, una vez cubierto, tiene
+incentivos a tomar menos precauciones. Un agente de exportación descubre, al llegar al mercado
+externo, información que la firma no puede evaluar (información oculta).
+
+Ejemplo 7.1 (Por qué falla el salario fijo). Volvamos al Ejemplo 4.1(a). El contrato eficiente
+paga un salario fijo w = 49 y exige eH . √  Supongamos ahora que el esfuerzo no es verificable.
+Con salario fijo, la utilidad del agente es 49 − v(e): 7 − 2 = 5 con eH y 7 − 0 = 7 con eL . El
+agente elige eL , y el beneficio esperado del principal pasa a ser 0.4 · 100 − 49 = −9. El seguro
+completo destruye los incentivos: para inducir eH , el salario tendrá que depender del resultado,
+y eso obliga al agente averso a soportar riesgo. En cambio, la franquicia del Ejemplo 4.1(b) sigue
+
+
+                                                        10
+funcionando: con k = 73 el agente obtiene 80 − 73 − 2 = 5 con eH y 40 − 73 = −33 con eL , y
+elige eH por sí mismo.
+
+  Idea clave. En el riesgo moral aparece un trade-off entre seguro e incentivos: el reparto
+  eficiente del riesgo (Borch) pide asegurar al agente; los incentivos piden que su pago dependa
+  del resultado. Si el agente es neutral al riesgo, no hay conflicto y la franquicia alcanza el
+  óptimo. Unidad VII.
+
+
+7.2.    Selección adversa
+
+Definición 7.2 (Selección adversa). Hay selección adversa cuando el agente tiene información
+privada relevante antes de firmar el contrato. El principal puede verificar la conducta del agente,
+pero la decisión óptima (o su costo) depende del tipo del agente, que sólo él conoce.
+
+
+                                                                                                     t
+       N elige el      P diseña        A acepta           A aporta       N determina     Resultado
+       tipo de A,     el contrato      o rechaza         el esfuerzo      el estado       y pagos
+       sólo A lo
+        observa
+
+
+            Figura 5: Selección adversa: la asimetría es previa a la firma del contrato.
+
+
+Ejemplos. A una aseguradora de autos le importa si el cliente es un conductor prudente o
+temerario, pero no puede saberlo al contratar, y las declaraciones del cliente no son creíbles. Un
+regulador quiere fijar el precio de un monopolio natural igual a su costo marginal y cubrir los
+costos fijos con un subsidio, pero la empresa conoce sus costos mejor que él: si le pregunta, ¿qué
+respondería la empresa? El mercado de autos usados de Akerlof (1970) es el caso clásico.
+
+Ejemplo 7.2 (Por qué fallan los contratos de información simétrica). Un principal neutral valora
+                           √
+el esfuerzo según Π(e) = 4 e (sin azar, para simplificar). El agente tiene utilidad w −θe y U = 0.
+Hay dos tipos: eficiente, θG = 1, y poco eficiente, θB = 2. Con información simétrica, para cada
+                                  √
+tipo el principal resuelve máxe 4 e − θe, de donde e = 4/θ2 , y paga w = θe:
+
+                    tipo G : (eG , wG ) = (4, 4);        tipo B : (eB , wB ) = (1, 2).
+
+Si el principal no observa el tipo y ofrece ambos contratos, el agente eficiente puede elegir el
+contrato pensado para el otro tipo: obtiene wB − θG eB = 2 − 1 = 1 > 0, que es mejor que la
+utilidad nula de su propio contrato. El menú de información simétrica no es compatible con los
+incentivos.
+
+  Idea clave. En la selección adversa, el agente “bueno” puede hacerse pasar por “malo” y
+  apropiarse de una renta informacional. La respuesta del principal es ofrecer un menú de
+  contratos diseñado para que cada tipo elija el suyo (autoselección), como las pólizas con y
+  sin franquicia. Unidad VIII.
+
+
+7.3.    Señalización
+
+Definición 7.3 (Señalización). Hay señalización cuando la parte informada puede, antes de
+firmar el contrato, tomar una decisión observable que influye en las creencias de la otra parte
+sobre su tipo.
+
+
+                                                    11
+                                                                                                                           t
+       N elige el           A envía            P diseña           A acepta           A aporta            N elige el
+       tipo de A,          una señal          el contrato         o rechaza         el esfuerzo           estado;
+       sólo A lo                                                                                         resultado
+        observa                                                                                           y pagos
+
+
+                                                                                                                      t
+         N elige el             P diseña              A acepta             A aporta               N elige el
+         tipo de P ,           el contrato            o rechaza           el esfuerzo              estado;
+         sólo P lo             y lo usa co-                                                       resultado
+          observa               mo señal                                                           y pagos
+
+
+            Figura 6: Señalización por parte del agente (arriba) y del principal (abajo).
+
+
+Ejemplos. El graduado del aviso: terminar una carrera, aunque su contenido no tenga que ver
+con el puesto, informa sobre la capacidad o la constancia del candidato (Spence, 1973). En los
+mercados financieros, el nivel de endeudamiento que eligen los directivos es leído por los inversores
+como una señal de la calidad de la firma. Cuando es el principal quien tiene información privada,
+puede usar los propios términos del contrato como señal: dos lavarropas aparentemente idénticos
+se venden a precios distintos, y el más caro ofrece una garantía más larga.
+
+Observación 7.1 (¿Cuándo es creíble una señal?). Para que una acción transmita información,
+debe ser más barata para los tipos “buenos” que para los “malos”. Si estudiar fuera igualmente
+costoso para todos, todos (o nadie) estudiarían y el título no revelaría nada.
+
+
+7.4.    Cuadro comparativo
+
+Problema               Qué ignora el prin-         Cuándo surge          Respuesta contractual tí-              Unidad
+                       cipal                                             pica
+
+Información si-        nada (ambos ignoran         —                     reparto de Borch: salario fijo,                  VI
+métrica                lo mismo)                                         franquicia o regla de toleran-
+                                                                         cias
+Riesgo moral           la acción del agente o      después de fir-       pago contingente al resultado:               VII
+                       lo que aprende luego        mar                   incentivos vs. seguro
+Selección    ad-       el tipo del agente          antes de firmar       menú de contratos que induce                 VIII
+versa                                                                    la autoselección
+Señalización           el tipo de la parte in-     antes de firmar;      acción observable y costosa                      IX
+                       formada                     el   informado        que revela el tipo
+                                                   actúa primero
+
+
+
+8.     Síntesis
+
+La Unidad VI construye el puente entre las dos partes del curso. Del lado del riesgo, el modelo
+básico con información simétrica es un caso particular del teorema de Borch: el contrato óptimo
+reparte el resultado de modo de igualar el cociente de utilidades marginales en todos los estados,
+lo que da salario fijo si el principal es neutral, franquicia si lo es el agente, y un reparto según
+las tolerancias al riesgo si ambos son aversos (lineal bajo CARA). La indeterminación que Borch
+resolvía con la negociación se resuelve aquí dando todo el poder de negociación al principal. Del
+lado de la información, ese mismo contrato es el punto de comparación para medir los costos
+de la asimetría: el Ejemplo 7.1 muestra que el seguro completo destruye los incentivos cuando
+el esfuerzo no es verificable, y el Ejemplo 7.2 que los contratos “a medida” de cada tipo no
+
+
+                                                            12
+sobreviven cuando el tipo es privado. Las próximas tres unidades estudian, una por una, cómo
+el contrato óptimo se deforma respecto del de Borch para enfrentar el riesgo moral, la selección
+adversa y la señalización.
+
+
+Ejercicios
+
+1. Clasificación de problemas de información. Para cada situación, indique si se trata de
+   riesgo moral (acción oculta o información oculta), selección adversa o señalización, identifique
+   principal y agente, y dibuje la secuencia temporal correspondiente. (a) Una aseguradora no
+   puede observar si el asegurado deja el auto con alarma. (b) Un banco no conoce la probabilidad
+   de éxito de los proyectos de quienes le piden crédito. (c) Un recién graduado incluye en su CV
+   un posgrado no relacionado con el puesto. (d) Un gerente, ya contratado, conoce el estado de la
+   demanda antes de fijar la estrategia comercial; los accionistas no. (e) Un regulador fija la tarifa
+   de una distribuidora de gas sin conocer sus costos. (f) Un fabricante de electrodomésticos
+   ofrece una garantía de tres años en lugar de dos.
+
+2. Modelo básico con principal neutral. El resultado es x ∈ {0, 60}. Con esfuerzo alto,
+                                                                      √
+   Pr(x = 60) = 3/4; con esfuerzo bajo, 1/4. El agente tiene u(w) = w, v(eH ) = 1, v(eL ) = 0
+   y U = 3; el principal es neutral. (a) Explique por qué el salario óptimo no depende del
+   resultado. (b) Calcule el salario óptimo para cada nivel de esfuerzo. (c) ¿Qué esfuerzo exige
+   el principal? ¿Cuál es su beneficio esperado? (d) Si el esfuerzo dejara de ser verificable y
+   el principal mantuviera el salario de (c), ¿qué esfuerzo elegiría el agente y cuál sería el
+   beneficio del principal? (e) Repita (b) y (c) suponiendo que el agente es neutral (u(w) = w)
+   y el principal averso, y compruebe que la franquicia induce el esfuerzo eficiente aun sin
+   verificabilidad.
+
+3. Seguro con información simétrica (Macho Stadler y Pérez Castrillo, ej. 2.2). Un individuo
+   con riqueza w0 posee una propiedad de valor L que se incendia con probabilidad π, conocida
+   por ambas partes. Puede contratar una cobertura q a cambio de una prima P . La aseguradora
+   es neutral al riesgo y el individuo tiene utilidad u(·). (a) ¿Cuál es la utilidad de reserva del
+   individuo? (b) ¿Qué variables verificables puede incluir el contrato? (c) Si la aseguradora elige
+   prima y cobertura, calcule el contrato óptimo para un individuo averso y relacione el resultado
+   con la Proposición 4.1. (d) ¿Qué ocurre si el individuo es neutral al riesgo? (e) ¿Qué prima
+   resultaría con competencia perfecta entre aseguradoras? (f) Muestre que, si la aseguradora
+   también es aversa, no es óptimo asegurar por completo al individuo.
+
+4. Contrato lineal bajo CARA. Sean u(w) = −e−rA w y B(x − w) = −e−rP (x−w) . (a) A
+   partir de la condición de Borch B ′ (x − w) = λu′ (w), derive el contrato óptimo y muestre que
+   es lineal con b = rP /(rP + rA ). (b) Calcule ∂b/∂rA y ∂b/∂rP e interprételas. (c) Evalúe b
+   para rA = 3 y rP = 1, y en los límites rA → 0 y rP → 0; relacione esos límites con el salario
+   fijo y la franquicia. (d) Reescriba b en términos de tolerancias al riesgo y compárelo con la
+   regla de reparto de la Clase 3.
+
+5. Dos resultados (Macho Stadler y Pérez Castrillo, ej. 2.3). Sea un modelo con éxito (xS )
+   y fracaso (xF ), xF < xS , y probabilidad de éxito pS (e). (a) Escriba el contrato óptimo y
+   la condición necesaria para el esfuerzo óptimo cuando el principal es neutral y el agente
+   averso,
+   ∑︁ ′′ y cuando el agente es neutral y el principal averso. (b) Escriba la condición suficiente
+      i pi (e)xi ≤ 0 para este caso e interprétela como rendimientos decrecientes del esfuerzo.
+   (c) Verifique que pS (e) = e/(1 + e) la satisface.
+
+6. Contratos implícitos en el mercado de trabajo (Macho Stadler y Pérez Castrillo,
+   ej. 2.4). Una firma neutral al riesgo contrata n trabajadores idénticos con utilidad u(w) − e,
+
+                                                 13
+donde e ∈ {0, 1} y u′′ < 0. La producción es x = f (n, ε), con ε un shock aleatorio que
+nadie conoce al firmar pero que todos observan después. Un trabajador desempleado recibe
+un subsidio s, de modo que U = u(s). (a) Calcule el salario contingente óptimo en función
+del nivel de empleo. (b) La teoría de los contratos implícitos sostiene que el contrato laboral
+es también un contrato de seguro. Comente esta idea a partir de (a) y explique por qué el
+salario no tiene por qué igualar la productividad marginal en cada estado. (c) Calcule el nivel
+óptimo de empleo y analice cómo varía con s.
+
+
+
+
+                                            14
+                                                           Anexo
+
+A.     El modelo básico con resultados continuos
+
+Supongamos que el resultado toma valores en un intervalo X = [x, x], con densidad condicional
+al esfuerzo f (x; e) > 0 para todo x y todo e. El contrato es ahora una función w(·), y el problema
+del principal es
+                  ∫︂ x                                ∫︂ x
+                        (︁       )︁                         (︁   )︁
+           máx        B x − w(x) f (x; e) dx s.a.         u w(x) f (x; e) dx − v(e) ≥ U .
+         e, w(·)    x                                                 x
+
+Como el salario en cada x aparece sólo en el integrando correspondiente, el lagrangiano puede
+maximizarse punto a punto: para cada x,
+
+                                                               B ′ x − wo (x)
+                                                                  (︁          )︁
+         ′       o               ′
+           (︁        )︁            (︁ o )︁
+     −B x − w (x) f (x; e) + λ u w (x) f (x; e) = 0 =⇒               (︁    )︁ = λ ∀x.
+                                                                  u′ wo (x)
+
+Es la misma condición de Borch (2), ahora para un continuo de estados. Todos los resultados
+de la Sección 4 se mantienen: con principal neutral, wo (x) = u−1 (U + v(e)); con agente neutral,
+wo (x) = x − k; y si ambos son aversos, dwo /dx = rP /(rP + rA ), ahora como derivada exacta.
+Ejemplo A.1 (Una familia de densidades). Sea X = [0, 1], e ∈ [0, 1] y f (x; e) = 1 + e (x − 12 ).
+Para e = 0 la distribución es uniforme; a mayor e, más masa en los resultados altos. El resultado
+esperado es               ∫︂ 1                          (︃       )︃
+                                (︁         1
+                                              )︁    1      1 1        1    e
+                   Π(e) =      x 1 + e(x − 2 ) dx = + e     −       = + .
+                            0                       2      3 4        2 12
+Como Π′′ (e) = 0, se cumple la condición suficiente de la Sección 6. Con principal neutral, la
+condición (10) queda 1/12 = v ′ (eo )/u′ (wo ).
+
+
+B.    Condiciones de segundo orden para el esfuerzo
+
+Consideremos el caso de principal neutral. El objetivo en función del esfuerzo es G(e) = Π(e) −
+w(e), con w(e) = u−1 (U + v(e)). Derivando la identidad u(w(e)) = U + v(e),
+
+                   v ′ (e)                        v ′′ (e)   v ′ (e) u′′ (w) w′ (e)   v ′′ (e)   u′′ (w) [v ′ (e)]2
+        w′ (e) =           ,         w′′ (e) =             −                        =          −                    .
+                   u′ (w)                         u′ (w)            [u′ (w)]2         u′ (w)         [u′ (w)]3
+La condición de segundo orden G′′ (eo ) ≤ 0 se escribe entonces
+                                n
+                               ∑︂                      v ′′ (eo )   u′′ (wo ) [v ′ (eo )]2
+                                     p′′i (eo ) xi −              +                        ≤ 0.
+                                                       u′ (wo )          [u′ (wo )]3
+                               i=1
+
+El segundo término es no positivo porque v ′′ ≥ 0, y el tercero también porque u′′ ≤ 0. Por lo
+tanto, una condición suficiente para que eo sea un máximo global es
+                                            n
+                                           ∑︂
+                                                 p′′i (e) xi ≤ 0     para todo e,                                       (12)
+                                           i=1
+
+es decir, Π′′ (e) ≤ 0: el resultado esperado es cóncavo en el esfuerzo. Con dos resultados, Π(e) =
+xF + pS (e)(xS − xF ) y (12) se reduce a p′′S (e) ≤ 0: la probabilidad de éxito crece con el esfuerzo
+a tasa decreciente. En el caso de agente neutral ocurre lo mismo: la condición local es Π′′ (eo ) −
+v ′′ (eo ) < 0, y (12) garantiza el máximo global.
+
+                                                               15
+Observación B.1. Estas condiciones son “baratas” con información simétrica. Con riesgo moral,
+el esfuerzo lo elige el agente en función del contrato, y garantizar que la condición de primer orden
+del agente describa su verdadera elección exigirá supuestos más fuertes sobre pi (e) (el enfoque
+de primer orden de la Unidad VII).
+
+
+
+Referencias
+ [1] Akerlof, G. A. (1970). The market for “lemons”: Quality uncertainty and the market mechanism.
+     Quarterly Journal of Economics, 84(3), 488–500.
+ [2] Arrow, K. J. (1964). The role of securities in the optimal allocation of risk-bearing. The Review of
+     Economic Studies, 31(2), 91–96.
+ [3] Borch, K. H. (1962). Equilibrium in a reinsurance market. Econometrica, 30(3), 424–444.
+ [4] Holmström, B. (1979). Moral hazard and observability. The Bell Journal of Economics, 10(1), 74–91.
+ [5] Laffont, J. J., & Martimort, D. (2002). The Theory of Incentives: The Principal-Agent Model. Prin-
+     ceton University Press.
+ [6] Macho Stadler, I., & Pérez Castrillo, D. (1994). Introducción a la economía de la información. Ariel.
+     (Caps. 1 y 2.)
+ [7] Mas-Colell, A., Whinston, M. D., & Green, J. R. (1995). Microeconomic Theory. Oxford University
+     Press. (Caps. 13 y 14.)
+ [8] Spence, M. (1973). Job market signaling. The Quarterly Journal of Economics, 87(3), 355–374.
+ [9] Wilson, R. (1968). The theory of syndicates. Econometrica, 36(1), 119–132.
+
+
+
+
+                                                   16
+

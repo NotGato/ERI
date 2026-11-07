@@ -1,0 +1,1368 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                       Notas de Clase 7
+                            Unidad VII — El problema del riesgo moral
+
+
+
+                    Macho Stadler & Pérez Castrillo (1994), cap. 3; Holmström (1979)
+
+
+
+                                                  Resumen
+       En la Clase 6 resolvimos el modelo principal–agente con información simétrica y vimos que el
+       contrato eficiente es un reparto de Borch: si el principal es neutral y el agente averso, el agente
+       recibe un salario fijo. También vimos, con un ejemplo, que ese contrato se derrumba si el
+       esfuerzo deja de ser verificable. Estas notas estudian ese problema: el riesgo moral. Primero
+       planteamos el problema general y su secuencia temporal, en la que aparece una nueva
+       restricción, la condición de incentivos. Segundo, resolvemos el modelo con dos esfuerzos
+       posibles de Macho Stadler y Pérez Castrillo, lo representamos gráficamente y medimos el
+       costo del riesgo moral. Tercero, mostramos que la estructura salarial óptima está gobernada
+       por el cociente de verosimilitud: el agente cobra más en los resultados que son una buena
+       señal de que se esforzó, lo que no siempre coincide con los resultados más altos. Cuarto,
+       extendemos el análisis a esfuerzos continuos mediante el enfoque de primer orden y
+       discutimos cuándo es válido. Quinto, presentamos el resultado central de Holmström (1979):
+       una señal adicional es valiosa si y sólo si es informativa sobre el esfuerzo (no es redundante
+       dado el resultado). Sexto, analizamos el riesgo moral con información oculta. Cerramos
+       con cuatro aplicaciones: franquicias en los seguros, incentivos para gerentes, responsabilidad
+       limitada y racionamiento del crédito.
+
+
+
+1.     El problema del riesgo moral
+
+1.1.    Una acción que no puede figurar en el contrato
+
+En la Clase 6 supusimos que el principal podía exigir un esfuerzo e por contrato y que, si el
+agente no cumplía, un tribunal lo sancionaba. A partir de ahora levantamos ese supuesto: el
+esfuerzo del agente no es verificable. Puede que el principal no lo observe, o que lo observe pero
+no pueda probarlo ante un juez; en ambos casos una cláusula del tipo “si veo que te esforzaste
+cobrás más” no es exigible. Todos los demás elementos del problema (tecnología, preferencias,
+distribución del azar) siguen siendo de conocimiento común.
+Definición 1.1 (Riesgo moral con acción oculta). Hay riesgo moral (con acción oculta) cuando,
+después de firmado el contrato, el agente elige una acción que afecta la distribución del resultado,
+esa acción no es verificable y, por lo tanto, no puede incluirse en el contrato. Lo que sí es verificable
+es el resultado x (o alguna otra señal), y el pago al agente puede depender de él.
+
+Los ejemplos son innumerables (Macho Stadler y Pérez Castrillo, sec. 3.1): el esfuerzo de un
+trabajador cuyo salario puede depender de sus ventas o de su producción; la inversión de una
+empresa regulada, cuyos pagos pueden depender de sus ventas o beneficios; el cuidado de un
+asegurado, cuya póliza puede depender del número y la gravedad de los siniestros. Holmström
+(1979) agrega un matiz importante: el problema surge porque se comparte riesgo en una situación
+en la que las acciones privadas afectan la distribución del resultado. Si no hubiera riesgo que
+repartir, bastaría con un contrato que castigara los malos resultados.
+
+                                                       1
+1.2.     Secuencia temporal
+
+La Figura 1 reproduce la secuencia que ya anticipamos en la Clase 6. La diferencia crucial con el
+modelo de referencia es que, una vez firmado el contrato, el agente elige libremente su esfuerzo,
+porque éste no es una variable contractual.
+
+                                                                                                  t
+            P diseña        A acepta               A elige un      N determina     Resultado x
+        el contrato w(x)    o rechaza               esfuerzo        el estado      y pagos w(x)
+                                                 no verificable
+
+
+Figura 1: Secuencia temporal del riesgo moral con acción oculta (Macho Stadler y Pérez Castrillo,
+Fig. 3.1).
+
+El concepto de solución sigue siendo el equilibrio perfecto en subjuegos, y lo obtenemos por
+inducción hacia atrás. Lo nuevo está en la última etapa:
+
+(1) Elección del esfuerzo. Dado el contrato {w(xi )}, el agente elige
+                                      {︄ n                          }︄
+                                        ∑︂           (︁     )︁
+                          e ∈ arg max       pi (ê) u w(xi ) − v(ê) .                                (1)
+                                           ê        i=1
+
+       Es la restricción de incentivos o de compatibilidad de incentivos (IC).
+(2) Aceptación. Anticipando e, el agente acepta si
+                                           n
+                                          ∑︂            (︁     )︁
+                                                pi (e) u w(xi ) − v(e) ≥ U ,                          (2)
+                                          i=1
+
+       la restricción de participación (PC) o de racionalidad individual, que ya estaba en la
+       Clase 6.
+(3) Diseño del contrato. El principal resuelve
+                                           n
+                                          ∑︂            (︁          )︁
+                              máx              pi (e) B xi − w(xi ) s.a. (2) y (1).                  (3)
+                            e, {w(xi )}
+                                          i=1
+
+
+El principal puede “proponer” un esfuerzo, pero debe asegurarse de que sea precisamente el que
+el agente quiere realizar dado el contrato. Esa es toda la diferencia con el problema de la Clase 6,
+y alcanza para cambiar la naturaleza del contrato óptimo.
+
+
+1.3.     Por qué el contrato eficiente deja de servir
+
+Supongamos, como haremos en casi toda la clase, que el principal es neutral y el agente averso.
+Con información simétrica, el contrato eficiente es un salario fijo wo = u−1 (U + v(eo )) (Clase 6).
+Pero con un salario fijo, la utilidad del agente es u(wo ) − v(e), que es máxima con el menor
+esfuerzo posible, emı́n(︁. El principal)︁ lo anticipa: si ofrece un salario fijo, lo mejor que puede hacer
+es pagar wmı́n = u−1 U + v(emı́n ) y conformarse con emı́n . Para obtener más esfuerzo tiene que
+hacer que el pago dependa del resultado.
+El otro extremo es la franquicia —el agente “compra” el resultado y paga una suma fija—,
+que da incentivos perfectos porque el agente se apropia de todo el resultado marginal. Pero la
+franquicia también estaba disponible con información simétrica y el principal no la eligió: un
+agente averso no está dispuesto a pagar mucho por cargar con todo el riesgo. La franquicia da
+incentivos, pero a un costo muy alto.
+
+                                                           2
+  Idea clave. El contrato óptimo con riesgo moral resuelve un trade-off entre seguro
+  e incentivos. El reparto eficiente del riesgo (Borch) pide asegurar al agente averso; los
+  incentivos piden que su pago dependa del resultado. Ninguno de los dos extremos —salario
+  fijo o franquicia— es, en general, óptimo.
+
+
+2.     El modelo con dos esfuerzos posibles
+
+2.1.    Supuestos
+
+Muchas conclusiones del modelo general pueden obtenerse en el caso más simple, en el que el
+agente elige entre dos esfuerzos: alto, eH (trabaja), y bajo, eL (descansa), con v(eH ) > v(eL ).
+Escribimos
+                       pH
+                        i ≡ pi (eH ),     pL
+                                           i ≡ pi (eL ),   pH    L
+                                                            i , pi > 0 ∀i.
+
+Suponemos además que el principal es neutral al riesgo. El supuesto simplifica el análisis y,
+sobre todo, aísla el efecto de la información: como con información simétrica el contrato óptimo
+es un salario fijo, cualquier dependencia del salario respecto del resultado se deberá al riesgo
+moral.
+Para que el principal prefiera el esfuerzo alto, los buenos resultados deben ser más probables con
+eH . Una forma de decirlo es la dominancia estocástica de primer orden:
+                         k
+                        ∑︂               k
+                                        ∑︂
+                              pH
+                               i ≤            pL
+                                               i   para todo k = 1, . . . , n − 1 :            (4)
+                        i=1             i=1
+
+los malos resultados son más probables cuando el agente descansa.
+
+
+Si el principal quiere eL , no hay problema. Con un salario       fijo el )︁agente elige eL por sí
+mismo. El contrato de información simétrica para eL , wL = u−1 U +v(eL ) , sigue siendo óptimo.
+                                                              (︁
+
+El problema aparece cuando el principal quiere eH .
+
+
+2.2.    El contrato óptimo que induce eH
+
+Con dos esfuerzos, la condición de incentivos (1) se reduce a comparar dos números:
+                      ∑︂                           ∑︂
+                         pH                            pL
+                              (︁    )︁                     (︁     )︁
+                          i u w(xi ) − v(eH ) ≥         i u w(xi ) − v(eL ),
+                        i                                   i
+
+es decir,
+                               n
+                              ∑︂
+                                      pH    L
+                                 (︁           )︁ (︁   )︁
+                                       i − pi u w(xi ) ≥ v(eH ) − v(eL ).                      (5)
+                              i=1
+La interpretación es directa: el agente se esfuerza si la ganancia de utilidad esperada que le
+reporta el esfuerzo supera su costo. El principal resuelve
+                               n
+                              ∑︂
+                                     pH
+                                        [︁         ]︁
+                    máx              i xi − w(xi )
+                   {w(xi )}
+                               i=1
+                               n
+                              ∑︂
+                                     pH
+                                         (︁     )︁
+                      s.a.            i u w(xi ) − v(eH ) ≥ U          (λ)                     (6)
+                              i=1
+                               n
+                              ∑︂     (︁ H
+                                       pi − pL
+                                               )︁ (︁   )︁
+                                             i u w(xi ) ≥ v(eH ) − v(eL )             (µ)
+                               i=1
+
+
+                                                        3
+Derivando el lagrangiano respecto de cada w(xi ),
+                                H ′                  L ′
+                      −pH
+                                    (︁    )︁    (︁ H  )︁ (︁    )︁
+                         i + λ pi u w(xi ) + µ pi − pi u w(xi ) = 0,
+
+y dividiendo por pH  ′
+                  i u obtenemos la condición que caracteriza el contrato óptimo:
+
+
+                                            pL
+                                        (︃     )︃
+                         1                   i
+                      (︁      )︁ = λ + µ 1 − H           para todo i = 1, . . . , n.            (7)
+                    u′ w(xi )               pi
+
+Sumando (7) ponderada por pH                      H         L
+                                            ∑︁          ∑︁
+                           i y usando          i pi =    i pi = 1,
+
+                                           n
+                                          ∑︂      pH
+                                     λ=         (︁ i )︁ > 0.                                    (8)
+                                          i=1
+                                              u′ w(xi )
+
+Proposición 2.1 (Ambas restricciones se saturan). En el contrato óptimo que induce eH , λ > 0
+y µ > 0: el agente obtiene exactamente U y está indiferente entre esforzarse y no hacerlo.
+
+Demostración. λ > 0 se sigue de (8). Si fuera µ = 0, (7) daría u′ (w(xi )) = 1/λ para todo i: un
+salario fijo. Pero con salario fijo el lado izquierdo de (5) vale cero y el derecho es positivo, de
+modo que la condición de incentivos no se cumpliría. Luego µ ̸= 0 y, por Kuhn–Tucker, µ > 0.
+(El Anexo A muestra que las condiciones de primer orden caracterizan un máximo global.)
+
+Que µ > 0 tiene una consecuencia importante: el precio sombra de la condición de incentivos es
+positivo, así que el riesgo moral le cuesta al principal. Su beneficio es estrictamente menor que
+con información simétrica.
+
+
+2.3.   El ejemplo de la Clase 6, con riesgo moral
+
+Ejemplo 2.1 (Contrato de incentivos). Retomemos el Ejemplo de la Clase 6: x ∈ {0, 100},
+                                                   √
+Pr(x = 100) = 0.8 con eH y 0.4 con eL , u(w) = w, v(eH ) = 2, v(eL ) = 0, U = 5 y principal
+neutral. Con información simétrica el principal exigía eH con un salario fijo de 49 y ganaba 31;
+con esfuerzo no verificable ese contrato inducía eL y el principal perdía 9.
+                  √             √
+Llamemos uS ≡ wS y uF ≡ wF a las utilidades en el éxito (x = 100) y el fracaso (x = 0).
+Las dos restricciones se saturan:
+
+   (PC) 0.8 uS + 0.2 uF = 5 + 2 = 7,         (IC) (0.8 − 0.4)(uS − uF ) = 2 ⇒ uS − uF = 5.
+
+Resolviendo, uS = 8 y uF = 3, es decir,
+
+                                      wS = 64,       wF = 9 .
+
+El salario esperado es 0.8(64) + 0.2(9) = 53 y el beneficio del principal es 80 − 53 = 27. Como con
+eL obtiene 40 − 25 = 15, sigue exigiendo eH , pero gana 4 menos que con información simétrica
+(31).
+                           √                 √
+Multiplicadores. Con u = w, 1/u′ (w) = 2 w. Los cocientes pL           H                1
+                                                                   i /pi son 0.4/0.8 = 2 en el éxito
+                                                               1
+y 0.6/0.2 = 3 en el fracaso. La condición (7) da 16 = λ + 2 µ y 6 = λ − 2µ, de donde µ = 4 y
+λ = 14 (que coincide con 0.8 · 16 + 0.2 · 6, como indica (8)).
+El costo del riesgo moral es una prima de riesgo. El agente recibe una lotería que paga 64 o 9.
+Su equivalente cierto es (0.8 · 8 + 0.2 · 3)2 = 72 = 49: exactamente el salario fijo de información
+simétrica. Los 4 pesos adicionales de salario esperado son la prima de riesgo que el principal
+debe pagarle para que acepte cargar con el riesgo que exigen los incentivos.
+
+                                                 4
+                                                                                       √
+Observación 2.1 (Una fórmula para el costo del riesgo moral). Con u(w) = w el cálculo
+anterior se generaliza. Si llamamos A ≡ U + v(eH ), ∆v ≡ v(eH ) − v(eL ) y ri ≡ pL                H
+                                                                                              i /pi , la
+                             √
+condición (7) dice que ui = wi es lineal en 1 − ri , y las dos restricciones dan (siempre que todos
+los ui resulten no negativos)
+                                                                           n (︁ H       )︁2
+                     ∆v                          2     (∆v)2         2
+                                                                         ∑︂    pi − p L
+                                                                                      i
+           ui = A + 2 (1 − ri ),     EH [w] = A +            ,     χ ≡                      .        (9)
+                     χ                                   χ2
+                                                                          i=1
+                                                                                  pH
+                                                                                   i
+
+A2 es el salario fijo de información simétrica, así que (∆v)2 /χ2 es el costo del riesgo moral.
+El denominador χ2 mide cuán distintas son las distribuciones del resultado con uno y otro
+esfuerzo, es decir, cuán informativo es el resultado sobre el esfuerzo. En el Ejemplo 2.1, χ2 =
+0.42 /0.8 + 0.42 /0.2 = 1 y el costo es 22 /1 = 4. (La derivación está en el Anexo A.)
+
+
+2.4.   ¿Qué esfuerzo exige el principal?
+
+Resuelto el contrato para cada esfuerzo, el principal compara sus beneficios. Con información
+asimétrica, eL cuesta lo mismo que antes y eH cuesta más, de modo que el riesgo moral puede
+producir dos tipos de pérdida: el principal sigue pidiendo eH pero gana menos, o directamente
+deja de pedirlo aunque fuera eficiente.
+Ejemplo 2.2 (Continuación: valor del éxito). Sea X el resultado en caso de éxito (antes era
+100). Los beneficios del principal son
+
+                              información simétrica, eH : 0.8X − 49,
+                              riesgo moral, eH :             0.8X − 53,
+                              eL (en ambos casos) :          0.4X − 25.
+Con información simétrica conviene eH si 0.4X ≥ 24, es decir, si X ≥ 60; con riesgo moral sólo
+si 0.4X ≥ 28, es decir, si X ≥ 70. Para X ∈ (60, 70) el riesgo moral lleva al principal a contratar
+un esfuerzo ineficientemente bajo (Figura 2).
+
+                      beneficio
+                                                                  eH info. simétrica
+                                                                  eH riesgo moral
+
+
+                                                                  eL : 0.4X − 25
+
+
+
+                                                                     X
+                         40              60       70            90
+
+
+
+
+                                          esfuerzo
+                                         ineficiente
+
+
+Figura 2: Beneficio del principal según el valor del éxito X (Ejemplo 2.2). Con información
+simétrica conviene eH a partir de X = 60; con riesgo moral, recién a partir de X = 70.
+
+
+  Idea clave. El riesgo moral tiene dos costos. Cuando el principal sigue pidiendo el esfuerzo
+  alto, debe pagar una prima de riesgo para compensar al agente por los incentivos. Cuando
+  esa prima es demasiado alta, renuncia al esfuerzo alto aunque sea eficiente.
+
+                                                       5
+3.     Análisis gráfico
+
+Con dos resultados podemos representar el problema en el plano de los salarios contingentes
+(wF , wS ), como en la caja de Edgeworth de la Clase 6 (Macho Stadler y Pérez Castrillo, com-
+plemento 3A.1). Tres elementos bastan:
+
+     La frontera de incentivos. Los contratos que dejan al agente indiferente entre eH y eL
+     satisfacen (5) con igualdad; con dos resultados,
+
+                                                             v(eH ) − v(eL )
+                                      u(wS ) = u(wF ) +                      .                                (10)
+                                                                pH
+                                                                 S − pS
+                                                                       L
+
+
+     Por encima de esa curva (wS grande respecto de wF ) el agente elige eH ; por debajo, eL . La
+     línea de certeza wS = wF está siempre por debajo: un salario fijo nunca induce el esfuerzo
+     alto.
+     La curva de participación con eH , convexa, como una curva de indiferencia del agente al
+     nivel U .
+     Las rectas de isocosto del principal neutral, pH       H                            H   H
+                                                    S wS + pF wF = cte., con pendiente −pF /pS .
+
+
+                        wS               A elige eH (sombreado)
+                                                                                 wS = wF
+
+
+
+
+                                 H′
+                       64
+
+
+                                                                   EH [w] = 53
+
+                                                           H
+                                                                   EH [w] = 49   PC con eH
+
+
+                                          frontera de incentivos
+
+                                          L
+
+
+
+
+                                                                                    wF
+                             9          25              49
+
+
+Figura 3: El contrato óptimo con riesgo moral en el plano (wF , wS ) para el Ejemplo 2.1 (basado
+en Macho Stadler y Pérez Castrillo, Figs. 3.3–3.6). L: salario fijo para eL . H: salario fijo de
+información simétrica para eH , que con esfuerzo no verificable induce eL . H ′ : contrato óptimo
+con riesgo moral, en la intersección de la frontera de incentivos y la curva de participación.
+
+La Figura 3 dibuja el Ejemplo 2.1. El punto H es el óptimo de información simétrica para eH : está
+sobre la línea de certeza, en la tangencia entre la curva de participación y la isocosto más baja.
+Pero H queda por debajo de la frontera de incentivos: si el principal lo ofrece, el agente acepta y
+descansa. El contrato más barato que el agente acepta y que lo lleva a esforzarse es H ′ = (9, 64),
+en la intersección de la frontera de incentivos y la curva de participación. Formalmente, H ′
+resuelve (10) y la participación saturada:
+
+                                  v(eH ) − v(eL )                                            v(eH ) − v(eL )
+ u(wS ) = U + v(eH ) + (1 − pH
+                             S)                   ,          u(wF ) = U + v(eH ) − pH
+                                                                                    S                        . (11)
+                                     pH
+                                      S − pS
+                                            L                                                   pH
+                                                                                                 S − pS
+                                                                                                       L
+
+
+                                                       6
+Con los datos del ejemplo, u(wS ) = 7 + 0.2 · 5 = 8 y u(wF ) = 7 − 0.8 · 5 = 3. El costo del riesgo
+moral es la distancia entre las isocostos que pasan por H y por H ′ : 53 − 49 = 4. Por último, el
+principal compara H ′ con L (el salario fijo que obtiene eL ), como en el Ejemplo 2.2.
+Observación 3.1 (Un detalle del gráfico). H ′ también está sobre la curva de participación con
+eL : como el agente queda indiferente entre ambos esfuerzos, obtiene U con cualquiera de los dos.
+Seguimos la convención usual de que, ante la indiferencia, el agente elige el esfuerzo que prefiere
+el principal; si se quiere evitar la convención, basta con agregar un peso a wS .
+
+
+4.     El cociente de verosimilitud y la estructura salarial
+
+4.1.   El salario como respuesta a una señal
+
+La condición (7) dice cómo se ordenan los salarios. Como 1/u′ es creciente en w (porque u′′ < 0),
+el salario w(xi ) es mayor cuanto menor es el cociente
+                                                      pL
+                                                       i
+                                              ri ≡       ,
+                                                      pH
+                                                       i
+
+que se llama cociente de verosimilitud. Mide con qué precisión el resultado xi señala que el
+esfuerzo fue eH : si ri es chico, xi es mucho más probable con esfuerzo alto que con esfuerzo bajo,
+y observarlo es una buena noticia sobre el esfuerzo. Si ri es grande, xi es típico de un agente que
+descansa.
+Es útil tomar como referencia el salario w̄ ≡ (u′ )−1 (1/λ), que es el que se pagaría en un resultado
+“neutro” con ri = 1. Despejando de (7),
+                                                       ⎧
+                          (︃
+                                  1
+                                            )︃         ⎨w(xi ) > w̄ si ri < 1 (“premio”),
+                                                       ⎪
+                     ′ −1
+          w(xi ) = (u )                        =⇒        w(xi ) = w̄ si ri = 1,
+                             λ + µ(1 − ri )            ⎪
+                                                         w(xi ) < w̄ si ri > 1 (“castigo”).
+                                                       ⎩
+
+
+Por ejemplo, si pH             L            H           L
+                 1 = 0.001 y p1 = 0.8, y pn = 0.9 y pn = 0.01, el sentido común indica premiar
+la observación de xn y castigar la de x1 ; (7) dice cuánto.
+
+  Idea clave. El principal usa el resultado como en un problema de inferencia estadística:
+  paga más cuando el resultado es una buena señal de que el agente se esforzó. Lo que importa
+  de cada resultado no es cuánto vale para el principal, sino cuánto informa sobre el esfuerzo.
+
+Observación 4.1 (No es inferencia de verdad). La analogía es sólo eso. En equilibrio el principal
+sabe qué esfuerzo elige el agente: lo eligió ella misma al diseñar el contrato. Paga según el resultado
+no porque tenga dudas, sino porque es la única manera de influir sobre el esfuerzo. Si el agente
+fuera a elegir eH de todos modos, no haría falta exponerlo al riesgo.
+
+
+4.2.   ¿Salarios crecientes en el resultado?
+
+Una consecuencia llamativa de (7) es que el salario no depende del valor que el principal asigna
+a cada resultado —los xi ni siquiera aparecen—, sino sólo de las probabilidades. Por eso no está
+garantizado que el salario crezca con el resultado.
+Definición 4.1 (Propiedad del cociente de verosimilitud monótono). Las distribuciones satisfa-
+cen la propiedad del cociente de verosimilitud monótono (MLRP, por sus siglas en inglés)
+si pL    H
+     i /pi es decreciente en i: cuanto mejor es el resultado, más fuerte es la evidencia a favor de
+eH .
+
+                                                  7
+Si se cumple la MLRP, (7) implica que w(xi ) es creciente en i. La MLRP es más fuerte que la
+dominancia estocástica (4): la implica, pero no al revés. Con dominancia estocástica solamente,
+el contrato óptimo puede pagar más por un resultado intermedio que por uno alto.
+
+Ejemplo 4.1 (Un salario no monótono). Hay tres resultados, x1 < x2 < x3 , con
+
+                          pH = (0.1, 0.4, 0.5),       pL = (0.3, 0.2, 0.5).
+
+Las acumuladas son (0.1, 0.5) con eH y (0.3, 0.5) con eL , así que se cumple la dominancia esto-
+cástica. Pero los cocientes de verosimilitud son r = (3, 12 , 1): el resultado intermedio es la mejor
+señal de esfuerzo y el más alto no dice nada (es igual de probable con ambos esfuerzos). Con
+     √
+u = w, v(eH ) = 2, v(eL ) = 0 y U = 8, la fórmula (9) da A = 10, χ2 = 0.22 /0.1+0.22 /0.4 = 0.5,
+y
+                  ui = 10 + 4(1 − ri ) = (2, 12, 10) =⇒ w = (4, 144, 100).
+El agente cobra 144 si el resultado es intermedio y sólo 100 si es el más alto. El salario esperado
+es 0.1(4)+0.4(144)+0.5(100) = 108, contra 100 con información simétrica: el riesgo moral cuesta
+(∆v)2 /χ2 = 4/0.5 = 8.
+
+Macho Stadler y Pérez Castrillo dan una situación en la que esto es razonable: el principal quiere
+que el agente elija una acción cuyas consecuencias posibles son un gran éxito o un rotundo fracaso,
+con pocas chances de un resultado intermedio. El contrato debe pagar más por los resultados
+bajos que por los intermedios, porque los intermedios delatan que el agente no eligió la acción
+pedida. El contrato no busca repartir el riesgo sino dar incentivos.
+
+
+4.3.   Señales perfectas y castigos severos
+
+En la Clase 6 supusimos pi (e) > 0 para todo i y todo e. Veamos qué pasa si no se cumple. Si
+algún resultado xk tiene pH             L
+                           k = 0 < pk , observarlo prueba que el agente descanso. El principal
+puede entonces pagar el salario de información simétrica en todos los demás resultados y fijar
+un castigo muy severo en xk (Harris y Raviv, 1979). El agente que se esfuerza nunca sufre el
+castigo, así que no soporta riesgo; el que descansa lo sufre con probabilidad pL
+                                                                               k , y si el castigo es
+suficientemente grande no le conviene. Se alcanza el óptimo de información simétrica.
+Los castigos severos funcionan como una amenaza: no están pensados para aplicarse. “Sólo un
+mal cochero tiene que usar el látigo; a uno bueno le basta con la amenaza.” Un ejemplo es el
+despido de quien no se presenta a trabajar: el esfuerzo es difícil de verificar, pero la ausencia no.
+Holmström (1979, nota 7) muestra lo mismo cuando el soporte de la distribución del resultado
+cambia con el esfuerzo. Por eso el supuesto pi (e) > 0 no es inocente: es el que hace que el riesgo
+moral sea un problema.
+
+  Idea clave. Si algún resultado es una señal perfecta de que el agente no se esforzó, un
+  castigo severo en ese resultado elimina el problema. El riesgo moral es costoso precisamente
+  porque todos los resultados son posibles con cualquier esfuerzo: nunca se puede estar seguro
+  de que un mal resultado se debió a la falta de esfuerzo y no a la mala suerte.
+
+
+5.     Esfuerzo continuo: el enfoque de primer orden
+
+5.1.   El enfoque de primer orden
+
+Cuando el esfuerzo puede tomar muchos valores, o es continuo, el problema (3) es difícil: una
+de sus restricciones, (1), es a su vez un problema de maximización. La salida clásica (Mirrlees,
+
+                                                  8
+1974; Holmström, 1979) es reemplazar (1) por la condición de primer orden del agente,
+                                  n
+                                 ∑︂
+                                        p′i (e) u w(xi ) − v ′ (e) = 0.
+                                                 (︁     )︁
+                                                                                             (12)
+                                  i=1
+
+Este procedimiento se llama enfoque de primer orden. Con multiplicadores λ (participación)
+y µ (incentivos), la condición de primer orden respecto de cada salario es
+
+               −pi (e) B ′ xi − w(xi ) + λ pi (e) u′ w(xi ) + µ p′i (e) u′ w(xi ) = 0,
+                          (︁          )︁            (︁     )︁             (︁     )︁
+
+es decir,
+                         B ′ xi − w(xi )
+                            (︁          )︁
+                                                   p′i (e)
+                               (︁    )︁    = λ + µ                para todo i.               (13)
+                            u′ w(xi )              pi (e)
+
+Con resultados continuos y densidad f (x; e), la misma derivación —punto a punto, como en el
+Anexo A de la Clase 6— da la fórmula de Mirrlees–Holmström:
+                               B ′ x − w(x)
+                                  (︁         )︁
+                                                       f (x; e)
+                                     (︁   )︁ = λ + µ e          .                       (14)
+                                  u′ w(x)              f (x; e)
+
+Comparemos con la Clase 6. Con µ = 0, (14) es la condición de Borch: el cociente de utilidades
+marginales es constante. El segundo término mide la desviación respecto del reparto eficiente
+del riesgo que se necesita para dar incentivos. El caso de dos esfuerzos es la versión discreta:
+p′i (e)/pi (e) corresponde a (pH    L    H
+                               i − pi )/pi = 1 − ri en (7).
+
+Proposición 5.1 (Holmström, 1979, Prop. 1). Si v ′ > 0 y un mayor esfuerzo mejora la distri-
+bución del resultado en el sentido de la dominancia estocástica de primer orden (Fe (x; e) ≤ 0,
+con desigualdad estricta para algunos x), entonces µ > 0. En consecuencia:
+
+(a) el agente cobra más que en el reparto de Borch (para el mismo λ) en los resultados con
+    fe > 0, y menos en los resultados con fe < 0;
+(b) el contrato óptimo es estrictamente peor que el de información simétrica: el riesgo moral
+    tiene un costo.
+
+
+Interpretación. El cociente fe /f = ∂ ln f (x; e)/∂e es la derivada del logaritmo de la función
+de verosimilitud cuando se mira e como un parámetro desconocido. Mide con qué fuerza uno
+se inclinaría a inferir, a partir de x, que el agente no realizó el esfuerzo pedido. Holmström lo
+interpreta como un cociente beneficio–costo: |fe | mide el efecto incentivo de mover el salario en
+el resultado x, y f mide su costo en términos de riesgo (cuanto más probable es x, más riesgo
+agrega moverlo). La fórmula dice que las desviaciones respecto del reparto eficiente —premios y
+castigos— deben ser proporcionales a ese cociente.
+Ejemplo 5.1 (El técnico de mantenimiento de Holmström). Un técnico repara una máquina; su
+esfuerzo e determina el tiempo medio hasta la próxima rotura, y el resultado x es proporcional
+a ese tiempo: x tiene distribución exponencial con media e, f (x; e) = 1e e−x/e . Entonces fe /f =
+                                                                           √                √
+(x − e)/e2 , creciente en x. Con principal neutral y agente con u(w) = 2 w, 1/u′ (w) = w y
+(14) da
+                                                    x−e 2
+                                            [︃           ]︃
+                                    w(x) = λ + µ 2          .
+                                                     e
+Holmström resuelve el ejemplo con v(e) = e2 y λ = 21 : el esfuerzo es e = 21 , µ = e3 = 18 y
+                 )︁2
+w(x) = 14 x + 12 , un contrato convexo (con el mismo λ, el óptimo de información simétrica es
+          (︁
+
+un salario fijo de 14 con e = 1). Los castigos por resultados por debajo de la media son pequeños
+y los premios por encima de ella, grandes: la convexidad no tiene nada de excepcional.
+
+                                                    9
+5.2.   ¿Cuándo es válido el enfoque de primer orden?
+
+El problema es que (12) es sólo una condición
+                                         ∑︁      necesaria para que e maximice la utilidad del
+agente. Si la utilidad esperada EU (e) = i pi (e)u(w(xi )) − v(e) no es cóncava en e, la condición
+de primer orden también la cumplen mínimos locales y máximos locales que no son globales.
+Al reemplazar (1) por (12) el principal estaría eligiendo entre demasiados candidatos, y podría
+terminar proponiendo un contrato que, en realidad, induce otro esfuerzo (Mirrlees, 1975). No se
+trata de una sutileza: la ecuación se usa como restricción del problema del principal.
+
+                       EU (e)
+                                                            máx. global
+
+                                  máx. local
+
+
+
+
+                                               mín. local
+
+
+                                                                            e
+                                      e1          e2            e3
+
+
+Figura 4: Por qué puede fallar el enfoque de primer orden. Los tres esfuerzos cumplen EU ′ (e) = 0,
+pero el agente sólo elegiría e3 . Si el principal diseña el contrato “para” e1 usando la condición de
+primer orden, el agente responderá con e3 (basado en Macho Stadler y Pérez Castrillo, Figs. 3.9
+y 3.10).
+
+Hay dos maneras de evitar el problema.
+
+(i) Restringir la tecnología para que EU (e) sea cóncava en el contrato óptimo. Rogerson
+    (1985) muestra que el enfoque es válido si se cumplen la MLRP y la convexidad de la
+    función de distribución (F (x; e) convexa en e: rendimientos decrecientes del esfuerzo en el
+    sentido estocástico). El caso más sencillo es el siguiente.
+(ii) Resolver en dos etapas (Grossman y Hart, 1983): para cada esfuerzo, calcular el contrato
+     más barato que lo induce —un problema bien comportado, como el de dos esfuerzos—, y
+     luego elegir el esfuerzo. Así pueden estudiarse las propiedades del contrato óptimo aunque
+     no pueda identificarse el esfuerzo óptimo.
+Ejemplo 5.2 (Distribución lineal: el enfoque es válido). Sea e ∈ [0, 1] y
+                                      pi (e) = e pH            L
+                                                  i + (1 − e) pi ,
+
+como si el agente “mezclara” los dos esfuerzos del modelo discreto (Hart y Holmström, 1987,
+llaman a esto linealidad de la función de distribución). La utilidad esperada del agente es
+                                   ∑︂            ∑︂ (︁
+                                       pL              pH    L
+                                                               )︁
+                          EU (e) =      i ui + e        i − pi ui − v(e),
+                                       i               i
+
+con EU ′′ (e) =∑︁−v ′′ (e) ≤ 0: es cóncava para cualquier contrato, de modo que la condición de
+primer orden i (pH          L        ′
+                     i − pi )ui = v (e) equivale a (1) (si la solución es interior). La fórmula (13)
+con principal neutral queda
+                                    1                   pH − p L
+                                         )︁ = λ + µ H i        i
+                                                                     ,
+                                                   e pi + (1 − e) pL
+                                 (︁
+                                u′ w(xi )                          i
+
+y el lado derecho es creciente en i exactamente cuando pL   H
+                                                        i /pi es decreciente: la misma condición
+MLRP del modelo con dos esfuerzos.
+
+                                                   10
+5.3.   El esfuerzo que se exige
+
+Aunque el problema no sea cóncavo en e, la condición de primer orden del lagrangiano respecto
+del esfuerzo es necesaria. Con principal neutral,
+                  n                n
+                                                        [︄ n                             ]︄
+                 ∑︂               ∑︂                      ∑︂
+                     p′i (e) xi =    p′i (e) w(xi ) − µ      p′′i (e) u w(xi ) − v ′′ (e) .
+                                                                       (︁     )︁
+                                                                                            (15)
+                 i=1            i=1                     i=1
+
+(La derivada de la participación respecto de e coincide con la condición de incentivos, que vale
+cero.) El lado izquierdo es el beneficio marginal del esfuerzo; el derecho, su costo: cuánto aumenta
+el salario esperado y cuánto cuesta “endurecer” la condición de incentivos, a su precio sombra µ.
+Con información simétrica, en cambio, lo que determina el esfuerzo es la participación (Clase 6,
+ecuación del esfuerzo óptimo). Con riesgo moral, el elemento central pasa a ser el costo de la
+restricción de incentivos.
+
+
+6.     Información valiosa
+
+6.1.   Señales adicionales
+
+Hasta aquí el contrato sólo podía depender del resultado x. Pero la Proposición 5.1 dice que el
+riesgo moral tiene un costo, así que habría ganancias en observar el esfuerzo. Como observarlo
+perfectamente suele ser imposible o carísimo, la pregunta relevante es otra: ¿sirve una información
+imperfecta sobre el esfuerzo? Holmström (1979) la responde de manera completa.
+Sea y otra variable verificable —un informe de un supervisor, un dato contable, el clima, las
+ventas de otro vendedor— con distribución conjunta f (x, y; e). El contrato es ahora w(x, y) y la
+misma derivación da
+                               B ′ x − w(x, y)
+                                  (︁          )︁
+                                                      f (x, y; e)
+                                       (︁   )︁ = λ + µ e           .                         (16)
+                                     ′
+                                  u w(x, y)            f (x, y; e)
+La novedad es que fe /f puede cambiar con y. Para un mismo resultado x, el agente debe cobrar
+distinto según la contingencia que señala y: si con cierto valor de y se puede inferir menos sobre
+e a partir de x, la desviación respecto del reparto eficiente debe ser menor. En el límite, si una
+realización de y hace que x no diga nada sobre el esfuerzo (fe = 0 para todo x), se aplica
+el reparto de Borch: si una catástrofe natural destruye la cosecha, no tiene sentido castigar al
+trabajador.
+
+
+6.2.   El resultado del estadístico suficiente
+
+Definición 6.1 (Señal informativa). La señal y es no informativa sobre el esfuerzo (dado x)
+si la densidad conjunta puede escribirse como
+
+                                      f (x, y; e) = g(x, y) h(x; e)                            (17)
+
+para ciertas funciones g y h; en caso contrario es informativa. La condición (17) dice que x es
+un estadístico suficiente de (x, y) para el parámetro e: una vez conocido x, y no agrega nada
+para inferir el esfuerzo.
+
+Con dos esfuerzos, y es informativa si y sólo si el cociente de verosimilitud pL (x, y)/pH (x, y)
+depende de y para algún x.
+
+
+
+
+                                                   11
+Teorema 6.1 (Holmström, 1979, Prop. 3). Sea w(x) el contrato óptimo basado sólo en el re-
+sultado, con una respuesta del agente única e interior. Existe un contrato w(x, y) que mejora
+estrictamente a ambas partes si y sólo si y es informativa. En pocas palabras: una señal es
+valiosa si y sólo si es informativa.
+
+La demostración (Anexo B) tiene dos partes con intuiciones claras.
+
+   Si y no es informativa, no sirve. Condicionar el pago a y sólo agrega ruido: aumenta el riesgo
+   sin mejorar los incentivos. Con aversión al riesgo, siempre conviene reemplazar w(x, y) por
+   un pago que dependa sólo de x (por la desigualdad de Jensen).
+   Si y es informativa, sirve, por ruidosa que sea. Dado x, ambas partes son neutrales al riesgo
+   “en el margen” frente a pequeñas variaciones del pago según y. Se puede entonces mover un
+   poco el pago en la dirección de fe /f sin cambiar su valor esperado: mejora los incentivos sin
+   agregar, en el margen, riesgo.
+
+Comparemos con la Clase 6. Con esfuerzo verificable, el contrato eficiente ignora cualquier señal
+que no afecte a x: sólo agregaría riesgo. Con riesgo moral, en cambio, toda señal correlacionada
+con el esfuerzo tiene valor. Holmström (nota 28) subraya un corolario: desde el punto de vista
+teórico no hay diferencia entre una señal sobre la acción y una sobre el estado de la naturaleza,
+porque ambas están ligadas a través del resultado.
+
+  Idea clave. La información imperfecta tiene valor porque permite juzgar mejor el desem-
+  peño del agente o, dicho de otro modo, porque da los mismos incentivos con menos pérdida
+  de los beneficios del reparto del riesgo. Una señal vale si y sólo si agrega información sobre
+  el esfuerzo a la que ya contiene el resultado.
+
+
+6.3.   Un ejemplo: el informe del supervisor
+
+Ejemplo 6.1 (Continuación del Ejemplo 2.1). Supongamos que un supervisor emite un informe
+verificable y ∈ {1, 0} (favorable o desfavorable), independiente del resultado dado el esfuerzo,
+con
+                          Pr(y = 1 | eH ) = 0.8,    Pr(y = 1 | eL ) = 0.4.
+Como el informe depende del esfuerzo, es informativo. Hay ahora cuatro contingencias (x, y), y
+los cocientes de verosimilitud son productos de los de cada señal: 12 · 12 = 14 en (éxito, favorable),
+1       3
+2 · 3 = 2 en (éxito, desfavorable) y en (fracaso, favorable), y 3 · 3 = 9 en (fracaso, desfavorable).
+Para distribuciones independientes, 1 + χ2 es el producto de los factores correspondientes a cada
+señal: 1 + χ2 = (1 + 1)(1 + 1) = 4, así que χ2 = 3. Por (9), ui = 7 + 23 (1 − ri ):
+
+
+                           (éxito, fav.)   (éxito, desfav.)   (fracaso, fav.)   (fracaso, desfav.)
+
+           Prob. con eH        0.64             0.16               0.16               0.04
+           ri                  1/4               3/2               3/2                  9
+                  √
+           ui =       wi       7.5              20/3               20/3                5/3
+           wi                 56.25             44.44             44.44               2.78
+
+
+El salario esperado es 49+22 /3 = 50.33 y el beneficio del principal sube de 27 a 29.67. El informe
+reduce en dos tercios el costo del riesgo moral: el principal estaría dispuesto a pagar hasta 2.67
+por él. Notemos además que un éxito con informe desfavorable se paga igual que un fracaso con
+informe favorable: las dos señales son igual de informativas y se “compensan”.
+
+                                                    12
+6.4.     Consecuencias
+
+El Teorema 6.1 explica varios rasgos de los contratos reales, que tienden a ser detallados y a
+prever contingencias diversas (huelgas, accidentes, catástrofes).
+
+     Señales sobre el estado. El clima no depende del esfuerzo de un trabajador rural, pero
+     influye en la cosecha. Una buena cosecha es una señal de esfuerzo mucho más fuerte si el clima
+     fue malo que si fue ideal: el pago por una buena cosecha debería ser mayor con mal clima. En
+     cambio, una variable que no depende del esfuerzo ni influye en el resultado (el clima para un
+     vendedor de enciclopedias) no debe figurar en el contrato.
+     Evaluación relativa. Si varios agentes enfrentan un shock común, el resultado de cada uno
+     informa sobre el esfuerzo de los otros. Dos vendedores de paraguas en la misma tienda: si
+     llueve, ambos venden mucho; si uno vende mucho y el otro poco, es difícil que el segundo lo
+     atribuya a la mala suerte. Conviene pagar a cada uno según su resultado y el del otro. Un
+     vendedor de libros y uno de paraguas, en cambio, deben cobrar sólo según sus propias ventas.
+     Los torneos (“el empleado del mes”) son óptimos cuando el ruido común es importante.
+     Controles y auditorías. Todo control cuya información dependa del esfuerzo es valioso,
+     aunque no afecte al resultado. El principal elige su intensidad comparando su costo con
+     el beneficio informativo. Holmström destaca dos formas baratas: los sistemas condicionales
+     (investigar sólo si el resultado es malo) y los aleatorios (investigar con cierta probabilidad). Si
+     la señal es muy precisa y se admiten castigos altos, una probabilidad de control baja alcanza.
+     Contratos simples. Si fe /f es continuo, siempre existe una región Y tal que basta con
+     distinguir “y ∈ Y ” de “y ∈
+                               / Y ” para mejorar el contrato: los contratos dicotómicos, fáciles de
+     administrar, capturan parte del valor de la señal.
+
+Observación 6.1 (El agente mejor informado). Holmström (1979, sec. 6) extiende el resultado
+al caso en que el agente observa una señal z sobre el estado antes de elegir su esfuerzo. La
+caracterización del contrato es similar, con un promedio ponderado de los efectos incentivo en
+los distintos z, y la conclusión se mantiene: salvo casos excepcionales, una señal es valiosa si y
+sólo si es informativa. Este caso nos lleva a la sección siguiente.
+
+
+7.     Riesgo moral con información oculta
+
+7.1.     Planteo
+
+Hay una segunda forma de riesgo moral, a la que la literatura prestó menos atención. El principal
+puede observar la decisión del agente, pero no sabe si fue la adecuada, porque después de firmar
+el contrato el agente recibe información privada sobre el entorno (Figura 5).
+
+                                                                                                 t
+           P diseña         A acepta          N elige el          A elige         Resultado
+          el contrato       o rechaza           estado,         su decisión        y pagos
+                                              sólo A lo
+                                               observa
+
+
+  Figura 5: Riesgo moral con información oculta (Macho Stadler y Pérez Castrillo, Fig. 3.2).
+
+
+Ejemplos. Un agente de exportación no sabe cómo le irá al producto en el mercado externo
+hasta que empieza a trabajar allí, y según lo que descubre debe elegir la estrategia comercial; la
+
+
+                                                    13
+firma observa la estrategia y los clientes conseguidos, pero no las condiciones en que se tomó la
+decisión. Un intermediario financiero invierte el dinero de un cliente: el cliente sabe qué acciones
+se compraron, pero no si era la mejor decisión dada la información que tenía el intermediario
+sobre el mercado.
+
+
+Participación ex ante y ex post. Al firmar, el agente no sabe si tendrá buena o mala suerte;
+lo averigua antes de actuar. Si recibe malas noticias, puede arrepentirse de haber aceptado. Hay
+entonces dos tipos de modelo: con participación ex ante (el agente no puede romper el contrato:
+su utilidad esperada al firmar debe ser al menos U ) y con participación ex post (una restricción
+para cada estado: el agente debe obtener al menos U en cada contingencia).
+
+
+7.2.   Un modelo simple
+
+Siguiendo a Macho Stadler y Pérez Castrillo (sec. 3.6), sea θ la condición del mercado, con
+θG > θB (bueno y malo). El agente genera un resultado total E = θ + e, donde sólo e le resulta
+costoso. El principal observa E pero no θ, así que no sabe cuánto se esforzó el agente. Con
+información simétrica, el principal observaría e = E − θ: el producto marginal de e es 1 en ambos
+estados y, con agente averso, lo asegura con un mismo salario, de modo que el esfuerzo eficiente
+e∗ no depende de θ y los resultados totales son distintos: EB = θB + e∗ < θG + e∗ = EG .
+Si el principal ofrece ese contrato sin observar θ, el agente que descubre θG tiene un incentivo
+claro: producir sólo EB —lo que le cuesta menos que e∗ — y alegar que el mercado estaba mal.
+Obtiene más que su utilidad de reserva.
+
+
+El contrato óptimo. Cuando el problema de riesgo moral está presente (con participación ex
+ante o ex post):
+
+   en el estado bueno, el esfuerzo es eficiente: se cumple la condición de eficiencia entre producto
+   marginal y costo marginal;
+   en el estado malo, el esfuerzo se distorsiona hacia abajo: su costo marginal queda por debajo
+   de su producto marginal. El objetivo es que “hacerse pasar por el estado malo” sea menos
+   atractivo cuando el estado es bueno;
+   con participación ex ante, el agente obtiene más utilidad en el estado bueno que en el malo,
+   y U en promedio; con participación ex post, obtiene U en el estado malo y más de U en el
+   bueno: una renta.
+
+Ejemplo 7.1 (Información oculta con participación ex post). Sea θ ∈ {0, 1} con probabilidad
+1                                                                          2
+2 cada uno, principal neutral que recibe E − w, y agente con utilidad w − e /2, U = 0 en cada
+estado (participación ex post). Suponemos que el agente puede mostrar un resultado menor al
+que obtiene (libre disposición).
+Información simétrica. En cada estado, máxe θ + e − e2 /2 da e∗ = 1 y w = 21 . Los resultados
+son EB = 1 y EG = 2, y el beneficio esperado del principal es 21 (1 − 12 ) + 21 (2 − 12 ) = 1.
+Riesgo moral. Si el principal ofrece esos dos contratos, el agente que observa θG = 1 puede mostrar
+E = 1 sin esforzarse y cobrar 21 > 0. Para evitarlo, el principal ofrece (EB , wB ) y (EG , wG ) tales
+que el agente en el estado bueno prefiera el suyo: debe dejarle la renta wB − 0 = e2B /2 que
+obtendría imitando al estado malo (si eB ≤ 1). El principal maximiza
+
+                                1             e2 ]︁            e2   e2 ]︁
+                                         eB − 2B + 12 1 + eG − 2G − 2B ,
+                                    [︁               [︁
+                                2
+
+
+
+
+                                                      14
+de donde eG = 1 (sin distorsión en el estado bueno) y 1 − eB − eB = 0, es decir, eB = 12 (esfuerzo
+distorsionado a la mitad). Los contratos son (EB , wB ) = ( 21 , 18 ) y (EG , wG ) = (2, 85 ): el agente
+obtiene una renta de 18 en el estado bueno y el beneficio del principal cae a 12 ( 21 − 18 ) + 12 (2 − 58 ) =
+0.875.
+Con participación ex ante y agente neutral, en cambio, el principal alcanzaría el óptimo con una
+franquicia w = E − k: el agente elegiría e = 1 en cada estado por sí mismo.
+
+  Idea clave. El riesgo moral con información oculta se parece mucho a la selección adversa:
+  el agente con “buenas noticias” se hace pasar por uno con “malas noticias”, el principal
+  distorsiona la decisión en el estado malo y el agente obtiene una renta informacional en el
+  bueno. La diferencia es sólo de calendario: la información llega después de firmar.
+
+
+8.     Aplicaciones
+
+8.1.    Franquicias en los seguros
+
+En la Clase 6 vimos que, con información simétrica, una aseguradora neutral ofrece cobertura
+completa. En la práctica, casi todas las pólizas de autos o de hogar tienen una franquicia
+(deducible): el asegurado paga los primeros pesos de cada siniestro. Holmström (1979, sec. 3)
+muestra que el riesgo moral explica este rasgo.
+Sea x = 0 si no hay accidente y x < 0 el daño si lo hay. Si el cuidado e del asegurado sólo afecta
+la probabilidad de accidente p(e) (con p′ < 0) y no el tamaño del daño, que tiene densidad g(x),
+la distribución mixta es
+
+                         f (0; e) = 1 − p(e),      f (x; e) = p(e) g(x) (x < 0),
+
+y el cociente de la fórmula (14) vale
+
+        fe (0; e)    −p′ (e)             fe (x; e)   p′ (e)
+                  =          > 0,                  =        < 0 (igual para todo daño x < 0).
+        f (0; e)    1 − p(e)             f (x; e)    p(e)
+
+El segundo cociente no depende del tamaño del daño: dado que hubo accidente, el daño no dice
+nada sobre el cuidado. Con aseguradora neutral, (14) implica entonces que la riqueza final del
+asegurado es la misma en todos los accidentes, y menor que sin accidente: la aseguradora cubre
+todo el daño por encima de una suma fija d.
+
+Proposición 8.1 (Holmström, 1979, Prop. 2). Si el cuidado reduce la probabilidad de accidente,
+la póliza óptima con riesgo moral incluye una franquicia. Si además el cuidado no afecta el
+tamaño del daño y la aseguradora es neutral, la póliza óptima es una franquicia pura.
+
+La razón es muy distinta de la de Arrow (1970), para quien las franquicias surgen por los costos
+de administración (recargos sobre la prima), sin riesgo moral. Aquí la franquicia es un incentivo:
+hace que el asegurado cargue con parte de las consecuencias de un accidente, lo suficiente como
+para que le convenga cuidarse.
+                                                                                       √
+Ejemplo 8.1 (Una franquicia óptima). Un individuo con riqueza 100 y u(w) = w sufre un
+accidente con probabilidad 0.1 si se cuida y 0.3 si no; el costo del cuidado es 0.2 (en utilidad).
+Si hay
+   (︁ accidente,    el daño es 19 o 51 con igual probabilidad. Sin seguro, cuidarse le da 0.9(10) +
+0.1 12 9 + 12 7 − 0.2 = 9.6 y no cuidarse, 0.7(10) + 0.3(8) = 9.4: se cuida, y U = 9.6.
+               )︁
+
+Una aseguradora neutral y monopolista quiere inducir el cuidado. Como el daño no informa
+sobre el cuidado, la utilidad del asegurado es uN sin accidente y uA en cualquier accidente.
+
+                                                     15
+Con A = 9.6 + 0.2 = 9.8, ∆v = 0.2, rN = 0.7/0.9 = 79 y rA = 0.3/0.1 = 3, se obtiene
+χ2 = 0.22 /0.9 + 0.22 /0.1 = 94 y, por (9),
+                   uN = 9.8 + 0.45 · 29 = 9.9,            uA = 9.8 + 0.45 · (−2) = 8.9.
+La riqueza final es 98.01 sin accidente y 79.21 con accidente. Es decir, una prima de 1.99 y una
+franquicia de 98.01 − 79.21 = 18.80: la aseguradora paga 0.20 si el daño es 19 y 32.20 si es 51.
+Su beneficio esperado es 1.99 − 0.1(0.5 · 0.20 + 0.5 · 32.20) = 0.37.
+Si el cuidado fuera verificable, cubriría todo con una riqueza cierta de 9.82 = 96.04 (prima
+de 3.96) y ganaría 3.96 − 0.1 · 35 = 0.46. Con cobertura completa y cuidado no verificable, el
+asegurado dejaría de cuidarse y la aseguradora perdería dinero. La franquicia cuesta 0.09, pero
+salva el negocio.
+
+                     riqueza final
+
+                      98.01          cobertura completa (cuidado verificable)
+
+
+                              d
+
+                                            con franquicia: 98.01 − 18.80
+                      79.21
+
+
+
+
+                                                                        sin seguro: 100 − D
+                                                                             daño D
+                                       19                          51
+
+
+Figura 6: La póliza óptima del Ejemplo 8.1. Con riesgo moral, la riqueza del asegurado cae en
+una suma fija d si hay un accidente, cualquiera sea el daño: una franquicia pura.
+
+Si el cuidado también redujera el tamaño de los daños, fe /f variaría con x y aparecería, además
+de la franquicia, un coaseguro creciente con el daño.
+
+
+8.2.   Incentivos para gerentes
+
+En muchas sociedades anónimas los gerentes no cobran un salario fijo sino, al menos en parte,
+según ventas o beneficios (Macho Stadler y Pérez Castrillo, aplicación 3B.1). Los accionistas,
+neutrales al riesgo, quieren maximizar px − cx − w, donde x son las ventas, que dependen del
+esfuerzo e del gerente (análisis de mercado, negociación con proveedores, estrategia de inversión)
+y del azar, con densidad f (x; e). Supongamos que las ventas son verificables y los beneficios no
+(son fáciles de manipular).
+Con esfuerzo verificable, el gerente averso recibe un salario fijo w = u−1 (U + v(e)) y el esfuerzo
+iguala el ingreso marginal esperado con su costo en pesos. Con riesgo moral, la fórmula (14) da
+                                             1                 fe (x; e)
+                                       (︁         )︁ = λ + µ             .
+                                     u′ w(x)                   f (x; e)
+Si x = e + ε con ε ∼ N (0, σ 2 ), entonces fe /f = (x − e)/σ 2 , creciente en x: el gerente cobra un
+bono creciente con las ventas. Si además u(w) = ln w, entonces 1/u′ (w) = w y
+                                                   µ
+                                      w(x) = λ + 2 (x − e) :
+                                                  σ
+
+                                                       16
+un contrato lineal. En la Clase 6 los contratos lineales aparecían por razones de reparto del
+riesgo (CARA); aquí aparecen por razones de incentivos. (Un detalle técnico: como la normal no
+está acotada, el salario podría volverse negativo, y Mirrlees (1974) mostró que en este caso el
+óptimo puede no existir; por eso en la práctica se acota w(x).) El Ejercicio 6 presenta el modelo
+lineal de Holmström y Milgrom (1987).
+
+
+8.3.   Responsabilidad limitada
+
+Con agente neutral, el riesgo moral no cuesta nada: la franquicia de la Clase 6 da incentivos
+perfectos. Pero la franquicia exige que el agente pague cuando el resultado es malo (en el Ejemplo
+de la Clase 6, 73 pesos). Si el agente no tiene con qué, o la ley lo impide, hay responsabilidad
+limitada: w(xi ) ≥ wmı́n para todo i.
+
+Ejemplo 8.2 (Macho Stadler y Pérez Castrillo, complemento 3A.3). Principal y agente son
+neutrales. Hay fracaso y éxito; con eH el éxito tiene probabilidad 0.9, con eL , 0.2; v(eH ) = 7,
+v(eL ) = 0 y U = 1. Las restricciones son
+
+          0.1 wF + 0.9 wS − 7 ≥ 1,       (0.9 − 0.2)(wS − wF ) ≥ 7 ⇔ wS − wF ≥ 10.
+
+Sin límite inferior, wS = 9 y wF = −1 inducen eH con un salario esperado de 8 = U + v(eH ):
+el óptimo de información simétrica. Si los pagos deben ser no negativos, el contrato más barato
+que induce eH es wS = 10, wF = 0, que cuesta 9. El agente obtiene una renta de 1 por encima
+de su reserva.
+
+La responsabilidad limitada devuelve el interés al riesgo moral aun sin aversión al riesgo: el
+trade-off ya no es entre seguro e incentivos sino entre renta e incentivos. Es un modelo muy
+usado porque es fácil de resolver y de integrar en juegos más complejos. La aplicación siguiente
+es un caso.
+
+
+8.4.   Racionamiento del crédito
+
+Decimos que hay racionamiento del crédito si algunas firmas no obtienen el préstamo que
+piden aunque estén dispuestas a pagar la tasa de mercado. El modelo de Bester y Hellwig (1987)
+lo explica con riesgo moral (Macho Stadler y Pérez Castrillo, aplicación 3B.3).
+Un empresario necesita un préstamo I y elige entre dos proyectos: el proyecto i ∈ {a, b} rinde
+Xi con probabilidad pi y 0 en otro caso, con
+
+                         pa Xa > pb Xb > I,      pa > pb ,    Xb > Xa :
+
+a es más seguro y más rentable en valor esperado; b paga más si sale bien. El banco cobra un
+reembolso bruto R sólo si el proyecto tiene éxito (responsabilidad limitada: no se le puede cobrar
+a una firma quebrada). Todos son neutrales. El empresario obtiene pi (Xi − R) y el banco pi R − I.
+Con información simétrica, el banco exige el proyecto a y cobra R = Xa . Con riesgo moral —el
+contrato no puede depender del proyecto elegido—, el empresario elige a si y sólo si
+                                                                  pa Xa − pb Xb
+                  pa (Xa − R) ≥ pb (Xb − R)     ⇐⇒     R ≤ R̂ ≡                 .
+                                                                     pa − p b
+Una tasa alta empuja al empresario hacia el proyecto riesgoso, porque con responsabilidad limi-
+tada se queda con el éxito y le traslada al banco el fracaso. El beneficio del banco es pa R − I si
+R ≤ R̂ y pb R − I si R̂ < R ≤ Xb (Figura 7).
+
+
+                                                17
+Ejemplo 8.3 (Racionamiento). Sea pa = 0.9, Xa = 100, pb = 0.3, Xb = 150 e I = 40. Entonces
+R̂ = (90 − 45)/0.6 = 75. Al banco le conviene R = R̂ = 75, que le da 0.9 · 75 − 40 = 27.5, antes
+que R = Xb = 150, que le da 0.3 · 150 − 40 = 5. Con información simétrica cobraría R = 100 y
+ganaría 50.
+Con R = 75, el empresario obtiene 0.9(100−75) = 22.5 > 0: todas las firmas quieren un préstamo.
+Si el banco dispone de fondos para prestarle sólo a una parte de ellas, algunas quedarán sin crédito
+aunque estén dispuestas a pagar más. Y el banco no sube la tasa, porque hacerlo cambiaría el
+proyecto elegido y reduciría su beneficio.
+
+
+                       beneficio del banco
+                                                     27.5
+
+
+
+
+                                                                                     5
+
+                                                                                         R
+                                                    R̂ = 75                   Xb = 150
+
+
+
+                                             elige a: pa R − I
+                                                                 elige b: pb R − I
+
+
+
+                             −I
+
+
+Figura 7: Beneficio del banco en función del reembolso R (Ejemplo 8.3; basado en Macho Stadler
+y Pérez Castrillo, Fig. 3.11). Por encima de R̂ el empresario cambia al proyecto riesgoso y el
+beneficio del banco cae.
+
+El riesgo moral tiene dos consecuencias. La tasa de mercado cambia (en el ejemplo es menor que
+con información simétrica; en otros casos, cuando pa R̂ < pb Xb , el banco cobra Xb y se financia
+el proyecto ineficiente). Y puede haber racionamiento. ¿Por qué hay ineficiencia si todos son
+neutrales? Porque la responsabilidad limitada impide cobrar en caso de quiebra, de modo que la
+franquicia que eliminaría el problema no está disponible (Ejercicio 5).
+
+
+9.    Síntesis
+
+La Unidad VII estudia qué ocurre con el contrato de Borch de la Clase 6 cuando el esfuerzo
+deja de ser verificable. Aparece una nueva restricción, la de incentivos, y con ella el trade-off
+entre seguro e incentivos: el agente averso debe soportar riesgo para que le convenga esforzarse,
+y el principal paga ese riesgo con una prima (en nuestro ejemplo, 53 en lugar de 49) o renuncia
+al esfuerzo alto. La forma del contrato no la dicta el valor de los resultados sino su contenido
+informativo: el salario sube donde el cociente de verosimilitud pL /pH es bajo, lo que sólo garantiza
+salarios crecientes bajo la MLRP. Con esfuerzo continuo, la fórmula de Mirrlees–Holmström
+generaliza la condición de Borch agregando el término µfe /f , siempre que el enfoque de primer
+orden sea válido. Holmström (1979) muestra además que toda señal informativa sobre el esfuerzo
+tiene valor, lo que explica la riqueza de cláusulas de los contratos reales. La información oculta
+anticipa la selección adversa, y las aplicaciones —franquicias, bonos, responsabilidad limitada y
+racionamiento del crédito— muestran la amplitud del modelo.
+
+
+
+
+                                                    18
+                        Información simétrica (VI)           Riesgo moral (VII)
+
+Restricciones           participación                        participación e incentivos
+Condición óptima        B ′ /u′ = λ (Borch)                  B ′ /u′ = λ + µ fe /f
+Principal neutral       salario fijo                         salario contingente al resultado
+Agente neutral          franquicia                           franquicia (sin costo, salvo responsabi-
+                                                             lidad limitada)
+Forma del salario       según tolerancias al riesgo          según el cociente de verosimilitud
+Señales adicionales     se ignoran                           valiosas si y sólo si son informativas
+Costo para el princi-   —                                    prima de riesgo y/o esfuerzo ineficiente
+pal
+
+
+
+Ejercicios
+
+1. Riesgo moral con dos esfuerzos. Retome el Ejercicio 2 de la Clase 6: x ∈ {0, 60}, Pr(x =
+                                             √
+   60) = 3/4 con eH y 1/4 con eL , u(w) = w, v(eH ) = 1, v(eL ) = 0, U = 3 y principal neutral.
+   Suponga ahora que el esfuerzo no es verificable. (a) Plantee el problema del principal que
+   quiere inducir eH . (b) Calcule el contrato óptimo y verifique las dos restricciones. (c) Calcule
+   los multiplicadores λ y µ y relacione los salarios con los cocientes de verosimilitud. (d) ¿Qué
+   esfuerzo exige el principal? Compare su beneficio con el de información simétrica y verifique
+   la fórmula (9). (e) Sea X el valor del éxito. ¿Para qué valores de X el riesgo moral lleva al
+   principal a exigir un esfuerzo ineficiente?
+
+2. Cociente de verosimilitud y estructura salarial (basado en Macho Stadler y Pérez
+                                                                                  √
+   Castrillo, ej. 3.11). Un empresario neutral contrata a un trabajador con u(w) = w, v(eH ) =
+   1.5, v(eL ) = 0 y U = 8.5. Hay tres resultados x1 < x2 < x3 con pH = (0.25, 0.5, 0.25)
+   y pL = (0.5, 0.25, 0.25). (a) Verifique que se cumple la dominancia estocástica de primer
+   orden pero no la MLRP. (b) Plantee el problema que induce eH y sus condiciones de primer
+   orden. ¿Es posible que el trabajador cobre menos por x3 que por x2 ? Calcule el contrato
+   óptimo. (c) Interprete el salario pagado en x3 . (d) Suponga ahora que pH = (0, 0.75, 0.25)
+   y pL = (0.5, 0.25, 0.25). ¿Puede el principal alcanzar el óptimo de información simétrica?
+   ¿Qué castigo necesita en x1 ?
+
+3. Información valiosa. Con los datos del Ejercicio 1: (a) Un supervisor emite un informe
+   verificable y ∈ {1, 0}, independiente del resultado dado el esfuerzo, con Pr(y = 1 | eH ) = 3/4
+   y Pr(y = 1 | eL ) = 1/4. Calcule el contrato óptimo w(x, y) y el máximo que el principal
+   pagaría por el informe. (b) En lugar del supervisor, se observa el clima y ∈ {bueno, malo},
+   con probabilidad 1/2 cada uno e independiente del esfuerzo. Con buen clima, Pr(x = 60)
+   es 7/8 con eH y 3/8 con eL ; con mal clima, 5/8 y 1/8. Verifique que las probabilidades
+   marginales son las del Ejercicio 1, decida si el clima es informativo y calcule el costo del
+   riesgo moral. ¿El éxito se paga más con buen o con mal clima? (c) Muestre que una moneda
+   arrojada al aire, independiente de todo, no tiene valor.
+
+4. Responsabilidad limitada. Principal y agente son neutrales. x ∈ {0, 60}, Pr(x = 60) = 3/4
+   con eH y 1/4 con eL , v(eH ) = 1, v(eL ) = 0 y U = 0. (a) Calcule el contrato de franquicia
+   que induce eH y verifique que funciona aunque el esfuerzo no sea verificable. (b) Suponga
+   que los salarios no pueden ser negativos. Calcule el contrato óptimo que induce eH y la renta
+   del agente. (c) ¿Para qué valores de U la responsabilidad limitada no tiene costo? (d) Sea X
+   el valor del éxito (con U = 0). ¿Para qué valores de X la responsabilidad limitada lleva al
+   principal a exigir eL cuando lo eficiente es eH ?
+
+
+                                                 19
+5. Riesgo moral en el mercado de crédito. Un empresario elige entre el proyecto a (pa = 0.8,
+   Xa = 50) y el b (pb = 0.4, Xb = 80); necesita un préstamo I = 20 de un banco monopolista,
+   que sólo cobra R si el proyecto tiene éxito. Todos son neutrales. (a) Calcule el contrato de
+   información simétrica. (b) Calcule R̂. (c) ¿Qué reembolso fija el banco con riesgo moral?
+   ¿Qué proyecto se realiza? ¿Hay racionamiento? (d) Manteniendo pb = 0.4, ¿para qué valores
+   de Xb > 50 habría racionamiento? (e) (Macho Stadler y Pérez Castrillo, ej. 3.10.) Suponga
+   que el empresario tiene un activo C que el banco puede cobrar si el proyecto fracasa, de modo
+   que el contrato es (RS , RF ) con RF ≤ C. ¿Qué valor mínimo de C permite al banco alcanzar
+   el resultado de información simétrica?
+
+6. Contratos lineales con riesgo moral (Macho Stadler y Pérez Castrillo, ej. 3.14; Holmström
+   y Milgrom, 1987). El resultado es x = e + ε, con ε ∼ N (0, σ 2 ), y el principal (neutral) ofrece
+   w(x) = A + Bx. El agente valora el contrato por su equivalente cierto E[w] − 2r Var(w) − 21 e2 y
+   lo acepta si es no negativo. (a) Calcule el contrato óptimo con esfuerzo verificable. (b) Calcule
+   el contrato óptimo con esfuerzo no verificable y el beneficio del principal. (c) Analice cómo
+   dependen B y e de r y σ 2 . Evalúe para r = 2 y σ 2 = 0.5. (d) Compare con el contrato lineal
+   de la Clase 6: ¿por qué aquí B > 0 aunque el principal sea neutral?
+
+7. Aplicaciones conceptuales (Macho Stadler y Pérez Castrillo, ejs. 3.1 y 3.5). (a) En 1995 el
+   garrochista Sergei Bubka cobraba $30 000 cada vez que batía el récord mundial. Los expertos
+   creían que podía mejorarlo en unos 10 cm, pero hasta septiembre de 1995 lo había batido 35
+   veces, siempre por un centímetro. Comente este esquema de incentivos. (b) Para reducir los
+   accidentes causados por conductores alcoholizados, compare: controles de alcoholemia al azar
+   con multa a quien dé positivo, y controles sólo a quienes causan un accidente. (c) Un partido
+   propone multas más altas si en el accidente hay heridos, aunque que haya heridos no depende
+   de si el conductor bebió. (d) El mismo partido propone multar también a los conductores
+   sobrios que causan accidentes. Evalúe (c) y (d) a la luz del resultado de Holmström.
+
+
+
+
+                                                20
+                                                    Anexo
+
+A.      El problema con dos esfuerzos: existencia, saturación y la fór-
+        mula χ2
+
+Un problema convexo. La restricción de incentivos (5) no es cóncava en los salarios, así que
+no es obvio que las condiciones de primer orden describan un máximo. El truco de Grossman y
+Hart (1983) es cambiar de variables: sea ui ≡ u(w(xi )) y h ≡ u−1 , de modo que w(xi ) = h(ui ),
+con h creciente y convexa (porque u es cóncava). El problema (6) con principal neutral equivale
+a
+         ∑︂                   ∑︂                          ∑︂ (︁
+             pH                  pH                             pH    L
+                                                                        )︁
+    mı́n      i h(ui ) s.a.        i ui ≥ U + v(eH ),            i − pi ui ≥ v(eH ) − v(eL ).
+     {ui }
+             i                       i                                 i
+
+El objetivo es convexo y las restricciones son lineales: las condiciones de Kuhn–Tucker son ne-
+cesarias y suficientes para un mínimo global. Como h′ (ui ) = 1/u′ (w(xi )), esas condiciones son
+exactamente (7).
+
+
+Saturación de la participación. Con utilidad separable, si la participación
+                                                                        ∑︁ H noL se saturara, el
+          podría restar la misma cantidad a todos los ui : la diferencia i (pi − pi )ui no cambia
+principal∑︁
+(porque i (pH       L
+              i − pi ) = 0), así que los incentivos se mantienen y el costo baja. Con utilidad no
+separable este argumento puede fallar.
+
+                               √
+La fórmula (9). Con u = w, h(u) = u2 y el problema es de mínimos       ∑︁ cuadrados.   Las
+condiciones de primer orden son 2ui = λ + µ(1 − ri ). Como EH [1 − r] = i (pH
+                                                                            i − p L ) = 0,
+                                                                                  i
+tomando esperanza con pH y usando la participación, λ = 2A. Reemplazando en la restricción
+de incentivos, y usando que (pH    L      H
+                              i − pi ) = pi (1 − ri ),
+                         ∑︂                        µ ∑︂ H             µ
+                               pH
+                                i (1 − ri ) ui =       pi (1 − ri )2 = χ2 = ∆v,
+                                                   2                  2
+                           i                         i
+
+donde χ2 =           H          2            H    L 2 H                         2
+                 ∑︁                  ∑︁
+                  i pi (1 − ri ) =       i (pi − pi ) /pi . Luego ui = A + (∆v/χ )(1 − ri ) y
+                                                                            )︃2
+                                                                                              (∆v)2
+                                                                  (︃
+                                 2         2                  2        ∆v
+                  EH [w] = EH [u ] = A + VarH (u) = A +                           χ2 = A2 +         .
+                                                                       χ2                      χ2
+
+Desarrollando el cuadrado, χ2 =
+                                    ∑︁ L 2 H
+                                       i (pi ) /pi − 1. Si la información consiste en dos señales
+independientes dado el esfuerzo (como x y el informe del supervisor), las probabilidades conjuntas
+son productos y 1 + χ2x,y = (1 + χ2x )(1 + χ2y ), lo que se usó en el Ejemplo 6.1. Cuanto mayor es
+χ2 , más informativa es la señal y menor el costo del riesgo moral.
+
+
+B.     Demostración del resultado del estadístico suficiente
+
+Damos la demostración para el caso de dos esfuerzos y señales discretas, con principal neutral;
+Holmström (1979) la presenta en general. Usamos las variables u(x, y) del Anexo A, con costo
+h(u) convexo.
+
+
+
+
+                                                         21
+Una señal no informativa no tiene valor. Si pe (x, y) = g(x, y) he (x) para e ∈ {eH , eL }, la
+          ∑︁ de y dado x, g(y | x), no depende del esfuerzo. Dado un contrato u(x, y), definamos
+distribución
+ū(x) ≡ y g(y | x) u(x, y). Como las esperanzas de u bajo ambos esfuerzos sólo dependen de
+ū(x), el contrato ū(x) satisface
+                          ∑︁       las mismas restricciones de participación e incentivos. Y por la
+desigualdad de Jensen, y g(y | x) h(u(x, y)) ≥ h(ū(x)) para cada x: ū(x) cuesta menos (o lo
+mismo). Condicionar el pago a y sólo agrega ruido.
+
+
+Una señal informativa tiene valor. Sea {u(x)} el contrato óptimo basado sólo en x, con
+µ > 0. Si y es informativa, existe un x y un conjunto Y de valores de y tales que el cociente de
+verosimilitud en (x, Y ) es menor que en (x, Y c ). Modifiquemos el contrato sólo en ese x: sumamos
+δ > 0 a la utilidad cuando y ∈ Y y restamos δ ′ cuando y ∈    / Y , con δ pH (x, Y ) = δ ′ pH (x, Y c ).
+Entonces:
+
+   la utilidad esperada del agente con eH no cambia (participación intacta);
+   el costo cambia sólo en segundo orden, porque la variación tiene media cero alrededor de u(x)
+   y h es diferenciable;
+   el lado izquierdo de la restricción de incentivos aumenta en δ pH (x, Y ) r(x, Y c )−r(x, Y ) > 0,
+                                                                            [︁                  ]︁
+
+   un efecto de primer orden.
+
+La restricción de incentivos queda holgada, y como su precio sombra µ es positivo, el principal
+puede reducir el riesgo en otros resultados y ahorrar en primer orden. Para δ chico, la ganancia
+de primer orden supera el costo de segundo orden: el principal mejora estrictamente, y parte de
+la ganancia puede transferirse al agente.                                                     □
+
+
+Referencias
+ [1] Arrow, K. J. (1970). Essays in the Theory of Risk-Bearing. North-Holland.
+ [2] Bester, H., & Hellwig, M. (1987). Moral hazard and equilibrium credit rationing: An overview of
+     the issues. En G. Bamberg & K. Spremann (Eds.), Agency Theory, Information, and Incentives
+     (pp. 135–166). Springer.
+ [3] Borch, K. H. (1962). Equilibrium in a reinsurance market. Econometrica, 30(3), 424–444.
+ [4] Grossman, S. J., & Hart, O. D. (1983). An analysis of the principal-agent problem. Econometrica,
+     51(1), 7–45.
+ [5] Harris, M., & Raviv, A. (1979). Optimal incentive contracts with imperfect information. Journal of
+     Economic Theory, 20(2), 231–259.
+ [6] Hart, O., & Holmström, B. (1987). The theory of contracts. En T. Bewley (Ed.), Advances in
+     Economic Theory: Fifth World Congress (pp. 71–155). Cambridge University Press.
+ [7] Holmström, B. (1979). Moral hazard and observability. The Bell Journal of Economics, 10(1), 74–91.
+     https://doi.org/10.2307/3003320
+ [8] Holmström, B., & Milgrom, P. (1987). Aggregation and linearity in the provision of intertemporal
+     incentives. Econometrica, 55(2), 303–328.
+ [9] Laffont, J. J., & Martimort, D. (2002). The Theory of Incentives: The Principal-Agent Model. Prin-
+     ceton University Press.
+[10] Macho Stadler, I., & Pérez Castrillo, D. (1994). Introducción a la economía de la información. Ariel.
+     (Cap. 3.)
+[11] Mas-Colell, A., Whinston, M. D., & Green, J. R. (1995). Microeconomic Theory. Oxford University
+     Press. (Cap. 14.)
+
+
+                                                   22
+[12] Mirrlees, J. (1974). Notes on welfare economics, information and uncertainty. En M. Balch, D.
+     McFadden & S. Wu (Eds.), Essays on Economic Behavior under Uncertainty. North-Holland.
+[13] Mirrlees, J. (1975/1999). The theory of moral hazard and unobservable behaviour: Part I. The Review
+     of Economic Studies, 66(1), 3–21 (publicado en 1999).
+[14] Rogerson, W. P. (1985). The first-order approach to principal-agent problems. Econometrica, 53(6),
+     1357–1367.
+[15] Shavell, S. (1979). Risk sharing and incentives in the principal and agent relationship. The Bell
+     Journal of Economics, 10(1), 55–73.
+
+
+
+
+                                                  23
+

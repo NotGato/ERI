@@ -1,0 +1,842 @@
+             El problema de la selección adversa
+                                Unidad VIII
+
+
+
+
+                   Economía del Riesgo y de la Información
+                  UADE · Facultad de Ciencias Económicas
+
+Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 4; Akerlof (1970)
+
+
+                   Clase 8 · 2do cuatrimestre 2026
+
+
+
+
+    (UADE)                 Clase 8 — Selección adversa         Clase 8         1 / 25
+Hoja de ruta
+
+
+1   El problema de la selección adversa
+
+2   Dos tipos de agente
+
+3   Competencia entre principales
+
+4   Un continuo de tipos
+
+5   Aplicaciones
+
+6   Instituciones correctoras
+
+7   Síntesis
+
+
+          (UADE)                Clase 8 — Selección adversa   Clase 8   2 / 25
+Información privada antes de firmar
+
+     Clase 7 (riesgo moral): P no ve la acción de A, elegida después de
+     firmar.
+     Clase 8: A conoce su tipo (costo, productividad, riesgo, calidad) antes
+     de firmar.
+
+Selección adversa
+Antes del contrato, el agente tiene información privada sobre una variable
+relevante (su tipo); el principal sólo conoce la distribución de los tipos.
+
+Ejemplos: el carpintero (habilidad), el abogado (interés y capacidad), el conductor
+(hábitos), la empresa regulada (costos), el comprador de una licencia
+(rentabilidad del mercado).
+
+
+
+
+         (UADE)                Clase 8 — Selección adversa       Clase 8        3 / 25
+Información privada antes de firmar
+
+     Clase 7 (riesgo moral): P no ve la acción de A, elegida después de
+     firmar.
+     Clase 8: A conoce su tipo (costo, productividad, riesgo, calidad) antes
+     de firmar.
+
+Selección adversa
+Antes del contrato, el agente tiene información privada sobre una variable
+relevante (su tipo); el principal sólo conoce la distribución de los tipos.
+
+Ejemplos: el carpintero (habilidad), el abogado (interés y capacidad), el conductor
+(hábitos), la empresa regulada (costos), el comprador de una licencia
+(rentabilidad del mercado).
+
+Idea clave
+La información privada sólo se revela si al agente le conviene revelarla.
+
+         (UADE)                Clase 8 — Selección adversa       Clase 8        3 / 25
+El mercado de “limones” (Akerlof, 1970)
+
+Calidad κ ∼ U[0, 1], conocida sólo por el
+vendedor.
+     Vendedor: vende si P ≥ p0 κ.
+     Comprador: valora p1 κ = 23 p0 κ.
+
+
+
+
+          (UADE)                Clase 8 — Selección adversa   Clase 8   4 / 25
+El mercado de “limones” (Akerlof, 1970)
+
+Calidad κ ∼ U[0, 1], conocida sólo por el                         se paga P
+vendedor.
+     Vendedor: vende si P ≥ p0 κ.
+                                                                             3P
+                                                                        vale 4
+     Comprador: valora p1 κ = 23 p0 κ.
+A precio P sólo se ofrecen κ ≤ P/p0 :
+
+              P
+   κ̄(P) =       ⇒ p1 κ̄(P) = 34 P < P
+             2p0
+                                                                              P
+Ningún precio P > 0 es aceptado: el
+mercado desaparece, aunque cada auto
+vale más para algún comprador.
+ Ley de Gresham modificada: los autos malos expulsan a los buenos. . . pero
+ aquí sólo el vendedor distingue la calidad.
+
+
+          (UADE)                Clase 8 — Selección adversa   Clase 8             4 / 25
+Ejemplo: dos calidades
+
+                          valor para el vendedor         valor para el comprador
+
+   Auto bueno (prob. q)             100                           120
+   Limón (prob. 1 − q)               40                            50
+
+
+
+
+       (UADE)              Clase 8 — Selección adversa              Clase 8        5 / 25
+Ejemplo: dos calidades
+
+                           valor para el vendedor         valor para el comprador
+
+    Auto bueno (prob. q)             100                           120
+    Limón (prob. 1 − q)               40                            50
+
+    Precio agrupador: 120q + 50(1 − q) = 50 + 70q.
+    Los buenos se ofrecen sólo si 50 + 70q ≥ 100 ⇐⇒ q ≥ 5/7.
+    Si q < 5/7: sólo se venden limones, a 50. Se pierden 20 por cada auto
+    bueno.
+    Con q = 12 : precio agrupador 85 < 100.
+
+Idea clave
+La calidad media depende del precio: lo malo expulsa a lo menos malo, que
+expulsa a lo regular. . .
+
+        (UADE)              Clase 8 — Selección adversa              Clase 8        5 / 25
+Secuencia temporal
+
+
+                                                                                                   t
+       N elige       P diseña          A acepta         A realiza      N determina     Resultado
+        el tipo      un menú            y elige        el esfuerzo      el estado       y pagos
+    (sólo A lo ve)                     contrato       (verificable)
+
+
+
+
+                         Simétrica (VI)           Riesgo moral (VII)       Selección adversa (VIII)
+
+  P ignora                      nada                   la acción                     el tipo
+  Asimetría                      —                 después de firmar             antes de firmar
+  Esfuerzo verificable           sí                        no                           sí
+
+Aquí diseña el contrato la parte no informada (screening). Si actua primero la
+informada, el contrato es una señal (Unidad IX).
+
+
+
+
+           (UADE)                      Clase 8 — Selección adversa                   Clase 8           6 / 25
+El modelo con dos tipos
+
+Principal neutral, beneficio Π(e) con Π′ > 0, Π′′ < 0; esfuerzo verificable.
+
+ U G = u(w ) − v (e),      U B = u(w ) − k v (e),          k > 1,       Pr(G ) = q
+
+
+
+
+         (UADE)              Clase 8 — Selección adversa            Clase 8      7 / 25
+El modelo con dos tipos
+
+Principal neutral, beneficio Π(e) con Π′ > 0, Π′′ < 0; esfuerzo verificable.
+
+ U G = u(w ) − v (e),              U B = u(w ) − k v (e),            k > 1,       Pr(G ) = q
+
+Información simétrica: para cada tipo,
+
+                      v ′ (e G ∗ )                          k v ′ (e B∗ )
+      Π′ (e G ∗ ) =                ,        Π′ (e B∗ ) =                  ⇒ e G ∗ > e B∗
+                      u ′ (w G ∗ )                          u ′ (w B∗ )
+
+
+
+
+         (UADE)                        Clase 8 — Selección adversa            Clase 8      7 / 25
+El modelo con dos tipos
+
+Principal neutral, beneficio Π(e) con Π′ > 0, Π′′ < 0; esfuerzo verificable.
+
+ U G = u(w ) − v (e),              U B = u(w ) − k v (e),            k > 1,       Pr(G ) = q
+
+Información simétrica: para cada tipo,
+
+                      v ′ (e G ∗ )                          k v ′ (e B∗ )
+      Π′ (e G ∗ ) =                ,        Π′ (e B∗ ) =                  ⇒ e G ∗ > e B∗
+                      u ′ (w G ∗ )                          u ′ (w B∗ )
+
+Con información asimétrica esos contratos no sirven:
+
+     U G (w B∗ , e B∗ ) = u(w B∗ ) − v (e B∗ ) > u(w B∗ ) − k v (e B∗ ) = U
+
+El tipo bueno se hace pasar por malo: el contrato de B compensa un
+esfuerzo que a G le cuesta menos.
+
+
+         (UADE)                        Clase 8 — Selección adversa            Clase 8      7 / 25
+Menú de contratos y principio de revelación
+
+
+     P ofrece un menú {(e G , w G ), (e B , w B )}: “decime tu tipo y te doy tu
+     contrato”.
+     Debe ser autoseleccionable: cada tipo prefiere el suyo.
+
+Principio de revelación
+Sin pérdida de generalidad, el principal puede limitarse a mecanismos
+directos en los que a cada tipo le conviene decir la verdad.
+
+Intuición: si P deduce el tipo de otras respuestas, A tiene los mismos incentivos a
+manipularlas que a mentir sobre su tipo.
+Ejemplos: pólizas de seguros a elección; modalidades de contratación.
+
+
+
+
+         (UADE)                Clase 8 — Selección adversa        Clase 8       8 / 25
+El problema del principal
+
+                máx q[Π(e G ) − w G ] + (1 − q)[Π(e B ) − w B ]
+
+                 (PCG )    u(w G ) − v (e G ) ≥ U
+                 (PCB )    u(w B ) − k v (e B ) ≥ U
+                  (ICG )   u(w G ) − v (e G ) ≥ u(w B ) − v (e B )
+                  (ICB )   u(w B ) − k v (e B ) ≥ u(w G ) − k v (e G )
+
+
+
+
+       (UADE)                  Clase 8 — Selección adversa               Clase 8   9 / 25
+El problema del principal
+
+                  máx q[Π(e G ) − w G ] + (1 − q)[Π(e B ) − w B ]
+
+                   (PCG )    u(w G ) − v (e G ) ≥ U
+                   (PCB )    u(w B ) − k v (e B ) ≥ U
+                    (ICG )   u(w G ) − v (e G ) ≥ u(w B ) − v (e B )
+                    (ICB )   u(w B ) − k v (e B ) ≥ u(w G ) − k v (e G )
+
+
+  1   PCG es redundante: ICG + PCB la implican.
+  2   ICG + ICB ⇒ e G ≥ e B y w G ≥ w B .
+  3   Se saturan PCB e ICG ; ICB queda holgada.
+
+Idea clave
+Sólo importa la participación del peor tipo y la autoselección del mejor.
+         (UADE)                  Clase 8 — Selección adversa               Clase 8   9 / 25
+El menú óptimo
+
+         u(w B ) − k v (e B ) = U
+           u(w G ) − v (e G ) = U + (k − 1) v (e B )
+                                v ′ (e G )
+                     Π′ (e G ) =
+                                u ′ (w G )
+                                k v ′ (e B )  q (k − 1) v ′ (e B )
+                     Π′ (e B ) = ′ B +
+                                 u (w )      1−q   u ′ (w G )
+
+   Malo: sin renta. Bueno: renta informacional (k − 1)v (e B ).
+   No distorsión en la cima; el malo, distorsión hacia abajo (el último término
+   es el costo de la renta).
+
+
+
+
+       (UADE)                Clase 8 — Selección adversa          Clase 8    10 / 25
+El menú óptimo
+
+             u(w B ) − k v (e B ) = U
+              u(w G ) − v (e G ) = U + (k − 1) v (e B )
+                                   v ′ (e G )
+                        Π′ (e G ) =
+                                   u ′ (w G )
+                                   k v ′ (e B )  q (k − 1) v ′ (e B )
+                        Π′ (e B ) = ′ B +
+                                    u (w )      1−q   u ′ (w G )
+
+     Malo: sin renta. Bueno: renta informacional (k − 1)v (e B ).
+     No distorsión en la cima; el malo, distorsión hacia abajo (el último término
+     es el costo de la renta).
+
+Idea clave
+Trade-off entre eficiencia y renta: para achicar la renta del bueno, se le pide
+al malo menos esfuerzo que el eficiente.
+         (UADE)                 Clase 8 — Selección adversa         Clase 8    10 / 25
+Ejemplo: Π = 6e, u = w , v = e 2 /2, k = 2, U = 0
+
+Simétrica: 6 = e ⇒ (e G ∗ , w G ∗ ) = (6, 18); 6 = 2e ⇒ (e B∗ , w B∗ ) = (3, 9).
+Con (3, 9) el bueno obtiene 9 − 4.5 = 4.5 > 0 ⇒ lo elige.
+
+
+
+
+         (UADE)               Clase 8 — Selección adversa      Clase 8      11 / 25
+Ejemplo: Π = 6e, u = w , v = e 2 /2, k = 2, U = 0
+
+Simétrica: 6 = e ⇒ (e G ∗ , w G ∗ ) = (6, 18); 6 = 2e ⇒ (e B∗ , w B∗ ) = (3, 9).
+Con (3, 9) el bueno obtiene 9 − 4.5 = 4.5 > 0 ⇒ lo elige.
+
+                                 q            6(1 − q)
+                   6 = 2e B +       eB ⇒ eB =
+                                1−q            2−q
+
+
+Menú óptimo con q = 12
+                                              B 2
+    (e B , w B ) = (2, 4),      renta = (e 2 ) = 2,           (e G , w G ) = (6, 20)
+
+
+
+
+         (UADE)                 Clase 8 — Selección adversa            Clase 8         11 / 25
+Ejemplo: Π = 6e, u = w , v = e 2 /2, k = 2, U = 0
+
+Simétrica: 6 = e ⇒ (e G ∗ , w G ∗ ) = (6, 18); 6 = 2e ⇒ (e B∗ , w B∗ ) = (3, 9).
+Con (3, 9) el bueno obtiene 9 − 4.5 = 4.5 > 0 ⇒ lo elige.
+
+                                 q            6(1 − q)
+                   6 = 2e B +       eB ⇒ eB =
+                                1−q            2−q
+
+
+Menú óptimo con q = 12
+                                              B 2
+    (e B , w B ) = (2, 4),      renta = (e 2 ) = 2,           (e G , w G ) = (6, 20)
+
+     Beneficio esperado: 12 (16) + 12 (8) = 12 (vs. 13.5 simétrico).
+     Pérdida 1.5 = renta (1) + ineficiencia del malo (0.5).
+     q → 0: e B → 3 (eficiente). q → 1: e B → 0 (distorsión máxima).
+
+
+         (UADE)                 Clase 8 — Selección adversa            Clase 8         11 / 25
+Análisis gráfico
+
+
+ w
+                     UB = 0                                      B tiene curvas más empinadas:
+                                           UG = 0
+                                                                 cruce único.
+                              G′                                 Punteada: indiferencia de G
+                                    G∗                           por B ∗ (renta 4.5).
+
+
+
+                B∗
+
+
+
+          B′
+
+
+                                             e
+
+
+
+
+       (UADE)                      Clase 8 — Selección adversa                Clase 8      12 / 25
+Análisis gráfico
+
+
+ w
+                     UB = 0                                      B tiene curvas más empinadas:
+                                           UG = 0
+                                                                 cruce único.
+                              G′                                 Punteada: indiferencia de G
+                                    G∗                           por B ∗ (renta 4.5).
+                                                                 Bajar B ∗ → B ′ sobre la curva
+                                                                 de reserva de B baja la renta
+                                                                 de G a 2.
+                B∗
+
+                                                                 G ′ = (6, 20): eficiente, con
+          B′                                                     renta.
+                                                                 B ′ : ya no es tangente a la
+                                             e
+                                                                 isobeneficio ⇒ ineficiente.
+
+
+
+       (UADE)                      Clase 8 — Selección adversa                  Clase 8          12 / 25
+Análisis de incentivos
+
+
+    Siempre conviene distorsionar: en B ∗ , bajar e B tiene un costo de
+    segundo orden (óptimo) y un beneficio de primer orden (menos renta).
+    La aversión al riesgo no es esencial: no hay nada que asegurar; el
+    principal no sabe con quién contrata.
+    Excluir al malo: ofrecer sólo (e G ∗ , w G ∗ ) da q[Π(e G ∗ ) − w G ∗ ]. En el
+    ejemplo, menú − exclusión = 18(1 − q)2 /(2 − q) > 0.
+
+
+
+
+        (UADE)                Clase 8 — Selección adversa         Clase 8      13 / 25
+Análisis de incentivos
+
+
+    Siempre conviene distorsionar: en B ∗ , bajar e B tiene un costo de
+    segundo orden (óptimo) y un beneficio de primer orden (menos renta).
+    La aversión al riesgo no es esencial: no hay nada que asegurar; el
+    principal no sabe con quién contrata.
+    Excluir al malo: ofrecer sólo (e G ∗ , w G ∗ ) da q[Π(e G ∗ ) − w G ∗ ]. En el
+    ejemplo, menú − exclusión = 18(1 − q)2 /(2 − q) > 0.
+
+Conexión con la Clase 7
+El riesgo moral con información oculta daba la misma estructura: eficiencia
+en el estado bueno, distorsión en el malo, renta en el bueno. Diferencia:
+aquí A conoce su tipo al firmar.
+
+
+
+
+        (UADE)                Clase 8 — Selección adversa         Clase 8      13 / 25
+Competencia: el modelo de Rothschild y Stiglitz
+
+    Muchos principales neutrales compiten; agentes aversos.
+    Los tipos difieren en la probabilidad de éxito: p G > p B . Contrato
+    (wF , wS ).
+    Interpretación: seguros (éxito = sin accidente). G : bajo riesgo; B: alto
+    riesgo.
+
+
+
+
+        (UADE)              Clase 8 — Selección adversa      Clase 8       14 / 25
+Competencia: el modelo de Rothschild y Stiglitz
+
+    Muchos principales neutrales compiten; agentes aversos.
+    Los tipos difieren en la probabilidad de éxito: p G > p B . Contrato
+    (wF , wS ).
+    Interpretación: seguros (éxito = sin accidente). G : bajo riesgo; B: alto
+    riesgo.
+Simétrica: beneficio nulo + eficiencia ⇒ seguro completo:
+
+                   wST ∗ = wFT ∗ = p T xS + (1 − p T )xF
+
+
+
+
+        (UADE)              Clase 8 — Selección adversa      Clase 8       14 / 25
+Competencia: el modelo de Rothschild y Stiglitz
+
+    Muchos principales neutrales compiten; agentes aversos.
+    Los tipos difieren en la probabilidad de éxito: p G > p B . Contrato
+    (wF , wS ).
+    Interpretación: seguros (éxito = sin accidente). G : bajo riesgo; B: alto
+    riesgo.
+Simétrica: beneficio nulo + eficiencia ⇒ seguro completo:
+
+                   wST ∗ = wFT ∗ = p T xS + (1 − p T )xF
+
+
+    Con asimetría todos elegirían C G ∗ : ahora son los malos los que imitan.
+                                           T u ′ (w )
+    Pendiente de la indiferencia: − 1−p
+                                     pT
+                                                   F
+                                             u ′ (wS )   : la de G es menos
+    empinada (cruce único).
+
+
+        (UADE)              Clase 8 — Selección adversa              Clase 8   14 / 25
+No existe equilibrio agrupador
+
+ wS
+                                               C I debe estar sobre ΠI = 0, con
+                                               p I = qp G + (1 − q)p B .
+                            ΠG = 0             Entre las indiferencias hay
+                                               contratos (sombreados) que
+                            UG                 prefiere G y no B.
+                   CI
+                            ΠI = 0
+                            UB
+
+
+
+
+                              wF
+
+
+
+
+       (UADE)           Clase 8 — Selección adversa            Clase 8       15 / 25
+No existe equilibrio agrupador
+
+ wS
+                                                      C I debe estar sobre ΠI = 0, con
+                                                      p I = qp G + (1 − q)p B .
+                                   ΠG = 0             Entre las indiferencias hay
+                                                      contratos (sombreados) que
+                                   UG                 prefiere G y no B.
+                          CI
+                                   ΠI = 0
+                                   UB                 Un principal los ofrece, atrae sólo
+                                                      a los buenos y gana.
+                                                      En C I quedan sólo malos ⇒
+                                                      pérdidas.
+
+                                      wF
+
+
+Idea clave
+Si existe equilibrio, es separador.
+
+         (UADE)                Clase 8 — Selección adversa             Clase 8       15 / 25
+El equilibrio separador
+
+  wS
+                                                    C B = C B∗ : seguro completo justo.
+            G
+        C
+                                                    C G : en ΠG = 0 y en la indiferencia
+                                ΠG = 0              de B por C B∗ .
+                         CG∗
+
+
+                                ΠI = 0
+                    B∗
+                C
+
+
+                                ΠB = 0
+
+
+
+
+                                 wF
+
+
+
+
+       (UADE)                  Clase 8 — Selección adversa            Clase 8       16 / 25
+El equilibrio separador
+
+  wS
+                                                  C B = C B∗ : seguro completo justo.
+            G
+        C
+                                                  C G : en ΠG = 0 y en la indiferencia
+                              ΠG = 0              de B por C B∗ .
+                       CG∗
+
+                                                  Existe sólo si ΠI = 0 no corta la
+                              ΠI = 0
+                                                  indiferencia de G por C G :
+                C B∗
+                                                  ∃ q ◦ : si q < q ◦ , equilibrio
+                              ΠB = 0              separador; si q > q ◦ , no hay
+                                                  equilibrio.
+
+                               wF
+
+
+
+
+       (UADE)                Clase 8 — Selección adversa             Clase 8        16 / 25
+El equilibrio separador
+
+  wS
+                                                    C B = C B∗ : seguro completo justo.
+            G
+        C
+                                                    C G : en ΠG = 0 y en la indiferencia
+                                ΠG = 0              de B por C B∗ .
+                         CG∗
+
+                                                    Existe sólo si ΠI = 0 no corta la
+                                ΠI = 0
+                                                    indiferencia de G por C G :
+                  C B∗
+                                                    ∃ q ◦ : si q < q ◦ , equilibrio
+                                ΠB = 0              separador; si q > q ◦ , no hay
+                                                    equilibrio.
+
+                                 wF
+
+                                                                     √
+Ejemplo: xS = 100, xF = 0, p G = 0.9, p B = 0.6, u =                  w
+C B∗ = (60, 60); C G ≈ (20.6, 97.7): mismo pago esperado (90) pero con
+riesgo (EU = 9.35 < 9.49). q ◦ ≈ 0.88.
+
+        (UADE)                 Clase 8 — Selección adversa             Clase 8        16 / 25
+Conclusiones con competencia
+
+
+    Puede no existir equilibrio (respuestas: Wilson, 1977; Riley, 1979).
+    Si existe, es separador: los pagos contingentes pueden servir para
+    separar tipos, no sólo por riesgo moral (franquicias).
+    Los malos obtienen lo mismo que con información simétrica; los
+    buenos pierden: cargan riesgo para no ser imitados.
+    “No distorsión en la cima” vale para los malos: la cima es el tipo al que
+    nadie quiere imitar.
+
+Idea clave
+Monopolio: el eficiente gana renta y el ineficiente recibe un contrato
+distorsionado. Competencia: la renta desaparece y el bueno acepta la
+distorsión para diferenciarse.
+
+
+
+        (UADE)              Clase 8 — Selección adversa     Clase 8        17 / 25
+Continuo de tipos: cuatro propiedades
+
+U = u(w ) − k v (e), k ∈ [k, k̄] con distribución F , densidad f . Menú
+{e(k), w (k)}.
+  1   Cruce único (Spence–Mirrlees): la TMS k v ′ (e)/u ′ (w ) crece con k.
+  2   Monotonía: e(k) es implementable ⇐⇒ es no creciente.
+  3   Sólo importa la participación de k̄.
+  4   Envolvente: I ′ (k) = −v (e(k)) ⇒
+                                           ∫︂ k̄
+                            renta(k) =
+                                                    (︁   )︁
+                                                   v e(x) dx
+                                             k
+
+
+
+
+         (UADE)              Clase 8 — Selección adversa       Clase 8    18 / 25
+Continuo de tipos: cuatro propiedades
+
+U = u(w ) − k v (e), k ∈ [k, k̄] con distribución F , densidad f . Menú
+{e(k), w (k)}.
+  1   Cruce único (Spence–Mirrlees): la TMS k v ′ (e)/u ′ (w ) crece con k.
+  2   Monotonía: e(k) es implementable ⇐⇒ es no creciente.
+  3   Sólo importa la participación de k̄.
+  4   Envolvente: I ′ (k) = −v (e(k)) ⇒
+                                           ∫︂ k̄
+                            renta(k) =
+                                                    (︁   )︁
+                                                   v e(x) dx
+                                             k
+
+
+Idea clave
+La renta de cada tipo crece con el esfuerzo pedido a los tipos menos
+eficientes.
+
+         (UADE)              Clase 8 — Selección adversa       Clase 8    18 / 25
+El costo virtual
+Con u(w ) = w , integrando por partes, el problema se reduce a
+                  ∫︂ [︂         (︂           )︂         ]︂
+            máx       Π(e(k)) − k + Ff (k)
+                                         (k)
+                                                v (e(k)) f (k) dk
+                  e(·)
+
+
+
+Condición de primer orden
+                         (︂      F (k) )︂ ′
+     Π′ (e(k)) =              k+         v (e(k))                vs.    Π′ (e ∗ ) = k v ′ (e ∗ )
+                                 f (k)
+                              ⏞ ⏟⏟ ⏞
+                              costo virtual
+
+
+    F (k) = 0 ⇒ no distorsión en la cima; los demás: e(k) < e ∗ (k).
+    Monotonía garantizada si F /f es creciente (uniforme, normal,
+    exponencial. . . ). Si no: agrupamiento (bunching).
+                                                  q
+    Dos tipos: el costo virtual del malo era k + 1−q (k − 1).
+
+         (UADE)                           Clase 8 — Selección adversa             Clase 8          19 / 25
+Ejemplo: k ∼ U[1, 2], Π = 6e, v = e 2 /2
+
+
+F /f = k − 1 ⇒ costo virtual 2k − 1:                       e
+
+                                                       6
+                6            6
+    e ∗ (k) =     ,   e(k) =
+                k         2k − 1
+                  (︂ 1                                 4
+                            1 )︂
+      renta(k) = 9        −                                                           e∗
+                    2k − 1 3
+                                                       2                              e(k)
+
+
+     k = 1: e = 6, renta 6.
+                                                                                           k
+                                                           1      1.5             2
+     k = 2: e = 2 < 3, renta 0.
+     Beneficio: 9 ln 3 ≈ 9.89 vs.
+     18 ln 2 ≈ 12.48.
+
+
+
+
+          (UADE)                    Clase 8 — Selección adversa         Clase 8              20 / 25
+Seguro de salud para mayores de 65
+
+Al subir la prima, sólo siguen comprando
+quienes esperan necesitarlo.
+Ejemplo: gasto c ∼ U[0, 100], disposición a
+pagar 1.2c.
+     P = 50 → 70.8 → 79.5 → · · · → 85.7.
+     Sólo se asegura el 29 % (los de
+     c ≥ 71.4).
+     Seguro obligatorio a P = 50: excedente
+     10 por persona vs. 4.9.
+
+
+
+
+          (UADE)               Clase 8 — Selección adversa   Clase 8   21 / 25
+Seguro de salud para mayores de 65
+
+Al subir la prima, sólo siguen comprando
+quienes esperan necesitarlo.
+                                                                        85.7
+Ejemplo: gasto c ∼ U[0, 100], disposición a
+pagar 1.2c.
+     P = 50 → 70.8 → 79.5 → · · · → 85.7.
+     Sólo se asegura el 29 % (los de
+     c ≥ 71.4).                                                                P
+                                                             50
+     Seguro obligatorio a P = 50: excedente
+     10 por persona vs. 4.9.
+Argumento de Akerlof a favor de Medicare:
+todos pagarían su costo esperado, pero
+ninguna aseguradora privada puede vender a
+ningún precio.
+
+
+          (UADE)               Clase 8 — Selección adversa        Clase 8          21 / 25
+Otras aplicaciones de Akerlof
+
+    Estadísticas de grupo: si la calidad individual no se observa, se usa
+    la de un grupo (discriminación estadística). El rendimiento de
+    capacitarse se reparte en el grupo. Una certificación creíble lo corrige.
+    Costo de la deshonestidad: no sólo lo que pierde el engañado, sino
+    los negocios honestos que desaparecen.
+    Desarrollo: la habilidad de garantizar calidad es escasa (comerciantes
+    → primeros empresarios).
+
+
+
+
+        (UADE)              Clase 8 — Selección adversa      Clase 8      22 / 25
+Otras aplicaciones de Akerlof
+
+     Estadísticas de grupo: si la calidad individual no se observa, se usa
+     la de un grupo (discriminación estadística). El rendimiento de
+     capacitarse se reparte en el grupo. Una certificación creíble lo corrige.
+     Costo de la deshonestidad: no sólo lo que pierde el engañado, sino
+     los negocios honestos que desaparecen.
+     Desarrollo: la habilidad de garantizar calidad es escasa (comerciantes
+     → primeros empresarios).
+
+Crédito en la aldea
+Seguros devuelven siempre; riesgosos con prob. 12 . Costo de fondos 10 %.
+Prestamista local: 10 % a seguros, 120 % a riesgosos. Un intermediario
+ofrece 30 % a todos ⇒ sólo acuden riesgosos ⇒ recupera 0.65 < 1.10.
+
+Stiglitz y Weiss (1981): racionamiento del crédito por selección adversa.
+
+
+         (UADE)                Clase 8 — Selección adversa       Clase 8    22 / 25
+Instituciones correctoras
+
+   Garantías: el riesgo lo soporta quien
+   conoce la calidad.
+   Marcas: informan y permiten
+   represalias.
+   Cadenas: en las rutas, para clientes no
+   locales.
+   Licencias y títulos: médicos,
+   abogados, diplomas.
+   Menús de contratos: franquicias,
+   descuentos.
+   Seguros obligatorios, controles,
+   auditorías.
+
+
+
+
+        (UADE)                     Clase 8 — Selección adversa   Clase 8   23 / 25
+Instituciones correctoras
+
+   Garantías: el riesgo lo soporta quien
+   conoce la calidad.                         La garantía separa
+   Marcas: informan y permiten             Paga D si el auto se rompe: prob. 0.1
+   represalias.                            (bueno), 0.6 (limón). Precio con
+   Cadenas: en las rutas, para clientes no garantía: 120 + 0.1D.
+   locales.                                Bueno: 120 ≥ 100 ✓
+   Licencias y títulos: médicos,           Limón: 120 − 0.5D ≤ 50 ⇐⇒ D ≥ 140.
+   abogados, diplomas.
+   Menús de contratos: franquicias,
+   descuentos.
+   Seguros obligatorios, controles,
+   auditorías.
+
+Idea clave
+Generan información, crean consecuencias o separan tipos. Costo: poder de
+mercado.
+
+        (UADE)                  Clase 8 — Selección adversa        Clase 8   23 / 25
+Cuadro comparativo
+
+
+
+                          Riesgo moral (VII)                    Selección adversa (VIII)
+
+   Información oculta     acción (después)                      tipo (antes)
+   Instrumento            salario contingente                   menú de contratos
+   Trade-off              seguro vs. incentivos                 eficiencia vs. renta
+   ¿Aversión al riesgo?   necesaria (o resp. limitada)          no necesaria
+   Renta                  —                                     tipo eficiente
+   Distorsión             riesgo; esfuerzo bajo                 esfuerzo del ineficiente
+   En un mercado          racionamiento del crédito             desaparición; no existencia
+
+
+La selección adversa obliga a pagar una renta para que el agente revele lo
+que sabe, y a distorsionar los contratos para que esa renta sea menor.
+
+
+
+
+           (UADE)                 Clase 8 — Selección adversa                    Clase 8      24 / 25
+     Bibliografía: Macho Stadler & Pérez Castrillo (1994), cap. 4; Akerlof (1970).
+Complementaria: Baron & Myerson (1982); Guesnerie & Laffont (1984); Mussa & Rosen
+ (1978); Myerson (1979); Riley (1979); Rothschild & Stiglitz (1976); Stiglitz & Weiss
+  (1981); Wilson (1977); Laffont & Martimort (2002); Mas-Colell, Whinston & Green
+                                       (1995).
+
+
+
+
+         (UADE)                 Clase 8 — Selección adversa        Clase 8       25 / 25
+
