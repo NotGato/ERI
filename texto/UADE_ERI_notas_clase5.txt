@@ -1,0 +1,586 @@
+                           UADE — Facultad de Ciencias Económicas
+             Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                   Notas de Clase 5
+            Unidad V — La firma competitiva bajo incertidumbre de precios
+
+
+
+                                           Sandmo (1971)
+
+
+                                              Resumen
+     Bajo certeza, la teoría del productor competitivo se resume en una regla normativa nítida:
+     producir hasta igualar el precio con el costo marginal. Estas notas muestran cómo esa regla
+     se disuelve cuando el precio de venta es incierto y la firma es aversa al riesgo. Siguiendo
+     a Sandmo (1971), formalizamos a una firma que decide su producción antes de conocer
+     el precio y maximiza la utilidad esperada de sus beneficios. Obtenemos tres bloques de re-
+     sultados. Primero, el resultado central: la firma aversa produce estrictamente menos que el
+     “producto de certeza”, porque el costo marginal óptimo queda por debajo del precio espera-
+     do; el caso neutral al riesgo reaparece como frontera. Segundo, desarrollamos —con fuentes
+     adicionales— la firma con preferencias media–varianza tipo Markowitz, que traduce el re-
+     sultado cualitativo de Sandmo en una fórmula transparente. Tercero, la estática comparada
+     revela que bajo incertidumbre se rompen dos neutralidades clásicas —los costos fijos y el
+     impuesto proporcional dejan de ser inocuos— y que el equilibrio competitivo de largo plazo
+     exige beneficios esperados positivos, resucitando el beneficio como retribución al riesgo. El
+     hilo conductor es la tensión entre el modelo normativo (precio = costo marginal, beneficio
+     nulo) y la conducta descriptiva de firmas que se autocubren recortando producción.
+
+
+
+1.   De la certeza a la incertidumbre de precios
+
+Recordemos el problema canónico de la firma competitiva bajo certeza. Con un precio de venta p
+conocido, un costo variable C(x) y un costo fijo B, la firma elige el producto x para maximizar
+el beneficio
+                                   π(x) = p x − C(x) − B,
+lo que conduce a la condición de primer orden p = C ′ (x): producir hasta que el precio iguale al
+costo marginal. Esta regla es el corazón normativo de la teoría del productor.
+El punto de partida de Sandmo es una alteración mínima pero de consecuencias profundas en
+el orden temporal de las decisiones. La firma debe fijar su producción antes de que el precio
+se realice: piénsese en el agricultor que decide cuánto sembrar meses antes de la cosecha, o en
+la fábrica que programa su producción antes de conocer el precio spot al que venderá. En el
+momento de decidir, el precio p es una variable aleatoria.
+Observación 1.1 (Precio-aceptante en sentido probabilístico). La firma sigue siendo competiti-
+va: no puede influir sobre la distribución de p. Lo que cambia es que ya no toma un número dado,
+sino una distribución de probabilidad dada. Sandmo interpreta esta distribución como subjetiva,
+resumiendo las creencias de la firma sobre el precio de venta.
+
+Como en las Clases 1 y 2, la actitud de la firma frente al riesgo se resume en una función de
+utilidad von Neumann–Morgenstern U definida sobre los beneficios. El objetivo deja de ser el
+beneficio y pasa a ser la utilidad esperada del beneficio,
+                                                          
+                                   máx E U p x − C(x) − B .
+                                    x≥0
+
+
+                                                  1
+  Idea clave. El referente normativo “precio = costo marginal” presupone un precio conocido.
+  En cuanto el precio es aleatorio y la firma valora el riesgo, la regla óptima cambia de forma
+  cualitativa: no basta con reemplazar p por su media.
+
+
+2.     El modelo de Sandmo: planteo formal
+
+Definición 2.1 (Entorno de decisión). La firma competitiva bajo incertidumbre de precios se
+describe por:
+
+     Una función de costos F (x) = C(x) + B, con B ≥ 0 el costo fijo y C(·) el costo variable, que
+     satisface
+                                     C(0) = 0,     C ′ (x) > 0.
+     No se exige costo marginal creciente.
+     Un precio de venta p ≥ 0, variable aleatoria con densidad f (p) y esperanza E[p] = µ.
+     Un beneficio π(x) = p x − C(x) − B. Nótese que la pérdida máxima es −C(x) − B y que
+     π(0) = −B.
+     Una utilidad U sobre beneficios, cóncava, continua y diferenciable:
+
+                                       U ′ (π) > 0,       U ′′ (π) < 0.
+
+     La firma es, por lo tanto, aversa al riesgo.
+
+Observación 2.1 (Acotamiento de U ). Como se discutió en la Clase 2, para que una utilidad
+vNM no genere fenómenos tipo San Petersburgo debe estar acotada superiormente. Estrictamen-
+te, entonces, U ′′ < 0 rige en el rango por debajo de la cota superior de U .
+
+Un concepto será nuestra vara de comparación permanente.
+
+Definición 2.2 (Producto de certeza). El producto de certeza xc es el nivel que la firma
+elegiría si el precio fuese conocido e igual a su valor esperado µ. Queda definido por
+
+                                              C ′ (xc ) = µ.
+
+La pregunta que organiza toda la clase es: ¿cómo se compara el producto óptimo bajo incerti-
+dumbre con el producto de certeza xc ?
+
+
+3.     La firma neutral al riesgo
+
+Empecemos por el caso más simple, que servirá de referencia. Una firma neutral al riesgo tiene
+utilidad lineal, U (π) = α + βπ con β > 0. Maximizar la utilidad esperada equivale entonces a
+maximizar el beneficio esperado:
+
+                                    máx E[π] = µ x − C(x) − B.
+                                     x≥0
+
+La condición de primer orden es
+                                           C ′ (x) = µ = E[p] ,
+es decir, costo marginal igual al precio esperado. La firma neutral al riesgo produce exactamente
+el producto de certeza: x∗ = xc .
+
+                                                      2
+  Idea clave. La neutralidad al riesgo colapsa el problema estocástico en su promedio. La
+  regla de certeza sobrevive intacta, con µ en lugar del precio conocido. Toda la “acción” de
+  la incertidumbre aparecerá recién cuando la firma sea aversa.
+
+Ejemplo 3.1 (Firma neutral con costo cuadrático). Sea C(x) = 2c x2 con c > 0, de modo que
+C ′ (x) = c x. Supongamos que el precio toma dos valores equiprobables, p ∈ {8, 12}, de manera
+que µ = 21 (8) + 12 (12) = 10. Con c = 1, la firma neutral resuelve
+
+                                                   µ   10
+                             c x = µ =⇒ x∗ =         =    = 10 = xc .
+                                                   c    1
+El beneficio esperado óptimo es E[π] = µx∗ − 2c (x∗ )2 −B = 100−50−B = 50−B. La distribución
+de p no afectó la decisión: solo importó su media.
+
+
+4.    La firma aversa al riesgo: el resultado central
+
+Consideremos ahora la firma aversa genérica. El problema es máxx E[U (p x − C(x) − B)]. Dife-
+renciando bajo el signo de esperanza, obtenemos la condición de primer orden y la de segundo
+orden:
+
+                             E U ′ (π) (p − C ′ (x)) = 0,
+                                                   
+                                                                                          (1)
+                        D ≡ E U (π) (p − C ′ (x))2 − U ′ (π) C ′′ (x) < 0.
+                                ′′                                  
+                                                                                          (2)
+
+Observación 4.1. Un rasgo notable de (2): como U ′′ < 0, el primer término ya es negativo,
+de modo que no hace falta suponer costo marginal creciente (C ′′ > 0) para que se cumpla la
+condición de segundo orden. La aversión al riesgo, por sí sola, “convexifica” el problema.
+
+El siguiente teorema es el corazón del trabajo de Sandmo.
+
+Teorema 4.1 (Reducción del producto bajo incertidumbre). Si la firma es aversa al riesgo
+(U ′′ < 0) y el producto óptimo x∗ es interior, entonces el costo marginal óptimo es menor que el
+precio esperado:
+                                            C ′ (x∗ ) < µ.
+En consecuencia, con costo marginal creciente, el producto óptimo bajo incertidumbre es estric-
+tamente menor que el producto de certeza: x∗ < xc .
+
+Demostración. Reescribimos la condición (1) separando los términos:
+
+                                  E[U ′ (π) p] = E[U ′ (π) C ′ (x)].
+
+Restando E[U ′ (π) µ] en ambos miembros,
+
+                           E U ′ (π)(p − µ) = E[U ′ (π)] C ′ (x) − µ .
+                                                                  
+                                                                                              (3)
+
+Ahora bien, de la definición de beneficio, E[π] = µx − C(x) − B, y por lo tanto
+
+                                      π = E[π] + (p − µ) x.
+
+Como x ≥ 0 y U ′′ < 0, la utilidad marginal U ′ es decreciente en π; luego
+
+                          p ≷ µ =⇒ π ≷ E[π] =⇒ U ′ (π) ≶ U ′ (E[π]).                          (4)
+
+
+
+                                                  3
+Multiplicando por (p − µ) se obtiene, para todo p,
+                                   U ′ (π) (p − µ) ≤ U ′ (E[π]) (p − µ).                         (5)
+(En efecto: si p > µ, ambos factores respetan el sentido de (4); si p < µ, se invierte la desigualdad
+de las utilidades marginales pero también el signo de (p−µ), y el sentido ≤ se preserva.) Tomando
+esperanza en (5) y recordando que U ′ (E[π]) es un número dado,
+                           E U ′ (π)(p − µ) ≤ U ′ (E[π]) E[p − µ] = 0.
+                                          
+                                                          | {z }
+                                                                   =0
+
+El miembro izquierdo de (3) es entonces negativo. Como E[U ′ (π)] > 0, se concluye que C ′ (x)−µ <
+0, esto es, C ′ (x∗ ) < µ.
+
+
+Interpretación económica. Las últimas unidades producidas son las que más exponen a la
+firma a la variabilidad del beneficio: cada unidad adicional multiplica el impacto de la sorpresa
+de precio (p − µ) sobre π. La firma aversa se autocubre recortando producción por debajo del
+nivel de certeza. La brecha
+                                          µ − C ′ (x∗ ) > 0
+puede leerse como una prima marginal de riesgo: el margen esperado extra que la firma exige
+sobre el costo marginal para compensar el riesgo que soporta en el margen.
+
+  Idea clave. Frente a la predicción normativa “µ = C ′ (x)” de la firma neutral, la evidencia
+  descriptiva es que las firmas aversas producen menos: dejan un colchón entre el precio espe-
+  rado y el costo marginal. La incertidumbre de precios opera como un “impuesto implícito”
+  a la producción.
+
+
+                  precio / costo
+
+
+                                                                        C ′ (x)
+
+                         µ
+                                                                           prima marginal
+                                                                           de riesgo
+                                                                           µ − C ′ (x∗ )
+
+                  C ′ (x∗ )
+
+
+
+
+                                                                            x
+                                               x∗             xc
+
+Figura 1: La firma aversa produce x∗ < xc : el costo marginal óptimo se ubica por debajo del
+precio esperado µ. La brecha vertical es la prima marginal de riesgo.
+
+
+4.1.   Un caso resoluble: utilidad CARA con precio normal
+
+El Teorema 4.1 es cualitativo. Para obtener el producto óptimo en forma cerrada conviene espe-
+cializar preferencias y distribución. El par CARA–Normal, ya empleado en la Clase 2, es el más
+tratable.
+
+                                                    4
+Ejemplo 4.1 (Firma CARA con precio normal). Sea la utilidad de aversión absoluta constante
+(CARA)
+                                  U (π) = −e−aπ ,   a > 0,
+y supongamos p ∼ N (µ, σ 2 ). Entonces π = p x − C(x) − B ∼ N µx − C(x) − B, x2 σ 2 , y la
+                                                                                    
+
+propiedad de la lognormal da
+                                                              
+                          E[U (π)] = − exp − a E[π] − a2 Var(π) .
+
+Maximizar E[U (π)] equivale a maximizar el equivalente cierto
+                                        a                         a
+                     EC(x) = E[π] −       Var(π) = µx − C(x) − B − x2 σ 2 .
+                                        2                         2
+La condición de primer orden es
+
+                       µ − C ′ (x) − a σ 2 x = 0     ⇐⇒        C ′ (x) = µ − a σ 2 x.
+
+Se ve de inmediato que C ′ (x∗ ) = µ−aσ 2 x∗ < µ, en línea con el Teorema 4.1. Con costo cuadrático
+C(x) = 2c x2 ,
+                                                          µ         µ
+                       c x = µ − aσ 2 x =⇒ x∗ =               2
+                                                                 <     = xc .
+                                                       c + aσ        c
+Valores numéricos. Con µ = 10, c = 1, a = 1, σ 2 = 1:
+                                       10                       10
+                                xc =      = 10,         x∗ =       = 5.
+                                       1                       1+1
+La incertidumbre reduce el producto a la mitad. La prima marginal de riesgo es µ − C ′ (x∗ ) =
+10 − 5 = aσ 2 x∗ = 1 · 1 · 5 = 5.
+
+Observación 4.2. El par CARA–Normal es una aproximación tratable: la normal asigna pro-
+babilidad positiva a precios (y beneficios) negativos, en tensión con p ≥ 0 y con el acotamiento
+de U . Se lo usa por su transparencia analítica; en el margen relevante, captura correctamente la
+fuerza que reduce el producto.
+
+
+5.    La firma con función de utilidad tipo Markowitz
+
+El Ejemplo 4.1 sugiere una manera de modelar directamente a la firma que evalúa el riesgo
+por media y varianza, en la tradición de Markowitz (1952) vista en la Clase 4. En lugar de
+especificar U y la distribución completa, postulamos que la firma ordena las distribuciones de
+beneficio según el criterio
+                                                   ρ
+                               V (x) = E[π] −        Var(π),         ρ > 0,
+                                                   2
+donde ρ es el coeficiente de aversión al riesgo (constante). Este es el funcional de utilidad tipo
+Markowitz para la firma.
+
+Observación 5.1 (Puente con CARA–Normal). El Ejemplo 4.1 mostró que, con preferencias
+CARA y precio normal, maximizar la utilidad esperada equivale exactamente a maximizar E[π]−
+a
+2 Var(π). El criterio media–varianza no es entonces un supuesto ad hoc: coincide con la utilidad
+esperada bajo CARA–Normal, con ρ = a. Fuera de ese caso, es una aproximación de segundo
+orden al equivalente cierto.
+
+
+
+                                                    5
+5.1.   Producto óptimo
+
+Como solo el precio es aleatorio, el beneficio π = p x − C(x) − B tiene
+
+                   E[π] = µ x − C(x) − B,           Var(π) = x2 σ 2 ,   σ 2 ≡ Var(p).
+
+El objetivo se escribe entonces de manera totalmente explícita:
+                                                                 ρ 2 2
+                                V (x) = µ x − C(x) − B −           σ x .
+                                                                 2
+La condición de primer orden es
+                                           C ′ (x) = µ − ρ σ 2 x .
+                                                              d ρ
+El término ρσ 2 x es el costo marginal de riesgo: en efecto, dx                2
+                                                                         
+                                                                  2 Var(π) = ρσ x. La firma
+iguala el precio esperado a la suma del costo marginal de producción y el costo marginal de
+riesgo. Con C(x) = 2c x2 resulta la forma cerrada
+                                                µ       µ
+                                     x∗ =             <   = xc .
+                                             c + ρσ 2   c
+
+  Idea clave. El criterio media–varianza convierte el resultado cualitativo de Sandmo en una
+  fórmula legible: la cuña que separa a x∗ de xc es ρσ 2 x, el producto de la aversión al riesgo
+  por la varianza del precio. Sin varianza (o sin aversión), la firma vuelve al producto de
+  certeza.
+
+
+5.2.   Estática comparada
+
+La forma cerrada permite leer las respuestas de manera inmediata:
+
+        ∂x∗         ρµ                     ∂x∗       σ2µ                   ∂x∗      1
+           2
+             =−              < 0,              =−              < 0,            =          > 0.
+        ∂σ      (c + ρσ 2 )2               ∂ρ     (c + ρσ 2 )2             ∂µ    c + ρσ 2
+
+Mayor riesgo de precio (σ 2 ↑) o mayor aversión (ρ ↑) reducen el producto; un precio esperado
+más alto lo aumenta. En el límite neutral al riesgo ρ → 0 se recupera x∗ → µ/c = xc .
+
+Ejemplo 5.1 (Firma tipo Markowitz, numérico). Con µ = 10, c = 1, ρ = 1, σ 2 = 1:
+                                            10
+                                    x∗ =       = 5,          xc = 10.
+                                           1+1
+Idéntico al Ejemplo 4.1, como debe ser por la equivalencia CARA–Normal (ρ = a). El beneficio
+esperado es E[π] = 10·5− 12 ·25−B = 37.5−B y el descuento por riesgo, ρ2 Var(π) = 21 ·1·25 = 12.5,
+de modo que V (x∗ ) = 25 − B.
+
+Observación 5.2 (Utilidad cuadrática y oferta que se dobla hacia atrás). Sandmo señala que
+con utilidad cuadrática U (π) = π − 2b π 2 y costo marginal constante, la curva de oferta puede
+doblarse hacia atrás para precios esperados suficientemente altos. La razón: la utilidad cuadrática
+genera aversión absoluta creciente, de modo que el “ρ” efectivo aumenta con el beneficio esperado.
+Es un recordatorio de que la constancia de ρ en el modelo media–varianza es un supuesto fuerte,
+cómodo pero no inocuo.
+
+
+
+
+                                                     6
+                µ (precio esperado)
+
+
+                                                                 aversa: µ = (c + ρσ 2 ) x
+
+
+                       µ̄
+                                                                             certeza: µ = c x
+
+
+
+
+                                                                                  x
+                                                           x∗                xc
+
+Figura 2: Oferta (inversa) de la firma media–varianza. Introducir riesgo rota la oferta hacia
+arriba: para un mismo precio esperado µ̄, el producto cae de xc a x∗ . Un aumento de σ 2 o de ρ
+empina aún más la recta.
+
+
+6.     Estática comparada de la firma aversa
+
+Volvemos a la firma aversa general de la Sección 4. La sola aversión al riesgo es una restricción
+débil; para obtener predicciones de signo necesitamos restringir cómo varía la aversión con la
+riqueza. Usamos las medidas de Arrow–Pratt introducidas en la Clase 2:
+
+                            U ′′ (π)                                    π U ′′ (π)
+              RA (π) = −                 (absoluta),       RR (π) = −                 (relativa).
+                            U ′ (π)                                      U ′ (π)
+
+El supuesto empíricamente razonable es que RA sea decreciente (DARA): al enriquecerse, la
+firma exige una prima de riesgo menor por cualquier lotería dada.
+
+
+6.1.   Los costos fijos sí importan
+
+Bajo certeza, un costo fijo B no altera el producto óptimo (con producción positiva). Bajo
+incertidumbre, esto deja de ser cierto. Diferenciando la condición (1) respecto de B:
+
+                                       ∂x∗   1  ′′
+                                               E U (π) (p − C ′ (x)) .
+                                                                    
+                                           =                                                        (6)
+                                       ∂B    D
+Proposición 6.1 (Efecto del costo fijo). La aversión absoluta decreciente (DARA) es condición
+necesaria y suficiente para que ∂x∗ /∂B < 0: un aumento del costo fijo reduce el producto.
+
+Idea de la demostración. Sea π̂ el nivel de beneficio cuando p = C ′ (x). Con DARA, RA (π) ≤
+RA (π̂) cuando p − C ′ (x) ≥ 0 (y viceversa). Sustituyendo la definición de RA y multiplicando
+por la cantidad no positiva −U ′ (π)(p − C ′ (x)), se obtiene una desigualdad válida para todo p; al
+tomar esperanza, el término con RA (π̂) se anula por la condición de primer orden (1), y queda
+E[U ′′ (π)(p − C ′ (x))] > 0. Como D < 0, de (6) resulta ∂x∗ /∂B < 0.
+
+
+Lectura de política. La intuición se aclara preguntando qué medida haría a la firma producir
+más: ¿un impuesto de suma fija o un subsidio de suma fija? Bajo DARA, un subsidio de suma
+
+
+                                                       7
+fija (que reduce B) aumenta el producto, porque enriquece a la firma y baja su aversión efectiva
+en el margen.
+Observación 6.1. En el modelo media–varianza de la Sección 5, ∂x∗ /∂B = 0: el costo fijo no
+afecta el producto. Esto es coherente con la Proposición 6.1, ya que media–varianza equivale
+a CARA (aversión absoluta constante), el caso frontera entre DARA y IARA. Los costos fijos
+importan solo cuando la aversión cambia con la riqueza.
+
+
+6.2.   La oferta y una ecuación tipo Slutsky
+
+¿Qué ocurre si sube el precio esperado? Como el precio es aleatorio, no tiene sentido hablar de
+“un aumento del precio”; sí lo tiene desplazar la distribución hacia la derecha sin cambiar su
+forma, escribiendo el precio como p + θ y estudiando ∂x∗ /∂θ evaluado en θ = 0. Diferenciando
+(1) respecto de θ y reordenando con ayuda de (6), Sandmo obtiene
+                              ∂x∗        ∂x∗              1
+                                  = − x∗                − E[U ′ (π)] .                          (7)
+                              ∂θ    | {z∂B}             | D {z     }
+                                     efecto “riqueza” efecto sustitución > 0
+
+Esta descomposición es análoga a la ecuación de Slutsky de la teoría de la demanda. El segundo
+término (efecto sustitución) es siempre positivo. El primero tiene el signo de −x∗ ∂x∗ /∂B: bajo
+DARA, ∂x∗ /∂B < 0, así que este término también es positivo.
+Proposición 6.2 (Pendiente de la oferta). La aversión absoluta decreciente (DARA) es condi-
+ción suficiente para que ∂x∗ /∂θ > 0, es decir, para una curva de oferta con pendiente positiva.
+
+
+6.3.   El impuesto proporcional a las ganancias
+
+Bajo certeza, un impuesto proporcional a las ganancias no altera el producto. No hay razón a
+priori para que esto valga bajo incertidumbre. Con compensación plena de pérdidas (full loss
+offset), el beneficio después de impuestos es πt = (p x − C(x) − B)(1 − t), y como el factor (1 − t)
+se puede extraer, la condición de primer orden (1) queda inalterada en su forma. Sin embargo,
+diferenciando respecto de t se obtiene un resultado que depende de la aversión relativa:
+Proposición 6.3 (Efecto del impuesto proporcional). Con compensación plena de pérdidas,
+un aumento de la tasa impositiva t aumenta, deja constante o reduce el producto según que la
+aversión relativa al riesgo RR sea creciente, constante o decreciente, respectivamente.
+
+La intuición: subir t “achica” todos los beneficios en la misma proporción, llevando a la firma a
+un tramo distinto de su función de aversión. Si RR crece con el beneficio, achicar los beneficios
+reduce la aversión relativa y la firma se anima a producir más.
+
+  Idea clave. Bajo incertidumbre se rompen dos neutralidades clásicas del modelo normativo:
+  ni los costos fijos ni el impuesto proporcional a las ganancias son inocuos. En ambos casos,
+  es la forma de la aversión al riesgo (decreciente/creciente) la que determina el signo de la
+  respuesta real de la firma.
+
+
+7.     Beneficios, entrada y equilibrio de largo plazo
+
+7.1.   Existencia del óptimo
+
+Bajo certeza, el costo marginal creciente es necesario para que exista un óptimo competitivo. Bajo
+incertidumbre no lo es. Si C ′′ (x) = 0 (costo marginal constante), la concavidad y el acotamiento
+
+                                                   8
+de U bastan para que exista un x∗ finito que maximiza E[U (π)]; si C ′′ (x) > 0, el costo marginal
+creciente solo refuerza la concavidad. Incluso un costo marginal en forma de U es compatible. El
+caso realmente delicado es el de costo marginal siempre decreciente, donde el acotamiento ya no
+garantiza la existencia; aun así, un mercado puede ser competitivo bajo ese supuesto.
+
+
+7.2.   Solución interior versus esquina
+
+Un máximo interior de E[U (π)] no garantiza el óptimo global: puede ser preferible no producir.
+La firma produce x∗ > 0 si y solo si
+
+                                     E[U (π(x∗ ))] > U (−B),
+
+donde U (−B) es la utilidad de no producir. Desarrollando el miembro izquierdo en serie de
+Taylor alrededor de p = µ y despreciando términos de orden superior,
+                           U (E[π]) − U (−B)  1
+                                             ≥ RA (E[π]) (x∗ )2 σ 2 .
+                                U ′ (E[π])    2
+
+El miembro derecho —el producto de la aversión absoluta por la varianza de las ventas (x∗ )2 σ 2 —
+es positivo. Luego el izquierdo también lo es, y como U es creciente, E[π] > −B, es decir
+µx∗ − C(x∗ ) − B > −B, o bien
+                                             C(x∗ )
+                                        µ>          ,
+                                               x∗
+el precio esperado debe superar al costo medio: la firma exige un beneficio esperado estricta-
+mente positivo para producir.
+Teorema 7.1 (Beneficios positivos en competencia). Bajo incertidumbre de precios y aversión
+al riesgo, el equilibrio competitivo requiere la existencia de beneficios esperados positivos.
+
+
+7.3.   Largo plazo, entrada y concentración
+
+Suponiendo firmas con costos y creencias idénticos y B = 0 (largo plazo, todos los costos varia-
+bles), la condición anterior tiene consecuencias sobre la entrada:
+
+   Una firma casi neutral al riesgo entra mientras exista cualquier beneficio esperado positivo;
+   fija C ′ (x) = µ.
+   Una firma muy aversa no entra, o es marginal: una pequeña caída del precio esperado la
+   expulsa del mercado.
+   El beneficio esperado es mayor para las firmas más cercanas a la neutralidad, que además
+   producen más. Esto confirma una vieja tesis: el beneficio es una retribución al riesgo
+   asumido.
+
+Además, si el costo marginal es constante o decreciente y una o pocas firmas son mucho menos
+aversas que el resto, estas pueden elegir producciones muy grandes, deprimir el precio esperado y
+expulsar a las demás. La distribución desigual de la aversión al riesgo es, por sí sola, una fuente
+de concentración oligopólica.
+
+  Idea clave. La aversión al riesgo resucita el beneficio (puro) positivo en el equilibrio com-
+  petitivo de largo plazo. La predicción normativa de “beneficio nulo” es un artefacto del
+  supuesto de certeza (o de neutralidad): con incertidumbre, el beneficio es el precio que el
+  mercado paga por soportar riesgo.
+
+                                                9
+8.    Síntesis: lo normativo frente a lo descriptivo
+
+La clase cierra el bloque de riesgo mostrando cómo la incertidumbre de precios reescribe la teoría
+del productor. El siguiente cuadro resume el contraste.
+
+
+     Rasgo                        Certeza       Neutral al riesgo     Aversa / Markowitz
+
+     Objetivo                       máx π            máx E[π]            máx E[U (π)]
+     Condición óptima             p = C ′ (x)         µ = C ′ (x)     C ′ (x) = µ − prima < µ
+     Producto vs. xc                  xc                  xc                  x∗ < xc
+     Costo fijo B                irrelevante          irrelevante      ∂x/∂B < 0 (DARA)
+     Impuesto proporcional         neutral             neutral             signo de RR
+     Beneficio de largo plazo         0                   0                     >0
+
+
+El mensaje de fondo es que casi todas las “neutralidades” cómodas de la teoría del productor
+—la irrelevancia de los costos fijos, la del impuesto proporcional, la anulación del beneficio en el
+largo plazo— son propiedades del mundo de certeza. La incertidumbre, mediada por la aversión
+al riesgo, las convierte en predicciones sustantivas y contrastables sobre la conducta real de las
+firmas.
+
+
+Ejercicios
+
+1. Firma neutral al riesgo. Una firma tiene C(x) = 12 x2 y enfrenta un precio p que vale 6 o
+   14 con igual probabilidad. Calcule µ, el producto óptimo y el beneficio esperado. Verifique
+   que la regla óptima es C ′ (x) = µ y que la varianza del precio no interviene.
+
+2. Resultado central de Sandmo. Demuestre que para una firma aversa al riesgo con óptimo
+   interior se cumple C ′ (x∗ ) < µ. (Sugerencia: parta de la condición de primer orden, reste
+   E[U ′ (π)µ] y use que U ′ es decreciente junto con π = E[π] + (p − µ)x.)
+
+3. Firma CARA con precio normal. Con U (π) = −e−aπ , p ∼ N (µ, σ 2 ) y C(x) = 2c x2 ,
+   deduzca el equivalente cierto, la condición de primer orden y la forma cerrada x∗ = µ/(c +
+   aσ 2 ). Evalúe en µ = 12, c = 1, a = 2, σ 2 = 1 y compare con el producto de certeza.
+
+4. Firma tipo Markowitz. Para V (x) = E[π] − ρ2 Var(π) con C(x) = 2c x2 , obtenga x∗ , calcule
+   los signos de ∂x∗ /∂σ 2 , ∂x∗ /∂ρ y ∂x∗ /∂µ, e interprete el límite ρ → 0.
+
+5. Costos fijos y aversión. Muestre que en el modelo media–varianza ∂x∗ /∂B = 0. Explique
+   por qué esto es consistente con la proposición de Sandmo según la cual ∂x∗ /∂B < 0 requiere
+   aversión absoluta decreciente.
+
+6. Impuesto proporcional y largo plazo. (a) Con compensación plena de pérdidas, muestre
+   que la condición de primer orden es invariante al impuesto proporcional t y explique, vía RR ,
+   cuándo un aumento de t eleva o reduce el producto. (b) Para la firma media–varianza con
+   B = 0, verifique que el beneficio esperado en el óptimo es positivo e identifique el descuento
+   por riesgo ρ2 Var(π).
+
+
+
+
+                                                 10
+Referencias
+[1] Arrow, K. J. (1965). Aspects of the Theory of Risk-Bearing. Yrjö Jahnssonin Säätiö, Helsinki.
+[2] Gravelle, H., & Rees, R. (2006). Microeconomía (3.ª ed.). Pearson.
+[3] Markowitz, H. (1952). Portfolio selection. The Journal of Finance, 7(1), 77–91.
+[4] Pratt, J. W. (1964). Risk aversion in the small and in the large. Econometrica, 32(1–2), 122–136.
+[5] Sandmo, A. (1971). On the theory of the competitive firm under price uncertainty. The American
+    Economic Review, 61(1), 65–73.
+[6] Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk.
+    The Journal of Finance, 19(3), 425–442.
+[7] Varian, H. R. (1998). Análisis microeconómico (3.ª ed.). Antoni Bosch.
+
+
+
+
+                                                  11
+

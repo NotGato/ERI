@@ -1,0 +1,644 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                      Notas de Clase 1
+                        Unidad I: Decisiones bajo Riesgo e Incertidumbre
+
+
+
+                  Bibliografía: Gravelle & Rees (cap. 17); Kahneman & Tversky (1979)
+
+
+
+                                                 Resumen
+       Estas notas cubren la primera clase del curso. Distinguimos riesgo de incertidumbre en el
+       sentido de Knight, formalizamos la situación de decisión mediante estados del mundo y
+       prospectos, y presentamos primero los criterios de decisión bajo incertidumbre sin probabili-
+       dades (maximin, maximax, Hurwicz, Laplace, minimax-arrepentimiento). Luego desarrolla-
+       mos el modelo normativo dominante —la teoría de la utilidad esperada de von Neumann–
+       Morgenstern— junto con las nociones de equivalente cierto, prima de riesgo y aversión al
+       riesgo. Finalmente exponemos la crítica descriptiva de Kahneman y Tversky (Teoría de las
+       Perspectivas): efecto certeza, efecto reflejo y efecto aislamiento; la función de valor en forma
+       de S con aversión a las pérdidas; y la función de ponderación de probabilidades. Cerramos
+       con los cisnes negros (Taleb) y los sesgos de optimismo, que ponen en cuestión el propio
+       marco probabilístico.
+
+
+
+1.     Presentación del curso
+
+El curso estudia cómo deciden los agentes económicos cuando el resultado de sus acciones no
+es único ni conocido de antemano, y cómo funcionan los mercados en presencia de riesgo y de
+información imperfecta o asimétrica. El programa se organiza en dos grandes bloques.
+Bloque de riesgo (Unidades I–V). Un único decisor frente a la incertidumbre: criterios de
+decisión, utilidad esperada, aversión al riesgo, mercados de derechos contingentes y seguros,
+decisiones de cartera (Markowitz, CAPM) y la firma competitiva bajo incertidumbre.
+Bloque de información (Unidades VI–X). Varios agentes con información distinta: la rela-
+ción agente–principal y los tres problemas centrales de la economía de la información —riesgo
+moral, selección adversa y señalización— más elementos de teoría de juegos y subastas.
+
+     Idea clave. El hilo conductor del curso es una tensión permanente entre el modelo normativo (qué
+     debería hacer un decisor racional) y la evidencia descriptiva (qué hacen realmente las personas y
+     los mercados). La Clase 1 instala esa tensión desde el primer día.
+
+En cuanto al régimen: dos exámenes parciales (Unidades I–V y VI–X), un trabajo práctico
+obligatorio y examen final, para quienes no alcancen la promoción.
+
+
+2.     Riesgo, incertidumbre y la formalización de la decisión
+
+2.1.     La distinción de Knight
+
+Toda la microeconomía vista hasta aquí supuso decisiones en condiciones de certeza: cada acción
+conducía a un único resultado conocido. Pero la incertidumbre es omnipresente —tecnológica (la
+
+                                                      1
+cosecha depende del clima, las máquinas se rompen) y de mercado (no se conocen con seguridad
+los precios a los que se comprará o venderá).
+Frank Knight (1921) introdujo una distinción que sigue siendo fundamental.
+Definición 2.1 (Riesgo vs. incertidumbre, Knight). Hay riesgo cuando el decisor enfrenta un
+conjunto de resultados posibles a los que puede asignar una distribución de probabilidad conocida
+(incertidumbre mensurable). Hay incertidumbre (en sentido estricto, o knightiana) cuando ni
+siquiera se conocen las probabilidades: la situación es única, irrepetible y no admite frecuencia
+ni cálculo probabilístico confiable (incertidumbre no mensurable).
+
+La distinción no es un tecnicismo: para Knight, el beneficio empresario —aquello que remunera
+al empresario más allá del interés y los salarios— nace precisamente de la incertidumbre no
+asegurable. Si todo riesgo fuese mensurable, podría transferirse mediante seguros y desaparecería
+como fuente de renta. Volveremos sobre esta idea al final de la clase, al hablar de cisnes negros.
+Observación 2.1. La mayor parte del curso trabaja bajo riesgo (probabilidades dadas). Pero
+conviene tener presente desde ahora que el supuesto de “probabilidades conocidas” es fuerte, y
+que buena parte de la crítica moderna —de Knight a Taleb— apunta justamente a su fragilidad.
+
+
+2.2.   Estados del mundo, prospectos y probabilidades
+
+Seguimos a Gravelle & Rees (cap. 17) para dar forma precisa a la “incertidumbre”. La consecuencia
+de una decisión no es un resultado seguro sino un abanico de resultados posibles, uno por cada
+configuración del entorno.
+Definición 2.2 (Estado del mundo). Un estado del mundo es una especificación completa y
+precisa de todas las variables ambientales relevantes fuera del control del decisor. Indexamos los
+estados por s = 1, 2, . . . , S.
+
+El conjunto de estados {1, . . . , S} satisface tres propiedades:
+
+ (a) Exhaustivo: contiene todos los estados que podrían ocurrir.
+
+(b) Mutuamente excluyente: la ocurrencia de uno descarta a los demás.
+
+ (c) Exógeno: ningún agente (ni coalición de agentes) puede influir sobre qué estado ocurre.
+                                                                             PS
+El decisor asigna a cada estado s una probabilidad πs , con πs ≥ 0 y            s=1 πs = 1. Sea ys el
+ingreso (o resultado monetario) que obtendría si ocurre el estado s.
+Definición 2.3 (Prospecto). Un prospecto (o lotería) es un vector de resultados estado-contingentes
+con su vector de probabilidades asociado:
+                                                                       X
+                     P = (π1 , . . . , πS ; y1 , . . . , yS ), πs ≥ 0,   πs = 1.
+                                                                      s
+
+
+Los prospectos son los objetos de elección de la teoría: toda decisión tiene como consecuencia
+algún prospecto, de modo que elegir entre acciones equivale a elegir entre prospectos. Un pros-
+pecto seguro (y) entrega y con certeza. Notación abreviada: (x, p) denota el prospecto que paga
+x con probabilidad p y 0 con probabilidad 1 − p.
+
+   Idea clave. Toda la teoría de la decisión bajo incertidumbre consiste en construir una relación
+   de preferencias sobre prospectos y en encontrar una función que la represente de forma simple. La
+   pregunta central de la clase es qué función es esa —y si describe bien la conducta real.
+
+                                                  2
+3.    Decisión bajo incertidumbre sin probabilidades
+
+Antes de suponer probabilidades conocidas, consideremos el caso de incertidumbre estricta (a
+lo Knight): el decisor conoce los estados posibles y los pagos en cada uno, pero no puede o no
+quiere asignarles probabilidades. La información se resume en una matriz de pagos {xij }, donde
+i indexa acciones ai y j indexa estados sj .
+Ejemplo 3.1 (Elección de proyecto). Una firma debe elegir entre tres alternativas de inversión.
+Los pagos (en millones) según el estado de la economía son:
+
+                                         s1 (recesión)            s2 (estable)       s3 (expansión)
+             a1 (bono seguro)                 50                      50                   50
+             a2 (proyecto moderado)          20                       60                  90
+             a3 (proyecto agresivo)          −30                      40                  150
+
+Sin probabilidades, distintos criterios —cada uno con su propia filosofía— recomiendan acciones
+diferentes.
+
+
+Maximin (Wald): pesimismo puro. Se evalúa cada acción por su peor resultado y se elige
+la mejor entre esos peores:
+                            a⋆ = arg max mı́n xij .
+                                                  i           j
+En el Ejemplo 3.1: los mínimos son 50, 20, −30; se elige a1 . El criterio protege contra el peor
+escenario, pero ignora por completo el potencial de ganancia.
+
+
+Maximax: optimismo puro. Simétrico al anterior: se elige la acción con el mejor resultado
+posible,
+                            a⋆ = arg max máx xij .
+                                                i             j
+Aquí los máximos son 50, 90, 150; se elige a3 .
+
+
+Criterio de Hurwicz: optimismo parcial. Introduce un coeficiente de optimismo α ∈ [0, 1]
+y pondera el mejor y el peor resultado:
+                 Hi (α) = α máx xij + (1 − α) mı́n xij ,             a⋆ = arg max Hi (α).
+                              j                       j                          i
+α = 1 reproduce maximax y α = 0 maximin. En el ejemplo:
+                        H1 = 50,     H2 = 20 + 70α,               H3 = −30 + 180α.
+Con α = 0.5: H1 = 50, H2 = 55, H3 = 60, y se elige a3 . La recomendación depende críticamente
+de α (para α bajo domina a1 ), lo que expone la principal debilidad del criterio: α es un parámetro
+subjetivo difícil de justificar y usa solo los extremos, descartando los pagos intermedios.
+
+
+Criterio de Laplace: razón insuficiente. Ante la ausencia de información, se invoca el
+principio de razón insuficiente: si no hay motivo para creer que un estado es más probable que
+otro, se les asigna igual probabilidad 1/S y se maximiza el pago esperado resultante:
+                                               1X
+                                         Li =       xij .
+                                               S
+                                                          j
+
+En el ejemplo (S = 3): L1 = 50, L2 = 170/3 ≈ 56.7, L3 = 160/3 ≈ 53.3; se elige a2 . Crítica
+clásica: la equiprobabilidad depende de cómo se definan y agrupen los estados, de modo que
+reetiquetar el espacio de estados puede cambiar la recomendación.
+
+                                                      3
+Minimax-arrepentimiento (Savage): minimizar el remordimiento. Se define el arre-
+pentimiento (regret) como la diferencia entre lo que se hubiera obtenido con la mejor acción para
+ese estado y lo efectivamente obtenido:
+                                                    
+                                     rij = máx xkj − xij .
+                                                     k
+
+Luego se elige la acción que minimiza el máximo arrepentimiento. La matriz de arrepentimientos
+del ejemplo (máximos por columna: 50, 60, 150) es:
+
+                                           s1   s2           s3   máxj rij
+                                     a1    0    10       100        100
+                                     a2    30    0        60        60
+                                     a3    80   20        0          80
+
+El mínimo de los máximos arrepentimientos es 60; se elige a2 . Advertencia: el criterio puede
+violar la independencia de alternativas irrelevantes —agregar o quitar una acción cambia los
+máximos por columna y puede invertir el orden entre dos acciones ya presentes.
+Observación 3.1 (Síntesis). Los cinco criterios eligen acciones distintas sobre la misma matriz:
+
+                              Criterio                            Acción elegida
+                              Maximin (Wald)                              a1
+                              Maximax                                     a3
+                              Hurwicz (α = 0.5)                           a3
+                              Laplace                                     a2
+                              Minimax-arrepentimiento                     a2
+
+No existe un criterio “correcto” universal: Milnor (1954) mostró que ningún criterio satisface
+simultáneamente un conjunto natural de axiomas deseables. La lección es que, en ausencia de
+probabilidades, la elección exige un juicio adicional sobre la actitud frente a lo desconocido. Estos
+criterios se discuten en Luce & Raiffa (1957) y en Borch (1968, cap. VII).
+
+     Idea clave. Si el decisor sí puede asignar probabilidades (pasamos de incertidumbre a riesgo), el
+     candidato natural es maximizar el valor esperado s πs ys . Pero ya veremos —con la paradoja de
+                                                      P
+     San Petersburgo en la Clase 2— que el valor esperado también falla. La salida será reemplazar el
+     valor esperado por la utilidad esperada.
+
+
+4.     El modelo normativo: la utilidad esperada
+
+Supongamos ahora que el decisor tiene probabilidades sobre los estados. ¿Cómo ordena los pros-
+pectos? La respuesta clásica es la teoría de la utilidad esperada.
+
+
+4.1.     Los axiomas
+
+Si las preferencias ≿ sobre prospectos satisfacen ciertos axiomas, pueden representarse median-
+te la esperanza de una función de utilidad. Presentamos una versión de los axiomas de von
+Neumann–Morgenstern (1944).
+Axioma 1 (Orden completo). Para todo par de prospectos P, Q, exactamente una de las rela-
+ciones P ≻ Q, P ≺ Q, P ∼ Q es verdadera, y ≿ es transitiva.
+
+                                                         4
+Axioma 2 (Continuidad). Si P ≿ Q ≿ R, existe una probabilidad λ ∈ [0, 1] tal que el decisor
+es indiferente entre Q con certeza y la lotería que da P con probabilidad λ y R con probabilidad
+1 − λ.
+
+Axioma 3 (Independencia). Para todo λ ∈ (0, 1] y todo prospecto R,
+
+                         P ≿ Q ⇐⇒ λP + (1 − λ)R ≿ λQ + (1 − λ)R.
+
+Mezclar dos prospectos con un tercero común, con la misma probabilidad, no altera el orden de
+preferencia.
+
+El axioma de independencia (junto con una hipótesis de monotonía, que hace preferir la lotería
+con mayor probabilidad del mejor resultado) es el corazón de la teoría —y, como veremos, el que
+la evidencia experimental más contundentemente viola.
+
+Teorema 4.1 (Representación de utilidad esperada). Si ≿ satisface los axiomas anteriores, existe
+una función de utilidad v(·) sobre los resultados, única salvo transformaciones afines positivas,
+tal que para todo par de prospectos:
+                                                                   S
+                                                                   X
+            P ≿ Q ⇐⇒ U (P) ≥ U (Q),           donde      U (P) =         πs v(ys ) = E[v(y)].
+                                                                   s=1
+
+
+Que v sea única salvo transformación afín positiva significa que es una utilidad cardinal (a
+diferencia de la utilidad ordinal del consumidor bajo certeza): las diferencias de utilidad tienen
+sentido, aunque el origen y la escala sean arbitrarios.
+
+
+4.2.     Actitud frente al riesgo: equivalente cierto y prima de riesgo
+
+Consideremos un prospecto P = (π, y1 , y2 ) con valor esperado ȳ = πy1 + (1 − π)y2 .
+
+Definición 4.1 (Equivalente cierto y prima de riesgo). El equivalente cierto yc es el ingreso
+seguro que deja al decisor indiferente frente al prospecto:
+
+                             v(yc ) = E[v(y)] = πv(y1 ) + (1 − π)v(y2 ).
+
+La prima de riesgo es ρ = ȳ − yc : lo máximo que el decisor pagaría por eliminar el riesgo y
+quedarse con el valor esperado seguro.
+
+Comparando yc con ȳ clasificamos la actitud frente al riesgo:
+
+       yc < ȳ (equivalentemente ρ > 0): aversión al riesgo. Valora el prospecto en menos que su
+       valor esperado.
+
+       yc = ȳ (ρ = 0): neutralidad al riesgo.
+
+       yc > ȳ (ρ < 0): propensión (atracción) al riesgo.
+
+Proposición 4.1 (Concavidad y aversión al riesgo). Por la desigualdad de Jensen, E[v(y)] ≤
+v(E[y]) para toda v cóncava. Por lo tanto:
+
+                    v estrictamente cóncava (v ′′ < 0) ⇐⇒ aversión al riesgo,
+
+y análogamente v lineal ⇐⇒ neutralidad, v convexa ⇐⇒ propensión al riesgo.
+
+
+                                                 5
+           v(y)
+
+                                                                                    v(y)
+
+
+
+
+                                                      v(ȳ)
+                                                       E[v(y)]
+
+
+
+
+                                                                                           ingreso y
+                   y1                  yc        ȳ                          y2
+                                            ρ
+
+Figura 1: Aversión al riesgo: v cóncava. La utilidad esperada E[v(y)] está por debajo de v(ȳ); el
+equivalente cierto yc < ȳ y la prima de riesgo es ρ = ȳ − yc > 0.
+
+La Figura 1 ilustra el caso de aversión al riesgo: la utilidad esperada E[v(y)] (altura de la cuerda
+sobre ȳ) queda por debajo de v(ȳ), y el equivalente cierto yc es menor que ȳ; la distancia horizontal
+ρ = ȳ − yc es la prima de riesgo.
+                                                                   √
+Ejemplo 4.1 (Cálculo del equivalente cierto). Sea v(y) = 2 y y el prospecto (0.5; 1, 9). En-
+tonces ȳ = 5, y                         √           √
+                       E[v(y)] = 0.5 · 2 1 + 0.5 · 2 9 = 0.5 · 2 + 0.5 · 6 = 4.
+                                  √
+El equivalente cierto satisface 2 yc = 4 ⇒ yc = 4, y la prima de riesgo es ρ = 5 − 4 = 1. El
+decisor pagaría hasta 1 por evitar el riesgo.
+
+
+4.3.   Medidas de aversión al riesgo (Arrow–Pratt)
+
+¿Cómo comparar el grado de aversión al riesgo entre individuos o niveles de ingreso? La magnitud
+de v ′′ no sirve directamente porque cambia con las transformaciones afines admisibles. La medida
+invariante es el coeficiente de Arrow–Pratt.
+Definición 4.2 (Coeficientes de Arrow–Pratt). La aversión absoluta al riesgo y la aversión
+relativa al riesgo en el ingreso y son
+                                    v ′′ (y)                               y v ′′ (y)
+                         A(y) = −            ,         R(y) = y A(y) = −              .
+                                    v ′ (y)                                 v ′ (y)
+
+Para riesgos pequeños, la prima de riesgo es aproximadamente ρ ≈ 12 A(ȳ) σ 2 , donde σ 2 es la
+varianza del prospecto: la prima crece con la aversión absoluta y con la varianza. Estas medidas
+y sus implicancias (aversión absoluta decreciente, aversión relativa constante) se desarrollan en
+profundidad en la Unidad II; aquí solo dejamos planteada la herramienta.
+
+   Idea clave. El modelo de utilidad esperada es elegante, tiene fundamento axiomático y genera
+   predicciones nítidas: los agentes aversos al riesgo compran seguros, diversifican y exigen primas
+   por asumir riesgo. Como modelo normativo es muy sólido. La pregunta de la segunda mitad de
+   la clase es si describe bien la conducta real.
+
+                                                         6
+5.     La crítica descriptiva: Teoría de las Perspectivas (Kahneman
+       & Tversky, 1979)
+
+Kahneman y Tversky (1979) presentan una crítica de la utilidad esperada como modelo descrip-
+tivo y proponen una alternativa: la Teoría de las Perspectivas (Prospect Theory). Su método son
+elecciones hipotéticas entre prospectos, planteadas a estudiantes y docentes. Documentan varios
+patrones sistemáticos que violan los axiomas.
+
+
+5.1.   Efecto certeza y paradoja de Allais
+
+Las personas sobreponderan los resultados considerados ciertos respecto de los meramente pro-
+bables. El contraejemplo clásico es de Allais (1953). Considérense estos pares (los porcentajes
+indican la opción modal elegida):
+
+               Problema 1                                  Problema 2
+               A : (2500, 0.33; 2400, 0.66; 0, 0.01)       C : (2500, 0.33; 0, 0.67)
+               B : (2400) [82 %]                           D : (2400, 0.34; 0, 0.66) [83 %]
+
+La mayoría elige B en el Problema 1 y C en el Problema 2. Pero esto es inconsistente con la
+utilidad esperada. Con v(0) = 0, la elección de B implica
+            v(2400) > 0.33 v(2500) + 0.66 v(2400) =⇒ 0.34 v(2400) > 0.33 v(2500),
+mientras que la elección de C implica la desigualdad opuesta. El Problema 2 se obtiene del 1 qui-
+tando un 0.66 de ganar 2400 a ambas opciones; por independencia, el orden debería preservarse.
+No ocurre: eliminar esa parte común “duele” más cuando convierte una ganancia segura en una
+probable. Ese es el efecto certeza.
+
+
+5.2.   Efecto reflejo
+
+¿Qué pasa cuando invertimos el signo de los resultados (ganancias → pérdidas)? Las preferencias
+se reflejan como en un espejo. Por ejemplo:
+
+        Ganancias                                      Pérdidas
+        (4000, 0.80) ≺ (3000) [80 %]                   (−4000, 0.80) ≻ (−3000) [92 %]
+        (3000, 0.90) ≻ (6000, 0.45) [86 %]             (−3000, 0.90) ≺ (−6000, 0.45) [92 %]
+
+Observación 5.1 (La consecuencia central). La aversión al riesgo en el dominio de las ganancias
+convive con búsqueda de riesgo en el dominio de las pérdidas. Frente a una pérdida segura de 3000,
+la mayoría prefiere arriesgarse a perder 4000 con probabilidad 0.80 —aunque esa apuesta tiene
+peor valor esperado. Un único principio psicológico, la sobreponderación de la certeza, produce
+aversión al riesgo en ganancias y búsqueda de riesgo en pérdidas. Esto es incompatible con una
+v globalmente cóncava.
+
+
+5.3.   Efecto aislamiento (framing)
+
+Para simplificar, la gente descarta los componentes comunes a las alternativas y se concentra en
+lo que las distingue. Como un mismo par de prospectos puede descomponerse en común + dis-
+tintivo de más de una manera, distintas presentaciones del mismo problema generan preferencias
+distintas.
+
+                                                       7
+Ejemplo 5.1 (Juego secuencial, Problema 10). Juego en dos etapas: en la primera, con proba-
+bilidad 0.75 el juego termina sin ganar nada; con 0.25 se pasa a una segunda etapa donde se
+elige entre (4000, 0.80) y (3000). En términos de resultados finales, esto equivale a elegir entre
+(4000, 0.20) y (3000, 0.25) —idéntico al Problema 4, donde la mayoría prefería la primera. Pero
+al presentarlo en forma secuencial, el 78 % elige el prospecto seguro de la segunda etapa: la gente
+ignora la primera etapa (común) y ve una elección entre algo “seguro” y algo riesgoso.
+
+Ejemplo 5.2 (El bono común, Problemas 11 y 12). Problema 11 : además de lo que posee, le
+regalan 1000; elija entre (1000, 0.50) y (500) —la mayoría elige el seguro 500. Problema 12 :
+le regalan 2000; elija entre (−1000, 0.50) y (−500) —la mayoría arriesga. Pero en términos de
+estados finales de riqueza ambos problemas son idénticos: A = (2000, 0.50; 1000, 0.50) = C y
+B = (1500) = D. El bono, común a ambas opciones, no entra en la comparación. Los portadores
+de valor son los cambios de riqueza, no los estados finales.
+
+
+5.4.   El modelo: fase de edición y fase de evaluación
+
+La teoría distingue dos fases. En la edición, el decisor reorganiza y simplifica los prospectos
+mediante operaciones como: codificación (resultados como ganancias/pérdidas respecto de un
+punto de referencia), combinación de probabilidades de resultados idénticos, segregación del
+componente seguro, cancelación de componentes comunes (origen del efecto aislamiento), simpli-
+ficación (redondeo) y detección de dominancia. En la evaluación, se elige el prospecto de mayor
+valor V , definido por dos escalas: una función de valor v(·) y una función de ponderación π(·).
+Para un prospecto regular (x, p; y, q) (con p + q < 1, o bien x ≥ 0 ≥ y):
+
+                               V (x, p; y, q) = π(p) v(x) + π(q) v(y)
+
+con v(0) = 0, π(0) = 0, π(1) = 1. Nótese el paralelo con la utilidad esperada —y la diferencia:
+(i) v se define sobre cambios respecto de un punto de referencia, no sobre la riqueza final; (ii) las
+probabilidades p se reemplazan por pesos de decisión π(p).
+
+Observación 5.2 (Doble uso de π). Cuidado con la notación: en Gravelle πs era la probabilidad
+del estado s; en Kahneman–Tversky π(p) es el peso de decisión asociado a la probabilidad p. No
+son lo mismo: π(p) no es una medida de probabilidad.
+
+
+5.5.   La función de valor
+
+Proposición 5.1 (Propiedades de la función de valor). La función de valor v(x) es:
+
+ (i) definida sobre desviaciones respecto de un punto de referencia (ganancias y pérdidas);
+
+(ii) cóncava en las ganancias (v ′′ (x) < 0 para x > 0) y convexa en las pérdidas (v ′′ (x) > 0 para
+     x < 0): utilidad marginal decreciente en ambos dominios;
+
+(iii) más empinada en las pérdidas que en las ganancias: v ′ (x) < v ′ (−x) para x > 0. Esto es la
+      aversión a las pérdidas: “las pérdidas pesan más que las ganancias”.
+
+El resultado es la característica curva en forma de S de la Figura 2, con quiebre en el punto de
+referencia.
+
+La aversión a las pérdidas explica por qué la apuesta simétrica (x, 0.5; −x, 0.5) resulta poco
+atractiva para la mayoría, y por qué esa aversión crece con la magnitud de lo apostado.
+
+
+                                                 8
+                                   v(x)
+
+                                                       ganancias
+
+
+
+
+                                 ref.
+                                                                   x (ganancias/pérdidas)
+
+
+
+
+            pérdidas
+
+
+
+
+Figura 2: Función de valor de la Teoría de las Perspectivas: cóncava en ganancias, convexa en
+pérdidas y más empinada en pérdidas (aversión a las pérdidas). Nótese la asimetría: la caída de
+valor de una pérdida de 2 supera al alza de una ganancia de 2.
+
+
+5.6.   La función de ponderación
+
+Proposición 5.2 (Propiedades de la función de ponderación). La función π(p) que transforma
+probabilidades declaradas en pesos de decisión es creciente, con π(0) = 0 y π(1) = 1, y satisface:
+
+ (i) Sobreponderación de probabilidades bajas: π(p) > p para p pequeño.
+
+(ii) Subcertidumbre: π(p) + π(1 − p) < 1 para todo 0 < p < 1 (las preferencias son “regresivas”
+     respecto de p: menos sensibles a la probabilidad de lo que dicta el principio de esperanza).
+
+(iii) Subaditividad para p chico: π(rp) > r π(p), 0 < r < 1.
+
+(iv) Subproporcionalidad: para un cociente fijo de probabilidades, el cociente de pesos está más
+     cerca de 1 cuando las probabilidades son bajas.
+
+La curva resultante (Figura 3) queda por encima de la diagonal para p chico, por debajo en el
+rango medio-alto, y es mal comportada (con quiebres) cerca de los extremos.
+
+Observación 5.3 (Seguros y loterías). La sobreponderación de probabilidades bajas explica de
+un mismo golpe dos conductas aparentemente opuestas: la compra de loterías (se sobrevalora la
+probabilidad chica de una gran ganancia) y la compra de seguros (se sobrevalora la probabilidad
+chica de una gran pérdida). El famoso “patrón cuádruple” de actitudes al riesgo —aversión y
+búsqueda de riesgo que se invierten entre dominios y entre probabilidades altas y bajas— surge
+de combinar la función de valor en S con la ponderación no lineal.
+
+
+
+
+                                                9
+                          π(p)
+                                                         π(p) = p
+                          1
+
+
+
+
+                        0.5
+                                         π(p)
+
+
+
+                                                            p (prob. declarada)
+                                       0.5           1
+
+
+Figura 3: Función de ponderación (esquemática): sobreponderación de probabilidades bajas
+(π(p) > p cerca de 0) y subponderación en el rango medio-alto. La curva cruza la diagonal
+y es discontinua/abrupta cerca de los extremos.
+
+6.      Cisnes negros y sesgos de optimismo
+
+6.1.     Cisnes negros (Taleb)
+
+La Teoría de las Perspectivas critica cómo pesamos las probabilidades, pero acepta que las
+probabilidades existen y son conocidas. Nassim Taleb (2007) va un paso más allá y cuestiona el
+propio marco: muchos fenómenos económicos y sociales están dominados por cisnes negros.
+Definición 6.1 (Cisne negro, Taleb). Un cisne negro es un evento con tres rasgos: (i) es un
+valor atípico que queda fuera de las expectativas ordinarias porque nada en el pasado apuntaba
+a él de manera convincente; (ii) tiene un impacto extremo; (iii) es retrospectivamente predecible:
+después de ocurrido, construimos explicaciones que lo hacen parecer esperable.
+
+La crítica de Taleb apunta a la sobreconfianza en distribuciones de “colas finas” (como la nor-
+mal), que subestiman la probabilidad y el impacto de los eventos extremos. En dominios de
+colas gruesas —crisis financieras, pandemias, quiebras— una parte desproporcionada del resul-
+tado agregado proviene de unos pocos eventos raros, y la extrapolación del pasado (la “falacia
+lúdica” de tratar la vida como un juego de reglas y probabilidades conocidas) resulta engañosa.
+Esto reconecta con la incertidumbre knightiana: cuando la distribución misma es desconocida o
+inestable, ni la utilidad esperada ni la Teoría de las Perspectivas —que operan sobre probabili-
+dades dadas— son plenamente aplicables. La respuesta sensata pasa entonces menos por afinar
+el cálculo y más por la robustez ante lo que no se puede prever.
+
+
+6.2.     Sesgos de optimismo
+
+Un patrón complementario, muy documentado en psicología cognitiva, es el sesgo de optimismo:
+la tendencia sistemática a sobreestimar la probabilidad de eventos favorables y subestimar la de
+los desfavorables que nos afectan a nosotros mismos.
+
+       Optimismo comparativo (Weinstein, 1980): la mayoría se cree “por encima del promedio”
+       y menos expuesta que los demás a enfermedades, accidentes o divorcios.
+       Falacia de la planificación (Kahneman, 2011): los planes —de obras, proyectos, tesis— se
+       construyen sobre escenarios cercanos al mejor caso, subestimando costos y plazos de forma
+       persistente incluso ante experiencia previa en contrario.
+
+                                                10
+Estos sesgos matizan la imagen del cisne negro en una dirección distinta: no solo subestimamos
+los riesgos raros por limitaciones estadísticas, sino también por una inclinación motivada a ver el
+propio futuro con exceso de confianza. La combinación —colas gruesas ignoradas más optimismo
+sistemático— ayuda a entender por qué agentes y organizaciones quedan reiteradamente mal
+preparados frente a eventos adversos.
+
+     Idea clave. Recorrido de la clase: partimos de un marco sin probabilidades (criterios de decisión),
+     pasamos al modelo normativo con probabilidades conocidas (utilidad esperada), lo confrontamos
+     con la evidencia descriptiva (Teoría de las Perspectivas) y terminamos cuestionando el supuesto
+     de probabilidades conocidas (cisnes negros, incertidumbre knightiana) y la propia calibración del
+     decisor (sesgos de optimismo). Estas tensiones reaparecerán a lo largo de todo el curso.
+
+
+7.     Ejercicios
+ 1. Criterios de decisión. Para la matriz de pagos
+
+                                                     s1   s2 s3
+                                                a1   10   40 70
+                                                a2   30   30 30
+                                                a3   60   20 5
+
+      determine la acción elegida por maximin, maximax, Hurwicz con α = 0.6, Laplace y
+      minimax-arrepentimiento. ¿Cambia alguna recomendación si se agrega una cuarta acción
+      dominada?
+
+ 2. Equivalente cierto. Con v(y) = ln y y el prospecto (0.5; 100, 400), calcule ȳ, la utilidad es-
+    perada, el equivalente cierto y la prima de riesgo. ¿El individuo es averso, neutral o propenso
+    al riesgo? Justifique con v ′′ .
+
+ 3. Arrow–Pratt. Muestre que v(y) = −e−ay (con a > 0) tiene aversión absoluta al riesgo
+                                      y 1−R
+    constante igual a a, y que v(y) =       tiene aversión relativa al riesgo constante igual a
+                                      1−R
+    R.
+
+ 4. Allais. Verifique explícitamente que las elecciones modales B (Problema 1) y C (Problema
+    2) no pueden derivarse de ninguna función v bajo utilidad esperada. ¿Qué axioma se viola?
+
+ 5. Efecto aislamiento. Reescriba los Problemas 11 y 12 en términos de estados finales de
+    riqueza y explique, usando la fase de edición, por qué las preferencias observadas difieren
+    pese a ser problemas idénticos.
+
+ 6. Ponderación. A partir de la preferencia (6000, 0.001) ≻ (3000, 0.002) (Problema 8) y
+    suponiendo v cóncava, muestre que π(0.001)/π(0.002) > 1/2, es decir, que π es subaditiva
+    para p chico.
+
+
+Referencias
+
+Referencias
+ [1] Allais, M. (1953). Le comportement de l’homme rationnel devant le risque. Econometrica, 21(4),
+     503–546.
+
+ [2] Arrow, K. J. (1965). Aspects of the Theory of Risk-Bearing. Yrjö Jahnssonin Säätiö.
+
+
+                                                     11
+ [3] Borch, K. H. (1968). La economía de la incertidumbre. Tecnos (cap. VII).
+
+ [4] Gravelle, H. & Rees, R. (2006). Microeconomía (cap. 17). Pearson.
+
+ [5] Hurwicz, L. (1951). Optimality criteria for decision making under ignorance. Cowles Commission
+     Discussion Paper, 370.
+
+ [6] Kahneman, D. & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. Econome-
+     trica, 47(2), 263–291.
+
+ [7] Kahneman, D. (2012). Pensar rápido, pensar despacio. Debate.
+
+ [8] Knight, F. H. (1921). Risk, Uncertainty, and Profit. Houghton Mifflin.
+
+ [9] Luce, R. D. & Raiffa, H. (1957). Games and Decisions. Wiley.
+
+[10] Milnor, J. (1954). Games against nature. En Decision Processes, Wiley.
+
+[11] Pratt, J. W. (1964). Risk aversion in the small and in the large. Econometrica, 32(1–2), 122–136.
+
+[12] Savage, L. J. (1951). The theory of statistical decision. JASA, 46(253), 55–67.
+
+[13] Taleb, N. N. (2008). El cisne negro: El impacto de lo altamente improbable. Taurus.
+
+[14] von Neumann, J. & Morgenstern, O. (1944). Theory of Games and Economic Behavior. Princeton
+     University Press.
+
+[15] Wald, A. (1950). Statistical Decision Functions. Wiley.
+
+[16] Weinstein, N. D. (1980). Unrealistic optimism about future life events. Journal of Personality and
+     Social Psychology, 39(5), 806–820.
+
+
+
+
+                                                   12
+

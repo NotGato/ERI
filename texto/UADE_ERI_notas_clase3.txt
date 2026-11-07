@@ -1,0 +1,777 @@
+                             UADE — Facultad de Ciencias Económicas
+               Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                     Notas de Clase 3
+                               Unidad III: Reparto óptimo del riesgo
+
+
+
+                  Bibliografía: Borch (1962); Gravelle & Rees (cap. 19); Varian (cap. 11)
+
+
+
+
+                                                Resumen
+
+       En las dos primeras clases el riesgo era un problema individual: un decisor aislado elegía
+       entre prospectos usando la utilidad esperada. En esta clase cambiamos el punto de vista y
+       estudiamos cómo el riesgo puede reasignarse entre agentes mediante mercados e institucio-
+       nes, generando mejoras de Pareto. Presentamos el espacio de estados de la naturaleza y los
+       ingresos contingentes; analizamos en detalle la decisión de seguro como un intercambio de de-
+       rechos contingentes; introducimos los mercados de derechos contingentes de Arrow–Debreu y
+       los precios de estado; y estudiamos tres mecanismos íntimamente relacionados para abaratar
+       el riesgo: la difusión del riesgo (teorema de Arrow–Lind y “costo del riesgo”), el fondo común
+       o pooling y la diversificación. El punto culminante es el teorema de Borch, que caracteriza
+       todo reparto Pareto-óptimo del riesgo mediante la igualación de las utilidades marginales
+       ponderadas y el principio de mutualidad: en el óptimo cada agente recibe una función que
+       depende sólo del riesgo agregado. Tres temas del programa que las lecturas no desarrollan
+       formalmente —la Ley de Grandes Números, el marco general de Arrow–Debreu y la caja de
+       Edgeworth del reparto del riesgo— se tratan con rigor en el Anexo, al que se remite desde el
+       cuerpo.
+
+
+
+1.     Del riesgo individual al reparto del riesgo
+
+Hasta aquí, un decisor con función de utilidad de von Neumann–Morgenstern v evaluaba un
+prospecto arriesgado por su utilidad esperada E[v(ỹ)], y su aversión al riesgo se leía en la conca-
+vidad de v. Toda la acción ocurría dentro de una sola cabeza: no había con quién intercambiar
+riesgo.
+La Unidad III abre el análisis a la interacción. La observación de partida es simple pero fértil:
+si dos personas aversas al riesgo enfrentan riesgos que no están perfectamente correlacionados,
+ambas pueden mejorar su bienestar redistribuyendo esos riesgos entre sí. El riesgo no se destruye,
+pero se reasigna hacia quien está en mejores condiciones de soportarlo, o se reparte de modo
+que a cada uno le toque una porción menos temible. Esta es la lógica común detrás del seguro,
+del reaseguro, de las sociedades de responsabilidad limitada, de los mercados de acciones y de
+los fondos de inversión.
+
+     Idea clave. El riesgo agregado de una economía no puede eliminarse, sólo repartirse; el riesgo
+     puramente idiosincrático (independiente entre agentes) sí puede volverse despreciable si se lo
+     reparte entre suficientes personas. Distinguir ambos tipos de riesgo es el hilo conductor de toda
+     la clase.
+
+
+
+
+                                                     1
+2.     Estados de la naturaleza e ingresos contingentes
+
+2.1.    El espacio de estados
+
+Modelamos la incertidumbre mediante un conjunto de estados de la naturaleza s = 1, . . . , S,
+                                                                     P
+mutuamente excluyentes y exhaustivos, con probabilidades πs > 0, s πs = 1. Un estado es una
+descripción completa de todo lo relevante para el decisor: “llueve” o “no llueve”, “hay accidente”
+o “no lo hay”.
+
+Definición 2.1 (Ingreso contingente). Un plan de ingreso contingente asigna a cada estado s un
+ingreso ys ≥ 0 —el ingreso o consumo que el agente tendrá si ocurre ese estado— y se representa
+por el vector y = (y1 , . . . , yS ) de RS+ . Al punto donde y1 = · · · = yS lo llamamos línea de certeza:
+sobre él, el ingreso es el mismo en todos los estados.
+
+Con probabilidades objetivas y utilidad de von Neumann–Morgenstern, las preferencias sobre
+planes contingentes se representan por
+                                                    S
+                                                    X
+                                          V (y) =         πs v(ys ),                                  (1)
+                                                    s=1
+
+es decir, la utilidad esperada escrita en el espacio de ingresos contingentes. Esta es la misma
+función de la Clase 2, pero ahora la miramos como una función sobre el espacio de bienes
+contingentes: “un peso en el estado s” es un bien distinto de “un peso en el estado s′ ”.
+
+
+2.2.    Curvas de indiferencia y relación marginal de sustitución
+
+Con dos estados, las curvas de indiferencia de (1) en el plano (y1 , y2 ) tienen pendiente
+
+                                        dy2           π1 v ′ (y1 )
+                                                   =−              .                                  (2)
+                                        dy1 V =cte    π2 v ′ (y2 )
+
+Sobre la línea de certeza (y1 = y2 ) se tiene v ′ (y1 ) = v ′ (y2 ), de modo que la pendiente vale allí
+exactamente −π1 /π2 : todas las curvas de indiferencia cortan la línea de certeza con la misma
+pendiente, igual a la razón de probabilidades (la “recta de apuestas justas”). La concavidad de
+v hace que las curvas sean convexas hacia el origen: el agente está dispuesto a ceder ingreso en
+el estado abundante para ganar ingreso en el estado escaso, y tanto más cuanto mayor sea la
+disparidad.
+
+
+2.3.    Utilidad dependiente del estado
+
+La formulación (1) supone que la misma v valora el ingreso en todos los estados. Esto no
+siempre es inocuo. Varian (cap. 11) advierte que el valor de un peso puede depender del estado:
+un paraguas vale distinto con lluvia que sin ella, y “¿cuánto vale un millón si uno está en coma?”
+es una pregunta legítima para el diseño de un seguro de salud. En general escribimos u(s, ys )
+para una utilidad dependiente del estado,
+                                                  S
+                                                  X
+                                        V (y) =         πs u(s, ys ).                                 (3)
+                                                  s=1
+
+Salvo indicación en contrario trabajaremos con utilidad independiente del estado, pero conviene
+tener presente que todo el andamiaje admite esta generalización, importante en las aplicaciones
+al seguro de vida y de salud.
+
+                                                     2
+3.     La decisión de seguro en detalle
+
+3.1.   El contrato y los ingresos contingentes
+
+Consideremos dos estados. En el estado 1 (“sin accidente”), de probabilidad π1 , el individuo
+tiene ingreso y. En el estado 2 (“accidente”), de probabilidad π2 = 1 − π1 , sufre una pérdida L
+y su ingreso es y − L. Su dotación contingente es el punto a = (y, y − L).
+Una compañía ofrece cobertura a una tasa de prima p ∈ (0, 1): el asegurado paga pq por adelan-
+tado y recibe la indemnización q si y sólo si ocurre el accidente. La cantidad q es la cobertura.
+Como la prima pq se paga antes de conocer el estado, reduce el ingreso en ambos estados:
+
+                            y1 = y − pq,                                                      (4)
+                            y2 = y − L − pq + q = y − L + (1 − p)q.                           (5)
+
+Aumentar q transfiere ingreso del estado 1 al estado 2: el seguro es, literalmente, un mecanismo
+de transferencia de ingreso entre estados.
+
+
+3.2.   La restricción presupuestaria como valor de derechos contingentes
+
+Despejando q = (y − y1 )/p de (4) y sustituyendo en (5) se obtiene la recta presupuestaria, que
+conviene escribir en forma simétrica:
+
+                            (1 − p) y1 + p y2 = (1 − p) y + p (y − L).                        (6)
+
+La lectura es central para toda la clase: (1 − p) y p son los precios de sendos derechos
+contingentes —el precio de un peso a cobrar en el estado 1 y en el estado 2, respectivamente—
+; el lado izquierdo es el gasto en derechos contingentes y el derecho es el valor de la dotación
+inicial. Comprar seguro es vender derechos sobre el estado 1 (donde uno tiene “de más”) para
+comprar derechos sobre el estado 2 (donde uno tiene “de menos”). La pendiente de (6) es
+
+                                           dy2    1−p
+                                               =−     .                                       (7)
+                                           dy1     p
+
+Definición 3.1 (Prima actuarialmente justa). La prima es actuarialmente justa si no altera el
+ingreso esperado del asegurado. El ingreso esperado con seguro es
+                                                     
+                   π1 (y − pq) + π2 y − L + (1 − p)q = y − π2 L − q (p − π2 ),
+
+que es independiente de q si y sólo si p = π2 . Entonces π2 es la tasa de prima justa y π2 q la
+prima justa.
+
+Con prima justa, (1−p)/p = π1 /π2 y la recta presupuestaria (6) coincide con la recta de apuestas
+justas que pasa por la dotación a. Las compañías cargan un recargo (costos administrativos,
+capital, beneficio), de modo que en la práctica p > π2 y el contrato es actuarialmente injusto
+para el asegurado; gráficamente, la recta presupuestaria es más plana que la de apuestas justas.
+
+
+3.3.   La elección óptima de cobertura
+
+El asegurado elige q para maximizar
+                                                                         
+                         V (q) = π1 v(y − pq) + π2 v y − L + (1 − p)q .                       (8)
+
+
+
+                                                3
+La condición de primer orden, suponiendo cobertura interior, es
+
+                            V ′ (q ∗ ) = −π1 v ′ (y1 ) p + π2 v ′ (y2 ) (1 − p) = 0,                 (9)
+
+y la de segundo orden, V ′′ = π1 v ′′ (y1 )p2 + π2 v ′′ (y2 )(1 − p)2 < 0, se cumple por la concavidad de
+v, de modo que (9) identifica un máximo. Reordenando (9),
+
+                                   π1 v ′ (y1 )                       1−p
+                                                          =                              .          (10)
+                                   π2 v ′ (y2 )                        p
+                                   |   {z     }                       | {z }
+                           pendiente de la indiferencia       pendiente presupuestaria
+
+Como en la teoría del consumidor, el óptimo iguala la relación marginal de sustitución (entre
+ingresos contingentes) con el cociente de precios de los derechos contingentes.
+
+Proposición 3.1 (Seguro completo con prima justa). Si la prima es actuarialmente justa (p =
+π2 ), el asegurado averso al riesgo elige cobertura completa q ∗ = L, alcanzando ingreso cierto
+y1 = y2 = y − π2 L igual a su ingreso esperado.
+
+Demostración. Con p = π2 se tiene (1 − p)/p = π1 /π2 , y (10) exige v ′ (y1 ) = v ′ (y2 ). Como
+v ′′ < 0, v ′ es estrictamente decreciente y por tanto inyectiva, de modo que y1 = y2 . Sustituyendo
+en (4)–(5), y1 = y2 implica q ∗ = L, y entonces y1 = y2 = y − π2 L.
+
+Observación 3.1 (Prima injusta ⇒ cobertura parcial). Si p > π2 , entonces (1 − p)/p < π1 /π2 ,
+y despejando en (10),
+                            v ′ (y1 )   π2 1 − p   π2 π1
+                                      =          <       = 1,
+                            v ′ (y2 )   π1 p       π1 π2
+de modo que v ′ (y1 ) < v ′ (y2 ) y, como v ′ es decreciente, y1 > y2 : el óptimo queda por debajo de
+la línea de certeza y el asegurado compra cobertura parcial (q ∗ < L). El recargo actúa como un
+precio relativo que lo aleja del seguro total. La Figura 1 resume la geometría.
+
+
+3.4.   Mercados incompletos: dos riesgos, un solo seguro
+
+Gravelle analiza el caso realista en que el individuo enfrenta dos fuentes de riesgo pero sólo
+puede asegurar una. Aparecen entonces cuatro estados (combinaciones de ambos riesgos), pero
+el mercado de derechos contingentes es incompleto: no existen todos los activos que permitirían
+transferir ingreso a cada estado por separado. El resultado cualitativo es que, con mercados
+incompletos, el individuo no alcanza en general la plena diversificación y su asignación óptima
+retiene riesgo que, con mercados completos, podría haber eliminado. Esto motiva la pregunta de
+la sección siguiente: ¿qué se necesita para que el reparto del riesgo sea eficiente? La respuesta
+pasa por la completitud de los mercados de derechos contingentes.
+
+
+4.     Mercados de derechos contingentes y precios de estado
+
+4.1.   Derechos contingentes y precios de estado
+
+La recta presupuestaria del seguro (6) es un caso particular de una estructura mucho más general.
+Imaginemos que para cada estado s existe un derecho contingente (o valor de Arrow): un título
+que paga un peso si ocurre s y cero en caso contrario, y cuyo precio de mercado es qs ≥ 0. Un
+
+
+
+
+                                                          4
+              y2 : ingreso con accidente
+
+                                                             certeza y1 = y2
+
+
+                                                       recta de apuestas justas (−π1 /π2 )
+
+                                                              E ∗ (seguro completo)
+
+
+
+
+                                             q ∗ < L (parcial)
+                                                                              a: dotación
+
+                                                                                 presupuesto (p > π2 )
+
+
+
+                                                                            y1 : ingreso sin accidente
+
+Figura 1: Decisión de seguro en el espacio de ingresos contingentes. Con prima justa el óptimo
+E ∗ está sobre la línea de certeza (seguro completo, Prop. 3.1); con recargo (p > π2 ) la recta
+presupuestaria se aplana y el óptimo cae por debajo de la línea de certeza (cobertura parcial).
+
+                                                                  P
+plan de consumo contingente c = (c1 , . . . , cS ) cuesta            s qs cs , y la restricción presupuestaria del
+agente con dotación contingente w = (w1 , . . . , wS ) es
+                                           S
+                                           X                S
+                                                            X
+                                                  qs cs =         qs ws .                                    (11)
+                                           s=1              s=1
+
+En el ejemplo del seguro, S = 2 y (q1 , q2 ) = (1 − p, p): la prima no es otra cosa que el precio
+del derecho contingente sobre el estado de accidente. Cuando existe un derecho para cada estado
+decimos que los mercados son completos. El marco general —bienes contingentes, equilibrio
+de Walras–Arrow y el primer teorema del bienestar en el espacio de estados— se desarrolla en
+el Anexo A.
+
+
+4.2.   La regla de valuación y el núcleo estocástico
+                            P
+Un agente que maximiza        s πs v(cs ) sujeto a (11) cumple, en el óptimo interior, la condición
+
+                                                                             πs v ′ (cs )
+                            πs v ′ (cs ) = λ qs        =⇒             qs =                ,                  (12)
+                                                                                 λ
+donde λ es la utilidad marginal del ingreso. El precio del derecho sobre el estado s es proporcional
+a la probabilidad del estado ponderada por la utilidad marginal del consumo en ese estado.
+Reescribiendo, el precio de cualquier activo que paga xs en el estado s es
+                                      X                                          v ′ (cs )
+                            P (x) =        qs xs = E[ m x̃ ],           ms ≡               ,                 (13)
+                                       s                                             λ
+
+donde m es el núcleo estocástico de descuento (o factor de descuento estocástico). Varian (cap. 11)
+obtiene de aquí la lectura financiera que retomaremos en la Clase 4: un activo cuyo rendimiento
+está positivamente correlacionado con la riqueza (y por tanto negativamente con la utilidad
+
+                                                        5
+marginal) es poco valioso para diluir riesgo y debe ofrecer un rendimiento esperado mayor; un
+activo que cubre riesgo (correlación negativa con la riqueza) se paga caro y rinde menos. Esta
+es la semilla del CAPM.
+
+     Idea clave. Los “precios de estado” aparecen en tres disfraces que son el mismo objeto: la tasa de
+     prima del seguro, el precio del valor de Arrow y el núcleo estocástico de descuento de las finanzas.
+     En un óptimo son proporcionales a πs v ′ (cs ).
+
+
+5.      Difundir el riesgo: el teorema de Arrow–Lind y el costo del
+        riesgo
+
+En el análisis del seguro suponíamos una aseguradora neutral al riesgo. ¿Qué pasa si quien
+absorbe el riesgo también es averso? Arrow y Lind (1970) muestran que, al repartir un riesgo
+dado entre un número creciente de personas, el costo total de soportarlo tiende a cero: es “como
+si” existiera un agente neutral al riesgo, aun cuando todos sean aversos.
+
+
+5.1.     El modelo del sindicato
+
+Un sindicato de n miembros idénticos adquiere un proyecto arriesgado y reparte por partes
+iguales ganancias y pérdidas. El ingreso de un miembro representativo en el estado s es
+
+                                         ys + k zs − ρ,       k = n1 ,                                  (14)
+
+donde zs es el pago del proyecto, k = 1/n la fracción de cada miembro y ρ lo que cada uno paga
+por su parte. Se supone que el pago del proyecto es estadísticamente independiente del ingreso
+previo de los miembros:
+                                        Cov(ys , zs ) = 0.                                (15)
+El precio máximo ρ que cada miembro está dispuesto a pagar se define implícitamente por
+
+                                       E v(ys + kzs − ρ) = E v(ys ).                                    (16)
+
+Definimos el recargo por riesgo (risk loading) de cada miembro como la diferencia entre el valor
+esperado de su parte y lo que paga:
+
+                                             θ(k) = k Ezs − ρ.                                          (17)
+
+
+5.2.     El costo del riesgo se desvanece
+
+El precio máximo que paga el sindicato entero es
+                                                          
+                              P = nρ = n k Ezs − θ(k) = Ezs − n θ(1/n).                                 (18)
+
+El término n θ(1/n) es el costo total del riesgo: la brecha entre el valor esperado del proyecto y
+lo que el sindicate está dispuesto a pagar. El resultado clave es que esta brecha se anula.
+
+Teorema 5.1 (Arrow–Lind). Si el pago del proyecto es independiente del ingreso de los miem-
+bros (15) y éstos son aversos al riesgo, entonces
+
+                          lı́m n θ(1/n) = 0,       y por lo tanto        P −→ Ezs .
+                         n→∞
+
+Un sindicato suficientemente grande contrata “como si” fuera neutral al riesgo.
+
+                                                      6
+Idea de la demostración. El recargo de cada miembro es aproximadamente proporcional a la
+varianza de su parte (recuérdese la aproximación de Pratt de la Clase 2): θ(1/n) ≈ 12 r Var(kz)
+con r el coeficiente de Arrow–Pratt. Pero
+                                                                    Var(zs )
+                                    Var(kzs ) = k 2 Var(zs ) =               ,
+                                                                      n2
+de modo que el recargo de cada miembro cae a razón de 1/n2 , mientras que hay sólo n miembros.
+En consecuencia n θ(1/n) = O(1/n) → 0. La independencia (15) es esencial: si el proyecto
+estuviera correlacionado con la riqueza de los miembros, el recargo no se anularía —ese riesgo
+es “sistemático” y debe soportarse.                                                         □
+
+     Idea clave. “Costo del riesgo” = recargo por riesgo agregado. La difusión del riesgo entre muchos
+     lo lleva a cero sólo para el riesgo idiosincrático (independiente). El riesgo agregado o sistemático
+     sobrevive a cualquier difusión.
+
+
+6.      Fondo común (pooling) y diversificación
+
+Mientras que la difusión reparte un riesgo dado entre más personas, el fondo común junta los
+riesgos de varias personas en una bolsa que luego se reparte. La diversificación es su versión
+“individual”: un solo decisor toma muchos riesgos pequeños en vez de uno grande. El argumento
+matemático es, en los tres casos, el mismo.
+
+
+6.1.     Pooling con dos individuos
+
+Sean A y B dos individuos aversos al riesgo con ingresos independientes e idénticamente distri-
+buidos: cada uno obtiene y ′ con probabilidad π y y ′′ con probabilidad 1 − π. Sin fondo común,
+la utilidad esperada de A es
+
+                                      V (1) = π v(y ′ ) + (1 − π) v(y ′′ ).                             (19)
+
+Si A y B ponen su ingreso en una bolsa y cada uno se lleva la mitad del total, los cuatro
+resultados posibles y sus probabilidades son:
+
+                          Ingreso de A      Ingreso de B       Ingreso por persona
+                           y ′ (prob. π)     y ′ (prob. π)                 y′
+                                 y′                y ′′              (y ′ + y ′′ )/2
+                                 y ′′              y′                (y ′ + y ′′ )/2
+                                 y ′′              y ′′                    y ′′
+
+Los dos sucesos cruzados dan el mismo promedio, de modo que la utilidad esperada de A con el
+fondo común es                                        ′ ′′ 
+                    V (2) = π 2 v(y ′ ) + 2π(1 − π) v y +y
+                                                        2     + (1 − π)2 v(y ′′ ).      (20)
+Restando (19) de (20) y reordenando,
+                                                h                                    i
+                  V (2) − V (1) = 2π(1 − π) v 21 y ′ + 12 y ′′ − 12 v(y ′ ) − 12 v(y ′′ ) > 0,          (21)
+
+donde la desigualdad se sigue de la concavidad de v (Jensen). El mismo argumento vale para B:
+el fondo común mejora a ambos. Nótese que el pooling no altera el ingreso esperado de cada uno
+(sigue siendo πy ′ + (1 − π)y ′′ ); lo que hace es reducir la varianza, concentrando la distribución
+alrededor de la media.
+
+                                                       7
+6.2.   Pooling con n individuos: el reparto en partes iguales es óptimo
+
+Proposición 6.1 (Optimalidad del reparto igualitario). Si n individuos aversos al riesgo tienen
+ingresos independientes e idénticamente distribuidos, el arreglo óptimo es el fondo común en
+partes iguales, en el que cada uno recibe n1 i ỹi .
+                                            P
+
+
+Idea de la demostración (Gravelle). El ingreso de un miembro bajo cualquier esquema alternativo
+de reparto puede escribirse como el ingreso bajo el reparto igualitario más una suma ponderada
+de diferencias ỹi − ỹj de media cero e independientes de aquel. Es decir, todo esquema distinto
+del igualitario equivale a “ingreso igualitario + ruido de media cero”: un aumento del riesgo
+conservando la media en el sentido de Rothschild–Stiglitz. Como todos los individuos son aversos
+al riesgo, prefieren el ingreso igualitario a cualquiera de sus “ensuciamientos”.              □
+
+
+6.3.   Pooling, diversificación y la Ley de Grandes Números
+
+A medida que n crece, el ingreso por persona bajo el reparto igualitario, ȳn = n1 ni=1 ỹi , se
+                                                                                     P
+
+concentra cada vez más alrededor de su media µ = E[ỹ]. La Ley de Grandes Números
+precisa esta afirmación: bajo independencia, ȳn → µ (en probabilidad y casi seguramente). En
+el límite, el ingreso por persona se vuelve cierto: el riesgo puramente idiosincrático desaparece
+del promedio.
+Conviene enfatizar un malentendido frecuente, que el Anexo B trata con cuidado: la Ley de
+                                                                P
+Grandes Números estabiliza el promedio ȳn , no el agregado i ỹi , cuya varianza crece con n.
+Por eso una aseguradora no elimina el riesgo por el mero hecho de vender muchas pólizas:
+necesita repartir el riesgo por póliza (pooling) y contar con capital para el agregado. La Ley de
+Grandes Números es el fundamento probabilístico común de Arrow–Lind y del pooling.
+
+
+7.     El teorema de Borch: reparto Pareto-óptimo del riesgo
+
+Las secciones anteriores mostraron mecanismos que mejoran el bienestar. Ahora caracterizamos
+el punto de llegada: ¿qué distingue a un reparto del riesgo que ya no puede mejorarse para
+todos? La respuesta es el teorema de Borch (1962), obtenido originalmente para el mercado de
+reaseguros pero de alcance completamente general.
+
+
+7.1.   El problema de reparto
+
+Hay n agentes; el agente i tiene función de utilidad de von Neumann–Morgenstern ui (cóncava,
+u′i > 0, u′′i < 0). La economía enfrenta una riqueza agregada W (s) = i wi (s) aleatoria (la
+                                                                        P
+
+suma de las dotaciones contingentes). Un reparto del riesgo asigna a cada agente un consumo
+contingente ci (s) sujeto a la factibilidad, estado por estado:
+                               n
+                               X
+                                     ci (s) = W (s)   para todo s.                          (22)
+                               i=1
+
+Definición 7.1 (Reparto Pareto-óptimo). El reparto {ci (·)} es Pareto-óptimo si no existe otro
+reparto factible que dé a todos los agentes al menos la misma utilidad esperada y a alguno
+estrictamente mayor.
+
+
+
+
+                                                  8
+7.2.   La condición de Borch
+
+Todo reparto Pareto-óptimo resuelve, para algún vector de pesos de bienestar λ = (λ1 , . . . , λn )
+con λi > 0, el problema
+                                n
+                                X                                    X
+                                                     
+                     máx             λi E ui (ci )       sujeto a        ci (s) = W (s) ∀s.              (23)
+                     {ci (·)}
+                                i=1                                   i
+
+Como la restricción se cumple estado por estado, el problema se separa: para cada realización de
+                   P               P
+W resolvemos máx i λi ui (ci ) con i ci = W . El lagrangiano tiene multiplicador µ (dependiente
+del estado) y arroja la condición de primer orden λi u′i (ci ) = µ para todo i, es decir:
+Teorema 7.1 (Borch, 1962). Un reparto del riesgo es Pareto-óptimo si y sólo si existen pesos
+λi > 0 tales que, en cada estado,
+
+                          λi u′i ci (s) = λj u′j cj (s)
+                                                                
+                                                                     para todo par i, j.                  (24)
+
+Es decir, las utilidades marginales ponderadas se igualan entre todos los agentes en todos los
+estados.
+
+
+7.3.   El principio de mutualidad
+
+La consecuencia más profunda de (24) es que el multiplicador µ depende del estado sólo a través
+de la riqueza agregada W (s). Como cada ci queda determinado por λi u′i (ci ) = µ(W ), se sigue
+que:
+Proposición 7.1 (Mutualidad). En todo reparto Pareto-óptimo, el consumo de cada agente
+depende del estado
+                 
+                     únicamente a través de la riqueza agregada: existe una función ci (·) tal que
+ci (s) = ci W (s) . Dos estados con la misma riqueza agregada reciben idéntico reparto individual,
+cualquiera sea la “causa” de esa riqueza.
+
+Esta es la justificación teórica del fondo común: cualquier reparto eficiente equivale a que todos
+vuelquen sus riesgos a una bolsa común y luego repartan el total según una regla que depende
+sólo del total. El riesgo idiosincrático (quién sufrió el siniestro) desaparece del reparto; sólo
+importa el agregado.
+Diferenciando la condición de Borch y la factibilidad respecto de W se obtiene la regla marginal
+de reparto: definiendo la tolerancia al riesgo Ti (c) = −u′i (c)/u′′i (c),
+                           dci     Ti (ci )                               X dci
+                               = Pn            ∈ (0, 1),                             = 1.                 (25)
+                           dW     j=1 Tj (cj )                              i
+                                                                                dW
+
+Cada agente absorbe una porción del riesgo agregado proporcional a su tolerancia al riesgo:
+quien más tolera el riesgo carga con la mayor parte de sus variaciones.
+
+
+7.4.   El caso CARA: la regla de reparto lineal
+
+Cuando todos tienen utilidad exponencial (CARA), ui (c) = −e−ai c , la tolerancia al riesgo es
+constante, Ti = 1/ai . Entonces (25) es constante y el reparto es afín en la riqueza agregada:
+                                                       1/ai               X               X
+               ci (W ) = αi W + βi ,             αi = P        ,                αi = 1,         βi = 0.   (26)
+                                                        j 1/aj              i               i
+
+Cada agente recibe una fracción fija αi del riesgo agregado —igual a su tolerancia al riesgo
+relativa— más una transferencia cierta βi que reparte las ganancias del intercambio (y que fijan
+
+                                                             9
+los pesos λi o, equivalentemente, las condiciones de participación de cada agente). Este es el
+célebre resultado de reparto lineal de riesgos de Wilson (1968), y es la ilustración más limpia
+del principio de mutualidad: bajo CARA las cuotas de riesgo no dependen ni del estado ni del
+nivel de riqueza.
+
+Ejemplo 7.1 (Reaseguro entre dos compañías). Dos aseguradoras con coeficientes a1 y a2
+enfrentan una pérdida agregada W . El reparto Pareto-óptimo hace que la compañía 1 soporte la
+fracción α1 = a2 /(a1 +a2 ) de toda fluctuación de W y la compañía 2 la fracción α2 = a1 /(a1 +a2 ):
+la más aversa (mayor a) carga con la fracción menor. Las transferencias βi —las primas netas
+del tratado de reaseguro— dividen el excedente entre ambas.
+
+
+7.5.     Riesgo idiosincrático versus riesgo agregado
+
+La regla de mutualidad ilumina la distinción que recorre toda la clase. Si la riqueza agregada W
+es cierta (todo el riesgo es idiosincrático y se cancela en la suma —por ejemplo, un pool grande de
+riesgos independientes por la Ley de Grandes Números), entonces cada ci (W ) es constante: todos
+alcanzan la línea de certeza y el seguro mutuo es completo. Si en cambio hay riesgo agregado,
+éste no puede asegurarse; lo único que la eficiencia determina es cómo repartirlo, y la respuesta
+es (25): en proporción a las tolerancias al riesgo. La caracterización geométrica de este óptimo,
+la caja de Edgeworth del reparto del riesgo, se desarrolla en el Anexo C.
+
+     Idea clave. Teorema de Borch: eficiencia ⇔ utilidades marginales ponderadas igualadas en todos
+     los estados ⇒ mutualidad (el reparto depende sólo del agregado). Bajo CARA, esto es una regla
+     de reparto lineal con cuotas iguales a la tolerancia al riesgo relativa.
+
+
+8.     Síntesis
+
+La Unidad III reformula el riesgo como un problema de asignación. El espacio de estados convier-
+te a “un peso en cada estado” en un bien; los precios de estado permiten valuar y comerciar esos
+bienes; y el seguro, el reaseguro, los sindicatos y los fondos comunes son instituciones que rea-
+lizan esos intercambios. Tres mecanismos —difusión (Arrow–Lind), pooling y diversificación—
+abaratan el riesgo idiosincrático hasta anularlo, con la Ley de Grandes Números como funda-
+mento común. El teorema de Borch cierra la unidad caracterizando el reparto eficiente: utilidades
+marginales ponderadas iguales, mutualidad y —bajo CARA— reparto lineal según la tolerancia
+al riesgo.
+Queda una pieza pendiente que estructura la Clase 4: el riesgo agregado o sistemático, que ningún
+reparto puede eliminar. Cuando el “activo arriesgado” está correlacionado con la riqueza de la
+economía, su precio incorpora una prima por ese riesgo no diversificable. Formalizar esa prima
+—vía el núcleo estocástico (13)— conduce directamente al modelo de Markowitz y al CAPM,
+aplicaciones a finanzas de exactamente el mismo aparato de derechos contingentes que vimos
+hoy.
+
+
+
+
+                                                  10
+                                              Anexo
+
+A.     Mercados de derechos contingentes de Arrow–Debreu
+
+Bienes contingentes y valores de Arrow
+
+La idea de Arrow (1953) y Debreu (1959) es tratar la incertidumbre sin salir de la teoría del
+equilibrio general: basta con indexar los bienes por el estado en que se entregan. Un “bien
+contingente” es un par (mercancía, estado). Si hay ℓ mercancías físicas y S estados, hay ℓS
+bienes contingentes. En su versión de un solo bien físico (ingreso), un valor de Arrow para el
+estado s es un título que paga una unidad si ocurre s y cero si no; su precio es qs .
+Definición A.1 (Mercados completos). Los mercados de derechos contingentes son completos
+si existe un valor de Arrow negociable para cada estado s = 1, . . . , S. Con mercados comple-
+tos, cualquier plan de consumo contingente c ∈ RS+ que satisfaga la restricción presupuestaria
+   s qs cs ≤
+P            P
+              s qs ws es alcanzable.
+
+
+Equilibrio de Walras–Arrow y precios de estado
+
+Un equilibrio es un vector de precios q = (q1 , . . . , qS ) y una asignación {ci } tales que (i) cada
+                    P
+agente i maximiza s πs vi (cis ) sujeto a su restricción presupuestaria, y (ii) los mercados se
+       P         P
+vacían: i cis = i wis para todo s. La condición de primer orden de cada agente,
+
+                                         πs vi′ (cis ) = λi qs ,
+
+implica que en el óptimo todos los agentes igualan sus utilidades marginales ponderadas al
+mismo vector de precios de estado; eliminando qs entre dos agentes se recupera exactamente la
+condición de Borch (24) con λi inverso de la utilidad marginal del ingreso. Los precios de estado
+revelan, así, la valoración marginal común del consumo en cada contingencia.
+Teorema A.1 (Primer teorema del bienestar con mercados completos). Si los mercados de
+derechos contingentes son completos y los agentes son maximizadores de utilidad esperada, toda
+asignación de equilibrio competitivo es Pareto-óptima.
+
+La intuición es la del primer teorema del bienestar clásico, aplicado al espacio de bienes con-
+tingentes: precios comunes ⇒ relaciones marginales de sustitución igualadas ⇒ imposibilidad
+de reasignaciones mutuamente beneficiosas. Cuando los mercados son incompletos (falta algún
+valor de Arrow), este resultado se rompe: los agentes no pueden transferir ingreso a todos los
+estados y la asignación de equilibrio retiene, en general, riesgo que sería eliminable con mercados
+completos. Ésta es la conexión entre completitud de mercados y eficiencia del reparto del riesgo.
+
+
+B.     La Ley de Grandes Números
+
+Desigualdades de Markov y Chebyshev
+
+Proposición B.1 (Markov). Si X ≥ 0 tiene media finita, entonces para todo a > 0: P(X ≥
+a) ≤ E[X]/a.
+Proposición B.2 (Chebyshev). Si X tiene media µ y varianza σ 2 finitas, entonces para todo
+ε > 0:
+                                                σ2
+                                P |X − µ| ≥ ε ≤ 2 .
+                                                 ε
+
+                                                  11
+Demostración de Chebyshev. Aplíquese Markov a la variable no negativa (X − µ)2 con umbral
+ 2           2   2
+ε : P (X − µ) ≥ ε ≤ E[(X − µ)2 ]/ε2 = σ 2 /ε2 .
+                   
+
+
+
+La Ley Débil de los Grandes Números
+
+Teorema B.1 (LGN débil). Sean ỹ1 , ỹ2 , . . . variables aleatorias independientes e idénticamente
+distribuidas con media µ y varianza σ 2 < ∞. Sea ȳn = n1 ni=1 ỹi el promedio muestral. Entonces,
+                                                            P
+
+para todo ε > 0,
+                                                      σ2
+                                 P |ȳn − µ| ≥ ε ≤         −−−→ 0,
+                                                      n ε2 n→∞
+es decir, ȳn → µ en probabilidad.
+
+Demostración. Por independencia, Var(ȳn ) = n12                       2
+                                                      P
+                                                        i Var(ỹi ) = σ /n y E[ȳn ] = µ. Aplíquese
+Chebyshev a ȳn .
+
+La Ley Fuerte de los Grandes Números refuerza esta conclusión a convergencia casi segura,
+P(lı́mn ȳn = µ) = 1, bajo la sola hipótesis de media finita (Kolmogorov). Para el curso basta la
+versión débil.
+
+
+Aplicación al seguro y una advertencia
+
+Consideremos una aseguradora con n pólizas independientes de siniestro x̃i , con media µ y
+varianza σ 2 . El siniestro promedio por póliza, x̄n = n1 i x̃i , tiene varianza σ 2 /n → 0: se vuelve
+                                                         P
+
+prácticamente cierto e igual a µ. Ésta es la base actuarial para fijar la prima cerca de µ (más
+un recargo), y el mecanismo por el cual el pooling (6) y la difusión (5) abaratan el riesgo.
+Observación B.1 (La falacia de la “cancelación” del riesgo). La Ley de Grandes Números
+                                                                  P
+estabiliza el promedio, no el total. El siniestro agregado Sn = i x̃i = nx̄n tiene varianza
+                                                                √
+Var(Sn ) = nσ 2 , que crece con n; su desvío estándar crece como n. La aseguradora no “elimina”
+el riesgo vendiendo muchas pólizas: hace que el riesgo por peso asegurado sea pequeño, pero el
+riesgo agregado que debe respaldar con capital aumenta. Por eso el seguro necesita, además del
+pooling, reservas de capital y reaseguro. Confundir “el promedio se estabiliza” con “el riesgo
+desaparece” es un error conceptual habitual.
+
+
+C.     Óptimo de Pareto en el reparto del riesgo: la caja de Edge-
+       worth de estados
+
+Consideremos dos agentes (A y B) y dos estados (s = 1, 2). La dotación agregada en cada
+estado es Ws = wAs + wBs . Un reparto asigna (cA1 , cA2 ) a A y, por factibilidad, (cB1 , cB2 ) =
+(W1 − cA1 , W2 − cA2 ) a B. Todo reparto factible es un punto de una caja de Edgeworth de lados
+W1 × W2 , con el origen de A en la esquina inferior izquierda y el de B en la superior derecha
+(Figura 2).
+Las curvas de indiferencia de cada agente son las de la utilidad esperada (1), con la propiedad
+(2): cortan su respectiva línea de certeza con pendiente −π1 /π2 . El conjunto de repartos Pareto-
+óptimos es la curva de contrato: el lugar de tangencias entre las curvas de indiferencia de A y
+B, donde
+                            ′ (c )
+                       π 1 vA             ′ (c )
+                                      π1 vB             ′ (c )
+                                                       vA           ′ (c )
+                                                                   vB
+                                A1            B1            A1          B1
+                            ′       =     ′        ⇐⇒   ′        =  ′        ,                (27)
+                       π2 vA (cA2 )   π2 vB (cB2 )     vA (cA2 )   vB (cB2 )
+que es precisamente la condición de Borch (24) para dos agentes.
+
+                                                 12
+                                                                        0B
+                                                          riesgo
+                                                         agregado
+
+
+                                       P (óptimo)
+
+
+
+
+                        cA2 →
+                                curva de contrato
+
+
+                                                           dotación ω
+
+
+
+                       0A                    cA1 →
+
+
+Figura 2: Caja de Edgeworth en el espacio de estados. La curva de contrato (azul) reúne todos
+los repartos Pareto-óptimos, caracterizados por la condición de Borch (27). Desde una dotación
+ω ineficiente, el intercambio de derechos contingentes lleva a un punto P de la curva. Si no
+hubiera riesgo agregado (W1 = W2 ), la curva de contrato sería la diagonal (ambas líneas de
+certeza coinciden) y el óptimo daría a cada agente ingreso cierto: seguro mutuo completo.
+
+
+Dos casos límite iluminan la teoría:
+
+   Sin riesgo agregado (W1 = W2 ). Las líneas de certeza de A y B coinciden con la diagonal
+   de la caja, y la curva de contrato es esa diagonal: en todo óptimo ambos agentes tienen
+   ingreso cierto. El riesgo, siendo puramente idiosincrático, se elimina por completo mediante
+   seguro mutuo. Es la contrapartida en dos agentes del pooling con W cierta (7).
+
+   Con riesgo agregado (W1 ̸= W2 ). Ningún reparto puede dar ingreso cierto a ambos a la
+   vez (sumarían menos que W en un estado). El riesgo agregado debe soportarse; la curva de
+   contrato indica cómo repartirlo eficientemente, en proporción a las tolerancias al riesgo (25).
+
+
+
+
+                                               13
+Referencias
+ [1] Arrow, K. J. (1964). The role of securities in the optimal allocation of risk-bearing. The Review of
+     Economic Studies, 31(2), 91–96. [Traducción del original de 1953, “Le rôle des valeurs boursières. . . ”.]
+ [2] Arrow, K. J. (1965). Aspects of the Theory of Risk-Bearing. Yrjö Jahnssonin Säätiö, Helsinki.
+ [3] Arrow, K. J., & Lind, R. C. (1970). Uncertainty and the evaluation of public investment decisions.
+     American Economic Review, 60(3), 364–378.
+ [4] Borch, K. H. (1962). Equilibrium in a reinsurance market. Econometrica, 30(3), 424–444.
+ [5] Borch, K. H. (1968). The Economics of Uncertainty. Princeton University Press. [Ed. española: La
+     economía de la incertidumbre, Tecnos.]
+ [6] Debreu, G. (1959). Theory of Value: An Axiomatic Analysis of Economic Equilibrium. Wiley, Nueva
+     York. (Cap. 7, “Uncertainty”.)
+ [7] Feller, W. (1968). An Introduction to Probability Theory and Its Applications, vol. 1 (3.ª ed.). Wiley.
+ [8] Gravelle, H., & Rees, R. (2006). Microeconomía (3.ª ed.). Pearson. (Cap. 19: seguro, difusión y fondo
+     común.)
+ [9] Mas-Colell, A., Whinston, M. D., & Green, J. R. (1995). Microeconomic Theory. Oxford University
+     Press. (Cap. 19: economías con incertidumbre.)
+[10] Pratt, J. W. (1964). Risk aversion in the small and in the large. Econometrica, 32(1–2), 122–136.
+[11] Varian, H. R. (1992). Microeconomic Analysis (3.ª ed.). Norton. [Ed. española: Análisis microeconó-
+     mico, Antoni Bosch.] (Cap. 11: incertidumbre.)
+[12] Wilson, R. (1968). The theory of syndicates. Econometrica, 36(1), 119–132.
+
+
+
+
+                                                      14
+

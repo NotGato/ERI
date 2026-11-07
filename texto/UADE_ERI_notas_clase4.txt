@@ -1,0 +1,547 @@
+                            UADE — Facultad de Ciencias Económicas
+              Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                    Notas de Clase 4
+                            Unidad IV — Aplicaciones a las Finanzas
+
+
+                            Bibliografía: Markowitz (1952) · Sharpe (1964)
+
+
+
+                                                Resumen
+      Trasladamos el problema del reparto del riesgo de la Clase 3 al mercado de capitales. Un
+      activo financiero es, en el fondo, un paquete de derechos contingentes: paga distinto en
+      distintos estados de la naturaleza. Cuando el inversor evalúa cada inversión sólo por su
+      media y su varianza de rendimiento, el problema de elegir cartera se vuelve un problema
+      de optimización cuadrática con solución geométrica transparente. Desarrollamos: (i) la regla
+      media-varianza de Markowitz y la frontera eficiente, con especial atención al papel de la
+      covarianza en la diversificación; (ii) la introducción de un activo libre de riesgo, el teorema
+      de separación de Tobin y la Línea del Mercado de Capitales (CML); (iii) el paso al equilibrio
+      de Sharpe: el portafolio de mercado, el CAPM, la Línea del Mercado de Títulos (SML)
+      y la descomposición del riesgo en sistemático y no sistemático; (iv) una introducción a los
+      mercados de futuros (cobertura, especulación, base y cost-of-carry); y (v) el puente conceptual
+      con los mercados de derechos contingentes de la Clase 3. El desarrollo formal de la frontera
+      con N activos y la derivación del CAPM a partir de las condiciones de primer orden se
+      relegan al Anexo.
+
+
+
+1 Del reparto del riesgo a los mercados financieros
+    En la Clase 3 estudiamos cómo un conjunto de agentes puede repartirse un riesgo dado.
+El teorema de estados contingentes (Borch) mostró que un reparto Pareto-óptimo iguala, entre
+agentes, las tasas marginales de sustitución entre estados, y que —bajo el principio de mutua-
+lidad— cada participante termina expuesto sólo al riesgo agregado de la economía. Los precios
+de estado (o el núcleo de valuación estocástico) resumían el costo de trasladar una unidad de
+consumo de un estado a otro.
+    Un mercado financiero es precisamente el mecanismo que instrumenta ese reparto. Una
+acción, un bono o cualquier activo es un paquete de derechos contingentes: promete un flujo
+que depende del estado de la naturaleza que finalmente ocurra. Comprar una cartera es elegir
+un perfil de ingreso contingente; diversificar es recomponer ese perfil para transferir riesgo hacia
+quienes pueden absorberlo a menor costo.
+
+   Hilo conductor. Si los inversores tuvieran acceso a un mercado completo de derechos contingentes
+   (una cantidad de activos linealmente independientes igual al número de estados), podrían replicar
+   cualquier perfil de ingreso y el análisis se reduciría al de la Clase 3. En la práctica los mercados
+   son incompletos y las distribuciones de rendimiento continuas. El aporte de Markowitz y Sharpe
+   es mostrar que, si el inversor sólo mira media y varianza, todo el problema de cartera se ordena
+   en un plano (σ, µ) y admite una teoría de equilibrio con implicancias contrastables.
+
+
+1.1 El supuesto media-varianza
+    A lo largo de la clase adoptamos el criterio media-varianza: el inversor evalúa una car-
+tera de rendimiento aleatorio rp mediante una función
+                                                   q de preferencias V (µp , σp ) creciente en la
+media µp = E[rp ] y decreciente en el desvío σp =           Var(rp ). Como vimos en la Clase 2, este
+
+                                                    1
+criterio es exacto en dos casos: (a) preferencias cuadráticas, o (b) rendimientos con distribución
+normal (o, más generalmente, elíptica) combinada con aversión al riesgo. En otros casos es una
+aproximación de segundo orden. Es el marco natural para conectar la utilidad esperada con el
+lenguaje operativo de las finanzas.
+
+
+2 Rendimiento y riesgo de una cartera
+    Consideremos N activos riesgosos. Sea ri el rendimiento (aleatorio) por peso invertido en el
+activo i, con
+                µi = E[ri ],   σi2 = Var(ri ),     σij = Cov(ri , rj ) = ρij σi σj ,
+donde ρij ∈ [−1, 1] es el coeficiente de correlación. Sea wi la proporción de la riqueza colocada en
+el activo i (Markowitz la denota Xi ). Una cartera es un vector w = (w1 , . . . , wN )⊤ que satisface
+la restricción presupuestaria
+                                           N
+                                                 wi = 1⊤ w = 1.
+                                           X
+
+                                           i=1
+
+Si además se excluyen las ventas en corto (como en el modelo original de Markowitz), se agrega
+wi ≥ 0 para todo i.
+                                                               P
+    El rendimiento de la cartera es la combinación lineal rp = i wi ri . Usando la linealidad de
+la esperanza y la bilinealidad de la covarianza obtenemos las dos piezas centrales:
+                                              N
+                                                    wi µi = w⊤ µ,
+                                              X
+                              µp = E[rp ] =                                                                (1)
+                                              i=1
+                                                 N X
+                                                   N
+                                                           wi wj σij = w⊤ Σ w,
+                                                 X
+                              σp2 = Var(rp ) =                                                             (2)
+                                                 i=1 j=1
+
+donde Σ = [σij ] es la matriz de varianzas y covarianzas, simétrica y (semi)definida positiva.
+
+   La media de la cartera es un promedio ponderado simple de las medias individuales; la varianza
+   no lo es. En σp2 aparecen los N términos de varianza propia (wi2 σi2 ) y los N (N − 1) términos de
+   covarianza (wi wj σij ). El riesgo de una cartera bien diversificada está gobernado por las covarian-
+   zas, no por las varianzas individuales. Ahí nace la diversificación.
+
+
+2.1 Por qué la covarianza domina en carteras grandes
+    Para ver la afirmación anterior con precisión, tomemos una cartera igualmente ponderada
+(wi = 1/N ) y supongamos, por simplicidad, varianza media σ̄ 2 y covarianza media σij = c̄ entre
+pares distintos. Entonces
+                            1 X 2   1 X         1 2       1
+                   σp2 =     2
+                               σi + 2     σij =   σ̄ + 1 −   c̄ −−−−→ c̄.
+                           N i     N i̸=j       N          N     N →∞
+
+
+El primer término (riesgo propio o idiosincrático) se desvanece al diversificar; el segundo (riesgo
+de covarianza) sobrevive. Si los activos fueran independientes (c̄ = 0), el riesgo tendería a cero: es
+exactamente el mecanismo de la Ley de Grandes Números y del pooling de la Clase 3. Pero los
+rendimientos financieros están positivamente correlacionados (dependen del ciclo económico),
+de modo que c̄ > 0 y queda un piso de riesgo no diversificable. Este es el germen del riesgo
+sistemático que formalizará Sharpe.
+
+
+
+
+                                                       2
+3 El modelo de Markowitz: la frontera eficiente
+3.1 Rechazo de la regla del valor presente esperado
+    Markowitz (1952) abre descartando la regla ingenua de maximizar el valor presente esperado
+de los rendimientos. Su argumento es contundente: si el inversor sólo maximizara el rendimiento
+esperado descontado, colocaría toda su riqueza en el activo de mayor valor esperado. Esa regla
+nunca implica diversificar, y como la diversificación es a la vez observada y sensata, la
+regla debe rechazarse tanto como hipótesis descriptiva como norma de conducta. La covarianza
+—ausente en la regla del valor presente— es lo que hace deseable repartir la riqueza entre varios
+activos.
+
+3.2 La regla media-varianza y el conjunto factible
+    En su lugar, Markowitz propone que el inversor considere el rendimiento esperado deseable
+y la varianza indeseable. Para creencias fijas (µi , σij ), cada cartera w genera un par (σp , µp ) vía
+(1)–(2). El conjunto de todos los pares alcanzables define una región en el plano (σ, µ).
+
+Definición 3.1 (Cartera eficiente). Una cartera es eficiente (en sentido media-varianza) si no
+existe otra cartera factible con igual o mayor rendimiento esperado y menor varianza, ni con
+igual o menor varianza y mayor rendimiento esperado. El lugar geométrico de los pares (σp , µp )
+de las carteras eficientes es la frontera eficiente.
+
+3.3 El caso de dos activos y el papel de la correlación
+   El caso N = 2 ilustra toda la intuición. Con w1 = w y w2 = 1 − w,
+
+           µp = wµ1 + (1 − w)µ2 ,        σp2 = w2 σ12 + (1 − w)2 σ22 + 2 w(1 − w) ρ12 σ1 σ2 .
+
+La media es lineal en w; la varianza es cuadrática y decrece con ρ12 . Los casos extremos son
+reveladores:
+
+   Si ρ12 = +1: σp = |wσ1 + (1 − w)σ2 |, una recta. No hay ganancia por diversificar; el riesgo
+   también es promedio ponderado.
+   Si ρ12 = −1: σp = |wσ1 − (1 − w)σ2 |, que se anula para w = σ2 /(σ1 + σ2 ). Existe una
+   combinación sin riesgo: cobertura perfecta.
+   Si −1 < ρ12 < 1: la frontera es una hipérbola que se comba hacia la izquierda; combinando
+   los dos activos se alcanza un riesgo menor que el de cualquiera de ellos por separado.
+
+La Figura 1 muestra las tres situaciones para un ejemplo numérico (µ1 = 8 %, σ1 = 12 %,
+µ2 = 15 %, σ2 = 25 %).
+
+3.4 El caso de N activos: bala de Markowitz y curvas isovalor
+    Con N activos, la región factible es una bala (región convexa) cuyo borde izquierdo es la
+frontera de mínima varianza. Markowitz la analiza geométricamente introduciendo dos familias
+de curvas en el espacio de ponderaciones: las curvas isomedia (lugar de carteras con igual µp ),
+que son rectas paralelas, y las curvas isovarianza (igual σp2 ), que son elipses concéntricas alre-
+dedor de la cartera de mínima varianza global. La cartera eficiente para un nivel de riesgo dado
+surge del punto de tangencia entre una recta isomedia y una elipse isovarianza. La derivación
+analítica completa para N activos, con la frontera en forma cerrada, se desarrolla en el Anexo A.
+
+
+
+
+                                                  3
+                         16
+                                        ρ = +1                                                           Activo 2
+                                         ρ=0
+                         14             ρ = −1
+
+
+
+
+               µp ( %)   12
+
+
+
+                         10
+
+
+
+                         8
+                                                                  Activo 1
+                              0     2     4      6     8     10     12         14   16   18   20   22    24   26
+                                                                     σp ( %)
+
+
+Figura 1: Combinaciones (σp , µp ) de dos activos según la correlación. Cuanto menor es ρ, más
+se comba la frontera hacia la izquierda: mayor beneficio de la diversificación. Con ρ = −1 existe
+una cartera de riesgo nulo.
+
+Proposición 3.2 (Frontera de mínima varianza). Sean A = 1⊤ Σ−1 µ, B = µ⊤ Σ−1 µ, C =
+1⊤ Σ−1 1 y D = BC − A2 > 0. La cartera de varianza mínima para un rendimiento esperado
+objetivo µp tiene varianza
+                                                      2   C µ2p − 2A µp + B
+                                                     σp =
+                                                                         D
+En el plano (σ, µ) esta relación es una hipérbola. Su vértice es la cartera de mínima va-
+rianza global (GMV), con
+                                              A             2            1                     Σ−1 1
+                                  µGMV =        ,          σGMV =          ,        wGMV =           .
+                                              C                          C                      C
+La demostración (Lagrangiano con las restricciones de presupuesto y de rendimiento objetivo)
+está en el Anexo A. La rama superior de la hipérbola (µp ≥ µGMV ) es la frontera eficiente.
+
+
+4 El activo libre de riesgo y el teorema de separación
+    Hasta aquí trabajamos sólo con activos riesgosos. Sharpe (1964), siguiendo a Tobin (1958),
+incorpora un activo libre de riesgo de rendimiento cierto rf (la “tasa pura de interés”, en
+palabras de Sharpe). Una cartera que coloca una fracción a en un portafolio riesgoso T (de
+media µT y desvío σT ) y 1 − a en el activo seguro tiene
+                         µp = a µT + (1 − a)rf = rf + a(µT − rf ),                             σp = a σT .
+Eliminando a = σp /σT se obtiene una recta en el plano (σ, µ):
+                                                                     µT − rf
+                                                     µp = rf +               σp .
+                                                                       σT
+El inversor querrá la recta de mayor pendiente posible; esa recta es tangente a la frontera de
+activos riesgosos. El punto de tangencia T es el portafolio tangente.
+Teorema 4.1 (Separación en dos fondos, Tobin). Con un activo libre de riesgo y expectativas
+dadas, todo inversor con preferencias media-varianza elige una combinación del mismo portafolio
+riesgoso tangente T y del activo seguro. La composición de la parte riesgosa (T ) es la misma
+para todos; sólo cambia la proporción a según el grado de aversión al riesgo.
+
+                                                                     4
+    Separación. La decisión se dicotomiza: primero se determina la mejor cartera riesgosa T (un
+    problema técnico, igual para todos), y luego cada inversor decide cuánto arriesgar mezclando
+    T con el activo seguro (un problema de gustos). La aversión al riesgo no afecta qué activos
+    riesgosos comprar, sólo cuánto del bloque riesgoso tomar. La proporción del portafolio tangente
+    es wT ∝ Σ−1 (µ − rf 1).
+
+
+ 4.1 La Línea del Mercado de Capitales (CML)
+    En equilibrio el portafolio tangente coincide con el portafolio de mercado M . La recta
+ tangente pasa a llamarse Línea del Mercado de Capitales (CML):
+
+                                                   µM − rf
+                                       µp = rf +           σp
+                                                     σM
+
+ La CML describe la relación media-riesgo de las carteras eficientes. Su ordenada al origen rf
+ es el “precio del tiempo”; su pendiente (µM − rf )/σM —el ratio de Sharpe del mercado— es
+ el “precio del riesgo”: el rendimiento esperado adicional por cada unidad de desvío estándar
+ soportada.
+
+
+ 5 El CAPM de Sharpe: equilibrio y riesgo sistemático
+ 5.1 Supuestos
+    El Capital Asset Pricing Model (CAPM) lleva el análisis de Markowitz al equilibrio de
+ mercado. Se apoya en los siguientes supuestos:
+
+ (i) Inversores media-varianza y aversos al riesgo, con horizonte común de un período.
+(ii) Expectativas homogéneas: todos comparten las mismas (µi , σij ).
+(iii) Existe un activo libre de riesgo a cuya tasa rf se puede prestar y pedir prestado.
+(iv) Mercados competitivos y sin fricciones (sin impuestos ni costos de transacción); activos
+     perfectamente divisibles.
+
+ Bajo expectativas homogéneas todos calculan la misma frontera y el mismo portafolio tangente
+ T . Si todos compran T , en el agregado T debe contener a todos los activos en la proporción de
+ su valor de mercado: el portafolio tangente es el portafolio de mercado M .
+
+ 5.2 De la CML a la SML
+     La CML sólo vale para carteras eficientes. Sharpe muestra que para un activo individual i
+ existe una relación de equilibrio distinta, ligada no al riesgo total σi sino a su contribución al
+ riesgo del mercado. El argumento (Anexo B) considera carteras que combinan el activo i con
+ el mercado M ; la condición de tangencia de esa curva con la CML en M produce, en forma de
+ primer orden, la relación fundamental:
+
+ Teorema 5.1 (Ecuación del CAPM). En equilibrio, el rendimiento esperado de todo activo (o
+ cartera) i satisface
+
+                                                                Cov(ri , rM )  σiM
+                    µi = rf + βi (µM − rf )        con   βi =                 = 2 .
+                                                                 Var(rM )      σM
+
+    El coeficiente βi mide la sensibilidad del rendimiento del activo a los movimientos del mer-
+ cado. La representación gráfica de esta ecuación —µi como función lineal de βi — es la Línea
+ del Mercado de Títulos (SML), Figura 2.
+
+                                                   5
+                         16
+
+                                                                                                 L
+                                                                                           SM
+                         12
+                                                infravalorado
+
+               µi ( %)
+                                                                         M (β = 1)
+
+                         8                                                 sobrevalorado
+
+
+                         r4f
+
+
+
+                         0
+                               0            0.5                     1                      1.5       2
+                                                                    βi
+
+Figura 2: Línea del Mercado de Títulos (SML). En equilibrio todo activo se ubica sobre la recta
+µi = rf + βi (µM − rf ). Un activo por encima ofrece más rendimiento del que corresponde a su
+β (infravalorado); por debajo, lo contrario.
+
+
+5.3 Riesgo sistemático y no sistemático
+    La clave económica del CAPM es la descomposición del riesgo. Proyectando el rendimiento
+del activo sobre el del mercado (regresión de ri sobre rM ),
+
+                                   ri = αi + βi rM + εi ,                Cov(rM , εi ) = 0,
+
+la varianza total se descompone en dos partes ortogonales:
+
+                                          σ2
+                                           i         = βi2 σM
+                                                            2
+                                                              +                σε2i        .
+                                         |{z}           | {z }                |{z}
+                                      riesgo total    sistemático         no sistemático
+
+El riesgo no sistemático (o idiosincrático, σε2i ) es propio del activo y se elimina por diversi-
+ficación: en una cartera grande su contribución tiende a cero, como vimos en la Sección 2. El
+riesgo sistemático (βi2 σM2 ) proviene de la correlación con el mercado —en última instancia,
+
+con el ciclo económico— y no puede diversificarse.
+
+   Sólo se paga el riesgo que no se puede evitar. Como el mercado no recompensa un riesgo
+   que el propio inversor puede anular gratis diversificando, en equilibrio el premio por riesgo de
+   un activo depende únicamente de su riesgo sistemático βi , no de su riesgo total σi . Esta es la
+   respuesta de Sharpe a la pregunta que la teoría tradicional dejaba abierta: cuál componente del
+   riesgo determina el precio de un activo.
+
+
+5.4 Nota sobre la notación original de Sharpe
+    Conviene registrar la correspondencia con el artículo de 1964, porque la notación difiere
+de la moderna. Sharpe llama P a la tasa pura de interés (nuestro rf ), escribe la CML como
+σR = S(ER − P ) (con S la inversa de la pendiente en el plano (µ, σ)), no habla todavía de
+“portafolio de mercado” sino de una combinación eficiente cualquiera g, y denota Big a la
+sensibilidad del activo i respecto de g (nuestro βi ). Un resultado central de su paper es que todas
+las combinaciones eficientes están perfectamente correlacionadas entre sí, lo que justifica tomar
+cualquiera de ellas —en particular, el mercado— como referencia. La forma de equilibrio moderna
+µi = rf + βi (µM − rf ) y la formulación explícita del portafolio de mercado se consolidaron poco
+después con Lintner (1965) y Mossin (1966).
+
+
+
+                                                                6
+6 Mercados de futuros
+    Los mercados de futuros, no cubiertos por Markowitz ni Sharpe; los desarrollamos con fuentes
+adicionales (Hull, 2018; Varian, 1992). Son un segundo instrumento —junto con la cartera de
+activos— para transferir riesgo entre agentes, y encajan naturalmente en el marco de derechos
+contingentes.
+
+Definición 6.1 (Contrato de futuros). Un contrato de futuros es un acuerdo estandarizado,
+negociado en un mercado organizado, para comprar o vender un activo subyacente en una fecha
+futura T a un precio F0 pactado hoy. Quien se compromete a comprar toma una posición
+larga; quien se compromete a vender, una posición corta. A diferencia del forward (contrato
+a medida, extrabursátil), el futuro se ajusta a mercado diariamente (marking-to-market) y tiene
+cámara compensadora que reduce el riesgo de contraparte.
+
+6.1 Cobertura y especulación
+   El futuro cumple dos funciones económicas complementarias:
+
+   Cobertura (hedging). Un agente expuesto a la variación del precio de un activo (un pro-
+   ductor de trigo, un importador de dólares) toma una posición en futuros de signo opuesto a
+   su exposición, fijando de antemano el precio de su transacción futura y reduciendo la varianza
+   de su resultado. Es el mismo motivo de la Clase 3: transferir riesgo hacia quien lo soporta a
+   menor costo.
+   Especulación. Un agente sin exposición previa toma una posición apostando a la dirección
+   del precio, aportando liquidez y absorbiendo el riesgo que los coberturistas quieren ceder. En
+   términos de reparto del riesgo, especuladores y coberturistas son las dos caras del mercado.
+
+6.2 Base, cost-of-carry, contango y backwardation
+    La diferencia entre el precio de futuro y el precio de contado (spot) S0 se llama base. Para
+un activo de inversión almacenable, el arbitraje entre comprar hoy y almacenar, o comprar a
+futuro, conduce a la relación de costo de acarreo (cost-of-carry):
+
+                                       F0 = S0 e(r+u−y) T ,
+
+donde r es la tasa libre de riesgo, u el costo de almacenamiento y y el rendimiento de conveniencia
+(convenience yield) de tener el bien físico. Se dice que el mercado está en contango cuando
+F0 > S0 (la curva de futuros es creciente) y en backwardation cuando F0 < S0 . La normal
+backwardation de Keynes sostiene que, si los coberturistas están netos cortos, los especuladores
+largos exigen una prima y F0 tiende a quedar por debajo del precio spot esperado E[ST ].
+
+6.3 Cobertura de varianza mínima
+   El puente con la teoría de cartera es directo. Si un agente tiene una posición en el activo de
+contado y cubre con h unidades de futuro, el desvío de su resultado se minimiza —un problema
+media-varianza— en el ratio de cobertura óptimo
+
+                                            σS   Cov(∆S, ∆F )
+                                 h⋆ = ρSF      =              ,
+                                            σF     Var(∆F )
+
+que es, formalmente, el β del precio spot respecto del precio de futuro. La cobertura perfecta
+(ρSF = 1) reproduce el caso ρ = −1 de la Figura 1: dos posiciones perfectamente correlacionadas
+y de signo opuesto se cancelan y anulan el riesgo.
+
+
+
+                                                7
+7 Puente con los mercados de derechos contingentes
+    Cerramos volviendo al lenguaje de la Clase 3. Un activo financiero con pagos di (s) en el
+estado s es una combinación de valores de Arrow (derechos que pagan una unidad en un estado
+y cero en el resto). Si hay tantos activos linealmente independientes como estados, el mercado
+es completo: cualquier perfil de ingreso contingente puede replicarse (spanning) y reaparecen
+los precios de estado de la Clase 3. El criterio media-varianza es entonces un caso particular
+tratable de ese marco general: resume la distribución de pagos en dos momentos.
+    La conexión se ve con nitidez en la valuación. En la Clase 3 el precio de un activo era
+q = E[m x], con m el núcleo de valuación estocástico (stochastic discount factor). Reescribiendo
+esa identidad en términos de rendimientos se obtiene exactamente una relación de tipo beta:
+
+                                      µi − rf = − rf Cov(m, ri ),
+
+es decir, el premio por riesgo de un activo es proporcional a la covarianza de su rendimiento
+con el factor de descuento. El CAPM es el caso en que ese factor es lineal en el rendimiento del
+mercado, m = a − b rM : entonces la covarianza con m se traduce en covarianza con el mercado
+y recuperamos µi = rf + βi (µM − rf ). Markowitz–Sharpe y Arrow–Borch son, así, dos lecturas
+del mismo problema de reparto del riesgo.
+
+   Síntesis. Diversificar es reordenar derechos contingentes para quedarse sólo con el riesgo agregado.
+   El β del CAPM mide cuánto de ese riesgo agregado (sistemático) carga cada activo, y el mercado
+   sólo remunera esa porción. Lo idiosincrático —evitable— no se paga.
+
+
+8 Síntesis Clase 4
+    Pasamos del reparto del riesgo entre agentes (Clase 3) a su valuación en el mercado de
+capitales. La regla media-varianza ordenó el problema de cartera en la frontera eficiente; el activo
+libre de riesgo y la separación de Tobin lo simplificaron a una recta (la CML); y el equilibrio de
+Sharpe entregó el CAPM, con su distinción entre riesgo sistemático y no sistemático. Los futuros
+añadieron un segundo canal de transferencia de riesgo, y el puente con los derechos contingentes
+reunió ambos enfoques bajo el factor de descuento estocástico.
+    En la Clase 5 llevamos la incertidumbre al lado de la producción: la teoría de la firma
+competitiva bajo incertidumbre de precios (Sandmo, 1971). Veremos cómo una empresa neutral
+al riesgo, una aversa al riesgo y una con función tipo Markowitz eligen su nivel de producción
+cuando el precio de venta es una variable aleatoria, y cómo la aversión al riesgo modifica la
+conocida regla “precio igual a costo marginal”.
+
+
+A Anexo A. La frontera eficiente con N activos
+   Buscamos, para un rendimiento esperado objetivo µp , la cartera de mínima varianza:
+
+                            mı́n 12 w⊤ Σ w    s.a.   w⊤ µ = µp , w⊤ 1 = 1.
+                             w
+
+El Lagrangiano, con multiplicadores λ y γ, es
+
+                            L = 21 w⊤ Σw − λ(w⊤ µ − µp ) − γ(w⊤ 1 − 1).
+
+La condición de primer orden ∂L/∂w = Σw − λµ − γ1 = 0 da
+
+                                         w = Σ−1 (λµ + γ1).
+
+
+
+                                                     8
+Imponiendo las dos restricciones y usando A, B, C, D como en la Proposición 3.2 se despejan
+                                      Cµp − A                   B − Aµp
+                                 λ=           ,            γ=           ,
+                                        D                          D
+y sustituyendo en σp2 = w⊤ Σw = λµp + γ resulta
+
+                                               Cµ2p − 2Aµp + B
+                                       σp2 =                   ,
+                                                      D
+la hipérbola del enunciado. Derivando e igualando a cero se obtiene el vértice µGMV = A/C con
+  2
+σGMV   = 1/C. Con un activo libre de riesgo, el mismo programa (reemplazando la restricción de
+presupuesto por w⊤ 1 ≤ 1 y ubicando el resto en el activo seguro) entrega el portafolio tangente
+wT ∝ Σ−1 (µ − rf 1), normalizado para sumar uno.
+
+
+B Anexo B. Derivación de la ecuación del CAPM
+    Sea M el portafolio de mercado. Consideremos una cartera que invierte una fracción a en el
+activo i y 1 − a en M . Su media y su varianza son
+                                                                                         1/2
+                                          σ(a) = a2 σi2 + (1 − a)2 σM
+                                                                    2
+                                                   
+         µ(a) = aµi + (1 − a)µM ,                                     + 2a(1 − a)σiM            .
+
+Evaluando las derivadas en a = 0 (donde la cartera es exactamente M ):
+
+                              dµ                           dσ            2
+                                                                  σiM − σM
+                                   = µi − µM ,                  =          .
+                              da 0                         da 0      σM
+
+La curva que generan estas carteras es tangente en M a la CML, cuya pendiente es (µM −rf )/σM .
+                                    dµ/da
+Igualando la pendiente de la curva           con la de la CML:
+                                    dσ/da 0
+                                        µi − µ M     µM − rf
+                                             2     =         .
+                                    (σiM − σM )/σM     σM
+                                  2 se llega a
+Despejando µi y usando βi = σiM /σM
+
+                                       µi = rf + βi (µM − rf ),
+
+que es la ecuación del Teorema 5.1. La condición de no arbitraje que subyace es que ninguna
+combinación factible puede ubicarse a la derecha de la CML, por lo que la tangencia es forzosa
+en equilibrio.
+
+
+Referencias
+ [1] Markowitz, H. (1952). Portfolio selection. The Journal of Finance, 7(1), 77–91.
+
+ [2] Sharpe, W. F. (1964). Capital asset prices: A theory of market equilibrium under conditions of risk.
+     The Journal of Finance, 19(3), 425–442.
+
+ [3] Tobin, J. (1958). Liquidity preference as behavior towards risk. The Review of Economic Studies,
+     25(2), 65–86.
+
+ [4] Lintner, J. (1965). The valuation of risk assets and the selection of risky investments in stock
+     portfolios and capital budgets. The Review of Economics and Statistics, 47(1), 13–37.
+
+ [5] Mossin, J. (1966). Equilibrium in a capital asset market. Econometrica, 34(4), 768–783.
+
+
+                                                       9
+ [6] Merton, R. C. (1972). An analytic derivation of the efficient portfolio frontier. Journal of Financial
+     and Quantitative Analysis, 7(4), 1851–1872.
+
+ [7] Borch, K. H. (1962). Equilibrium in a reinsurance market. Econometrica, 30(3), 424–444.
+
+ [8] Gravelle, H., & Rees, R. (2006). Microeconomía (3.ª ed.). Pearson.
+
+ [9] Varian, H. R. (1992). Análisis microeconómico (3.ª ed.). Antoni Bosch.
+
+[10] Hull, J. C. (2018). Options, Futures, and Other Derivatives (10.ª ed.). Pearson.
+
+[11] Cochrane, J. H. (2005). Asset Pricing (ed. rev.). Princeton University Press.
+
+
+
+
+                                                   10
+

@@ -1,0 +1,701 @@
+                              UADE — Facultad de Ciencias Económicas
+                Economía del Riesgo y de la Información (1.4.010) — 2º cuatrimestre 2026
+
+                                     Notas de Clase 2
+                        Unidad II: Utilidad Esperada y Aversión al Riesgo
+
+
+
+                         Bibliografía: Varian (cap. 11); Gravelle & Rees (cap. 17)
+
+
+
+                                                 Resumen
+       Estas notas cubren la segunda clase del curso. Partimos de una motivación histórica —el
+       principio de Bernoulli y la paradoja de San Petersburgo— que muestra por qué el valor
+       monetario esperado no puede ser el criterio de decisión bajo riesgo. Formalizamos luego el
+       objeto de elección mediante loterías y desarrollamos el fundamento axiomático del modelo:
+       el teorema de la utilidad esperada de von Neumann y Morgenstern, con sus axiomas (ra-
+       cionalidad, continuidad, independencia y monotonía), la construcción de la representación
+       E[u] y su unicidad salvo transformación afín (cardinalidad). Sobre esa base estudiamos las
+       preferencias y la aversión al riesgo (concavidad, desigualdad de Jensen, equivalente cierto y
+       prima de riesgo) y las medidas de aversión al riesgo de Arrow–Pratt —absoluta y relativa—,
+       la aproximación local de Pratt, el teorema de Pratt de comparación global y el caso CARA–
+       Normal que fundamenta el criterio media–varianza. Aplicamos el aparato a la demanda de
+       seguro y cerramos con la crítica descriptiva, identificando con precisión qué axioma vulneran
+       las paradojas de Allais (independencia) y de Ellsberg (probabilidad subjetiva y ambigüedad).
+
+
+
+1.      Introducción: del uso al fundamento de la utilidad esperada
+
+En la Clase 1 usamos la utilidad esperada como una herramienta: dado un prospecto, la va-
+luábamos por E[v(y)], discutíamos la actitud frente al riesgo a partir de la concavidad de v y
+contrastábamos ese modelo normativo con la evidencia de la Teoría de las Perspectivas (efec-
+to certeza de Allais, efecto reflejo, efecto aislamiento, ponderación de probabilidades). Quedó
+pendiente una pregunta más básica: ¿por qué valuar una lotería por la esperanza de la
+utilidad y no, por ejemplo, por su valor monetario esperado?
+Esta clase responde esa pregunta en dos niveles. Primero, con una motivación histórica —el prin-
+cipio de Bernoulli y la paradoja de San Petersburgo— que muestra por qué el valor esperado no
+puede ser el criterio de decisión. Segundo, con el fundamento axiomático moderno: el teorema
+de la utilidad esperada de von Neumann y Morgenstern, que deriva la representación E[u(·)]
+a partir de un puñado de axiomas sobre las preferencias del decisor. A partir de ahí formali-
+zamos las medidas de aversión al riesgo (Arrow–Pratt, absoluta y relativa) y su comparación
+global (teorema de Pratt). Cerramos volviendo a la crítica, ahora con precisión: mostraremos
+exactamente qué axioma vulneran las paradojas de Allais y de Ellsberg.
+La lectura central es Varian, Análisis microeconómico, cap. 11; los temas no cubiertos por esa
+lectura (San Petersburgo, la aproximación local de Pratt, la paradoja de Ellsberg) se desarrollan
+con fuentes adicionales: Bernoulli (1738), von Neumann & Morgenstern (1944), Pratt (1964),
+Arrow (1965), Allais (1953) y Ellsberg (1961).
+
+     Idea clave. El objetivo de la unidad es pasar de postular la utilidad esperada a derivarla de axio-
+     mas de comportamiento, y con ese andamiaje construir medidas de aversión al riesgo comparables
+     entre individuos.
+
+                                                     1
+2.     El principio de Bernoulli y la paradoja de San Petersburgo
+
+2.1.   El juego de San Petersburgo
+
+Consideremos el siguiente juego, propuesto por Nicolás Bernoulli en 1713. Se lanza una moneda
+equilibrada hasta que sale la primera cara. Si la primera cara ocurre en el lanzamiento n,
+el jugador cobra xn = 2n ducados. La probabilidad de que la primera cara aparezca en el
+lanzamiento n es pn = (1/2)n .
+El valor monetario esperado del juego es
+                                 ∞               ∞                       ∞
+                                 X               X     n                   X
+                     E[X] =            pn xn =          1
+                                                        2      2n =              1 = +∞.
+                                 n=1             n=1                       n=1
+
+
+Un decisor que valuara los juegos por su valor esperado debería estar dispuesto a pagar cualquier
+suma finita por participar. La paradoja es empírica y de sentido común: nadie paga más que
+unas pocas monedas por este juego. El criterio del valor esperado predice mal.
+
+
+2.2.   La resolución de Bernoulli: la utilidad marginal decreciente
+
+Daniel Bernoulli (1738) propuso que el jugador no valora el dinero linealmente, sino que “la
+utilidad resultante de un pequeño incremento de riqueza es inversamente proporcional a la
+cantidad de bienes previamente poseídos”. En términos modernos: la utilidad del dinero u(w) es
+creciente pero cóncava (u′ > 0, u′′ < 0), y el decisor evalúa el juego por su utilidad esperada,
+no por su valor esperado:
+                                                       ∞
+                                                       X
+                                       E[u(X)] =             pn u(xn ).
+                                                       n=1
+
+Con la función logarítmica u(w) = ln w que sugiere Bernoulli, y valuando los premios directa-
+mente, la utilidad esperada del juego es finita:
+                           ∞                              ∞
+                           X     n                          X          n
+               E[ln X] =          1
+                                  2     ln(2n ) = ln 2            n    1
+                                                                       2     = ln 2 · 2 = ln 4,
+                           n=1                              n=1
+
+donde usamos n≥1 n rn = r/(1 − r)2 evaluado en r = 1/2, que da 2. El equivalente cierto del
+               P
+
+juego —la cantidad segura CE que reporta la misma utilidad— satisface ln CE = ln 4, es decir
+
+                                       CE = eln 4 = 4 ducados.
+
+Un valor esperado infinito se transforma, bajo utilidad logarítmica, en una disposición a pagar
+de apenas 4 ducados: coherente con la conducta observada.
+
+
+2.3.   El límite de la resolución: utilidad acotada
+
+La solución de Bernoulli no es del todo general. Menger (1934) observó que basta con hacer
+                                                      n
+crecer los premios más rápido —por ejemplo xn = e2 — para que E[ln X] vuelva a divergir (una
+“super–paradoja de San Petersburgo”). La lección definitiva es más fuerte: para descartar
+paradojas de este tipo con cualquier sucesión de premios, la función de utilidad debe
+estar acotada. La representación por utilidad esperada requiere condiciones de regularidad
+(continuidad) que, entre otras cosas, disciplinan este tipo de comportamiento en el infinito.
+
+
+
+                                                   2
+     Idea clave. San Petersburgo refuta el criterio del valor esperado y motiva el principio de Bernou-
+     lli: las decisiones bajo riesgo se ordenan por la utilidad esperada de una función cóncava del dinero.
+     Lo que sigue es la pregunta de von Neumann–Morgenstern: ¿qué supuestos sobre las preferencias
+     justifican exactamente esa forma funcional?
+
+
+3.      Loterías: el marco formal
+
+Para enunciar el teorema de la utilidad esperada necesitamos un objeto de elección preciso.
+Siguiendo a Varian (cap. 11), el decisor elige entre loterías.
+Definición 3.1 (Lotería). Una lotería simple se denota
+                                             p ◦ x ⊕ (1 − p) ◦ y,
+y se lee: “el decisor recibe el premio x con probabilidad p y el premio y con probabilidad 1 − p”.
+Los premios pueden ser sumas de dinero, canastas de bienes o a su vez otras loterías, lo que
+permite construir loterías compuestas.
+
+Sobre la percepción de las loterías imponemos tres supuestos de consistencia:
+Axioma 3.1 (Certeza). 1 ◦ x ⊕ (1 − 1) ◦ y = x. Obtener un premio con probabilidad 1 equivale
+a obtenerlo con certeza.
+Axioma 3.2 (Irrelevancia del orden). p ◦ x ⊕ (1 − p) ◦ y = (1 − p) ◦ y ⊕ p ◦ x. El decisor no
+atiende al orden en que se describe la lotería.
+Axioma 3.3 (Reducción de loterías compuestas). El decisor sólo atiende a las probabilidades
+netas sobre los premios finales. Por ejemplo, una lotería que con probabilidad q entrega p ◦ x ⊕
+(1 − p) ◦ y y con probabilidad 1 − q entrega y es indistinguible de la lotería simple
+                                          (qp) ◦ x ⊕ (1 − qp) ◦ y.
+
+El supuesto de reducción es cómodo pero no inocuo: al colapsar las loterías compuestas en
+simples, borra cualquier valor (o disvalor) que el decisor asigne al proceso de resolución del
+riesgo por etapas. Con estos supuestos, la reducción de loterías compuestas permite representar
+cualquier situación de premios finitos mediante loterías de dos premios encadenadas, de modo
+que basta con axiomatizar preferencias sobre el conjunto L de todas las loterías así construidas.
+Sobre L el decisor tiene una relación de preferencia ≿ (“al menos tan buena como”), con las
+partes estricta ≻ e indiferente ∼ usuales.
+
+
+4.      El teorema de la utilidad esperada (von Neumann–Morgenstern)
+
+4.1.     Los axiomas
+
+Buscamos condiciones sobre ≿ que garanticen la existencia de una función u definida sobre los
+premios tal que las loterías se ordenen por su utilidad esperada. Los axiomas centrales son cuatro.
+Axioma 4.1 (Preferencias racionales). ≿ es completa (para todo par de loterías L, L′ , o bien
+L ≿ L′ o bien L′ ≿ L) y transitiva.
+Axioma 4.2 (Continuidad). Para todas las loterías L ≿ M ≿ N , existe α ∈ [0, 1] tal que
+                                        M ∼ α ◦ L ⊕ (1 − α) ◦ N.
+Pequeñas variaciones de probabilidades no producen saltos en las preferencias: siempre hay una
+mezcla de la mejor y la peor lotería indiferente a la intermedia.
+
+                                                       3
+Axioma 4.3 (Independencia). Para todas las loterías L, M, N y todo α ∈ (0, 1],
+                L≿M        ⇐⇒      α ◦ L ⊕ (1 − α) ◦ N ≿ α ◦ M ⊕ (1 − α) ◦ N.
+Mezclar dos loterías con una tercera común N , en idéntica proporción, no altera su ordena-
+miento.
+Axioma 4.4 (Monotonía). Si x ≻ y y p > q, entonces p ◦ x ⊕ (1 − p) ◦ y ≻ q ◦ x ⊕ (1 − q) ◦ y:
+entre dos loterías sobre los mismos premios, se prefiere la que asigna mayor probabilidad al
+mejor premio.
+
+El axioma de independencia es el corazón del modelo y, como veremos, el que las paradojas
+ponen en cuestión. No tiene análogo en la teoría del consumidor bajo certeza: allí las curvas
+de indiferencia pueden curvarse libremente; aquí la independencia obliga a que las curvas de
+indiferencia sobre loterías sean rectas paralelas en el símplex de probabilidades.
+
+
+4.2.   El teorema
+
+Teorema 4.1 (Utilidad esperada). Si ≿ sobre L satisface los Axiomas 4.1–4.4, entonces existe
+una función de utilidad u definida sobre los premios que tiene la propiedad de utilidad esperada:
+para toda lotería con premios x1 , . . . , xn y probabilidades p1 , . . . , pn ,
+                                                             n
+                                                             X
+                                                     
+                       U p1 ◦ x1 ⊕ · · · ⊕ pn ◦ xn       =         pi u(xi ) = E[u].
+                                                             i=1
+
+
+Idea de la demostración (construcción). Por completitud existen una mejor lotería b y una peor
+lotería w, con b ≿ x ≿ w para todo premio x. Para cada premio x, por continuidad existe un
+único número px ∈ [0, 1] tal que
+                                   x ∼ px ◦ b ⊕ (1 − px ) ◦ w.
+La unicidad de px se sigue de la monotonía. Definimos u(x) = px . Resta ver que u tiene la
+propiedad de utilidad esperada. Tomemos una lotería L = q ◦ x ⊕ (1 − q) ◦ y. Sustituyendo cada
+premio por su lotería indiferente sobre {b, w} (lícito por independencia) y reduciendo la lotería
+compuesta resultante, se obtiene
+                                                                                
+                   L ∼ q px + (1 − q) py ◦ b ⊕ 1 − q px − (1 − q) py ◦ w.
+Por monotonía, el valor de L queda determinado por la probabilidad total con que entrega b,
+esto es q px + (1 − q) py = q u(x) + (1 − q) u(y) = E[u]. Extendiendo por inducción a n premios
+mediante loterías compuestas se obtiene el resultado.
+
+
+4.3.   Unicidad: cardinalidad de la utilidad vNM
+
+Proposición 4.1 (Unicidad salvo transformación afín). Una función de utilidad esperada es
+única salvo transformaciones afines positivas: si u representa ≿ con la propiedad de utilidad
+esperada, entonces v también lo hace si y sólo si v(x) = a u(x) + c con a > 0.
+
+Demostración. Que toda transformación afín positiva preserva la propiedad es inmediato:
+                                     E[a u + c] = a E[u] + c,
+y como a > 0 el orden de las loterías se conserva. La recíproca —que ninguna otra transforma-
+ción monótona preserva la propiedad de utilidad esperada— se prueba mostrando que si g es
+monótona y g(u) conserva la linealidad en las probabilidades, entonces g debe ser afín.
+
+                                                 4
+Esta es una diferencia esencial con la teoría del consumidor bajo certeza. Allí la utilidad es
+ordinal: cualquier transformación monótona creciente sirve. Aquí la utilidad vNM es cardinal:
+diferencias de utilidad tienen significado (comparan intensidades entre premios), porque están
+ancladas a probabilidades de la lotería de referencia {b, w}. Lo que no tiene significado es el
+origen y la escala, que quedan libres.
+
+
+4.4.   Otras notaciones y el operador esperanza
+
+El teorema, probado para dos premios, se extiende sin dificultad a un número finito de premios
+vía loterías compuestas, y —con salvedades técnicas menores— a distribuciones continuas. Si
+los resultados son un continuo con densidad f (x), la utilidad esperada del “juego” es
+                                               Z
+                                   E[u(X)] =       u(x) f (x) dx.
+
+En lo que sigue escribimos indistintamente E[u(X)] para el caso discreto (suma) y continuo
+(integral), usando el operador esperanza.
+
+
+5.     Preferencias y aversión al riesgo
+
+Restringimos ahora la atención a loterías con premios monetarios y estudiamos la actitud frente al
+riesgo, ya introducida en la Clase 1. Recordemos las definiciones y profundicemos su fundamento.
+
+Definición 5.1 (Actitud frente al riesgo). Un decisor es averso al riesgo si para toda lotería no
+degenerada X prefiere su valor esperado con certeza a la lotería:
+
+                                      u(E[X]) > E[u(X)].
+
+Es neutral si vale la igualdad y propenso (amante) si vale la desigualdad opuesta.
+
+Proposición 5.1 (Aversión al riesgo ⇔ concavidad). Un decisor con utilidad esperada es averso
+al riesgo si y sólo si su función de utilidad del dinero u es cóncava.
+
+La equivalencia es un caso de la desigualdad de Jensen, que conviene enunciar con precisión
+porque es la herramienta técnica central de la unidad.
+
+Proposición 5.2 (Desigualdad de Jensen). Sea X una variable aleatoria no degenerada y u
+una función estrictamente cóncava. Entonces
+
+                                      E[u(X)] < u(E[X]).
+
+Demostración. Una función cóncava y diferenciable queda por debajo de cualquiera de sus rectas
+tangentes: para todo x y todo punto x̄,
+
+                                  u(x) ≤ u(x̄) + u′ (x̄) (x − x̄),
+
+con desigualdad estricta si x ̸= x̄. Tomemos x̄ = E[X] y esperanza a ambos lados:
+
+                  E[u(X)] ≤ u(E[X]) + u′ (E[X]) E[X] − E[X] = u(E[X]),
+                                                                     
+                                                       |    {z       }
+                                                           =0
+
+y como X es no degenerada la desigualdad es estricta.
+
+
+
+                                                   5
+5.1.   Equivalente cierto y prima de riesgo
+
+Definición 5.2 (Equivalente cierto y prima de riesgo). El equivalente cierto CE(X) de una
+lotería X es la cantidad segura que reporta la misma utilidad que la lotería:
+                                               
+                                     u CE(X) = E[u(X)].
+
+La prima de riesgo es la diferencia entre el valor esperado y el equivalente cierto:
+
+                                    π(X) = E[X] − CE(X).
+
+Para un averso al riesgo, Jensen implica u(CE) = E[u(X)] < u(E[X]) y, como u es creciente,
+CE(X) < E[X]: la prima de riesgo es positiva. La prima mide cuánto valor esperado está dis-
+puesto a sacrificar el decisor para eliminar el riesgo. La Figura 1 representa geométricamente
+estos objetos.
+
+                u(w)
+
+                                                                            u(w)
+
+
+
+          u(E[X])
+          E[u(X)]
+
+
+
+
+                                                                              w (riqueza)
+                        x1              CE E[X]                    x2
+
+                                           π
+
+Figura 1: Aversión al riesgo. La utilidad esperada E[u(X)] (punto dorado sobre la cuerda) es
+menor que la utilidad del valor esperado u(E[X]) (punto azul sobre la curva). El equivalente
+cierto CE satisface u(CE) = E[u(X)] y la prima de riesgo es π = E[X] − CE > 0.
+
+
+5.2.   El conjunto de aceptación
+
+Varian ofrece una caracterización alternativa, útil para comparar individuos. Representemos
+una apuesta por un par (x1 , x2 ): el decisor recibe x1 si ocurre un evento E y x2 si no. El
+conjunto de aceptación a un nivel de riqueza inicial w es el conjunto de apuestas que el decisor
+aceptaría. Si el decisor es averso al riesgo, ese conjunto es convexo, y su frontera —el conjunto de
+apuestas indiferentes— tiene, en el punto (0, 0), una pendiente igual a la razón de probabilidades
+− p/(1 − p). Esto ofrece un método para elicitar probabilidades: hallar las cuotas a las que el
+decisor está justo dispuesto a aceptar una apuesta pequeña sobre el evento. Además, un decisor
+i es localmente más averso que otro j cuando el conjunto de aceptación de i está contenido en
+el de j cerca del origen; formalizar esa idea conduce a la medida de Arrow–Pratt de la próxima
+sección.
+
+
+
+
+                                                   6
+6.     Medidas de aversión al riesgo
+
+6.1.   ¿Por qué no basta con u′′ ?
+
+La intuición dice: cuanto más cóncava es u, más averso el decisor, así que u′′ debería medir la
+aversión. El problema es que u′′ no es invariante a la representación. Como la utilidad vNM
+es única salvo transformación afín positiva, reemplazar u por a u + c (con a > 0) no cambia la
+conducta, pero multiplica u′′ por a. Necesitamos normalizar. Dividiendo por u′ (que también se
+multiplica por a) obtenemos una medida invariante.
+
+Definición 6.1 (Medida de Arrow–Pratt de aversión absoluta al riesgo).
+
+                                                      u′′ (w)
+                                        rA (w) = −            .
+                                                      u′ (w)
+
+6.2.   La aproximación local de Pratt
+
+La medida rA no es una definición arbitraria: aproxima la prima de riesgo de las apuestas
+pequeñas. Sea ε̃ un riesgo pequeño de media cero, E[ε̃] = 0, con varianza σ 2 . La prima de riesgo
+π satisface, por definición,                               
+                                  u(w − π) = E u(w + ε̃) .
+Desarrollamos ambos lados por Taylor. El lado derecho, a segundo orden:
+                                 h                                i
+              E[u(w + ε̃)] ≈ E u(w) + u′ (w)ε̃ + 12 u′′ (w)ε̃2 = u(w) + 12 u′′ (w) σ 2 ,
+
+usando E[ε̃] = 0 y E[ε̃2 ] = σ 2 . El lado izquierdo, a primer orden: u(w − π) ≈ u(w) − u′ (w)π.
+Igualando,
+                  − u′ (w) π = 12 u′′ (w) σ 2      =⇒        π ≈ 21 rA (w) σ 2 .
+
+La prima de riesgo de una apuesta pequeña es (aproximadamente) la mitad de la varianza esca-
+lada por la aversión absoluta al riesgo. Esta fórmula justifica la medida y conecta directamente
+aversión al riesgo con varianza.
+
+
+6.3.   Aversión relativa al riesgo
+
+Muchas apuestas económicas son multiplicativas (rendimientos porcentuales sobre la riqueza)
+más que aditivas. La medida apropiada para apuestas expresadas como fracción de la riqueza es
+la aversión relativa:
+
+Definición 6.2 (Aversión relativa al riesgo).
+
+                                              w u′′ (w)
+                                rR (w) = −              = w rA (w).
+                                               u′ (w)
+
+Es razonable suponer que la aversión absoluta decrece con la riqueza (a mayor riqueza, se aceptan
+apuestas mayores en dólares). El comportamiento de la aversión relativa es más discutible;
+suponerla constante es una aproximación habitual.
+
+
+
+
+                                                  7
+6.4.     Dos familias de referencia (repaso)
+
+Las derivamos como ejercicio en la Clase 1; las recordamos por su papel central en toda la
+materia.
+
+   CARA (aversión absoluta constante). u(w) = −e−aw , con a > 0. Entonces u′ (w) =
+   a e−aw , u′′ (w) = −a2 e−aw y
+
+                                             −a2 e−aw
+                                rA (w) = −            =a    (constante).
+                                              a e−aw
+
+                                                    w1−R
+   CRRA (aversión relativa constante). u(w) =            (con u(w) = ln w como caso límite
+                                                   1−R
+   R → 1). Entonces rR (w) = R constante y rA (w) = R/w decreciente.
+
+
+6.5.     Comparación global: el teorema de Pratt
+
+La aproximación de Pratt es local. A menudo queremos afirmar que un individuo es más averso
+que otro para todo nivel de riqueza. Hay tres formas naturales de decirlo, y el resultado notable
+es que son equivalentes.
+
+Teorema 6.1 (Pratt). Sean A(w) y B(w) dos funciones de utilidad diferenciables, crecientes y
+cóncavas. Las siguientes afirmaciones son equivalentes:
+
+         A′′ (w)     B ′′ (w)
+ (1) −           ≥ −          para todo w     (más averso en el sentido de Arrow–Pratt);
+         A′ (w)      B ′ (w)
+                       
+ (2) A(w) = G B(w) para alguna función G creciente y estrictamente cóncava               (A es una
+     “transformación cóncava” de B);
+
+ (3) πA (z̃) ≥ πB (z̃) para todo riesgo z̃ con E[z̃] = 0   (A paga más por evitar cualquier riesgo).
+
+Esquema. (1)⇒(2): defina G por A(w) = G(B(w)). La monotonía asegura que G está bien
+definida y G′ > 0. Derivando dos veces y dividiendo,
+
+                              G′′ (B) B ′ (w)   A′′ (w) B ′′ (w)
+                                              =        − ′       ≤ 0
+                                   G′ (B)       A′ (w)  B (w)
+
+por (1); como B ′ > 0, resulta G′′ < 0, esto es, G estrictamente cóncava.
+(2)⇒(3): aplicando la desigualdad de Jensen a la función cóncava G,
+                                                                                 
+A(w − πA ) = E[A(w + z̃)] = E G(B(w + z̃)) ≤ G E[B(w + z̃)] = G B(w − πB ) = A(w − πB ).
+
+Como A es creciente, w − πA ≤ w − πB , es decir πA ≥ πB .
+(3)⇒(1): como (3) vale para todo riesgo de media cero, en particular para riesgos arbitrariamente
+pequeños; aplicando la aproximación de Pratt π ≈ 12 rA (w)σ 2 a ambos individuos y comparando
+en el límite se obtiene (1).
+
+
+
+
+                                                   8
+6.6.     El caso CARA–Normal y la utilidad media–varianza
+
+Un caso de enorme importancia práctica combina utilidad CARA con riqueza Normal. Sea
+u(w) = −e−aw y supongamos w ∼ N (µ, σ 2 ). Usando la función generadora de momentos de la
+                       2 2
+Normal, E[etw ] = etµ+t σ /2 , con t = −a:
+                                                         2 2
+                                                                         h              i
+                 E[u(w)] = − E[e−aw ] = − e−aµ+a σ /2 = − exp − a µ − a2 σ 2 .
+
+Como la exponencial es monótona, maximizar la utilidad esperada equivale a maximizar
+                                                µ − a2 σ 2 .
+La utilidad esperada depende sólo de la media y la varianza de la riqueza. Esto proporciona
+el fundamento microeconómico del criterio media–varianza que reaparecerá en la Unidad IV
+(Markowitz) y en la Unidad V (firma con utilidad tipo Markowitz). Conviene notar que la
+utilidad cuadrática u(w) = w − bw2 también genera preferencias media–varianza, pero con
+inconvenientes (utilidad decreciente en algún tramo y aversión absoluta creciente); el par CARA–
+Normal es la justificación limpia.
+
+     Idea clave. Dos medidas (rA y rR ), una aproximación (Pratt: π ≈ 21 rA σ 2 ), un teorema de compa-
+     ración global (Pratt), y un caso cerrado (CARA–Normal ⇒ media–varianza). Estas herramientas
+     se usan en toda la parte de riesgo del curso.
+
+
+7.     Aplicación: decisión del consumidor bajo riesgo y demanda
+       de seguro
+
+El aparato de utilidad esperada permite analizar la primera decisión “de consumo” bajo riesgo:
+cuánto asegurarse. Presentamos el caso básico; el estudio de los mercados de seguros, el fondo
+común y los derechos contingentes es materia de la Unidad III.
+Un individuo con riqueza W enfrenta una pérdida L con probabilidad π (estado 2, “accidente”)
+y ninguna pérdida con probabilidad 1 − π (estado 1). Puede comprar cobertura q pagando una
+prima pq (con p la tasa de prima por unidad de cobertura), abonada antes de conocerse el
+estado. Las riquezas contingentes son
+                   w1 = W − pq,         w2 = W − L − pq + q = W − L + (1 − p)q.
+El decisor elige q para maximizar
+                                                                                 
+                         V (q) = (1 − π) u(W − pq) + π u W − L + (1 − p)q .
+La condición de primer orden es
+                          V ′ (q) = − p (1 − π) u′ (w1 ) + (1 − p) π u′ (w2 ) = 0.
+Proposición 7.1 (Cobertura total con prima actuarialmente justa). Si la prima es actuarial-
+mente justa, p = π, y el decisor es estrictamente averso al riesgo, entonces la cobertura óptima
+es total: q ∗ = L, y el individuo iguala su riqueza en ambos estados.
+
+Demostración. Con p = π, la condición de primer orden se reduce a
+                   − π(1 − π) u′ (w1 ) + (1 − π) π u′ (w2 ) = 0 =⇒ u′ (w1 ) = u′ (w2 ).
+Como u es estrictamente cóncava, u′ es estrictamente decreciente y por lo tanto inyectiva, de
+modo que u′ (w1 ) = u′ (w2 ) implica w1 = w2 :
+                               W − pq = W − L + (1 − p)q =⇒ L = q.
+
+                                                     9
+El resultado —a prima justa, el averso se asegura por completo— es el punto de partida de
+toda la economía del seguro. Su lectura en el espacio de rentas contingentes (w1 , w2 ) (tangencia
+entre la curva de indiferencia y la recta de presupuesto del seguro, sobre la recta de 45◦ de plena
+certeza) es el puente natural hacia el Teorema de Estados Contingentes de Borch. Cuando la
+prima incluye un recargo (p > π) o el asegurado puede influir en la probabilidad de pérdida,
+la cobertura óptima es parcial: esos casos, junto con la selección adversa y el riesgo moral, se
+estudian en las siguientes unidades.
+
+
+8.     Crítica al modelo tradicional: las paradojas
+
+La utilidad esperada es un modelo normativo atractivo, pero como vimos en la Clase 1 su
+desempeño descriptivo es imperfecto. Ahora podemos ser precisos sobre qué falla: las paradojas
+clásicas violan axiomas específicos.
+
+
+8.1.   La paradoja de Allais y el axioma de independencia
+
+Retomamos el experimento de Allais (1953), ya presentado en la Clase 1 como “efecto certeza”.
+Considere los premios en millones y u(0) = 0. En el Problema 1 la mayoría elige A sobre B; en
+el Problema 2, D sobre C:
+
+         Problema 1: A = (1 con certeza)         vs.    B = (0.10 : 5; 0.89 : 1; 0.01 : 0),
+         Problema 2: C = (0.11 : 1; 0.89 : 0)          vs.    D = (0.10 : 5; 0.90 : 0).
+
+Bajo utilidad esperada, con u1 = u(1) y u5 = u(5):
+
+                   A ≻ B =⇒ u1 > 0.10 u5 + 0.89 u1 =⇒ 0.11 u1 > 0.10 u5 ,
+
+                                 D ≻ C =⇒ 0.10 u5 > 0.11 u1 .
+Las dos desigualdades son contradictorias: no existe ninguna u que racionalice ambas elecciones
+modales. La raíz es que ambos problemas comparten una “consecuencia común” (una probabi-
+lidad 0.89 de un mismo premio) que, por el axioma de independencia, no debería afectar el
+ordenamiento —pero sí lo afecta cuando ese premio común pasa de 1 (Problema 1) a 0 (Problema
+2). Allais viola la independencia; ése es, exactamente, el axioma que la Teoría de las Perspectivas
+relaja mediante la ponderación no lineal de probabilidades.
+
+
+8.2.   La paradoja de Ellsberg y la ambigüedad
+
+Allais mantiene probabilidades conocidas. Ellsberg (1961) va más lejos y ataca la existencia
+misma de probabilidades subjetivas cuando hay ambigüedad (incertidumbre en el sentido de
+Knight, vista en la Clase 1). Una urna contiene 90 bolas: 30 son rojas y las 60 restantes son
+negras o amarillas en proporción desconocida. Se ofrecen dos pares de apuestas:
+
+                   Apuesta I:     “roja”   vs.   “negra”;
+                   Apuesta II: “roja o amarilla”        vs.    “negra o amarilla”.
+
+La mayoría elige roja en I (probabilidad conocida 1/3) y negra o amarilla en II (probabilidad
+conocida 2/3). Supongamos que existieran probabilidades subjetivas P (R) = 1/3, P (N ) = b,
+P (Y ) = y con b + y = 2/3. Entonces:
+
+roja ≻ negra =⇒ 31 > b,       (negra o amarilla) ≻ (roja o amarilla) =⇒ b+y > 13 +y =⇒ b > 13 .
+
+
+                                                 10
+De nuevo, contradicción: no hay ninguna probabilidad subjetiva que racionalice ambas elec-
+ciones. El fenómeno es la aversión a la ambigüedad: los decisores prefieren apuestas con
+probabilidades conocidas a apuestas con probabilidades desconocidas, aun cuando esto sea in-
+compatible con la existencia de una distribución de probabilidad subjetiva única. Esto distingue
+el riesgo (probabilidades conocidas) de la incertidumbre knightiana y motiva modelos posteriores
+(utilidad esperada con probabilidades múltiples, maxmin).
+
+     Idea clave. Allais viola independencia (con probabilidades conocidas); Ellsberg viola la existencia
+     de probabilidad subjetiva (bajo ambigüedad). Ambas paradojas no son “errores” aislados sino
+     patrones sistemáticos que delimitan el alcance descriptivo de la utilidad esperada.
+
+
+9.      Síntesis
+
+     San Petersburgo refuta el criterio del valor esperado; el principio de Bernoulli lo reemplaza
+     por la utilidad esperada de una función cóncava del dinero.
+
+     El teorema de von Neumann–Morgenstern deriva la representación E[u] de cuatro axiomas
+     (racionalidad, continuidad, independencia, monotonía). La utilidad vNM es cardinal: única
+     salvo transformación afín positiva.
+
+     Aversión al riesgo ⇔ concavidad de u (Jensen), con equivalente cierto y prima de riesgo
+     positivos.
+
+     Las medidas de Arrow–Pratt (rA absoluta, rR relativa) son invariantes a la representación; la
+     prima de un riesgo pequeño es π ≈ 12 rA σ 2 ; el teorema de Pratt caracteriza la aversión global;
+     CARA–Normal genera preferencias media–varianza.
+
+     A prima justa, el averso se asegura por completo (puente a la Unidad III).
+
+     Las paradojas de Allais y Ellsberg identifican los axiomas que fallan: independencia y pro-
+     babilidad subjetiva, respectivamente.
+
+
+
+
+10.      Ejercicios
+
+ 1. San Petersburgo con utilidad acotada. Considere el juego de San Petersburgo con
+    premios xn = 2n y probabilidades 2−n .
+
+       (a) Verifique que el valor monetario esperado diverge.
+       (b) Con u(w) = ln w, muestre que la utilidad esperada es ln 4 y que el equivalente cierto
+           es 4 ducados.
+       (c) Con la utilidad acotada u(w) = 1 − e−w , escriba E[u(X)] como una serie y argumente
+           por qué es finita. ¿Qué dice esto sobre la disposición máxima a pagar?
+
+ 2. Teorema de la utilidad esperada. Sea b la mejor lotería y w la peor. Para un premio x
+    se define u(x) = px mediante x ∼ px ◦ b ⊕ (1 − px ) ◦ w.
+
+       (a) Explique qué axioma garantiza la existencia de px y cuál su unicidad.
+       (b) Para la lotería q ◦ x ⊕ (1 − q) ◦ y, use el axioma de independencia para reducirla a una
+           lotería sobre {b, w} y deduzca que su utilidad es q u(x) + (1 − q)u(y).
+
+
+
+                                                     11
+ 3. Cardinalidad. Sea u una utilidad vNM. Muestre que v = a u + c (con a > 0) representa
+    las mismas preferencias sobre loterías, pero que la transformación monótona v = u3 no pre-
+    serva, en general, la propiedad de utilidad esperada. Ilustre con un contraejemplo numérico
+    sencillo.
+                                                                            √
+ 4. Equivalente cierto y prima de riesgo. Un individuo con u(w) = w y riqueza inicial
+    nula enfrenta la lotería (0.5; 36, 100) (recibe 36 o 100 con igual probabilidad).
+
+    (a) Calcule E[X], E[u(X)], el equivalente cierto CE y la prima de riesgo π.
+    (b) Compare la prima exacta con la aproximación de Pratt π ≈ 12 rA (w)σ 2 evaluada en
+        w = E[X]. Comente la calidad de la aproximación.
+
+ 5. Aproximación de Pratt. Deduzca la fórmula π ≈ 21 rA (w)σ 2 para un riesgo pequeño de
+    media cero, indicando en qué orden de Taylor se trunca cada lado y por qué E[ε̃] = 0 elimina
+    el término lineal.
+
+ 6. Teorema de Pratt. Sean A(w) = −e−2w y B(w) = −e−w .
+                 A (w) y r B (w) y determine quién es más averso.
+    (a) Calcule rA        A
+    (b) Encuentre explícitamente la función G tal que A = G ◦ B y verifique que es creciente
+        y cóncava.
+
+ 7. CARA–Normal. Con u(w) = −e−aw y w ∼ N (µ, σ 2 ), demuestre que E[u(w)] = − exp[−a(µ−
+    a 2                                                                                 a 2
+    2 σ )] y que, por lo tanto, maximizar la utilidad esperada equivale a maximizar µ − 2 σ .
+    ¿Qué papel juega a como precio del riesgo?
+
+ 8. Demanda de seguro. Un individuo con u(w) = ln w, riqueza W = 100, enfrenta una
+    pérdida L = 51 con probabilidad π = 1/3. La tasa de prima es p por unidad de cobertura
+    q.
+
+    (a) Con prima justa p = π, muestre que la cobertura óptima es total y calcule la riqueza
+        final (cierta).
+    (b) Con prima injusta p = 0.4, plantee la condición de primer orden y argumente (sin
+        resolver numéricamente) por qué la cobertura óptima es ahora parcial, q ∗ < L.
+
+ 9. Allais e independencia. Con los Problemas 1 y 2 del texto, escriba las dos desigualdades
+    de utilidad esperada implicadas por las elecciones modales A ≻ B y D ≻ C, muestre que son
+    incompatibles e identifique la “consecuencia común” cuya alteración provoca la inversión de
+    preferencias. ¿Qué axioma se viola?
+
+10. Ellsberg y ambigüedad. En la urna de Ellsberg (30 rojas; 60 negras o amarillas en
+    proporción desconocida), suponga que existieran probabilidades subjetivas P (R) = 1/3,
+    P (N ) = b, P (Y ) = y con b + y = 2/3. Derive las dos desigualdades implicadas por las
+    elecciones modales y muestre que son contradictorias. Explique en qué se diferencia esta
+    violación de la de Allais.
+
+
+Referencias
+
+Referencias
+[1] Allais, M. (1953). Le comportement de l’homme rationnel devant le risque. Econometrica, 21(4),
+    503–546.
+
+[2] Arrow, K. J. (1965). Aspects of the Theory of Risk-Bearing. Yrjö Jahnssonin Säätiö.
+
+
+                                                12
+ [3] Bernoulli, D. (1738/1954). Exposition of a new theory on the measurement of risk. Econometrica,
+     22(1), 23–36.
+
+ [4] Ellsberg, D. (1961). Risk, ambiguity, and the Savage axioms. The Quarterly Journal of Economics,
+     75(4), 643–669.
+
+ [5] Gravelle, H. & Rees, R. (2006). Microeconomía (cap. 17). Pearson.
+
+ [6] Jensen, J. L. W. V. (1906). Sur les fonctions convexes et les inégalités entre les valeurs moyennes.
+     Acta Mathematica, 30, 175–193.
+
+ [7] Mas-Colell, A., Whinston, M. D. & Green, J. R. (1995). Microeconomic Theory (cap. 6). Oxford
+     University Press.
+
+ [8] Menger, K. (1934). Das Unsicherheitsmoment in der Wertlehre. Zeitschrift für Nationalökonomie,
+     5(4), 459–485.
+
+ [9] Pratt, J. W. (1964). Risk aversion in the small and in the large. Econometrica, 32(1–2), 122–136.
+
+[10] Varian, H. R. (1992). Análisis microeconómico (cap. 11). Antoni Bosch.
+
+[11] von Neumann, J. & Morgenstern, O. (1944). Theory of Games and Economic Behavior. Princeton
+     University Press.
+
+
+
+
+                                                  13
+
