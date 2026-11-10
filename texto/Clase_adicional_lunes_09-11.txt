@@ -1,0 +1,536 @@
+Clase de repaso antes del segundo parcial: ejercicios resueltos
+
+6.1 Clasificación de problemas de información
+
+[]
+
+El criterio para clasificar es doble: qué ignora la parte no informada y cuándo surge la asimetría respecto de la firma del contrato.
+
+-   Si la asimetría surge después de firmar, es riesgo moral: con acción oculta si el principal no ve lo que hace el agente; con información oculta si el agente aprende algo que el principal no sabe.
+-   Si la asimetría es previa al contrato y el no informado mueve primero (ofrece un menú), es selección adversa.
+-   Si la asimetría es previa y el informado mueve primero con una acción observable y costosa, es señalización.
+
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Situación                     Problema                                  Principal / Agente          Secuencia
+  ----------------------------- ----------------------------------------- --------------------------- ---------------------------------------------------------------------------------------------
+  (a) Alarma del auto           Riesgo moral con acción oculta            Aseguradora / Asegurado     Contrato, acepta, elige el cuidado (oculto), siniestro, pagos
+
+  (b) Banco y proyectos         Selección adversa                         Banco / Solicitante         N fija el tipo, el banco ofrece contratos, el solicitante elige
+
+  (c) Posgrado no relacionado   Señalización                              Empleador / Graduado        N fija el tipo, el graduado se educa, el empleador lee el CV y ofrece
+
+  (d) Gerente y demanda         Riesgo moral con información oculta       Accionistas / Gerente       Contrato, acepta, N fija la demanda (sólo la ve el gerente), elige la estrategia, resultado
+
+  (e) Regulador y costos        Selección adversa                         Regulador / Distribuidora   N fija el costo, el regulador ofrece un menú tarifario, la empresa elige
+
+  (f) Garantía de tres años     Señalización por el principal informado   Fabricante / Consumidor     N fija la calidad, el fabricante ofrece precio y garantía, el consumidor infiere y compra
+  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+En (c) el posgrado “no relacionado” importa justamente porque no aumenta la productividad: sólo informa. En (f) quien tiene la información es quien diseña el contrato, y la garantía es la señal: le cuesta más ofrecerla a quien vende mala calidad.
+
+6.2. Modelo básico con principal neutral
+
+[]
+
+Datos:
+
+-   Resultados: x ∈ {0, 60}, es decir fracaso (x_(F) = 0) o éxito (x_(S) = 60).
+-   Probabilidad de éxito: 3/4 con e_(H) y 1/4 con e_(L).
+-   Utilidad del agente: $U = \sqrt{w} - v(e)$, averso al riesgo.
+-   Costo del esfuerzo: v(e_(H)) = 1, v(e_(L)) = 0.
+-   Utilidad de reserva: $\underline{U} = 3$.
+-   Principal: neutral al riesgo, maximiza E[x − w].
+
+Salvo en (d), el esfuerzo es verificable: se puede exigir por contrato.
+
+(a) Explicar por qué el salario óptimo no depende del resultado.
+
+Para un esfuerzo e dado, el principal elige los salarios w_(S) y w_(F) tal que
+
+$$\max_{w_{S},w_{F}}\ p_{S}\left( x_{S} - w_{S} \right) + p_{F}\left( x_{F} - w_{F} \right)\quad\text{sujeto a}\quad p_{S}\sqrt{w_{S}} + p_{F}\sqrt{w_{F}} - v(e) \geq \underline{U}\quad(\lambda)$$
+
+Derivando el lagrangiano respecto de cada salario:
+
+$$- p_{i} + \lambda\, p_{i}\, u'\left( w_{i} \right) = 0\quad \Rightarrow \quad u'\left( w_{i} \right) = \frac{1}{\lambda}\quad\quad i = S,F$$
+
+La utilidad marginal del agente debe ser igual en éxito y en fracaso. Como $u'(w) = \frac{1}{2\sqrt{w}}$ es estrictamente decreciente, eso sólo ocurre si w_(S) = w_(F): el salario es fijo.
+
+Es la condición de Borch B′/u′ = λ con B′ constante. El principal neutral no sufre por cargar con el riesgo y el agente averso paga por evitarlo, así que lo eficiente es que el principal lo asegure por completo. Además, como el esfuerzo se exige por contrato, no hace falta atar el pago al resultado para dar incentivos.
+
+(b) Salario óptimo para cada nivel de esfuerzo.
+
+La restricción de participación se satura: si el agente obtuviera más que 3, el principal podría bajarle el salario y el agente seguiría aceptando. Entonces
+
+$$\sqrt{w} - v(e) = 3\quad \Rightarrow \quad w^{o}(e) = (3 + v(e))^{2}$$
+
+-   Con e_(H): w^(o) = (3+1)² = 16.
+-   Con e_(L): w^(o) = (3+0)² = 9.
+
+El esfuerzo alto exige 7 pesos más de salario para compensar una unidad de desutilidad.
+
+(c) ¿Qué esfuerzo exige el principal y cuál es su beneficio?
+
+Resultado esperado: $\Pi\left( e_{H} \right) = \frac{3}{4} \cdot 60 = 45$ y $\Pi\left( e_{L} \right) = \frac{1}{4} \cdot 60 = 15$.
+
+Beneficio del principal (resultado esperado menos salario):
+
+-   Con e_(H): 45 − 16 = 29.
+-   Con e_(L): 15 − 9 = 6.
+
+El principal exige e_(H) con un salario fijo de 16 y gana 29: el esfuerzo alto sube el resultado esperado en 30 y el salario sólo en 7.
+
+(d) Esfuerzo no verificable con el salario de (c).
+
+Con w = 16 fijo, el agente elige el esfuerzo que le conviene:
+
+-   Con e_(H): $\sqrt{16} - 1 = 3$.
+-   Con e_(L): $\sqrt{16} - 0 = 4$.
+
+Elige e_(L). Acepta el contrato (4 ≥ 3) pero no se esfuerza, porque cobra lo mismo haga lo que haga. El beneficio del principal es 15 − 16 =  − 1: paga un salario pensado para el esfuerzo alto y recibe el resultado del bajo (le habría ido mejor pagando 9 y pidiendo e_(L), con lo que ganaba 6).
+
+El seguro completo destruye los incentivos: sin verificabilidad, para inducir e_(H) el salario tiene que depender del resultado, y el agente averso tiene que cargar con riesgo (ver 7.1).
+
+(e) Agente neutral (u(w) = w) y principal averso.
+
+Ahora Borch exige B′(x−w)/u′(w) = λ con u′ = 1: B′(x−w) debe ser igual en ambos resultados, y como B′ es decreciente, x − w debe ser constante:
+
+w(x) = x − k
+
+Es una franquicia: el agente se queda con el resultado y paga al principal una suma fija k. El neutral (agente) asegura al averso (principal). Saturando la participación:
+
+$$E\lbrack x\rbrack - k - v(e) = \underline{U}\quad \Rightarrow \quad k = \Pi(e) - \underline{U} - v(e)$$
+
+-   Con e_(H): k = 45 − 3 − 1 = 41.
+-   Con e_(L): k = 15 − 3 − 0 = 12.
+
+El principal cobra k con certeza, así que prefiere e_(H) (41 > 12). Los salarios son w_(S) = 60 − 41 = 19 y w_(F) = 0 − 41 =  − 41 (el agente paga 41). Verificación: $\frac{3}{4}(19) + \frac{1}{4}( - 41) - 1 = 3 = \underline{U}$.
+
+Sin verificabilidad, el agente maximiza Π(e) − v(e) − k: obtiene 45 − 1 − 41 = 3 con e_(H) y 15 − 0 − 41 =  − 26 con e_(L). Elige e_(H) por sí mismo, porque se queda con todo el resultado marginal: sus incentivos coinciden con los de la eficiencia. La franquicia exige salarios negativos; con responsabilidad limitada deja de estar disponible (ver 7.4).
+
+6.3. Seguro con información simétrica
+
+[]
+
+El individuo tiene riqueza w₀ si no hay incendio y w₀ − L si lo hay. Con un contrato (P,q) su riqueza es w₀ − P sin incendio y w₀ − L − P + q con incendio.
+
+(a) Utilidad de reserva.
+
+Es la que obtiene sin asegurarse:
+
+$$\underline{U} = \pi\, u\left( w_{0} - L \right) + (1 - \pi)\, u\left( w_{0} \right)$$
+
+(b) Variables verificables.
+
+La prima P, la ocurrencia del incendio y el monto del daño (y, por lo tanto, la cobertura q). El cuidado del asegurado no hace falta: con información simétrica no es el problema.
+
+(c) Contrato óptimo con individuo averso.
+
+La aseguradora resuelve
+
+$$\max_{P,q}\ P - \pi q\quad\text{sujeto a}\quad\pi\, u\left( w_{0} - L - P + q \right) + (1 - \pi)\, u\left( w_{0} - P \right) \geq \underline{U}$$
+
+Las condiciones de primer orden respecto de P y de q dan u′(w₀−L−P+q) = u′(w₀−P): la utilidad marginal del individuo es la misma en ambos estados. Como u′ es decreciente, las riquezas son iguales, es decir q = L: seguro completo. Es la misma lógica que el salario fijo de 6.2: la parte neutral asegura a la aversa (Proposición de Borch en el modelo principal–agente).
+
+La participación se satura: $u\left( w_{0} - P \right) = \underline{U}$, de modo que w₀ − P es el equivalente cierto de la lotería sin seguro. Entonces P = πL + ρ, donde ρ es la prima de riesgo del individuo: la aseguradora monopolista se queda con todo el excedente.
+
+(d) Individuo neutral.
+
+No hay ganancias de intercambio: el individuo valora la lotería por su valor esperado. Cualquier cobertura con prima justa P = πq es eficiente y la aseguradora gana cero; si cobrara más, el individuo no aceptaría.
+
+(e) Competencia perfecta.
+
+El beneficio es nulo: P = πL (prima actuarialmente justa) con cobertura completa. Ahora el excedente se lo queda el individuo.
+
+(f) Aseguradora también aversa.
+
+Si la cobertura fuera completa, el individuo tendría la misma riqueza en los dos estados, pero la aseguradora tendría P sin incendio y P − L con incendio, de modo que B′(P) < B′(P−L). El cociente B′/u′ no sería constante entre estados, y eso viola la condición de Pareto. Para igualarlo hace falta que u′ sea mayor con incendio, es decir que el individuo tenga menos riqueza con incendio: cobertura parcial. El riesgo se reparte según las tolerancias de ambas partes.
+
+6.5. Dos resultados
+
+[]
+
+(a) Contrato y esfuerzo óptimos.
+
+Principal neutral, agente averso. El salario es fijo, $w_{S} = w_{F} = u^{- 1}\left( \underline{U} + v(e) \right)$. El principal maximiza $\Pi(e) - u^{- 1}\left( \underline{U} + v(e) \right)$, con Π(e) = x_(F) + p_(S)(e)(x_(S)−x_(F)). La condición necesaria es
+
+$$p_{S}'(e)\,\left( x_{S} - x_{F} \right) = \frac{v'(e)}{u'\left( w^{o} \right)}$$
+
+Agente neutral, principal averso. Franquicia: w_(i) = x_(i) − k con $k = \Pi(e) - \underline{U} - v(e)$. El principal maximiza k, es decir Π(e) − v(e):
+
+p_(S)′(e) (x_(S)−x_(F)) = v′(e)
+
+En ambos casos el beneficio marginal esperado del esfuerzo se iguala a su costo marginal medido en pesos.
+
+(b) Condición suficiente.
+
+Con dos resultados, p_(F) = 1 − p_(S), así que p_(F)″ =  − p_(S)″ y
+
+$$\sum_{i}^{}p_{i}''(e)\, x_{i} = p_{S}''(e)\, x_{S} - p_{S}''(e)\, x_{F} = p_{S}''(e)\,\left( x_{S} - x_{F} \right) \leq 0 \Leftrightarrow p_{S}''(e) \leq 0$$
+
+La probabilidad de éxito crece con el esfuerzo a tasa decreciente: rendimientos decrecientes del esfuerzo.
+
+(c) Verificación.
+
+Con $p_{S}(e) = \frac{e}{1 + e}$: $p_{S}'(e) = \frac{1}{(1 + e)^{2}} > 0$ y $p_{S}''(e) = - \frac{2}{(1 + e)^{3}} < 0$. Se cumple.
+
+Clase 7 — El problema del riesgo moral
+
+7.1. Riesgo moral con dos esfuerzos
+
+[]
+
+Mismos datos que 6.2, pero ahora el esfuerzo no es verificable.
+
+(a) Planteo.
+
+Con $u_{S} = \sqrt{w_{S}}$ y $u_{F} = \sqrt{w_{F}}$, el principal que quiere e_(H) resuelve
+
+$$\max_{w_{S},w_{F}}\ \frac{3}{4}\left( 60 - w_{S} \right) + \frac{1}{4}\left( 0 - w_{F} \right)$$
+
+sujeto a
+
+$$\text{(PC)}\quad\frac{3}{4}u_{S} + \frac{1}{4}u_{F} - 1 \geq 3\quad\quad\quad\quad\text{(IC)}\quad\frac{3}{4}u_{S} + \frac{1}{4}u_{F} - 1 \geq \frac{1}{4}u_{S} + \frac{3}{4}u_{F} - 0$$
+
+La IC equivale a $\left( \frac{3}{4} - \frac{1}{4} \right)\left( u_{S} - u_{F} \right) \geq 1 - 0$, es decir u_(S) − u_(F) ≥ 2.
+
+(b) Contrato óptimo.
+
+Las dos restricciones se saturan (si la IC estuviera holgada, el salario sería fijo y no induciría e_(H)):
+
+$$\frac{3}{4}u_{S} + \frac{1}{4}u_{F} = 4,\quad\quad u_{S} - u_{F} = 2$$
+
+Reemplazando u_(F) = u_(S) − 2: $u_{S} - \frac{1}{2} = 4$, así que u_(S) = 4.5 y u_(F) = 2.5:
+
+w_(S) = 20.25,    w_(F) = 6.25
+
+Verificación: con e_(H) el agente obtiene $\frac{3}{4}(4.5) + \frac{1}{4}(2.5) - 1 = 3$; con e_(L), $\frac{1}{4}(4.5) + \frac{3}{4}(2.5) = 3$. Participa y queda indiferente entre esfuerzos (por convención, elige el que prefiere el principal).
+
+(c) Multiplicadores y cocientes de verosimilitud.
+
+Los cocientes son $r_{S} = p_{S}^{L}/p_{S}^{H} = \frac{1/4}{3/4} = \frac{1}{3}$ y $r_{F} = \frac{3/4}{1/4} = 3$. La condición $\frac{1}{u'\left( w_{i} \right)} = 2\sqrt{w_{i}} = \lambda + \mu\left( 1 - r_{i} \right)$ da
+
+$$9 = \lambda + \frac{2}{3}\mu,\quad\quad 5 = \lambda - 2\mu\quad \Rightarrow \quad\mu = 1.5,\ \ \lambda = 8$$
+
+El salario de referencia (r = 1) es w̄ = (λ/2)² = 16. El éxito tiene r < 1 (es más probable con esfuerzo alto) y se premia: 20.25 > 16. El fracaso tiene r > 1 y se castiga: 6.25 < 16. μ > 0 significa que el riesgo moral le cuesta al principal.
+
+(d) Esfuerzo exigido y fórmula.
+
+$E_{H}\lbrack w\rbrack = \frac{3}{4}(20.25) + \frac{1}{4}(6.25) = 16.75$, y el beneficio es 45 − 16.75 = 28.25. Con e_(L) ganaría 15 − 9 = 6, así que sigue exigiendo e_(H). Con información simétrica ganaba 29: el riesgo moral cuesta 0.75, la prima de riesgo que hay que pagarle al agente por cargar con la lotería.
+
+Con la fórmula: $A = \underline{U} + v\left( e_{H} \right) = 4$, Δv = 1 y
+
+$$\chi^{2} = \frac{(3/4 - 1/4)^{2}}{3/4} + \frac{(1/4 - 3/4)^{2}}{1/4} = \frac{1}{3} + 1 = \frac{4}{3},\quad\quad E_{H}\lbrack w\rbrack = A^{2} + \frac{(\Delta v)^{2}}{\chi^{2}} = 16 + \frac{3}{4} = 16.75$$
+
+(e) Esfuerzo ineficiente.
+
+Sea X el valor del éxito:
+
+-   Información simétrica: conviene e_(H) si $\frac{3}{4}X - 16 \geq \frac{1}{4}X - 9$, es decir X ≥ 14.
+-   Riesgo moral: conviene e_(H) si $\frac{3}{4}X - 16.75 \geq \frac{1}{4}X - 9$, es decir X ≥ 15.5.
+
+Para X ∈ (14; 15.5) el principal exige e_(L) aunque lo eficiente sea e_(H).
+
+7.4. Responsabilidad limitada
+
+[]
+
+(a) Franquicia.
+
+$k = \Pi\left( e_{H} \right) - \underline{U} - v\left( e_{H} \right) = 45 - 0 - 1 = 44$: el agente cobra 60 − 44 = 16 en el éxito y  − 44 en el fracaso. Con e_(H) obtiene 45 − 44 − 1 = 0; con e_(L), 15 − 44 =  − 29. Elige e_(H) sin necesidad de verificar el esfuerzo, y el principal gana 44, lo mismo que con información simétrica.
+
+(b) Salarios no negativos.
+
+La IC es $\left( \frac{3}{4} - \frac{1}{4} \right)\left( w_{S} - w_{F} \right) \geq 1$, es decir w_(S) − w_(F) ≥ 2, y la PC es $\frac{3}{4}w_{S} + \frac{1}{4}w_{F} - 1 \geq 0$. Con w_(F) ≥ 0, lo más barato es
+
+w_(F) = 0,    w_(S) = 2,    E[w] = 1.5
+
+La PC queda holgada: el agente obtiene 1.5 − 1 = 0.5 > 0, una renta de 0.5. El principal gana 45 − 1.5 = 43.5 en lugar de 44. El trade-off ya no es seguro contra incentivos (ambos son neutrales), sino renta contra incentivos.
+
+(c) ¿Cuándo no cuesta nada?
+
+Saturando PC e IC: w_(S) = w_(F) + 2 y $\frac{3}{4}\left( w_{F} + 2 \right) + \frac{1}{4}w_{F} - 1 = \underline{U}$, de donde $w_{F} = \underline{U} - 0.5$. Es no negativo si $\underline{U} \geq 0.5$: con una reserva alta, el agente ya cobra lo suficiente en el fracaso y la restricción w ≥ 0 no muerde.
+
+(d) Esfuerzo ineficiente.
+
+-   Eficiente (o franquicia): e_(H) si $\frac{3}{4}X - 1 \geq \frac{1}{4}X$, es decir X ≥ 2.
+-   Con responsabilidad limitada: el contrato (w_(F),w_(S)) = (0,2) cuesta 1.5, y e_(L) se consigue con salario 0. Conviene e_(H) si $\frac{3}{4}X - 1.5 \geq \frac{1}{4}X$, es decir X ≥ 3.
+
+Para X ∈ (2;3) el principal exige e_(L) aunque lo eficiente sea e_(H).
+
+7.7. Aplicaciones conceptuales
+
+[]
+
+(a) Bubka.
+
+El agente optimiza la variable por la que se le paga. Se le pagaba por cada récord y no por los centímetros, así que lo óptimo era mejorarlo de a un centímetro y cobrar 35 veces. El esquema premia el evento y no la magnitud de la mejora: un contrato mal diseñado induce exactamente la conducta que paga.
+
+(b) Controles de alcoholemia.
+
+Ambos esquemas usan una señal informativa sobre la acción oculta (no beber). Los controles al azar detectan al que bebe aunque no choque, y la probabilidad de ser detectado no depende de la suerte: con una probabilidad baja y una multa alta alcanza (control aleatorio de Holmström). El control sólo tras un accidente es más barato (control condicional), pero detecta con la probabilidad de accidente, que es baja: necesita multas mucho mayores y carga más riesgo sobre conductores aversos.
+
+(c) Multas mayores si hay heridos.
+
+Si, dado el accidente y el resultado del test, que haya heridos no depende de si el conductor bebió, esa variable no es informativa. Por el resultado de Holmström, condicionar la multa a ella sólo agrega riesgo sin mejorar los incentivos: la propuesta es mala.
+
+(d) Multar a los sobrios que chocan.
+
+Si el test de alcoholemia es un estadístico suficiente de “bebió”, el accidente de un conductor que dio negativo no informa nada sobre la bebida: la multa sólo agrega riesgo. Se justificaría únicamente si se quiere incentivar otras formas de cuidado (velocidad, distracción) que el test no capta; pero ese es otro problema de riesgo moral.
+
+Clase 8 — El problema de la selección adversa
+
+8.1. Menú óptimo con dos tipos
+
+[]
+
+(a) Información simétrica.
+
+-   Tipo G: max_(e) 4e − e², de donde e = 2, w = 4 y beneficio 4.
+-   Tipo B: max_(e) 4e − 2e², de donde e = 1, w = 2 y beneficio 2.
+
+El tipo G con el contrato de B obtiene 2 − 1² = 1 > 0, más que con el suyo (0): no son autoseleccionables. El que quiere mentir es el tipo eficiente.
+
+(b) Restricciones activas.
+
+Se saturan PC_(B) (si el malo obtuviera más que su reserva, se podrían bajar ambos salarios) e IC_(G) (el bueno es quien tiene incentivos a imitar). PC_(G) es redundante: w^(G) − (e^(G))² ≥ w^(B) − (e^(B))² ≥ w^(B) − 2(e^(B))² ≥ 0. IC_(B) queda holgada.
+
+(c) Menú óptimo.
+
+De las restricciones activas: w^(B) = 2(e^(B))² y w^(G) = (e^(G))² + (e^(B))² (la renta de G es (k−1)(e^(B))²). El principal resuelve
+
+$$\max\ \frac{1}{2}\left\lbrack 4e^{G} - \left( e^{G} \right)^{2} - \left( e^{B} \right)^{2} \right\rbrack + \frac{1}{2}\left\lbrack 4e^{B} - 2\left( e^{B} \right)^{2} \right\rbrack$$
+
+Condiciones de primer orden: e^(G) = 2 (sin distorsión en la cima) y  − e^(B) + 2 − 2e^(B) = 0, es decir e^(B) = 2/3 (distorsión a la baja respecto de 1).
+
+$$\left( e^{G},w^{G} \right) = \left( 2;\ \frac{40}{9} \right),\quad\quad\left( e^{B},w^{B} \right) = \left( \frac{2}{3};\ \frac{8}{9} \right),\quad\quad\text{renta de }G = \frac{4}{9}$$
+
+Beneficios: con G, $8 - \frac{40}{9} = \frac{32}{9}$; con B, $\frac{8}{3} - \frac{8}{9} = \frac{16}{9}$. Esperado: $\frac{24}{9} = \frac{8}{3} \approx 2.67$.
+
+(d) Pérdida.
+
+Con información simétrica el beneficio esperado es $\frac{1}{2}(4) + \frac{1}{2}(2) = 3$. La pérdida es $\frac{1}{3}$:
+
+-   Renta: $\frac{1}{2} \cdot \frac{4}{9} = \frac{2}{9}$.
+-   Ineficiencia del contrato de B: $\frac{1}{2}\left( 2 - \frac{16}{9} \right) = \frac{1}{9}$.
+
+(e) e^(B) en función de q.
+
+La condición es q(−2e^(B)) + (1−q)(4−4e^(B)) = 0, de donde
+
+$$e^{B}(q) = \frac{2(1 - q)}{2 - q}$$
+
+Contratar sólo a G da 4q. El menú da 4q + (1−q)[4e^(B)−2(e^(B))²] − q(e^(B))², y reemplazando e^(B)(q) la diferencia es
+
+$$\frac{4(1 - q)^{2}}{2 - q} > 0\quad\quad\text{para todo }q < 1$$
+
+El menú siempre es mejor, aunque la ventaja tiende a cero cuando q → 1.
+
+8.3. Competencia en el mercado de seguros
+
+[]
+
+(a) Utilidad y beneficio.
+
+Con prima p y cobertura z, la riqueza es 64 − p sin accidente y 64 − 63 − p + z = 1 − p + z con accidente. Con probabilidad de accidente π_(T):
+
+EU_(T) = (1−π_(T))ln (64−p) + π_(T)ln (1−p+z),    Π_(T) = p − π_(T) z
+
+(b) Información simétrica.
+
+Competencia y aseguradoras neutrales: seguro completo (z = 63) a prima justa.
+
+-   Prudente (π = 1/3): p = 21, riqueza cierta 43, utilidad ln 43 = 3.761.
+-   Imprudente (π = 1/2): p = 31.5, riqueza 32.5, utilidad ln 32.5 = 3.481.
+
+(c) ¿Por qué no funcionan con información asimétrica?
+
+El imprudente preferiría el contrato del prudente (riqueza 43 contra 32.5). Todos lo elegirían y la aseguradora perdería: cobra 21 y paga en promedio más de 21.
+
+(d) Candidato a equilibrio separador.
+
+El imprudente recibe su contrato simétrico, (31.5; 63). El del prudente está sobre su recta de beneficio nulo, p = z/3, y deja indiferente al imprudente:
+
+$$\frac{1}{2}\ln(64 - p) + \frac{1}{2}\ln(1 - p + z) = ln32.5\quad \Rightarrow \quad\left( 64 - \frac{z}{3} \right)\left( 1 + \frac{2z}{3} \right) = {32.5}^{2}$$
+
+Desarrollando: 2z² − 381z + 8930.25 = 0. La raíz relevante es z ≈ 27.37, con p ≈ 9.12. El prudente obtiene $\frac{2}{3}\ln(54.88) + \frac{1}{3}\ln(19.25) \approx 3.656$: menos que con seguro completo (3.761), porque carga con riesgo para que el imprudente no lo imite.
+
+(e) Con 2/3 de prudentes no es equilibrio.
+
+La probabilidad media de accidente es $\frac{2}{3} \cdot \frac{1}{3} + \frac{1}{3} \cdot \frac{1}{2} = \frac{7}{18}$, y el contrato agrupador completo tiene prima $63 \cdot \frac{7}{18} = 24.5$. Da al prudente ln 39.5 = 3.676 > 3.656, y al imprudente ln 39.5 > ln32.5. Un contrato apenas más caro (por ejemplo p = 24.6, z = 63) atrae a ambos tipos y deja beneficio positivo: el separador no es equilibrio. Y como el agrupador tampoco lo es (siempre hay un contrato que atrae sólo a los prudentes), el mercado no tiene equilibrio. El umbral de proporción de prudentes a partir del cual pasa esto es q^(∘) ≈ 0.59.
+
+8.4. Limones
+
+[]
+
+(a) Valoración θ + c.
+
+A precio P se ofrecen los autos con θ ≤ P, de calidad media P/2. Los compradores pagan su valoración esperada:
+
+$$P = \frac{P}{2} + c\quad \Rightarrow \quad P = 2c$$
+
+Con c = 0.25: P = 0.5 y se vende el 50% de los autos. Cada venta genera un excedente c; el excedente por auto existente es 0.5 ⋅ 0.25 = 0.125, contra 0.25 con información simétrica (se venden todos). Se pierde la mitad de las ganancias de intercambio, justamente la de los mejores autos.
+
+(b) ¿Cuándo se venden todos?
+
+Si P = 2c ≥ 1, es decir $c \geq \frac{1}{2}$.
+
+(c) Valoración βθ.
+
+A precio P ∈ (0,1) el comprador espera recibir βP/2. Hay intercambio si βP/2 ≥ P, es decir β ≥ 2:
+
+-   β < 2: no hay intercambio (sólo P = 0).
+-   β > 2: se venden todos los autos, a P = β/2 ≥ 1.
+-   β = 2: cualquier precio es equilibrio.
+
+Con valoración proporcional el mercado es “todo o nada”. En la figura del mercado de limones β = 1.5 < 2: el mercado desaparece aunque cada auto valga más para el comprador que para el vendedor.
+
+8.7. Aplicaciones conceptuales
+
+[]
+
+(a) El tipo malo obtiene exactamente su utilidad de reserva. El contrato eficiente es el del tipo bueno (no hay distorsión en la cima). El malo no imita al bueno porque ese contrato exige más esfuerzo, que a él le cuesta k veces más, y la renta no lo compensa (en 8.1, el malo con el contrato del bueno obtendría $\frac{40}{9} - 2 \cdot 2^{2} < 0$).
+
+(b) El argumento del amigo es de castigo o incentivos: es la lógica del riesgo moral de la Clase 7, donde la franquicia hace que el asegurado se cuide. Con una franquicia voluntaria opera también la selección adversa: la eligen los conductores de bajo riesgo, que esperan pagarla pocas veces y aprovechan la prima más baja; los que chocan mucho prefieren la cobertura completa. La franquicia separa tipos, como el contrato con riesgo del tipo bueno en Rothschild–Stiglitz. El argumento del amigo es incompleto: justamente los que chocan mucho evitan la franquicia.
+
+(c) En la ruta los clientes no son locales y no conocen los restaurantes: la marca de la cadena garantiza una calidad conocida y resuelve la asimetría. En el barrio el cliente local ya conoce los restaurantes y suele elegir otro.
+
+(d) Un informe técnico independiente y creíble elimina la asimetría: el comprador ya no paga la calidad media, los dueños de autos buenos vuelven a vender y se recuperan las ganancias de intercambio perdidas. La plataforma puede cobrar por ese servicio una parte de esas ganancias.
+
+Clase 10 — Subastas, información y diseño de mercados
+
+10.1. Estrategias en la subasta de segundo precio
+
+[]
+
+(a) Dominancia para el oferente 2 (v₂ = 40).
+
+Ganancia según la oferta máxima de los rivales m:
+
+  ------------------------------------------------------------------------
+  m     Oferta 30              Oferta 40            Oferta 50
+  ----- ---------------------- -------------------- ----------------------
+  20    gana, paga 20: 20      20                   20
+
+  35    pierde: 0              gana, paga 35: 5     5
+
+  45    0                      pierde: 0            gana, paga 45: −5
+
+  60    0                      0                    0
+  ------------------------------------------------------------------------
+
+Ofertar 40 nunca es peor que otra oferta y es estrictamente mejor en algún caso: ofertar menos hace perder un objeto rentable (m = 35) y ofertar más hace ganar a pérdida (m = 45). Es débilmente dominante. La oferta sólo decide si se gana; el precio lo fija otro.
+
+(b) Resultado.
+
+Gana el oferente 1 y paga la segunda oferta, 40: ganancia 10. En la subasta inglesa el oferente 2 se retira cuando el precio llega a 40 y el resultado es el mismo: gana 1 y paga 40.
+
+(c) Tercer precio.
+
+Si los rivales ofertan 50 y 30, el oferente 2 con 40 pierde (0). Con una oferta de 51 gana y paga el tercer precio, 30: ganancia 10. Ofertar la valuación ya no es dominante: conviene ofertar de más, y lo óptimo depende de lo que hagan los demás.
+
+(d) Ofertas falsas.
+
+Un vendedor deshonesto puede introducir una oferta falsa justo debajo de la ganadora, y el ganador termina pagando casi su valuación. Vickrey propone mostrarle al ganador la segunda oferta (y que sea verificable), para que confíe en el mecanismo.
+
+10.2. Primer precio y equivalencia de recaudación
+
+[]
+
+(a) Equilibrio.
+
+Si los otros dos ofertan $\frac{2}{3}v_{j}$, una oferta b gana con probabilidad $\left( \frac{3b}{2} \right)^{2}$. El oferente resuelve
+
+$$\max_{b}\ (v - b)\,\frac{9}{4}\, b^{2}\quad \Rightarrow \quad - b^{2} + 2b(v - b) = 0\quad \Rightarrow \quad b = \frac{2}{3}v$$
+
+La mejor respuesta coincide con la estrategia conjeturada: es un equilibrio (en general, $b = \frac{N - 1}{N}v$).
+
+(b) Recaudación.
+
+Con N = 3: $E\left\lbrack v_{(1)} \right\rbrack = \frac{3}{4}$ y $E\left\lbrack v_{(2)} \right\rbrack = \frac{1}{2}$.
+
+-   Primer precio: $\frac{2}{3} \cdot \frac{3}{4} = \frac{1}{2}$.
+-   Segundo precio: $E\left\lbrack v_{(2)} \right\rbrack = \frac{1}{2}$.
+
+Recaudación igual (equivalencia de la recaudación). Ganancia esperada del ganador: $\frac{3}{4} - \frac{1}{2} = \frac{1}{4}$.
+
+(c) Varianzas.
+
+$$Var\left( p^{1^{\circ}} \right) = \frac{(N - 1)^{2}}{N(N + 1)^{2}(N + 2)} = \frac{1}{60},\quad\quad Var\left( p^{2^{\circ}} \right) = \frac{2(N - 1)}{(N + 1)^{2}(N + 2)} = \frac{1}{20}$$
+
+El cociente es 3 $= \frac{2N}{N - 1}$: el segundo precio es más riesgoso.
+
+(d) Una realización.
+
+Con valuaciones 0.9, 0.3 y 0.2: primer precio $\frac{2}{3} \cdot 0.9 = 0.6$; segundo precio 0.3. No contradice el teorema, que habla de la recaudación esperada, no de cada realización.
+
+(e) Vendedor averso.
+
+Con la misma media, prefiere el formato con menor varianza: el primer precio.
+
+10.5. Maldición del ganador
+
+[]
+
+(a) Sobrestimación.
+
+$$E\left\lbrack \max_{i}\varepsilon_{i} \right\rbrack = \frac{N - 1}{N + 1}\, a = \frac{4}{6} \cdot 20 = 13.33$$
+
+(b) Ganancia esperada ofertando 150.
+
+Dado que su estimación es la más alta, E[V∣X=150, máxima] = 150 − 13.33 = 136.67. Ofertando 150 su ganancia esperada es  − 13.33: la maldición del ganador.
+
+(c) Segundo precio.
+
+La oferta de equilibrio es el valor esperado si el rival más fuerte tuviera la misma estimación x y los otros N − 2 estimaciones menores. Con a priori difusa, $t = \frac{x - V + a}{2a} \sim \text{Beta}(N - 1,1)$, con media $\frac{N - 1}{N}$, y V = x + a − 2at:
+
+$$b(x) = x + a - 2a\,\frac{N - 1}{N} = x - \frac{N - 2}{N}\, a = 150 - \frac{3}{5} \cdot 20 = 138$$
+
+(d) Wilson.
+
+$p = \theta - \sqrt{\pi}\, s$. Con s = 12: 150 − 1.77 ⋅ 12= 128.73. Con s = 6: 139.37. Con menos incertidumbre la rebaja es menor.
+
+(e) Más oferentes.
+
+Con valor común, ganarle a más rivales es peor noticia sobre el valor: la corrección por la maldición del ganador crece con N (en el segundo precio, $b = x - \frac{N - 2}{N}a$ baja con N). Ese efecto puede compensar el aumento de la competencia, y las ofertas pueden no subir.
+
+10.6. Producción en equipo
+
+[]
+
+(a) Eficiencia.
+
+$\max\ e_{1} + e_{2} + e_{3} - \sum_{i}^{}\frac{e_{i}^{2}}{2}$: e_(i) = 1, producto 3, excedente 3 − 1.5= 1.5.
+
+(b) Reparto igualitario.
+
+Cada socio maximiza $\frac{x}{3} - \frac{e_{i}^{2}}{2}$: $e_{i} = \frac{1}{3}$. El producto es 1 y cada socio obtiene $\frac{1}{3} - \frac{1}{18} = \frac{5}{18}$ (total 0.83 contra 1.5). Cada uno recibe sólo un tercio de lo que aporta: free riding.
+
+(c) Contrato forzante.
+
+Cada socio cobra 1 si x ≥ 3 y 0 si x < 3; si el producto no alcanza, se lo queda el principal externo. Con e_(i) = 1 para todos, cada socio obtiene $1 - \frac{1}{2} = \frac{1}{2}$. Si uno reduce su esfuerzo, el producto no llega a 3 y cobra 0; si lo aumenta, cobra lo mismo con más costo. Es un equilibrio de Nash. El presupuesto no está equilibrado fuera del equilibrio: alguien tiene que “romperlo”.
+
+(d) ¿Por qué externo?
+
+Si el principal fuera un socio, le convendría esforzarse menos (o sabotear) para que x < 3 y quedarse con todo el producto. Sólo es creíble si no puede influir sobre el resultado.
+
+(e) Subasta del derecho al residuo.
+
+En la subasta inglesa gana la empresa que lo valora en 1.2 y paga 0.9, la segunda valuación.
+
+10.8. Aplicaciones conceptuales
+
+[]
+
+(a) Le conviene comprometerse a publicar siempre la tasación: vincula el precio con información afiliada a las señales de los oferentes, reduce la renta informacional del ganador y aumenta la recaudación (principio de vinculación, “la honestidad es la mejor política”). Si la publicara sólo cuando es favorable, los oferentes interpretarían el silencio como mala noticia, como en el mercado de limones.
+
+(b) La reserva para un entrante sacrifica recaudación inmediata y eficiencia en la asignación (el bloque se vendió al mínimo, y Arlink ni siquiera lo usó), a cambio de más competencia futura en el mercado móvil.
+
+(c) Los reclamos, cancelaciones y demoras son conductas objetivas y verificables. Las calificaciones libres sufren de reciprocidad y temor a represalias (más del 99% son positivas en eBay) y de opiniones falsas, así que informan poco.
+
+(d) Con cierre en hora fija, ofertar en el último segundo no deja tiempo para responder ni revela la propia valuación antes. Con cierre extendido, cada oferta tardía reabre la subasta y esa ventaja desaparece (Roth y Ockenfels).
+
+(e) Clasificación:
+
+-   El comprador no sabe si el producto es original: selección adversa (calidad oculta antes de la transacción).
+-   El envío a tiempo depende del esfuerzo del vendedor, que el comprador no observa: riesgo moral con acción oculta.
+-   El vendedor nuevo ofrece envío gratis y devolución sin cargo: señalización por la parte informada, como una garantía: le cuesta más ofrecerla a quien vende mal.
